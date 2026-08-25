@@ -15,6 +15,9 @@ FROM node:22-alpine
 WORKDIR /app
 ENV NODE_ENV=production
 
+# Links the published package to this repo on GitHub
+LABEL org.opencontainers.image.source=https://github.com/trixilian/scout-lantern
+
 # Install ONLY production dependencies for the final image
 COPY package.json package-lock.json ./
 RUN npm ci --omit=dev
