@@ -7,7 +7,9 @@ Both sides implement against this document. Changes here need agreement from bot
 
 - Backend listens on **`0.0.0.0`** (not `127.0.0.1`)
 - Port: 3001
-- Frontend reaches it via the `BACKEND_URL` env var, e.g. `http://backend:3001`
+- Frontend reaches it via the `BACKEND_URL` env var:
+  - local dev: `http://localhost:3001`
+  - Docker Compose: `http://backend:3001`
 
 ## GET /api/cards
 
