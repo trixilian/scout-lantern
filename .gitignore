@@ -21,6 +21,3 @@ Thumbs.db
 # Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
-
-# Card data (local only; real data comes from the backend)
-/src/lib/data/

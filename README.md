@@ -16,14 +16,26 @@ Then open <http://localhost:5173>.
 
 ```bash
 docker build -t scout-lantern .
-docker run --rm -p 8080:3000 scout-lantern
+docker run --rm -p 8080:3000 -e BACKEND_URL=http://host.docker.internal:8000 scout-lantern
 ```
 
 Then open <http://localhost:8080>.
 
+`host.docker.internal` reaches a backend running on your host machine — inside the container,
+`localhost` means the container itself.
+
 ## Card data
 
-Card data lives in `src/lib/data/cards.json`. This file is **gitignored** — it's kept
-locally for builds only and is **not** committed to this repo. (The dataset will
-eventually be served by a separate backend service.) Without it, `npm run build` /
-`docker build` will fail, so make sure a `src/lib/data/cards.json` exists locally.
+Card data is served by a separate backend service over HTTP. This repo contains no card
+data of its own.
+
+Set `BACKEND_URL` to point at that service:
+
+```bash
+BACKEND_URL=http://localhost:8000
+```
+
+For local development, put it in a `.env` file (gitignored — see `.env.example`). In Docker,
+pass it at run time with `-e BACKEND_URL=...`.
+
+The request and response shapes are specified in [docs/api-contract.md](docs/api-contract.md).
