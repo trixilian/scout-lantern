@@ -54,5 +54,3 @@ BACKEND_URL=http://localhost:8000
 
 For local development, put it in a `.env` file (gitignored — see `.env.example`). In Docker,
 pass it at run time with `-e BACKEND_URL=...`.
-
-The request and response shapes are specified in [docs/api-contract.md](docs/api-contract.md).
