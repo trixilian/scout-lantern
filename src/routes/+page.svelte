@@ -1,13 +1,13 @@
 <script lang="ts">
-        import type { PageData } from './$types';
-        let { data }: { data: PageData } = $props();
-  </script>
+	import type { PageData } from './$types';
+	let { data }: { data: PageData } = $props();
+</script>
 
-  <h1>KDM Cards</h1>
-  <ul>
-        {#each data.cards as card (card.id)}
-            <li>
-            {card.name}
-            </li>
-        {/each}
-  </ul>
+<h1>KDM Cards</h1>
+<ul>
+	{#each data.cards as card (card.id)}
+		<li>
+			{card.name}
+		</li>
+	{/each}
+</ul>

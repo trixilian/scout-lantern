@@ -1,0 +1,8 @@
+{
+	// Both svelte-vscode and prettier-vscode can format .svelte files, so VS Code
+	// needs to be told which one wins. The Svelte extension runs prettier with
+	// prettier-plugin-svelte under the hood, so it matches `npm run lint`.
+	"[svelte]": {
+		"editor.defaultFormatter": "svelte.svelte-vscode"
+	}
+}
