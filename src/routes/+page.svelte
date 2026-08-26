@@ -5,7 +5,9 @@
 
   <h1>KDM Cards</h1>
   <ul>
-        {#each data.cards as card}
-                <li>{card.name}</li>
+        {#each data.cards as card (card.id)}
+            <li>
+            {card.name}
+            </li>
         {/each}
   </ul>
