@@ -1,1 +1,14 @@
+// 1. Fonts first
+@import '@fontsource-variable/roboto-serif/full.css';
+
+// 2. Bootstrap variable overrides — MUST come before Bootstrap
+$font-family-base: 'Roboto Serif Variable', serif;
+
+// 3. Bootstrap itself
 @import 'bootstrap/scss/bootstrap';
+
+// 4. Your own rules — AFTER, so they win
+body {
+    font-stretch: 75%;
+    font-weight: 300;
+}
