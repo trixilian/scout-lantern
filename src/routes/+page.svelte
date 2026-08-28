@@ -45,7 +45,7 @@
 	</form>
 </search>
 
-<div class="d-flex flex-row flex-wrap gap-3">
+<div class="d-flex flex-row flex-wrap justify-content-between gap-1 gap-md-3">
 	{#each data.cards as card (card.id)}
 		<GearCard {card} />
 	{/each}
