@@ -11,11 +11,12 @@
 			<span>{keyword}</span>
 		{/each}
 	</div>
-	<p class="gear-card-specialrules mt-auto mb-2 mx-2">
+	<p class="gear-card-specialrules mt-auto mx-2">
 		{#each card.special_rules as specialrule (specialrule)}
 			<span>{specialrule}</span>
 		{/each}
 	</p>
+	<p class="gear-card-rulestext mx-2 mb-2">{card.rules_text}</p>
 </div>
 
 <style>
@@ -23,7 +24,7 @@
 		--gear-card-tint: #e9eded;
 
 		flex: 0 0 auto;
-		width: 10rem;
+		width: 12rem;
 		aspect-ratio: 1;
 		background: radial-gradient(
 			circle at center,
@@ -61,10 +62,20 @@
 		justify-content: center;
 		gap: 0 0.3em;
 		font-size: 0.7rem;
-		font-weight: 500;
+		font-weight: 600;
 		margin: 0;
 	}
 	.gear-card-specialrules span:not(:last-child)::after {
 		content: ',';
+	}
+
+	.gear-card-rulestext {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 0 0.3em;
+		font-size: 0.5rem;
+		font-weight: 400;
+		margin: 0;
 	}
 </style>

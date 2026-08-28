@@ -45,8 +45,22 @@
 	</form>
 </search>
 
-<div class="d-flex flex-row flex-wrap justify-content-between gap-1 gap-md-3 mx-1 mx-md-3">
+<div class="gear-card-grid mx-2 mb-5">
 	{#each data.cards as card (card.id)}
 		<GearCard {card} />
 	{/each}
 </div>
+
+<style>
+	.gear-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, 12rem);
+		justify-content: center;
+		gap: 1rem;
+	}
+	@media (min-width: 768px) {
+		.gear-card-grid {
+			gap: 1rem;
+		}
+	}
+</style>
