@@ -30,8 +30,6 @@
 		--gear-card-tint: #e9eded;
 		--affinity-thickness: 0.9rem;
 
-		flex: 0 0 auto;
-		width: 12rem;
 		aspect-ratio: 1;
 		background: radial-gradient(
 			circle at center,

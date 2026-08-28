@@ -55,16 +55,11 @@
 
 <style>
 	.gear-card-grid {
+		/* Card width scales with the viewport, bounded at 11rem and 13rem.
+		   minmax() can't do this: a fixed max pins every track to that max. */
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(auto-fill, clamp(11rem, 25vw, 13rem));
+		justify-content: center;
 		gap: 0.5rem;
-	}
-
-	@media (min-width: 576px) {
-		.gear-card-grid {
-			grid-template-columns: repeat(auto-fill, 12rem);
-			justify-content: center;
-			gap: 1rem;
-		}
 	}
 </style>
