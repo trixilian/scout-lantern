@@ -26,24 +26,26 @@
 	}
 </script>
 
-<search>
-	<form data-sveltekit-keepfocus class="p-2 col-12 col-sm-8 p-sm-4 mx-sm-auto">
-		<label class="visually-hidden" for="q">Search gear</label>
-		<div class="input-group">
-			<span class="input-group-text"><i class="bi bi-search" aria-hidden="true"></i></span>
-			<input
-				oninput={onInput}
-				class="form-control"
-				id="q"
-				type="search"
-				name="q"
-				bind:value={q}
-				placeholder="Search gear…"
-			/>
-			<button class="btn btn-dark" type="submit">Search</button>
-		</div>
-	</form>
-</search>
+<header class="sticky-top">
+	<search>
+		<form data-sveltekit-keepfocus class="p-2 col-12 col-sm-8 p-sm-4 mx-sm-auto">
+			<label class="visually-hidden" for="q">Search gear</label>
+			<div class="input-group">
+				<span class="input-group-text"><i class="bi bi-search" aria-hidden="true"></i></span>
+				<input
+					oninput={onInput}
+					class="form-control"
+					id="q"
+					type="search"
+					name="q"
+					bind:value={q}
+					placeholder="Search gear…"
+				/>
+				<button class="btn btn-dark" type="submit">Search</button>
+			</div>
+		</form>
+	</search>
+</header>
 
 <div class="gear-card-grid mx-2 mb-5">
 	{#each data.cards as card (card.id)}
@@ -54,12 +56,14 @@
 <style>
 	.gear-card-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, 12rem);
-		justify-content: center;
-		gap: 1rem;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 0.5rem;
 	}
-	@media (min-width: 768px) {
+
+	@media (min-width: 576px) {
 		.gear-card-grid {
+			grid-template-columns: repeat(auto-fill, 12rem);
+			justify-content: center;
 			gap: 1rem;
 		}
 	}

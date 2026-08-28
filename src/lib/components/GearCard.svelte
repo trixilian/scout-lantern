@@ -2,9 +2,15 @@
 	import type { Card } from '$lib/types';
 
 	let { card }: { card: Card } = $props();
+	const EDGES = ['top', 'right', 'bottom', 'left'] as const;
 </script>
 
 <div class="card gear-card">
+	{#each EDGES as edge (edge)}
+		{#if card.affinities[edge]}
+			<span class="affinity affinity-{edge}" data-affinity={card.affinities[edge]}></span>
+		{/if}
+	{/each}
 	<h2 class="gear-card-name text-center mt-3 px-3">{card.name}</h2>
 	<div class="gear-card-keywords px-3">
 		{#each card.keywords as keyword (keyword)}
@@ -16,12 +22,13 @@
 			<span>{specialrule}</span>
 		{/each}
 	</p>
-	<p class="gear-card-rulestext mx-2 mb-2">{card.rules_text}</p>
+	<p class="gear-card-rulestext mx-2 mb-3">{card.rules_text}</p>
 </div>
 
 <style>
 	.gear-card {
 		--gear-card-tint: #e9eded;
+		--affinity-thickness: 0.9rem;
 
 		flex: 0 0 auto;
 		width: 12rem;
@@ -77,5 +84,50 @@
 		font-size: 0.5rem;
 		font-weight: 400;
 		margin: 0;
+	}
+
+	.affinity {
+		position: absolute;
+		background: var(--affinity-color);
+	}
+
+	.affinity[data-affinity='red'] {
+		--affinity-color: #b3352c;
+	}
+	.affinity[data-affinity='green'] {
+		--affinity-color: #3d7a3d;
+	}
+	.affinity[data-affinity='blue'] {
+		--affinity-color: #2f5e9e;
+	}
+
+	.affinity-top,
+	.affinity-bottom {
+		width: 1.75rem;
+		height: var(--affinity-thickness);
+		left: 50%;
+	}
+	.affinity-top {
+		top: calc(var(--affinity-thickness) / 2);
+		transform: translate(-50%, -50%);
+	}
+	.affinity-bottom {
+		bottom: calc(var(--affinity-thickness) / 2);
+		transform: translate(-50%, 50%);
+	}
+
+	.affinity-left,
+	.affinity-right {
+		width: var(--affinity-thickness);
+		height: 1.75rem;
+		top: 50%;
+	}
+	.affinity-left {
+		left: calc(var(--affinity-thickness) / 2);
+		transform: translate(-50%, -50%);
+	}
+	.affinity-right {
+		right: calc(var(--affinity-thickness) / 2);
+		transform: translate(50%, -50%);
 	}
 </style>
