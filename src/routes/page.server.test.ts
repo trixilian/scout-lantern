@@ -46,13 +46,14 @@ async function loadError(fetch: ReturnType<typeof fetchReturning>) {
 }
 
 // `load` only uses fetch and url, so a partial event is enough.
-function callLoad(fetch: ReturnType<typeof fetchReturning>) {
+function callLoad(fetch: ReturnType<typeof fetchReturning>, url = new URL('http://localhost/')) {
 	return (
-		load as unknown as (event: { fetch: typeof fetch }) => Promise<{
+		load as unknown as (event: { fetch: typeof fetch; url: URL }) => Promise<{
 			cards: Card[];
 			total: number;
+			q: string;
 		}>
-	)({ fetch });
+	)({ fetch, url });
 }
 
 beforeEach(() => {
@@ -64,7 +65,7 @@ describe('load', () => {
 		const body: CardsResponse = { cards: [card], total: 1, version: 1 };
 		const result = await callLoad(fetchReturning(body));
 
-		expect(result).toEqual({ cards: [card], total: 1 });
+		expect(result).toEqual({ cards: [card], total: 1, q: '' });
 	});
 
 	it('requests /api/cards on the configured backend', async () => {
@@ -86,7 +87,28 @@ describe('load', () => {
 		const body: CardsResponse = { cards: [], total: 0, version: 1 };
 		const result = await callLoad(fetchReturning(body));
 
-		expect(result).toEqual({ cards: [], total: 0 });
+		expect(result).toEqual({ cards: [], total: 0, q: '' });
+	});
+
+	it('forwards the search term to the backend', async () => {
+		const fetch = fetchReturning({ cards: [], total: 0, version: 1 });
+		await callLoad(fetch, new URL('http://localhost/?q=bone'));
+
+		expect(String(fetch.mock.calls[0][0])).toBe('http://backend:3001/api/cards?q=bone');
+	});
+
+	it('omits q entirely when the search is empty', async () => {
+		const fetch = fetchReturning({ cards: [], total: 0, version: 1 });
+		await callLoad(fetch, new URL('http://localhost/?q='));
+
+		expect(String(fetch.mock.calls[0][0])).toBe('http://backend:3001/api/cards');
+	});
+
+	it('returns the search term so the input can show it', async () => {
+		const body: CardsResponse = { cards: [card], total: 1, version: 1 };
+		const result = await callLoad(fetchReturning(body), new URL('http://localhost/?q=bone'));
+
+		expect(result.q).toBe('bone');
 	});
 
 	it('fails with 500 when BACKEND_URL is not set', async () => {
