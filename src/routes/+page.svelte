@@ -1,6 +1,29 @@
 <script lang="ts">
 	import type { PageData } from './$types';
+	import { goto } from '$app/navigation';
+	import { page } from '$app/state';
+	import { onDestroy } from 'svelte';
+	import GearCard from '$lib/components/GearCard.svelte';
+
+	onDestroy(() => clearTimeout(timer));
+
 	let { data }: { data: PageData } = $props();
+
+	let q = $state(data.q);
+	let timer: ReturnType<typeof setTimeout>;
+
+	function onInput() {
+		clearTimeout(timer);
+		timer = setTimeout(() => {
+			const url = new URL(page.url);
+			if (q) url.searchParams.set('q', q);
+			else url.searchParams.delete('q');
+
+			// page.url already includes any base path — we only change its search params
+			// eslint-disable-next-line svelte/no-navigation-without-resolve
+			goto(url, { keepFocus: true, replaceState: true, noScroll: true });
+		}, 300);
+	}
 </script>
 
 <search>
@@ -9,11 +32,12 @@
 		<div class="input-group">
 			<span class="input-group-text"><i class="bi bi-search" aria-hidden="true"></i></span>
 			<input
+				oninput={onInput}
 				class="form-control"
 				id="q"
 				type="search"
 				name="q"
-				value={data.q}
+				bind:value={q}
 				placeholder="Search gear…"
 			/>
 			<button class="btn btn-dark" type="submit">Search</button>
@@ -23,23 +47,6 @@
 
 <div class="d-flex flex-row flex-wrap gap-3">
 	{#each data.cards as card (card.id)}
-		<div class="card gear-card p-3">
-			<h2 class="gear-card-name text-center">{card.name}</h2>
-		</div>
+		<GearCard {card} />
 	{/each}
 </div>
-
-<style>
-	.gear-card {
-		flex: 0 0 auto;
-		width: 10rem;
-		aspect-ratio: 1;
-	}
-	.gear-card-name {
-		font-family: var(--font-display);
-		font-stretch: 62.5%;
-		font-weight: 300;
-		font-size: 1rem;
-		margin: 0;
-	}
-</style>
