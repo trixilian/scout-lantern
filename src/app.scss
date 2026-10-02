@@ -1,9 +1,11 @@
 // 1. Fonts first
 @import '@fontsource-variable/roboto-serif/full.css';
+@import '@fontsource-variable/roboto-flex/wdth.css'; // weight + width axes only
 @import 'bootstrap-icons/font/bootstrap-icons.css';
 // 2. Bootstrap itself
 @import 'bootstrap/scss/bootstrap';
 
 :root {
 	--font-display: 'Roboto Serif Variable', serif;
+	--font-number: 'Roboto Flex Variable', sans-serif;
 }

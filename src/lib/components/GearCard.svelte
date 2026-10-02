@@ -1,11 +1,17 @@
 <script lang="ts">
 	import type { Card } from '$lib/types';
+	import ArmorValue from './ArmorValue.svelte';
 
 	let { card }: { card: Card } = $props();
 	const EDGES = ['top', 'right', 'bottom', 'left'] as const;
 </script>
 
 <div class="card gear-card">
+	{#if card.armor_value !== null}
+		<div class="position-absolute top-0 start-0 m-2 armor-value">
+			<ArmorValue value={card.armor_value}></ArmorValue>
+		</div>
+	{/if}
 	{#each EDGES as edge (edge)}
 		{#if card.affinities[edge]}
 			<span class="affinity affinity-{edge}" data-affinity={card.affinities[edge]}></span>
@@ -36,6 +42,7 @@
 			color-mix(in srgb, var(--gear-card-tint) 2%, white),
 			var(--gear-card-tint)
 		);
+		border-radius: 1rem;
 	}
 	.gear-card-name {
 		font-family: var(--font-display);
@@ -127,5 +134,8 @@
 	.affinity-right {
 		right: calc(var(--affinity-thickness) / 2);
 		transform: translate(50%, -50%);
+	}
+	.armor-value {
+		width: 1.75rem;
 	}
 </style>
