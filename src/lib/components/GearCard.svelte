@@ -9,7 +9,7 @@
 <div class="card gear-card">
 	{#if card.armor_value !== null}
 		<div class="position-absolute top-0 start-0 m-2 armor-value">
-			<ArmorValue value={card.armor_value}></ArmorValue>
+			<ArmorValue value={card.armor_value} hit_location={card.hit_location}></ArmorValue>
 		</div>
 	{/if}
 	{#each EDGES as edge (edge)}

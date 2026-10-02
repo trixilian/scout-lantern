@@ -9,6 +9,9 @@ export type Stat = number | '*' | null;
 /** Affinity edge colour. The contract enumerates exactly these three. */
 export type AffinityColor = 'red' | 'green' | 'blue';
 
+/** Body location an armor card protects. */
+export type HitLocation = 'head' | 'arms' | 'chest' | 'waist' | 'legs';
+
 /** The four card edges. Each carries a colour, or null when that edge is blank. */
 export interface Affinities {
 	top: AffinityColor | null;
@@ -30,7 +33,7 @@ export interface Card {
 	/** Armor points on armor cards. */
 	armor_value: number | null;
 	/** Locations this card's armor protects — usually one, occasionally more. */
-	hit_location: string[];
+	hit_location: HitLocation[];
 	speed: Stat;
 	accuracy: Stat;
 	strength: Stat;
