@@ -19,7 +19,9 @@
 		{/if}
 	{/each}
 	{#if card.weapon_stats}
-		<WeaponStats weapon_stats={card.weapon_stats} />
+		<div class="position-absolute top-0 start-0 m-2 armor-value">
+			<WeaponStats weapon_stats={card.weapon_stats} />
+		</div>
 	{/if}
 	<h2 class="gear-card-name text-center mt-3 px-3">{card.name}</h2>
 	<div class="gear-card-keywords px-3">

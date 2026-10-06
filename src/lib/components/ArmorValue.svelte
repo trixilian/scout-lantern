@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { HitLocation } from '$lib/types';
-	import HitLocationIcon from './hit-locations/HitLocationIcon.svelte';
+	import HitLocationIcon from './icons/HitLocationIcon.svelte';
 
 	let { value, hit_location }: { value: number; hit_location: HitLocation[] } = $props();
 </script>
