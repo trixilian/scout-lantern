@@ -13,14 +13,7 @@ const card: Card = {
 	name: 'Founding Stone',
 	keywords: ['weapon', 'melee', 'stone'],
 	rules_text: 'Spend (a) to sling the stone from anywhere on the board!',
-	source: null,
-	armor_value: null,
-	hit_location: [],
-	speed: 2,
-	accuracy: '*',
-	strength: 1,
-	special_rules: [],
-	affinities: { top: null, right: null, bottom: null, left: null }
+	weapon_stats: { speed: 2, accuracy: '*', strength: 1 }
 };
 
 /**
@@ -62,14 +55,14 @@ beforeEach(() => {
 
 describe('load', () => {
 	it('returns the cards and total from the backend', async () => {
-		const body: CardsResponse = { cards: [card], total: 1, version: 1 };
+		const body: CardsResponse = { cards: [card], total: 1, version: 2 };
 		const result = await callLoad(fetchReturning(body));
 
 		expect(result).toEqual({ cards: [card], total: 1, q: '' });
 	});
 
 	it('requests /api/cards on the configured backend', async () => {
-		const fetch = fetchReturning({ cards: [], total: 0, version: 1 });
+		const fetch = fetchReturning({ cards: [], total: 0, version: 2 });
 		await callLoad(fetch);
 
 		expect(String(fetch.mock.calls[0][0])).toBe('http://backend:3001/api/cards');
@@ -77,35 +70,35 @@ describe('load', () => {
 
 	it('joins the path correctly when BACKEND_URL has a trailing slash', async () => {
 		mockEnv.BACKEND_URL = 'http://backend:3001/';
-		const fetch = fetchReturning({ cards: [], total: 0, version: 1 });
+		const fetch = fetchReturning({ cards: [], total: 0, version: 2 });
 		await callLoad(fetch);
 
 		expect(String(fetch.mock.calls[0][0])).toBe('http://backend:3001/api/cards');
 	});
 
 	it('treats an empty result as success, not an error', async () => {
-		const body: CardsResponse = { cards: [], total: 0, version: 1 };
+		const body: CardsResponse = { cards: [], total: 0, version: 2 };
 		const result = await callLoad(fetchReturning(body));
 
 		expect(result).toEqual({ cards: [], total: 0, q: '' });
 	});
 
 	it('forwards the search term to the backend', async () => {
-		const fetch = fetchReturning({ cards: [], total: 0, version: 1 });
+		const fetch = fetchReturning({ cards: [], total: 0, version: 2 });
 		await callLoad(fetch, new URL('http://localhost/?q=bone'));
 
 		expect(String(fetch.mock.calls[0][0])).toBe('http://backend:3001/api/cards?q=bone');
 	});
 
 	it('omits q entirely when the search is empty', async () => {
-		const fetch = fetchReturning({ cards: [], total: 0, version: 1 });
+		const fetch = fetchReturning({ cards: [], total: 0, version: 2 });
 		await callLoad(fetch, new URL('http://localhost/?q='));
 
 		expect(String(fetch.mock.calls[0][0])).toBe('http://backend:3001/api/cards');
 	});
 
 	it('returns the search term so the input can show it', async () => {
-		const body: CardsResponse = { cards: [card], total: 1, version: 1 };
+		const body: CardsResponse = { cards: [card], total: 1, version: 2 };
 		const result = await callLoad(fetchReturning(body), new URL('http://localhost/?q=bone'));
 
 		expect(result.q).toBe('bone');
@@ -126,9 +119,9 @@ describe('load', () => {
 	});
 
 	it('fails with 502 when the backend reports a different schema version', async () => {
-		const error = await loadError(fetchReturning({ cards: [], total: 0, version: 2 }));
+		const error = await loadError(fetchReturning({ cards: [], total: 0, version: 1 }));
 
 		expect(error.status).toBe(502);
-		expect(error.body.message).toContain('version 2');
+		expect(error.body.message).toContain('version 1');
 	});
 });

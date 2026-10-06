@@ -4,7 +4,7 @@ import type { CardsResponse } from '$lib/types';
 import type { PageServerLoad } from './$types';
 
 /** Response schema version this frontend is written against. */
-const API_VERSION = 1;
+const API_VERSION = 2;
 
 export const load: PageServerLoad = async ({ fetch, url }) => {
 	const base = env.BACKEND_URL;

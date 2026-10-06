@@ -1,30 +1,34 @@
 <script lang="ts">
 	import type { Card } from '$lib/types';
 	import ArmorValue from './ArmorValue.svelte';
+	import WeaponStats from './WeaponStats.svelte';
 
 	let { card }: { card: Card } = $props();
 	const EDGES = ['top', 'right', 'bottom', 'left'] as const;
 </script>
 
 <div class="card gear-card">
-	{#if card.armor_value !== null}
+	{#if card.armor_value !== undefined}
 		<div class="position-absolute top-0 start-0 m-2 armor-value">
-			<ArmorValue value={card.armor_value} hit_location={card.hit_location}></ArmorValue>
+			<ArmorValue value={card.armor_value} hit_location={card.hit_location ?? []}></ArmorValue>
 		</div>
 	{/if}
 	{#each EDGES as edge (edge)}
-		{#if card.affinities[edge]}
-			<span class="affinity affinity-{edge}" data-affinity={card.affinities[edge]}></span>
+		{#if card.affinities?.[edge]}
+			<span class="affinity affinity-{edge}" data-affinity={card.affinities?.[edge]}></span>
 		{/if}
 	{/each}
+	{#if card.weapon_stats}
+		<WeaponStats weapon_stats={card.weapon_stats} />
+	{/if}
 	<h2 class="gear-card-name text-center mt-3 px-3">{card.name}</h2>
 	<div class="gear-card-keywords px-3">
-		{#each card.keywords as keyword (keyword)}
+		{#each card.keywords ?? [] as keyword (keyword)}
 			<span>{keyword}</span>
 		{/each}
 	</div>
 	<p class="gear-card-specialrules mt-auto mx-2">
-		{#each card.special_rules as specialrule (specialrule)}
+		{#each card.special_rules ?? [] as specialrule (specialrule)}
 			<span>{specialrule}</span>
 		{/each}
 	</p>
