@@ -2,9 +2,12 @@
 	import type { Card } from '$lib/types';
 	import ArmorValue from './ArmorValue.svelte';
 	import WeaponStats from './WeaponStats.svelte';
+	import Activation from './icons/Activation.svelte';
 
 	let { card }: { card: Card } = $props();
 	const EDGES = ['top', 'right', 'bottom', 'left'] as const;
+
+	const splitRules = $derived(card.rules_text?.split('(a)') ?? []);
 </script>
 
 <div class="card gear-card">
@@ -24,17 +27,24 @@
 		</div>
 	{/if}
 	<h2 class="gear-card-name text-center mt-3 px-3">{card.name}</h2>
-	<div class="gear-card-keywords px-3">
+	<div class="gear-card-keywords px-3 text-center">
 		{#each card.keywords ?? [] as keyword (keyword)}
 			<span>{keyword}</span>
 		{/each}
 	</div>
-	<p class="gear-card-specialrules mt-auto mx-2">
+	<p class="gear-card-specialrules mt-auto mx-2 text-center">
 		{#each card.special_rules ?? [] as specialrule (specialrule)}
 			<span>{specialrule}</span>
 		{/each}
 	</p>
-	<p class="gear-card-rulestext mx-2 mb-3">{card.rules_text}</p>
+	<p class="gear-card-rulestext mx-2 mb-3 text-center">
+		{#each splitRules as substring, i ('rulestext' + i)}
+			{substring}
+			{#if i + 1 < splitRules.length}
+				<span class="activation"><Activation /></span>
+			{/if}
+		{/each}
+	</p>
 </div>
 
 <style>
@@ -59,9 +69,6 @@
 	}
 
 	.gear-card-keywords {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
 		gap: 0 0.3em;
 		font-style: italic;
 		font-size: 0.6rem;
@@ -75,9 +82,6 @@
 	}
 
 	.gear-card-specialrules {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
 		gap: 0 0.3em;
 		font-size: 0.7rem;
 		font-weight: 600;
@@ -88,9 +92,6 @@
 	}
 
 	.gear-card-rulestext {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
 		gap: 0 0.3em;
 		font-size: 0.5rem;
 		font-weight: 400;
@@ -143,5 +144,8 @@
 	}
 	.armor-value {
 		width: 1.75rem;
+	}
+	.activation {
+		vertical-align: 0.1em;
 	}
 </style>
