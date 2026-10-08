@@ -99,8 +99,18 @@
 	}
 
 	.affinity {
+		--affinity-gap: 0.02rem;
+		--affinity-stroke: 0.12rem;
+
 		position: absolute;
 		background: var(--affinity-color);
+	}
+
+	.affinity::before {
+		content: '';
+		position: absolute;
+		inset: calc(-1 * (var(--affinity-gap) + var(--affinity-stroke)));
+		border: var(--affinity-stroke) solid var(--affinity-color);
 	}
 
 	.affinity[data-affinity='red'] {
@@ -111,6 +121,23 @@
 	}
 	.affinity[data-affinity='blue'] {
 		--affinity-color: #2f5e9e;
+	}
+
+	.affinity-top::before {
+		top: 0;
+		border-top: none;
+	}
+	.affinity-bottom::before {
+		bottom: 0;
+		border-bottom: none;
+	}
+	.affinity-left::before {
+		left: 0;
+		border-left: none;
+	}
+	.affinity-right::before {
+		right: 0;
+		border-right: none;
 	}
 
 	.affinity-top,
