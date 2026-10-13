@@ -12,8 +12,18 @@ export type Stat = number | '*';
 /** Affinity edge colour. The contract enumerates exactly these three. */
 export type AffinityColor = 'red' | 'green' | 'blue';
 
+/** Affinity symbol in the affinity boxes */
+export type AffinitySymbol =
+	'red-square' | 'green-square' | 'blue-square' | 'red-puzzle' | 'green-puzzle' | 'blue-puzzle';
+
 /** Body location an armor card protects. */
 export type HitLocation = 'head' | 'arms' | 'chest' | 'waist' | 'legs';
+
+/** The four card edges. Only edges with a colour are present. */
+export interface AffinityBox {
+	affinities: AffinitySymbol[];
+	effect: string;
+}
 
 /** The four card edges. Only edges with a colour are present. */
 export interface Affinities {
@@ -49,6 +59,8 @@ export interface Card {
 	special_rules?: string[];
 	/** Card edges with a colour. Absent when every edge is blank. */
 	affinities?: Affinities;
+	/** Affinity boxes in the symbol: effect style */
+	affinity_boxes?: AffinityBox[];
 }
 
 export interface CardsResponse {

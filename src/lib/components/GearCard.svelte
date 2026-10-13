@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { Card } from '$lib/types';
+	import AffinityBoxes from './AffinityBoxes.svelte';
 	import ArmorValue from './ArmorValue.svelte';
 	import WeaponStats from './WeaponStats.svelte';
 	import Activation from './icons/Activation.svelte';
@@ -37,14 +38,19 @@
 			<span>{specialrule}</span>
 		{/each}
 	</p>
-	<p class="gear-card-rulestext mx-2 mb-3 text-center">
-		{#each splitRules as substring, i ('rulestext' + i)}
-			{substring}
-			{#if i + 1 < splitRules.length}
-				<span class="activation"><Activation /></span>
-			{/if}
-		{/each}
-	</p>
+	<div class="gear-card-rulestext mx-2 mb-3 text-center">
+		<p class="mb-0">
+			{#each splitRules as substring, i ('rulestext' + i)}
+				{substring}
+				{#if i + 1 < splitRules.length}
+					<span class="activation"><Activation /></span>
+				{/if}
+			{/each}
+		</p>
+		{#if card.affinity_boxes}
+			<AffinityBoxes affinity_boxes={card.affinity_boxes}></AffinityBoxes>
+		{/if}
+	</div>
 </div>
 
 <style>
