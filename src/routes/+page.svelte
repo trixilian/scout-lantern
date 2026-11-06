@@ -13,6 +13,14 @@
 	let q = $state(page.url.searchParams.get('q') ?? '');
 	const results = $derived(search(q));
 
+	const expansions = $derived(new Set(data.cards.map((card) => card.expansion)));
+	let selectedExpansions = $state<string[]>([]);
+	const filteredResults = $derived(
+		selectedExpansions.length === 0
+			? results
+			: results.filter((card) => selectedExpansions.includes(card.expansion))
+	);
+
 	let timer: ReturnType<typeof setTimeout>;
 	onDestroy(() => clearTimeout(timer));
 
@@ -54,12 +62,29 @@
 				/>
 				<button class="btn btn-dark" type="submit">Search</button>
 			</div>
+			<fieldset class="mt-2">
+				<legend class="visually-hidden">Expansion</legend>
+				{#each expansions as expansion (expansion)}
+					<div class="form-check form-check-inline">
+						<input
+							class="form-check-input"
+							type="checkbox"
+							id={`expansion-${expansion}`}
+							bind:group={selectedExpansions}
+							value={expansion}
+						/>
+						<label class="form-check-label" for={`expansion-${expansion}`}>
+							{expansion}
+						</label>
+					</div>
+				{/each}
+			</fieldset>
 		</form>
 	</search>
 </header>
 
 <div class="gear-card-grid mx-2 mb-5">
-	{#each results as card (card.id)}
+	{#each filteredResults as card (card.id)}
 		<GearCard {card} />
 	{/each}
 </div>
