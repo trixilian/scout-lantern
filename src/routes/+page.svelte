@@ -4,15 +4,20 @@
 	import { page } from '$app/state';
 	import { onDestroy } from 'svelte';
 	import GearCard from '$lib/components/GearCard.svelte';
-
-	onDestroy(() => clearTimeout(timer));
+	import { createSearch } from '$lib/search';
 
 	let { data }: { data: PageData } = $props();
 
-	let q = $state(data.q);
-	let timer: ReturnType<typeof setTimeout>;
+	const search = $derived(createSearch(data.cards));
 
-	function onInput() {
+	let q = $state(page.url.searchParams.get('q') ?? '');
+	const results = $derived(search(q));
+
+	let timer: ReturnType<typeof setTimeout>;
+	onDestroy(() => clearTimeout(timer));
+
+	/** Mirror the search term into ?q= (debounced) so the URL stays shareable. */
+	function syncUrl() {
 		clearTimeout(timer);
 		timer = setTimeout(() => {
 			const url = new URL(page.url);
@@ -28,12 +33,18 @@
 
 <header class="sticky-top">
 	<search>
-		<form data-sveltekit-keepfocus class="p-2 col-12 col-sm-8 p-sm-4 mx-sm-auto">
+		<form
+			class="p-2 col-12 col-sm-8 p-sm-4 mx-sm-auto"
+			onsubmit={(e) => {
+				e.preventDefault();
+				syncUrl();
+			}}
+		>
 			<label class="visually-hidden" for="q">Search gear</label>
 			<div class="input-group">
 				<span class="input-group-text"><i class="bi bi-search" aria-hidden="true"></i></span>
 				<input
-					oninput={onInput}
+					oninput={syncUrl}
 					class="form-control"
 					id="q"
 					type="search"
@@ -48,7 +59,7 @@
 </header>
 
 <div class="gear-card-grid mx-2 mb-5">
-	{#each data.cards as card (card.id)}
+	{#each results as card (card.id)}
 		<GearCard {card} />
 	{/each}
 </div>

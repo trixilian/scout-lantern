@@ -1,0 +1,90 @@
+{
+	"version": 3,
+	"generated": "2026-11-06T00:00:00+00:00",
+	"cards": [
+		{
+			"id": "core-sg-2",
+			"name": "Cloth",
+			"expansion": "core",
+			"keywords": ["armor"],
+			"source": "Starting Gear",
+			"armor_value": 1,
+			"hit_location": ["waist"]
+		},
+		{
+			"id": "core-unknown-3",
+			"name": "Founding Stone",
+			"expansion": "core",
+			"keywords": ["weapon", "melee", "stone"],
+			"rules_text": "Spend (a) to sling the stone from anywhere on the board! Archive this card for 1 automatic hit that inflicts a critical wound.",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 7,
+				"strength": 1
+			}
+		},
+		{
+			"id": "core-bm-5",
+			"name": "Bone Blade",
+			"expansion": "core",
+			"keywords": ["weapon", "melee", "sword", "bone"],
+			"source": "Bone Smith",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 2
+			},
+			"special_rules": ["Frail"],
+			"affinities": {
+				"left": "red"
+			}
+		},
+		{
+			"id": "core-bm-6",
+			"name": "Bone Axe",
+			"expansion": "core",
+			"keywords": ["weapon", "melee", "axe", "bone"],
+			"source": "Bone Smith",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 3
+			},
+			"special_rules": ["Frail", "Savage"],
+			"affinities": {
+				"left": "red"
+			}
+		},
+		{
+			"id": "core-unknown-21",
+			"name": "Rawhide Headband",
+			"expansion": "core",
+			"keywords": ["armor", "set", "rawhide"],
+			"source": "Skinnery",
+			"hit_location": ["head"],
+			"affinities": {
+				"bottom": "blue"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": ["blue-puzzle"],
+					"effect": "(a): Reveal the top 2 [AI]. Place them back on top of the deck in any order."
+				}
+			]
+		},
+		{
+			"id": "core-rg-125",
+			"name": "Lantern Halberd",
+			"expansion": "core",
+			"keywords": ["weapon", "melee", "two-handed", "spear", "lantern", "other"],
+			"rules_text": "Reach 2, Irreplaceable, Unique\nAfter attacking, if standing, you may move up to 2 spaces directly away from the monster.",
+			"source": "Rare Gear",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 4,
+				"strength": 7
+			},
+			"special_rules": ["Irreplaceable", "Reach", "Unique"]
+		}
+	]
+}

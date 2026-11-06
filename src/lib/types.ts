@@ -1,6 +1,6 @@
 /**
- * Shapes returned by the card API.
- * Mirrors kdm-search/docs/api-contract.md — response `version` 2.
+ * Shape of static/data/cards.json.
+ * Format `version` 3 (see DATA_VERSION below).
  *
  * Fields that don't apply to a card are left out of the JSON (never null), so they are
  * optional (`?`) here and read as `undefined`.
@@ -44,6 +44,8 @@ export interface Card {
 	// Always present.
 	id: string;
 	name: string;
+	/** Expansion id, e.g. "core". */
+	expansion: string;
 
 	// Left out when they don't apply to a card.
 	keywords?: string[];
@@ -63,10 +65,13 @@ export interface Card {
 	affinity_boxes?: AffinityBox[];
 }
 
-export interface CardsResponse {
-	cards: Card[];
-	/** Number of cards in `cards`. Reserved for total-before-pagination later. */
-	total: number;
-	/** Schema version of the response. Bumped on breaking shape changes. */
+/** Card data format version this frontend is written against. */
+export const DATA_VERSION = 3;
+
+export interface CardData {
+	/** Format version. Bumped on breaking shape changes. */
 	version: number;
+	/** ISO 8601 timestamp of the export. */
+	generated: string;
+	cards: Card[];
 }
