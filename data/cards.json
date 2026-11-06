@@ -1,0 +1,6806 @@
+{
+	"version": 3,
+	"generated": "2026-11-06T12:38:30+00:00",
+	"cards": [
+		{
+			"id": "core-sg-2",
+			"name": "Cloth",
+			"expansion": "core",
+			"keywords": [
+				"armor"
+			],
+			"source": "Starting Gear",
+			"armor_value": 1,
+			"hit_location": [
+				"waist"
+			]
+		},
+		{
+			"id": "core-unknown-3",
+			"name": "Founding Stone",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"stone"
+			],
+			"rules_text": "Spend (a) to sling the stone from anywhere on the board! Archive this card for 1 automatic hit that inflicts a critical wound.",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 7,
+				"strength": 1
+			}
+		},
+		{
+			"id": "core-bm-4",
+			"name": "Bone Dagger",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"dagger",
+				"bone"
+			],
+			"rules_text": "On a Perfect hit, gain +1 survival.",
+			"source": "Bone Smith",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 7,
+				"strength": 1
+			},
+			"special_rules": [
+				"Perfect Hit"
+			],
+			"affinities": {
+				"top": "red",
+				"left": "red"
+			}
+		},
+		{
+			"id": "core-bm-5",
+			"name": "Bone Blade",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"sword",
+				"bone"
+			],
+			"source": "Bone Smith",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 2
+			},
+			"special_rules": [
+				"Frail"
+			],
+			"affinities": {
+				"left": "red"
+			}
+		},
+		{
+			"id": "core-bm-6",
+			"name": "Bone Axe",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"axe",
+				"bone"
+			],
+			"source": "Bone Smith",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 3
+			},
+			"special_rules": [
+				"Frail",
+				"Savage"
+			],
+			"affinities": {
+				"left": "red"
+			}
+		},
+		{
+			"id": "core-bm-7",
+			"name": "Bone Darts",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"ranged",
+				"thrown",
+				"bone"
+			],
+			"rules_text": "Range: 6.",
+			"source": "Bone Smith",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 7,
+				"strength": 3
+			},
+			"special_rules": [
+				"Frail",
+				"Range"
+			],
+			"affinities": {
+				"left": "red"
+			}
+		},
+		{
+			"id": "core-bm-8",
+			"name": "Bone Club",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"two-handed",
+				"heavy",
+				"club",
+				"bone"
+			],
+			"source": "Bone Smith",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 5
+			},
+			"special_rules": [
+				"Cumbersome"
+			],
+			"affinities": {
+				"right": "red",
+				"left": "red"
+			}
+		},
+		{
+			"id": "core-bm-9",
+			"name": "Skull Helm",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"bone",
+				"fragile"
+			],
+			"rules_text": "When you suffer a severe head injury, the Skull Helm is destroyed. Archive this card.",
+			"source": "Bone Smith",
+			"armor_value": 3,
+			"hit_location": [
+				"head"
+			],
+			"affinities": {
+				"bottom": "red"
+			}
+		},
+		{
+			"id": "core-bm-10",
+			"name": "Bone Pickaxe",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"tool",
+				"pickaxe",
+				"bone"
+			],
+			"rules_text": "After Hunt phase setup, place the Mineral Gathering event on any hunt space.",
+			"source": "Bone Smith",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 8,
+				"strength": 2
+			},
+			"affinities": {
+				"top": "green"
+			}
+		},
+		{
+			"id": "core-bm-11",
+			"name": "Bone Sickle",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"tool",
+				"sickle",
+				"bone"
+			],
+			"rules_text": "After Hunt phase setup, place the Herb Gathering event on any hunt space.",
+			"source": "Bone Smith",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 8,
+				"strength": 1
+			},
+			"affinities": {
+				"top": "green"
+			}
+		},
+		{
+			"id": "core-s-12",
+			"name": "Rawhide Gloves",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"set",
+				"rawhide"
+			],
+			"rules_text": "When you depart, gain +1 survival.",
+			"source": "Skinnery",
+			"armor_value": 1,
+			"hit_location": [
+				"arms"
+			],
+			"affinities": {
+				"left": "red"
+			}
+		},
+		{
+			"id": "core-unknown-13",
+			"name": "Rawhide Pants",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"set",
+				"rawhide"
+			],
+			"armor_value": 1,
+			"hit_location": [
+				"waist"
+			]
+		},
+		{
+			"id": "core-s-14",
+			"name": "Rawhide Boots",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"set",
+				"rawhide"
+			],
+			"rules_text": "When you depart, gain +1 survival.",
+			"source": "Skinnery",
+			"armor_value": 1,
+			"hit_location": [
+				"legs"
+			]
+		},
+		{
+			"id": "core-s-15",
+			"name": "Bandages",
+			"expansion": "core",
+			"keywords": [
+				"item"
+			],
+			"rules_text": "(a): Remove up to 2 bleeding tokens from yourself or an adjacent survivor.",
+			"source": "Skinnery",
+			"affinities": {
+				"bottom": "green",
+				"left": "blue"
+			}
+		},
+		{
+			"id": "core-s-16",
+			"name": "Rawhide Drum",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"rawhide",
+				"instrument",
+				"noisy"
+			],
+			"rules_text": "On Arrival, all survivors gain +1 insanity. Inspirational Drumming! When you perform encourage, all non-deaf survivors are affected.",
+			"source": "Skinnery",
+			"affinities": {
+				"left": "green"
+			}
+		},
+		{
+			"id": "core-s-17",
+			"name": "Rawhide Whip",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"whip",
+				"rawhide"
+			],
+			"rules_text": "Provoke: When you wound with this weapon, gain the priority target token.",
+			"source": "Skinnery",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 7,
+				"strength": 1
+			},
+			"special_rules": [
+				"Provoke"
+			]
+		},
+		{
+			"id": "core-og-18",
+			"name": "Stone Noses",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"jewelry"
+			],
+			"rules_text": "On Arrival, gain +1 survival, +1 insanity. Arrival: At the start of the showdown.",
+			"source": "Organ Grinder"
+		},
+		{
+			"id": "core-og-19",
+			"name": "Fecal Salve",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"balm",
+				"stinky"
+			],
+			"rules_text": "When you depart, gain +1 survival.\n(a) : You are not a threat until you attack. If you have the priority target token, remove it.",
+			"source": "Organ Grinder"
+		},
+		{
+			"id": "core-og-20",
+			"name": "Dried Acanthus",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"herb",
+				"consumable"
+			],
+			"rules_text": "When you depart, gain +2 survival. When you suffer a severe injury, ignore it and archive this card instead.",
+			"source": "Organ Grinder"
+		},
+		{
+			"id": "core-unknown-21",
+			"name": "Rawhide Headband",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"set",
+				"rawhide"
+			],
+			"source": "Skinnery",
+			"hit_location": [
+				"head"
+			],
+			"affinities": {
+				"bottom": "blue"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-puzzle"
+					],
+					"effect": "(a): Reveal the top 2 [AI]. Place them back on top of the deck in any order."
+				}
+			]
+		},
+		{
+			"id": "core-og-22",
+			"name": "Monster Grease",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"consumable",
+				"soluble",
+				"stinky",
+				"flammable"
+			],
+			"rules_text": "Gain +1 evasion.",
+			"source": "Organ Grinder",
+			"affinities": {
+				"left": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"green-square",
+						"green-square",
+						"green-square"
+					],
+					"effect": "+1 evasion"
+				}
+			]
+		},
+		{
+			"id": "core-og-23",
+			"name": "Lucky Charm",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"jewelry"
+			],
+			"source": "Organ Grinder",
+			"affinities": {
+				"right": "blue",
+				"left": "blue"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-square",
+						"blue-square"
+					],
+					"effect": "+1 luck"
+				}
+			]
+		},
+		{
+			"id": "core-og-24",
+			"name": "Monster Tooth Necklace",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"jewelry",
+				"bone"
+			],
+			"rules_text": "Gain + 1 strength.",
+			"source": "Organ Grinder",
+			"affinities": {
+				"right": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-square",
+						"red-square"
+					],
+					"effect": "+ 1 strength"
+				}
+			]
+		},
+		{
+			"id": "core-og-25",
+			"name": "Counterweighted Axe",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"axe",
+				"two-handed"
+			],
+			"rules_text": "Reach 2.",
+			"source": "Organ Grinder",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 4
+			},
+			"special_rules": [
+				"Reach"
+			],
+			"affinities": {
+				"top": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle"
+					],
+					"effect": "On a Perfect hit, monster suffers 1 wound, do not draw a hit location. Limit once per attack."
+				}
+			]
+		},
+		{
+			"id": "core-wc-26",
+			"name": "Skullcap Hammer",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"club",
+				"bone"
+			],
+			"rules_text": "On a Perfect hit, the monster is dazed, and gains -1 speed token until the end of its turn. A Monster can be dazed once per round.",
+			"source": "Weapon Crafter",
+			"weapon_stats": {
+				"accuracy": 2,
+				"strength": 1
+			},
+			"special_rules": [
+				"Dazed",
+				"Perfect Hit"
+			],
+			"affinities": {
+				"bottom": "green"
+			}
+		},
+		{
+			"id": "core-wc-27",
+			"name": "Whistling Mace",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"club",
+				"bone"
+			],
+			"rules_text": "On a Perfect hit, reveal the next Al card. Place it on top or bottom of the Al deck. Unwieldy: If any attack roll results are 1, you hit yourself and suffer 1 damage.",
+			"source": "Weapon Crafter",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 6,
+				"strength": 3
+			},
+			"special_rules": [
+				"Perfect Hit",
+				"Unwieldy"
+			],
+			"affinities": {
+				"bottom": "green"
+			}
+		},
+		{
+			"id": "core-wc-28",
+			"name": "Scrap Lantern",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"metal",
+				"lantern"
+			],
+			"rules_text": "When you depart, gain +1 survival.",
+			"source": "Weapon Crafter",
+			"affinities": {
+				"right": "blue"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-square",
+						"red-square"
+					],
+					"effect": "+1 accuracy"
+				}
+			]
+		},
+		{
+			"id": "core-wc-29",
+			"name": "Dagger",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"dagger",
+				"metal"
+			],
+			"rules_text": "Barbed 2: On a Perfect hit, gain +2 strength for the rest of the attack.",
+			"source": "Weapon Crafter",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 7,
+				"strength": 2
+			},
+			"special_rules": [
+				"Barbed 2",
+				"Perfect Hit"
+			],
+			"affinities": {
+				"right": "red",
+				"bottom": "red"
+			}
+		},
+		{
+			"id": "core-wc-30",
+			"name": "Scrap Rebar",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"metal",
+				"heavy"
+			],
+			"rules_text": "The weapon to the left loses frail and gains unwieldy. If you attempt to wound a Super-dense location with the weapon, archive this at the end of the attack.",
+			"source": "Weapon Crafter",
+			"special_rules": [
+				"Frail",
+				"Unwieldy"
+			]
+		},
+		{
+			"id": "core-wc-31",
+			"name": "Scrap Bone Spear",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"spear",
+				"bone",
+				"metal"
+			],
+			"rules_text": "Reach 2, Frail",
+			"source": "Weapon Crafter",
+			"weapon_stats": {
+				"speed": 4,
+				"accuracy": 2,
+				"strength": 0
+			},
+			"special_rules": [
+				"Frail",
+				"Reach"
+			],
+			"affinities": {
+				"right": "red",
+				"left": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle"
+					],
+					"effect": "Barbed 4: On a Perfect hit, gain +4\nstrength for the rest of the attack."
+				}
+			]
+		},
+		{
+			"id": "core-wc-32",
+			"name": "Zanbato",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"grand weapon",
+				"two-handed",
+				"bone"
+			],
+			"source": "Weapon Crafter",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 6,
+				"strength": 6
+			},
+			"special_rules": [
+				"Deadly",
+				"Devastating 1",
+				"Frail",
+				"Slow"
+			],
+			"affinities": {
+				"top": "red",
+				"right": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"green-square"
+					],
+					"effect": "Gains Devastating 1: Whenever you wound, inflict 1 additional wound."
+				}
+			]
+		},
+		{
+			"id": "core-unknown-33",
+			"name": "Rawhide Vest",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"set",
+				"rawhide"
+			],
+			"source": "Skinnery",
+			"armor_value": 1,
+			"hit_location": [
+				"chest"
+			],
+			"affinities": {
+				"top": "blue",
+				"right": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"blue-puzzle"
+					],
+					"effect": "+1 evasion"
+				}
+			]
+		},
+		{
+			"id": "core-wc-34",
+			"name": "Scrap Sword",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"sword",
+				"metal"
+			],
+			"rules_text": "Barbed 4",
+			"source": "Weapon Crafter",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 5,
+				"strength": 3
+			},
+			"special_rules": [
+				"Barbed 4",
+				"Perfect Hit"
+			],
+			"affinities": {
+				"top": "blue"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-square",
+						"red-square",
+						"red-square"
+					],
+					"effect": "Gains Deadly"
+				}
+			]
+		},
+		{
+			"id": "core-lw-35",
+			"name": "Leather Mask",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"set",
+				"leather"
+			],
+			"rules_text": "When you depart, gain +2 insanity.",
+			"source": "Leather Worker",
+			"armor_value": 3,
+			"hit_location": [
+				"head"
+			],
+			"affinities": {
+				"top": "blue",
+				"bottom": "red"
+			}
+		},
+		{
+			"id": "core-lw-36",
+			"name": "Leather Bracers",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"set",
+				"leather"
+			],
+			"rules_text": "When you depart, gain +2 survival.",
+			"source": "Leather Worker",
+			"armor_value": 3,
+			"hit_location": [
+				"arms"
+			],
+			"affinities": {
+				"right": "green"
+			}
+		},
+		{
+			"id": "core-lw-37",
+			"name": "Leather Skirt",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"set",
+				"leather"
+			],
+			"source": "Leather Worker",
+			"armor_value": 3,
+			"hit_location": [
+				"waist"
+			],
+			"affinities": {
+				"bottom": "green"
+			}
+		},
+		{
+			"id": "core-lw-38",
+			"name": "Leather Boots",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"set",
+				"leather"
+			],
+			"source": "Leather Worker",
+			"armor_value": 3,
+			"hit_location": [
+				"legs"
+			],
+			"affinities": {
+				"right": "green",
+				"left": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"green-puzzle",
+						"green-puzzle"
+					],
+					"effect": "At the end of your act, you may\nmove 1 space."
+				}
+			]
+		},
+		{
+			"id": "core-lw-39",
+			"name": "Round Leather Shield",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"shield",
+				"leather"
+			],
+			"rules_text": "Add 1 to all hit locations. Block 1: Spend to ignore 1 hit the next time you are attacked. Lasts until your next act. You cannot use block more than once per attack.",
+			"source": "Leather Worker",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 8,
+				"strength": 1
+			},
+			"special_rules": [
+				"Block 1"
+			],
+			"affinities": {
+				"top": "green"
+			}
+		},
+		{
+			"id": "core-lw-40",
+			"name": "Hunter Whip",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"whip",
+				"leather"
+			],
+			"source": "Leather Worker",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 6,
+				"strength": 3
+			},
+			"affinities": {
+				"top": "blue",
+				"right": "blue"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-puzzle",
+						"blue-puzzle"
+					],
+					"effect": "On a Perfect hit, discard 1 mood in play."
+				}
+			]
+		},
+		{
+			"id": "core-lw-41",
+			"name": "First Aid Kit",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"heavy"
+			],
+			"rules_text": "On Arrival, all survivors gain + 3 survival. (a): Remove 1 bleeding or negative attribute token from yourself or an adjacent survivor.",
+			"source": "Leather Worker",
+			"affinities": {
+				"top": "green",
+				"right": "green",
+				"bottom": "green",
+				"left": "green"
+			}
+		},
+		{
+			"id": "core-lw-42",
+			"name": "Scavenger Kit",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"heavy"
+			],
+			"rules_text": "Unique When you defeat a monster, gain either 1 random basic resource or 1 random monster resource from that monster's resource deck.",
+			"source": "Leather Worker",
+			"special_rules": [
+				"Unique"
+			],
+			"affinities": {
+				"bottom": "green"
+			}
+		},
+		{
+			"id": "core-lw-43",
+			"name": "Almanac",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"soluble",
+				"flammable"
+			],
+			"rules_text": "When you depart, gain +2 insanity. You cannot gain disorders.",
+			"source": "Leather Worker",
+			"affinities": {
+				"right": "blue"
+			}
+		},
+		{
+			"id": "core-lw-44",
+			"name": "Bug Trap",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"soluble"
+			],
+			"rules_text": "At the start of the showdown, roll 1d10. On a 3+, add a Bug Patch terrain card to the showdown board.",
+			"source": "Leather Worker"
+		},
+		{
+			"id": "core-lw-45",
+			"name": "Musk Bomb",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"stinky",
+				"thrown",
+				"fragile"
+			],
+			"rules_text": "If adjacent to monster when it draws [AI] , you may spend 2 survial and archive Musk bomb to roll 1d10. On a 3+, discard [AI] without playing it.",
+			"source": "Leather Worker"
+		},
+		{
+			"id": "core-unknown-46",
+			"name": "Cuirass",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"set",
+				"leather"
+			],
+			"armor_value": 3,
+			"hit_location": [
+				"chest"
+			],
+			"affinities": {
+				"top": "red",
+				"bottom": "blue"
+			}
+		},
+		{
+			"id": "core-unknown-47",
+			"name": "Blue Charm",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"jewelry",
+				"fragile"
+			],
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-square",
+						"blue-square",
+						"blue-square",
+						"blue-square",
+						"blue-square"
+					],
+					"effect": "Unshakeable: When you draw a Trap, roll 1d10.\nOn a 6+, discard the Trap and reshuffle the deck."
+				}
+			],
+			"center_affinity": "blue"
+		},
+		{
+			"id": "core-bs-48",
+			"name": "Red Charm",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"jewelry",
+				"fragile"
+			],
+			"source": "Barber Surgeon",
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-square",
+						"red-square",
+						"red-square",
+						"red-square",
+						"red-square"
+					],
+					"effect": "Unstoppable: When you attempt to wound,\ninstead roll 1d10. On 1 - 5, fail. On 6 - 10, wound."
+				}
+			],
+			"center_affinity": "red"
+		},
+		{
+			"id": "core-bs-49",
+			"name": "Green Charm",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"jewelry",
+				"fragile"
+			],
+			"source": "Barber Surgeon",
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"green-square",
+						"green-square",
+						"green-square",
+						"green-square",
+						"green-square"
+					],
+					"effect": "Undeathable: If you would die, roll 1d10.\nOn a 6+, you inexplicably survive."
+				}
+			],
+			"center_affinity": "green"
+		},
+		{
+			"id": "core-unknown-50",
+			"name": "White Lion Mask",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"mask",
+				"bone",
+				"other"
+			],
+			"rules_text": "Unique, Irreplaceable, Accessory",
+			"armor_value": 2,
+			"hit_location": [
+				"head"
+			],
+			"special_rules": [
+				"Accessory",
+				"Irreplaceable",
+				"Unique"
+			],
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"green-square",
+						"green-square"
+					],
+					"effect": "If insane, spend (a) to lose all your survival and gain that many +1 strength tokens."
+				}
+			]
+		},
+		{
+			"id": "core-unknown-51",
+			"name": "Antelope Mask",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"mask",
+				"bone",
+				"other"
+			],
+			"rules_text": "Unique, Irreplaceable, Accessory",
+			"source": "Mask Maker",
+			"armor_value": 2,
+			"hit_location": [
+				"head"
+			],
+			"special_rules": [
+				"Accessory",
+				"Irreplaceable",
+				"Unique"
+			],
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-square",
+						"red-square",
+						"blue-square",
+						"blue-square"
+					],
+					"effect": "At the start of your act, if insane, gain +1 (m)."
+				}
+			]
+		},
+		{
+			"id": "core-unknown-52",
+			"name": "Phoenix Mask",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"mask",
+				"bone",
+				"other"
+			],
+			"rules_text": "Unique, Irreplaceable, Accessory",
+			"source": "Mask Maker",
+			"armor_value": 2,
+			"hit_location": [
+				"head"
+			],
+			"special_rules": [
+				"Accessory",
+				"Irreplaceable",
+				"Unique"
+			],
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-square",
+						"red-square",
+						"red-square",
+						"red-square"
+					],
+					"effect": "If insane, you may dodge 1 additional time per round."
+				}
+			]
+		},
+		{
+			"id": "core-unknown-53",
+			"name": "Death Mask",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"mask",
+				"bone",
+				"other"
+			],
+			"rules_text": "Unique, Irreplaceable, Accessory If you have no affinities, gain +4 luck and suffer -4 to all severe injury rolls.",
+			"source": "Mask Maker",
+			"armor_value": 2,
+			"hit_location": [
+				"head"
+			],
+			"special_rules": [
+				"Accessory",
+				"Irreplaceable",
+				"Unique"
+			]
+		},
+		{
+			"id": "core-unknown-54",
+			"name": "Man Mask",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"mask",
+				"bone",
+				"other"
+			],
+			"rules_text": "Unique, Irreplaceable, Accessory",
+			"source": "Mask Maker",
+			"armor_value": 2,
+			"hit_location": [
+				"head"
+			],
+			"special_rules": [
+				"Accessory",
+				"Irreplaceable",
+				"Unique"
+			],
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-square",
+						"green-square"
+					],
+					"effect": "If insane, you may spend negative attribute tokens in place of survival."
+				}
+			]
+		},
+		{
+			"id": "core-mm-55",
+			"name": "God Mask",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"mask",
+				"bone",
+				"other"
+			],
+			"rules_text": "Unique, Irreplaceable, Accessory",
+			"source": "Mask Maker",
+			"armor_value": 2,
+			"hit_location": [
+				"head"
+			],
+			"special_rules": [
+				"Accessory",
+				"Irreplaceable",
+				"Unique"
+			],
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-square",
+						"green-square",
+						"blue-square",
+						"green-square",
+						"blue-square",
+						"red-square"
+					],
+					"effect": "At the start of your act, if insane, gain + 1 survival."
+				}
+			]
+		},
+		{
+			"id": "core-b-56",
+			"name": "Lantern Helm",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"set",
+				"metal",
+				"heavy"
+			],
+			"source": "Blacksmith",
+			"armor_value": 5,
+			"hit_location": [
+				"head"
+			],
+			"affinities": {
+				"bottom": "blue"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-puzzle"
+					],
+					"effect": "Ear Plugs. You are deaf. -1 accuracy."
+				}
+			]
+		},
+		{
+			"id": "core-b-57",
+			"name": "Lantern Gauntlets",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"set",
+				"metal",
+				"heavy"
+			],
+			"source": "Blacksmith",
+			"armor_value": 5,
+			"hit_location": [
+				"arms"
+			],
+			"affinities": {
+				"left": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"green-puzzle"
+					],
+					"effect": "+ 2 Accuracy with club weapons."
+				}
+			]
+		},
+		{
+			"id": "core-b-58",
+			"name": "Lantern Mail",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"set",
+				"metal",
+				"heavy"
+			],
+			"source": "Blacksmith",
+			"armor_value": 5,
+			"hit_location": [
+				"waist"
+			],
+			"affinities": {
+				"right": "green"
+			}
+		},
+		{
+			"id": "core-b-59",
+			"name": "Lantern Cuirass",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"set",
+				"metal",
+				"heavy"
+			],
+			"rules_text": "- 2 movement.",
+			"source": "Blacksmith",
+			"armor_value": 5,
+			"hit_location": [
+				"chest"
+			],
+			"affinities": {
+				"top": "blue",
+				"right": "green",
+				"bottom": "blue",
+				"left": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-puzzle",
+						"green-puzzle",
+						"blue-puzzle",
+						"green-puzzle"
+					],
+					"effect": "When you depart, add 3 to all hit locations with metal armor."
+				}
+			]
+		},
+		{
+			"id": "core-b-60",
+			"name": "Lantern Greaves",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"set",
+				"metal",
+				"heavy"
+			],
+			"source": "Blacksmith",
+			"armor_value": 5,
+			"hit_location": [
+				"legs"
+			],
+			"affinities": {
+				"top": "blue",
+				"right": "red",
+				"left": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"red-puzzle",
+						"blue-puzzle"
+					],
+					"effect": "+ 2 Movement"
+				}
+			]
+		},
+		{
+			"id": "core-b-61",
+			"name": "Lantern Sword",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"sword",
+				"finesse",
+				"metal"
+			],
+			"rules_text": "Sharp: Add 1d10 Strength to each wound attempt. \nEarly Iron: When an attack roll result is 1, cancel any hits and end the attack.",
+			"source": "Blacksmith",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 5,
+				"strength": 3
+			},
+			"special_rules": [
+				"Early Iron",
+				"Sharp"
+			],
+			"affinities": {
+				"left": "red"
+			}
+		},
+		{
+			"id": "core-b-62",
+			"name": "Scrap Shield",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"shield",
+				"bone",
+				"metal"
+			],
+			"rules_text": "Add 1 to all hit locations. \nBlock 1: Spend to ignore a hit the next time you are attacked. Lasts until your next act. You cannot use block more than once per attack.",
+			"source": "Blacksmith",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 7,
+				"strength": 3
+			},
+			"special_rules": [
+				"Block 1",
+				"Block"
+			],
+			"affinities": {
+				"right": "red"
+			}
+		},
+		{
+			"id": "core-b-63",
+			"name": "Lantern Dagger",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"dagger",
+				"finesse",
+				"metal"
+			],
+			"rules_text": "Paired \nSharp: Add 1d10 Strength to each wound attempt. Early Iron: When an attack roll result is 1, cancel any hits and end the attack.",
+			"source": "Blacksmith",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 7,
+				"strength": 1
+			},
+			"special_rules": [
+				"Early Iron",
+				"Paired",
+				"Sharp"
+			],
+			"affinities": {
+				"left": "red"
+			}
+		},
+		{
+			"id": "core-b-64",
+			"name": "Beacon Shield",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"shield",
+				"metal",
+				"heavy"
+			],
+			"rules_text": "Add 2 to all hit locations.\nBlock 2: Spend to ignore 2 hits the next time you are attacked. Lasts until your next act. You cannot use block more than once per attack.",
+			"source": "Blacksmith",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 6,
+				"strength": 5
+			},
+			"special_rules": [
+				"Block 2",
+				"Block"
+			]
+		},
+		{
+			"id": "core-b-65",
+			"name": "Lantern Glaive",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"spear",
+				"axe",
+				"two-handed",
+				"finesse",
+				"metal"
+			],
+			"rules_text": "Reach 2 \nSharp: Add 1d10 Strength to each wound attempt. \nEarly Iron: When an attack roll result is 1, cancel any hits and end the attack.",
+			"source": "Blacksmith",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 4
+			},
+			"special_rules": [
+				"Early Iron",
+				"Reach",
+				"Sharp"
+			],
+			"affinities": {
+				"bottom": "green"
+			}
+		},
+		{
+			"id": "core-b-66",
+			"name": "Ring Whip",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"whip",
+				"finesse",
+				"metal"
+			],
+			"rules_text": "Sharp, Reach 2\nEarly Iron: When an attack roll result is 1, cancel any hits and end the attack.",
+			"source": "Blacksmith",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 5,
+				"strength": 0
+			},
+			"special_rules": [
+				"Early Iron",
+				"Reach",
+				"Sharp"
+			],
+			"affinities": {
+				"left": "blue"
+			}
+		},
+		{
+			"id": "core-b-67",
+			"name": "Dragon Slayer",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"grand weapon",
+				"two-handed",
+				"heavy",
+				"metal"
+			],
+			"source": "Blacksmith",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 6,
+				"strength": 9
+			},
+			"special_rules": [
+				"Devastating 1",
+				"Early Iron",
+				"Frail",
+				"Sharp",
+				"Slow"
+			],
+			"affinities": {
+				"top": "blue",
+				"right": "red"
+			}
+		},
+		{
+			"id": "core-b-68",
+			"name": "Polishing Lantern",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"metal",
+				"lantern"
+			],
+			"rules_text": "Ignore Early Iron. Spend (a) to polish the edge of your or an adjacent survivor's finesse weapon. It gains +4 strength for its next attack. Limit once per attack.",
+			"source": "Blacksmith",
+			"special_rules": [
+				"Early Iron"
+			],
+			"affinities": {
+				"left": "red"
+			}
+		},
+		{
+			"id": "core-b-69",
+			"name": "Perfect Slayer",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"grand weapon",
+				"two-handed",
+				"sword",
+				"heavy",
+				"finesse",
+				"metal"
+			],
+			"rules_text": "Slow, Sharp, Devastating 2, Irreplaceable\n-2 movement",
+			"source": "Blacksmith",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 6,
+				"strength": 14
+			},
+			"special_rules": [
+				"Devastating 2",
+				"Irreplaceable",
+				"Sharp",
+				"Slow"
+			],
+			"affinities": {
+				"bottom": "red"
+			}
+		},
+		{
+			"id": "core-c-70",
+			"name": "White Lion Helm",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"set",
+				"fur",
+				"heavy"
+			],
+			"source": "Catarium",
+			"armor_value": 2,
+			"hit_location": [
+				"head"
+			],
+			"special_rules": [
+				"Roar"
+			],
+			"affinities": {
+				"bottom": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"blue-square"
+					],
+					"effect": "(a) and 1 survival: Roar. Non-Deaf Insane survivors gain +2 strength until end of round. All other survivors gain +1 insanity."
+				}
+			]
+		},
+		{
+			"id": "core-c-71",
+			"name": "White Lion Gauntlet",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"set",
+				"fur",
+				"heavy"
+			],
+			"rules_text": "When you Pounce, gain +1 accuracy for your next attack this turn.",
+			"source": "Catarium",
+			"armor_value": 2,
+			"hit_location": [
+				"arms"
+			],
+			"special_rules": [
+				"Pounce"
+			]
+		},
+		{
+			"id": "core-c-72",
+			"name": "Lion Coat",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"set",
+				"fur",
+				"heavy"
+			],
+			"rules_text": "Pounce: Spend (m) and (a) to move 3 spaces in a straight line. Then, if you moved 3 spaces, activate a melee weapon with +1 strength.",
+			"source": "Catarium",
+			"armor_value": 2,
+			"hit_location": [
+				"chest"
+			],
+			"special_rules": [
+				"Pounce"
+			],
+			"affinities": {
+				"top": "blue"
+			}
+		},
+		{
+			"id": "core-c-73",
+			"name": "White Lion Skirt",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"set",
+				"fur",
+				"heavy"
+			],
+			"source": "Catarium",
+			"armor_value": 2,
+			"hit_location": [
+				"waist"
+			],
+			"affinities": {
+				"right": "red",
+				"left": "red"
+			}
+		},
+		{
+			"id": "core-c-74",
+			"name": "White Lion Boots",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"set",
+				"fur",
+				"heavy"
+			],
+			"source": "Catarium",
+			"armor_value": 2,
+			"hit_location": [
+				"legs"
+			],
+			"affinities": {
+				"right": "red",
+				"bottom": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"red-puzzle"
+					],
+					"effect": "+ 1 movement"
+				}
+			]
+		},
+		{
+			"id": "core-c-75",
+			"name": "Lion Beast Katar",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"katar"
+			],
+			"rules_text": "Deadly: +1 luck with this weapon. \nPaired: When you attack, add the speed of a 2nd Lion Beast Katar in your gear grid.",
+			"source": "Catarium",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 7,
+				"strength": 3
+			},
+			"special_rules": [
+				"Deadly",
+				"Paired"
+			]
+		},
+		{
+			"id": "core-c-76",
+			"name": "Cat Eye Circlet",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"jewelry",
+				"other"
+			],
+			"rules_text": "(a) : Reveal the next 3 monster hit locations and put them back in any order.",
+			"source": "Catarium",
+			"affinities": {
+				"left": "blue"
+			}
+		},
+		{
+			"id": "core-c-77",
+			"name": "Claw Head Arrow",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"ammunition",
+				"arrow"
+			],
+			"rules_text": "Slow, Ammo - Bow: You must have a bow in your gear grid to activate this. If you hit, monster gains -1 evasion token. Use once per showdown",
+			"source": "Catarium",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 6,
+				"strength": 6
+			},
+			"special_rules": [
+				"Ammo - Bow",
+				"Slow"
+			],
+			"affinities": {
+				"right": "blue"
+			}
+		},
+		{
+			"id": "core-c-78",
+			"name": "Whisker Harp",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"instrument",
+				"noisy"
+			],
+			"rules_text": "On Arrival, all survivors gain +1 survival.\n(a): Strum. Roll 1d10. On a result of 6+ discard 1 mood currently in play.",
+			"source": "Catarium",
+			"affinities": {
+				"left": "blue"
+			}
+		},
+		{
+			"id": "core-c-79",
+			"name": "King Spear",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"spear",
+				"heavy",
+				"two-handed"
+			],
+			"rules_text": "Reach 2: May attack from 2 spaces away.",
+			"source": "Catarium",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 3
+			},
+			"special_rules": [
+				"Reach"
+			],
+			"affinities": {
+				"right": "red"
+			}
+		},
+		{
+			"id": "core-unknown-80",
+			"name": "Lion Headdress",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"flammable"
+			],
+			"rules_text": "Accessory: You may wear this in addition to 1 armor at this hit location.",
+			"armor_value": 1,
+			"hit_location": [
+				"head"
+			],
+			"special_rules": [
+				"Accessory"
+			]
+		},
+		{
+			"id": "core-c-81",
+			"name": "Cat Gut Bow",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"ranged",
+				"bow",
+				"two-handed"
+			],
+			"rules_text": "Cumbersome, Range: 6. \nAim: When you attack, before rolling to hit, you may reduce the speed of this weapon by 1 to gain +2 accuracy for that attack.",
+			"source": "Catarium",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 7,
+				"strength": 3
+			},
+			"special_rules": [
+				"Cumbersome",
+				"Range"
+			],
+			"affinities": {
+				"top": "blue"
+			}
+		},
+		{
+			"id": "core-c-82",
+			"name": "Lion Skin Cloak",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"fur",
+				"bone",
+				"heavy",
+				"flammable"
+			],
+			"rules_text": "Reduce damage from every hit suffered by 1, to a minimum of 1.",
+			"source": "Catarium",
+			"armor_value": 0,
+			"hit_location": [
+				"chest"
+			],
+			"affinities": {
+				"right": "green"
+			}
+		},
+		{
+			"id": "core-c-83",
+			"name": "Cat Fang Knife",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"dagger",
+				"bone"
+			],
+			"source": "Catarium",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 6,
+				"strength": 2
+			},
+			"special_rules": [
+				"Perfect Hit"
+			],
+			"affinities": {
+				"top": "red",
+				"right": "red",
+				"bottom": "red",
+				"left": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-square",
+						"red-square",
+						"red-square"
+					],
+					"effect": "On a Perfect hit, gain + 1 strength token. When knocked down, remove all your +1 strength tokens."
+				}
+			]
+		},
+		{
+			"id": "core-c-84",
+			"name": "Frenzy Drink",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"consumable",
+				"fragile"
+			],
+			"rules_text": "(a) Consume: Suffer Frenzy brain trauma. Can be used once per showdown.",
+			"source": "Catarium",
+			"special_rules": [
+				"Consume"
+			]
+		},
+		{
+			"id": "core-sc-85",
+			"name": "Screaming Horns",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"set",
+				"bone"
+			],
+			"rules_text": "(a): Scream. Non-deaf insane survivors gain +1 movement until end of round. All other non-deaf survivors gain +1 insanity.",
+			"source": "Stone Circle",
+			"armor_value": 2,
+			"hit_location": [
+				"head"
+			],
+			"special_rules": [
+				"Scream"
+			],
+			"affinities": {
+				"bottom": "blue"
+			}
+		},
+		{
+			"id": "core-sc-86",
+			"name": "Screaming Bracers",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"set",
+				"fur"
+			],
+			"rules_text": "When you activate terrain, you may add +2 to your roll result.",
+			"source": "Stone Circle",
+			"armor_value": 2,
+			"hit_location": [
+				"arms"
+			],
+			"affinities": {
+				"top": "green",
+				"left": "red"
+			}
+		},
+		{
+			"id": "core-sc-87",
+			"name": "Screaming Coat",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"set",
+				"fur"
+			],
+			"rules_text": "Slam: Spend (m) to full move foward in a straight line. If you move 4+ spaces and stop adjacent to a monster, it suffers knockback 1 and -1 toughness until the end of the round.",
+			"source": "Stone Circle",
+			"armor_value": 2,
+			"hit_location": [
+				"chest"
+			],
+			"special_rules": [
+				"Slam"
+			],
+			"affinities": {
+				"top": "blue",
+				"right": "blue",
+				"bottom": "green",
+				"left": "green"
+			}
+		},
+		{
+			"id": "core-sc-88",
+			"name": "Screaming Skirt",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"set",
+				"fur"
+			],
+			"rules_text": "Thick, protective fur protects your parts. Add +1 to severe waist injury roll results.",
+			"source": "Stone Circle",
+			"armor_value": 2,
+			"hit_location": [
+				"waist"
+			],
+			"affinities": {
+				"right": "green",
+				"bottom": "blue"
+			}
+		},
+		{
+			"id": "core-sc-89",
+			"name": "Screaming Leg Warmers",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"set",
+				"fur"
+			],
+			"rules_text": "On Arrival your feet hurt, gain +3 insanity.",
+			"source": "Stone Circle",
+			"armor_value": 2,
+			"hit_location": [
+				"legs"
+			],
+			"affinities": {
+				"top": "blue",
+				"right": "red"
+			}
+		},
+		{
+			"id": "core-sc-90",
+			"name": "Boss Mehndi",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"soluble"
+			],
+			"rules_text": "Boss is brave. While adjacent to you, insane survivors gain +1 speed.",
+			"source": "Stone Circle"
+		},
+		{
+			"id": "core-sc-91",
+			"name": "Beast Knuckle",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"katar",
+				"bone",
+				"paired"
+			],
+			"rules_text": "Paired \nWhen you wound with this weapon, monster gains -1 toughness until end of the attack.",
+			"source": "Stone Circle",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 4
+			},
+			"special_rules": [
+				"Paired"
+			]
+		},
+		{
+			"id": "core-sc-92",
+			"name": "Brain Mint",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"consumable"
+			],
+			"rules_text": "(a) Consume: Remove all your tokens and stand up. You may use this while knocked down. Use once per showdown.",
+			"source": "Stone Circle",
+			"special_rules": [
+				"Consume"
+			],
+			"affinities": {
+				"top": "green",
+				"left": "blue"
+			}
+		},
+		{
+			"id": "core-sc-93",
+			"name": "Blood Paint",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"soluble"
+			],
+			"rules_text": "(a): Activate weapon gear to the left and right of this card. These are two separate attacks. Cannot be used with two-handed weapons.",
+			"source": "Stone Circle"
+		},
+		{
+			"id": "core-sc-94",
+			"name": "Bone Earrings",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"jewelry",
+				"bone"
+			],
+			"rules_text": "At the start of the showdown, gain +2 speed and +2 strength tokens if insane and all gear in your gear grid has the bone keyword.",
+			"source": "Stone Circle"
+		},
+		{
+			"id": "core-sc-95",
+			"name": "Speed Powder",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"soluble"
+			],
+			"rules_text": "(a): Suffer 2 brain damage. Gain +1 speed token. Use once per showdown.",
+			"source": "Stone Circle",
+			"affinities": {
+				"right": "blue"
+			}
+		},
+		{
+			"id": "core-sc-96",
+			"name": "Elder Earrings",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"jewelry"
+			],
+			"rules_text": "On Arrival, gain +2 survival. During the Aftermath, gain +1 Hunt XP.",
+			"source": "Stone Circle",
+			"affinities": {
+				"right": "green",
+				"bottom": "blue",
+				"left": "red"
+			}
+		},
+		{
+			"id": "core-sc-97",
+			"name": "Lance of Longinus",
+			"expansion": "core",
+			"keywords": [
+				"melee",
+				"weapon",
+				"spear",
+				"two-handed",
+				"bone"
+			],
+			"rules_text": "Irreplaceable, Reach 2\nEach showdown, the first time you wound, the monster gains a - 1 toughness token.",
+			"source": "Stone Circle",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 9
+			},
+			"special_rules": [
+				"Irreplaceable",
+				"Reach"
+			]
+		},
+		{
+			"id": "core-p-98",
+			"name": "Phoenix Helm",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"set",
+				"feather",
+				"metal",
+				"flammable"
+			],
+			"source": "Plumery",
+			"armor_value": 4,
+			"hit_location": [
+				"head"
+			],
+			"affinities": {
+				"bottom": "blue"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"green-square",
+						"blue-puzzle",
+						"red-square"
+					],
+					"effect": "If insane at the start of the showdown, gain + 1 evasion token."
+				}
+			]
+		},
+		{
+			"id": "core-p-99",
+			"name": "Phoenix Gauntlet",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"set",
+				"feather",
+				"metal",
+				"flammable"
+			],
+			"rules_text": "When you depart, gain +1 insanity.",
+			"source": "Plumery",
+			"armor_value": 4,
+			"hit_location": [
+				"arms"
+			]
+		},
+		{
+			"id": "core-p-100",
+			"name": "Phoenix Plackart",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"set",
+				"feather",
+				"metal",
+				"flammable"
+			],
+			"source": "Plumery",
+			"armor_value": 4,
+			"hit_location": [
+				"chest"
+			],
+			"affinities": {
+				"top": "blue",
+				"right": "red",
+				"left": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"green-puzzle",
+						"blue-puzzle",
+						"red-puzzle"
+					],
+					"effect": "If insane, ignore the first hit each round and suffer 1 brain damage instead."
+				}
+			]
+		},
+		{
+			"id": "core-p-101",
+			"name": "Phoenix Faulds",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"set",
+				"feather",
+				"metal",
+				"flammable"
+			],
+			"rules_text": "When you depart, gain +1 insanity.",
+			"source": "Plumery",
+			"armor_value": 4,
+			"hit_location": [
+				"waist"
+			]
+		},
+		{
+			"id": "core-p-102",
+			"name": "Phoenix Greaves",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"set",
+				"feather",
+				"metal",
+				"flammable"
+			],
+			"rules_text": "If insane, gain +2 movement.",
+			"source": "Plumery",
+			"armor_value": 4,
+			"hit_location": [
+				"legs"
+			],
+			"affinities": {
+				"right": "red"
+			}
+		},
+		{
+			"id": "core-p-103",
+			"name": "Feather Shield",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"shield",
+				"flammable"
+			],
+			"rules_text": "Block 1",
+			"source": "Plumery",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 7,
+				"strength": 0
+			},
+			"special_rules": [
+				"Block 1",
+				"Block"
+			],
+			"affinities": {
+				"top": "blue"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-square",
+						"green-square",
+						"red-square"
+					],
+					"effect": "Reduce any suffered brain damage by 1 to a minimum of 1."
+				}
+			]
+		},
+		{
+			"id": "core-p-104",
+			"name": "Feather Mantle",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"flammable"
+			],
+			"rules_text": "When you suffer knockback, you may ignore collision with other survivors and reduce the movement by up to 3 spaces.",
+			"source": "Plumery",
+			"affinities": {
+				"right": "green",
+				"bottom": "red",
+				"left": "blue"
+			}
+		},
+		{
+			"id": "core-p-105",
+			"name": "Bloom Sphere",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"stinky",
+				"other"
+			],
+			"source": "Plumery",
+			"affinities": {
+				"right": "blue",
+				"left": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-puzzle",
+						"green-puzzle"
+					],
+					"effect": "When you are picked as a target, roll 1d10. On a 6+, the monster must pick a new target if possible."
+				}
+			]
+		},
+		{
+			"id": "core-p-106",
+			"name": "Bird Bread",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"consumable",
+				"soluble"
+			],
+			"rules_text": "(a) Consume: Once per showdown, add 1 to all hit locations. Gain priority target token. Roll 1d10. On a 1, reduce your survival to 0.",
+			"source": "Plumery",
+			"special_rules": [
+				"Consume"
+			],
+			"affinities": {
+				"right": "green"
+			}
+		},
+		{
+			"id": "core-p-107",
+			"name": "Sonic Tomahawk",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"axe",
+				"metal"
+			],
+			"rules_text": "On a Perfect hit, make 1 additional attack roll.",
+			"source": "Plumery",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 5,
+				"strength": 6
+			},
+			"special_rules": [
+				"Paired",
+				"Perfect Hit",
+				"Savage"
+			],
+			"affinities": {
+				"left": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-square",
+						"red-puzzle",
+						"red-square"
+					],
+					"effect": "Gain Savage and Paired."
+				}
+			]
+		},
+		{
+			"id": "core-p-108",
+			"name": "Hours Ring",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"other"
+			],
+			"rules_text": "Unique\nDuring the aftermath, if you died or ceased to exist, you may archive the Hours Ring and reset the campaign to the previous Settlement Phase's develop step before you departed.",
+			"source": "Plumery",
+			"special_rules": [
+				"Unique"
+			]
+		},
+		{
+			"id": "core-p-109",
+			"name": "Hollow Sword",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"sword",
+				"dagger",
+				"bone"
+			],
+			"rules_text": "Frail\nThis weapon gains strength equal to the monster's damage attribute.",
+			"source": "Plumery",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 5,
+				"strength": 5
+			},
+			"special_rules": [
+				"Frail"
+			]
+		},
+		{
+			"id": "core-p-110",
+			"name": "Crest Crown",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"other"
+			],
+			"rules_text": "[AI]: If insane, reshuffle hit location deck.",
+			"source": "Plumery",
+			"affinities": {
+				"top": "blue",
+				"right": "green",
+				"bottom": "blue",
+				"left": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-puzzle",
+						"blue-puzzle",
+						"red-puzzle"
+					],
+					"effect": "When you depart, gain + 1 insanity and +1 survival for every [b] you have."
+				}
+			]
+		},
+		{
+			"id": "core-p-111",
+			"name": "Arc Bow",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"ranged",
+				"bow",
+				"two-handed"
+			],
+			"rules_text": "Slow, Range 6\nCumbersome: Spend (m) as an additional cost of activating this weapon.",
+			"source": "Plumery",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 6,
+				"strength": 9
+			},
+			"special_rules": [
+				"Cumbersome",
+				"Range",
+				"Slow"
+			],
+			"affinities": {
+				"right": "green",
+				"left": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"green-puzzle",
+						"blue-puzzle"
+					],
+					"effect": "Range + 2"
+				}
+			]
+		},
+		{
+			"id": "core-p-112",
+			"name": "Hollowpoint Arrow",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"ammunition",
+				"arrow"
+			],
+			"rules_text": "Slow, Ammo - Bow\nOn a hit, monster gains -1 movement token. Use once per showdown.",
+			"source": "Plumery",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 6,
+				"strength": 11
+			},
+			"special_rules": [
+				"Ammo - Bow",
+				"Slow"
+			]
+		},
+		{
+			"id": "core-p-113",
+			"name": "Finger of God",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"spear",
+				"two-handed"
+			],
+			"rules_text": "Reach 2",
+			"source": "Plumery",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 5,
+				"strength": 5
+			},
+			"special_rules": [
+				"Reach"
+			],
+			"affinities": {
+				"top": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-square",
+						"green-square",
+						"red-square"
+					],
+					"effect": "As long as you have 5+ survival, gain +1 accuracy and +1 strength."
+				}
+			]
+		},
+		{
+			"id": "core-p-114",
+			"name": "Blood Sheath",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"bone",
+				"other"
+			],
+			"rules_text": "Block 1\nWhen Rainbow Katana is left of Blood Sheath, it loses Frail and gains Sharp (add 1d10 strength to each wound attempt).",
+			"source": "Plumery",
+			"special_rules": [
+				"Block 1",
+				"Frail",
+				"Block",
+				"Sharp"
+			]
+		},
+		{
+			"id": "core-p-115",
+			"name": "Rainbow Katana",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"katana",
+				"finesse",
+				"two-handed"
+			],
+			"rules_text": "Frail",
+			"source": "Plumery",
+			"weapon_stats": {
+				"speed": 4,
+				"accuracy": 4,
+				"strength": 4
+			},
+			"special_rules": [
+				"Frail"
+			],
+			"affinities": {
+				"left": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"green-square",
+						"blue-square"
+					],
+					"effect": "Gains Deadly"
+				}
+			]
+		},
+		{
+			"id": "core-elh-116",
+			"name": "Survivors’ Lantern",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"lantern"
+			],
+			"source": "Exhausted Lantern Hoard",
+			"affinities": {
+				"right": "green",
+				"bottom": "blue",
+				"left": "red"
+			}
+		},
+		{
+			"id": "core-elh-117",
+			"name": "Oxidized Lantern Sword",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"sword",
+				"finesse",
+				"metal"
+			],
+			"rules_text": "Sharp\nDeflect 1: Spend (a), you now have exactly 1 deflect token. The next 1 time you are hit, ignore that hit and lose 1 deflect token.",
+			"source": "Exhausted Lantern Hoard",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 5,
+				"strength": 5
+			},
+			"special_rules": [
+				"Sharp"
+			],
+			"affinities": {
+				"left": "red"
+			}
+		},
+		{
+			"id": "core-elh-118",
+			"name": "Oxidized Beacon Shield",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"shield",
+				"metal",
+				"heavy"
+			],
+			"rules_text": "Add 2 to all hit locations.\nDeflect 2: Spend (a), you now have exactly 2 deflect tokens. The next 2 times you are hit, ignore a hit and lose 1 deflect token.",
+			"source": "Exhausted Lantern Hoard",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 6,
+				"strength": 6
+			}
+		},
+		{
+			"id": "core-elh-119",
+			"name": "Oxidized Lantern Dagger",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"dagger",
+				"finesse",
+				"metal"
+			],
+			"rules_text": "Sharp, Paired",
+			"source": "Exhausted Lantern Hoard",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 6,
+				"strength": 4
+			},
+			"special_rules": [
+				"Paired",
+				"Perfect Hit",
+				"Sharp"
+			],
+			"affinities": {
+				"right": "red",
+				"left": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"red-square"
+					],
+					"effect": "On a Perfect hit, gain +1 survival."
+				}
+			]
+		},
+		{
+			"id": "core-elh-120",
+			"name": "Oxidized Lantern Glaive",
+			"expansion": "core",
+			"keywords": [
+				"glaive",
+				"weapon",
+				"melee",
+				"spear",
+				"axe",
+				"two-handed",
+				"finesse",
+				"metal"
+			],
+			"rules_text": "Sharp, Reach 2",
+			"source": "Exhausted Lantern Hoard",
+			"weapon_stats": {
+				"accuracy": 2,
+				"strength": 6
+			},
+			"special_rules": [
+				"Reach",
+				"Sharp"
+			],
+			"affinities": {
+				"bottom": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"green-puzzle",
+						"red-square"
+					],
+					"effect": "Barbed 4: On a Perfect hit, gain +4 strength for the rest of the attack."
+				}
+			]
+		},
+		{
+			"id": "core-elh-121",
+			"name": "Oxidized Ring Whip",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"whip",
+				"finesse",
+				"metal"
+			],
+			"rules_text": "Sharp, Reach 2",
+			"source": "Exhausted Lantern Hoard",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 5,
+				"strength": 3
+			},
+			"special_rules": [
+				"Provoke",
+				"Reach",
+				"Sharp"
+			],
+			"affinities": {
+				"left": "blue"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-puzzle",
+						"red-square",
+						"red-square",
+						"red-square"
+					],
+					"effect": "Gains Provoke (see Rawhide Whip)."
+				}
+			]
+		},
+		{
+			"id": "core-elh-122",
+			"name": "Oxidized Lantern Helm",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"set",
+				"metal"
+			],
+			"rules_text": "Outfit.",
+			"source": "Exhausted Lantern Hoard",
+			"armor_value": 6,
+			"hit_location": [
+				"head"
+			],
+			"special_rules": [
+				"Outfit"
+			],
+			"affinities": {
+				"bottom": "blue"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-puzzle",
+						"red-square"
+					],
+					"effect": "If you are not deaf, you may ignore effects that target non-deaf survivors."
+				}
+			]
+		},
+		{
+			"id": "core-rg-123",
+			"name": "Butcher Cleaver",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"axe",
+				"other"
+			],
+			"rules_text": "Paired\nSentient: Must be insane to activate.\nIrreplaceable: When you die, archive this card.",
+			"source": "Rare Gear",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 5,
+				"strength": 5
+			},
+			"special_rules": [
+				"Irreplaceable",
+				"Paired",
+				"Sentient"
+			]
+		},
+		{
+			"id": "core-rg-124",
+			"name": "Forsaker Mask",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"mask",
+				"metal",
+				"other"
+			],
+			"rules_text": "Unique, Irreplaceable, Accessory\nDuring the Aftermath, you run off into the darkness never to be seen again. During the Settlement Phase, you may archive this item to build the Mask Maker location.",
+			"source": "Rare Gear",
+			"armor_value": 2,
+			"hit_location": [
+				"head"
+			],
+			"special_rules": [
+				"Accessory",
+				"Unique",
+				"Irreplaceable"
+			]
+		},
+		{
+			"id": "core-rg-125",
+			"name": "Lantern Halberd",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"two-handed",
+				"spear",
+				"lantern",
+				"other"
+			],
+			"rules_text": "Reach 2, Irreplaceable, Unique\nAfter attacking, if standing, you may move up to 2 spaces directly away from the monster.",
+			"source": "Rare Gear",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 4,
+				"strength": 7
+			},
+			"special_rules": [
+				"Irreplaceable",
+				"Reach",
+				"Unique"
+			]
+		},
+		{
+			"id": "core-rg-126",
+			"name": "Twilight Sword",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"two-handed",
+				"finesse",
+				"other"
+			],
+			"rules_text": "Slow, Cursed, Cumbersome, Sentient, Irreplaceable\nGains Devastating 2 when fighting the Watcher. *Accuracy is 9 - Twilight Sword proficiency level.",
+			"source": "Rare Gear",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": "*",
+				"strength": 9
+			},
+			"special_rules": [
+				"Cumbersome",
+				"Cursed",
+				"Devastating 2",
+				"Irreplaceable",
+				"Sentient",
+				"Slow"
+			]
+		},
+		{
+			"id": "core-rg-127",
+			"name": "Regal Helm",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"bone",
+				"metal"
+			],
+			"rules_text": "Cursed\nAt the Aftermath, 📖 King's Curse.",
+			"source": "Rare Gear",
+			"armor_value": 4,
+			"hit_location": [
+				"head"
+			],
+			"special_rules": [
+				"Cursed"
+			]
+		},
+		{
+			"id": "core-rg-128",
+			"name": "Regal Plackart",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"bone",
+				"metal"
+			],
+			"rules_text": "Cursed\nAt the Aftermath, 📖 King's Curse.",
+			"source": "Rare Gear",
+			"armor_value": 4,
+			"hit_location": [
+				"chest"
+			],
+			"special_rules": [
+				"Cursed"
+			]
+		},
+		{
+			"id": "core-rg-129",
+			"name": "Regal Gauntlet",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"bone",
+				"metal"
+			],
+			"rules_text": "Cursed\nAt the Aftermath, 📖 King's Curse.",
+			"source": "Rare Gear",
+			"armor_value": 4,
+			"hit_location": [
+				"arms"
+			],
+			"special_rules": [
+				"Cursed"
+			]
+		},
+		{
+			"id": "core-rg-130",
+			"name": "Regal Faulds",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"bone"
+			],
+			"rules_text": "Cursed\nKing's Curse. At the Aftermath, 📖 King's Curse.",
+			"source": "Rare Gear",
+			"armor_value": 4,
+			"hit_location": [
+				"waist"
+			],
+			"special_rules": [
+				"Cursed"
+			]
+		},
+		{
+			"id": "core-rg-131",
+			"name": "Regal Greaves",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"bone",
+				"metal"
+			],
+			"rules_text": "Cursed\nAt the Aftermath, 📖 King's Curse.",
+			"source": "Rare Gear",
+			"armor_value": 4,
+			"hit_location": [
+				"legs"
+			],
+			"special_rules": [
+				"Cursed"
+			]
+		},
+		{
+			"id": "core-rg-132",
+			"name": "Regal Faulds",
+			"expansion": "core",
+			"keywords": [
+				"armor",
+				"bone",
+				"metal"
+			],
+			"rules_text": "Cursed\nAt the Aftermath, 📖 King's Curse.",
+			"source": "Rare Gear",
+			"armor_value": 4,
+			"hit_location": [
+				"waist"
+			],
+			"special_rules": [
+				"Cursed"
+			]
+		},
+		{
+			"id": "core-rg-133",
+			"name": "Adventure Sword",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"sword",
+				"finesse",
+				"other"
+			],
+			"rules_text": "Unique, Irreplaceable\nYour courage is added to this weapon's strength.",
+			"source": "Rare Gear",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 6,
+				"strength": 0
+			},
+			"special_rules": [
+				"Irreplaceable",
+				"Unique"
+			]
+		},
+		{
+			"id": "core-rg-134",
+			"name": "Muramasa",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"katana",
+				"two-handed",
+				"finesse",
+				"other"
+			],
+			"rules_text": "Frail, Sharp, Sentient, Deadly 2, Unique\nWhen you critically wound with this weapon, gain 2 bleeding tokens.",
+			"source": "Rare Gear",
+			"weapon_stats": {
+				"speed": 6,
+				"accuracy": 6,
+				"strength": 6
+			},
+			"special_rules": [
+				"Deadly",
+				"Frail",
+				"Sentient",
+				"Sharp",
+				"Unique"
+			]
+		},
+		{
+			"id": "core-rg-135",
+			"name": "Steel Sword",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"sword",
+				"finesse",
+				"metal"
+			],
+			"rules_text": "Irreplaceable, Slow, Sharp\nBarbed 1d10: On a Perfect hit, gain +1d10 strength for the rest of the attack.",
+			"source": "Rare Gear",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 4,
+				"strength": 5
+			},
+			"special_rules": [
+				"Barbed 1",
+				"Irreplaceable",
+				"Perfect Hit",
+				"Sharp",
+				"Slow"
+			]
+		},
+		{
+			"id": "core-rg-136",
+			"name": "Steel Shield",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"shield",
+				"metal",
+				"heavy"
+			],
+			"rules_text": "Irreplaceable\n-3 movement.\nSpend (a) or 1 survival to ignore a hit.",
+			"source": "Rare Gear",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 6,
+				"strength": 6
+			},
+			"special_rules": [
+				"Irreplaceable"
+			]
+		},
+		{
+			"id": "core-rg-137",
+			"name": "Thunder Maul",
+			"expansion": "core",
+			"keywords": [
+				"weapon",
+				"melee",
+				"club",
+				"two-handed",
+				"other"
+			],
+			"rules_text": "Irreplaceable, Unique, Cursed\nOn a Perfect hit, the monster is knocked down. Suffer a severe arm injury. All non-deaf survivors suffer 1 brain damage.",
+			"source": "Rare Gear",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 10
+			},
+			"special_rules": [
+				"Cursed",
+				"Irreplaceable",
+				"Perfect Hit",
+				"Unique"
+			]
+		},
+		{
+			"id": "core-rg-138",
+			"name": "Final Lantern",
+			"expansion": "core",
+			"keywords": [
+				"item",
+				"lantern",
+				"other"
+			],
+			"rules_text": "Vital\nOn Arrival, all survivors gain the Horripilation survivor status card. (See the Watcher's Al deck). When not insane, flip this card.",
+			"source": "Rare Gear",
+			"special_rules": [
+				"Vital"
+			],
+			"affinities": {
+				"top": "green",
+				"left": "blue"
+			}
+		},
+		{
+			"id": "gce-sg-1",
+			"name": "Bloody Cloth",
+			"expansion": "gce",
+			"keywords": [
+				"armor",
+				"cloth"
+			],
+			"rules_text": "When you depart, gain +1 insanity. You may use this as armor for any hit location.",
+			"source": "Starting Gear",
+			"armor_value": 1
+		},
+		{
+			"id": "gce-sg-2",
+			"name": "Crimson Helm",
+			"expansion": "gce",
+			"keywords": [
+				"armor",
+				"set",
+				"bone"
+			],
+			"rules_text": "Mindlock 1: Spend (a) , you now have exactly 1 mindlock token. When you suffer brain damage, ignore it and lose 1 mindlock token.",
+			"source": "Starting Gear",
+			"armor_value": 2,
+			"hit_location": [
+				"head"
+			],
+			"affinities": {
+				"right": "red"
+			}
+		},
+		{
+			"id": "gce-sg-3",
+			"name": "Crimson Guard",
+			"expansion": "gce",
+			"keywords": [
+				"armor",
+				"set",
+				"flesh"
+			],
+			"rules_text": "When you depart, a pale scab hardens on your forearm. Gain a bleeding token and add 1 to the arms hit location.",
+			"source": "Starting Gear",
+			"armor_value": 2,
+			"hit_location": [
+				"arms"
+			],
+			"affinities": {
+				"top": "green",
+				"left": "red"
+			}
+		},
+		{
+			"id": "gce-sg-4",
+			"name": "Crimson Dress",
+			"expansion": "gce",
+			"keywords": [
+				"armor",
+				"set",
+				"flesh"
+			],
+			"rules_text": "Immortal Spin: Spend (m) (a) to move 3 spaces forward. Then if you moved 3 spaces, activate a melee weapon with +1 strength for each bleeding token you have.",
+			"source": "Starting Gear",
+			"armor_value": 2,
+			"hit_location": [
+				"waist"
+			],
+			"affinities": {
+				"right": "red",
+				"left": "blue"
+			}
+		},
+		{
+			"id": "gce-sg-5",
+			"name": "Crimson Faulds",
+			"expansion": "gce",
+			"keywords": [
+				"armor",
+				"set",
+				"flesh"
+			],
+			"rules_text": "When you depart, gain a bleeding token. It requires one more bleeding token to kill you.",
+			"source": "Starting Gear",
+			"armor_value": 2,
+			"hit_location": [
+				"waist"
+			],
+			"affinities": {
+				"bottom": "green"
+			}
+		},
+		{
+			"id": "gce-sg-6",
+			"name": "Crimson Slippers",
+			"expansion": "gce",
+			"keywords": [
+				"armor",
+				"set",
+				"flesh"
+			],
+			"source": "Starting Gear",
+			"armor_value": 2,
+			"hit_location": [
+				"arms"
+			],
+			"affinities": {
+				"left": "red"
+			}
+		},
+		{
+			"id": "gce-sg-7",
+			"name": "Bloodglass Dagger",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"dagger",
+				"bone"
+			],
+			"rules_text": "Honed 3: This has +3 strength until its edge is ruined after wounding a Parry or Super-Dense hit location.",
+			"source": "Starting Gear",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 6,
+				"strength": 0
+			},
+			"affinities": {
+				"right": "red"
+			}
+		},
+		{
+			"id": "gce-cc-8",
+			"name": "Crocbone Hammer",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"club",
+				"bone"
+			],
+			"rules_text": "Clobber 4: Gain +4 strength while attempting to wound a Super-Dense hit location.",
+			"source": "Crimson Crockery",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 7,
+				"strength": 2
+			},
+			"affinities": {
+				"right": "red",
+				"bottom": "green"
+			}
+		},
+		{
+			"id": "gce-cc-9",
+			"name": "Bloodglass Cleaver",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"axe",
+				"bone"
+			],
+			"rules_text": "Honed 5 While this is equipped, you are guardless.",
+			"source": "Crimson Crockery",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 6,
+				"strength": 0
+			}
+		},
+		{
+			"id": "gce-cc-10",
+			"name": "Bloodglass Katar",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"katar",
+				"bone"
+			],
+			"rules_text": "Honed 4, Paired While you have 3+ bleeding tokens, you gain +2 evasion and are guardless.",
+			"source": "Crimson Crockery",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 0
+			},
+			"special_rules": [
+				"Paired"
+			],
+			"affinities": {
+				"bottom": "green"
+			}
+		},
+		{
+			"id": "gce-cc-12",
+			"name": "Finger Darts",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"ranged",
+				"thrown",
+				"consumable"
+			],
+			"rules_text": "Range: 4",
+			"source": "Crimson Crockery",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 7,
+				"strength": 2
+			},
+			"special_rules": [
+				"Consume",
+				"Range"
+			],
+			"affinities": {
+				"right": "green",
+				"left": "blue"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"green-puzzle",
+						"blue-puzzle"
+					],
+					"effect": "(a) Consume: Devour the scum from under a fingernail to gain +* insanity."
+				}
+			]
+		},
+		{
+			"id": "gce-cc-13",
+			"name": "Bloodglass Longsword",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"sword",
+				"two-handed",
+				"heavy",
+				"bone"
+			],
+			"rules_text": "Honed 3, Reach 2",
+			"source": "Crimson Crockery",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 0
+			},
+			"special_rules": [
+				"Reach"
+			],
+			"affinities": {
+				"right": "blue",
+				"left": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"blue-puzzle"
+					],
+					"effect": "If you have 3+ bleeding tokens, the Honed edge cannot be ruined."
+				}
+			]
+		},
+		{
+			"id": "gce-cc-14",
+			"name": "Blood Compass Lantern",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"lantern",
+				"other"
+			],
+			"rules_text": "Before making a wound attempt, you may gain 1 bleeding token to discard all hit locations from your attack and draw that many to replace them. Limit once per round.",
+			"source": "Crimson Crockery",
+			"affinities": {
+				"right": "blue",
+				"bottom": "blue"
+			}
+		},
+		{
+			"id": "gce-cc-15",
+			"name": "Bloodglass Saw",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"saw",
+				"two-handed",
+				"bone"
+			],
+			"rules_text": "Honed 3, Savage Saw: Spend O. For the rest of the round, your attacks with this weapon gain +2 luck.",
+			"source": "Crimson Crockery",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 7,
+				"strength": 0
+			},
+			"special_rules": [
+				"Savage"
+			],
+			"affinities": {
+				"top": "blue"
+			}
+		},
+		{
+			"id": "gce-cc-16",
+			"name": "Crocodileyes",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"soluble"
+			],
+			"rules_text": "Gain + ⭐️ strength if you have no Foresight.\nForesight: When there are revealed cards on top of [AI] or [HL] decks.",
+			"source": "Crimson Crockery",
+			"affinities": {
+				"top": "red"
+			}
+		},
+		{
+			"id": "gce-cc-17",
+			"name": "Crimson Pearls",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"jewelry",
+				"other"
+			],
+			"rules_text": "On Arrival, gain 3 bleeding tokens.\nYour Fist & Tooth attacks gain +1 strength for each of your bleeding tokens.",
+			"source": "Crimson Crockery",
+			"affinities": {
+				"top": "red",
+				"bottom": "red"
+			}
+		},
+		{
+			"id": "gce-cc-18",
+			"name": "Crimson Bow",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"ranged",
+				"bow",
+				"two-handed"
+			],
+			"rules_text": "Cumbersome, Range: 5",
+			"source": "Crimson Crockery",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 3
+			},
+			"special_rules": [
+				"Cumbersome",
+				"Range"
+			],
+			"affinities": {
+				"top": "blue",
+				"right": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"blue-square"
+					],
+					"effect": "This gains +2 strength and Deadly while attacking from the monster's facing."
+				}
+			]
+		},
+		{
+			"id": "gce-cc-19",
+			"name": "Giggling Scythe",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"grand",
+				"scythe",
+				"two-handed",
+				"bone"
+			],
+			"rules_text": "Sharp, Reach 2, Unique\nWhen you critically wound, automatically critically wound all remaining hit locations in your attack.",
+			"source": "Crimson Crockery",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 5,
+				"strength": 8
+			},
+			"special_rules": [
+				"Reach",
+				"Sharp",
+				"Unique"
+			],
+			"affinities": {
+				"top": "blue"
+			}
+		},
+		{
+			"id": "gce-ch-20",
+			"name": "Singing Cap",
+			"expansion": "gce",
+			"keywords": [
+				"armor",
+				"set",
+				"flesh"
+			],
+			"source": "Chorusseum",
+			"armor_value": 3,
+			"hit_location": [
+				"head"
+			],
+			"affinities": {
+				"top": "green",
+				"bottom": "blue"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"green-puzzle",
+						"blue-puzzle"
+					],
+					"effect": "When you are attacked and suffer more than 1 hit, ignore 1 hit."
+				}
+			]
+		},
+		{
+			"id": "gce-ch-21",
+			"name": "Singing Gloves",
+			"expansion": "gce",
+			"keywords": [
+				"armor",
+				"set",
+				"flesh"
+			],
+			"rules_text": "Reduce the cost of performing your Ballads by 1.",
+			"source": "Chorusseum",
+			"armor_value": 3,
+			"hit_location": [
+				"arms"
+			],
+			"affinities": {
+				"right": "blue",
+				"left": "green"
+			}
+		},
+		{
+			"id": "gce-ch-22",
+			"name": "Singing Breastplate",
+			"expansion": "gce",
+			"keywords": [
+				"armor",
+				"set",
+				"flesh"
+			],
+			"rules_text": "Hit Song: Spend (m) (a) to full move forward and attack. If you moved at least 4 spaces, the first time you wound during this attack, encourage all survivors.",
+			"source": "Chorusseum",
+			"armor_value": 3,
+			"hit_location": [
+				"chest"
+			],
+			"affinities": {
+				"top": "blue",
+				"right": "red"
+			}
+		},
+		{
+			"id": "gce-ch-23",
+			"name": "Singing Pantaloons",
+			"expansion": "gce",
+			"keywords": [
+				"armor",
+				"set",
+				"flesh"
+			],
+			"source": "Chorusseum",
+			"armor_value": 3,
+			"hit_location": [
+				"waist"
+			],
+			"affinities": {
+				"bottom": "green"
+			}
+		},
+		{
+			"id": "gce-ch-24",
+			"name": "Singing Boots",
+			"expansion": "gce",
+			"keywords": [
+				"armor",
+				"set",
+				"flesh"
+			],
+			"source": "Chorusseum",
+			"armor_value": 3,
+			"hit_location": [
+				"legs"
+			],
+			"affinities": {
+				"top": "green",
+				"left": "blue"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"green-puzzle",
+						"blue-square"
+					],
+					"effect": "At the end of your act, you may move up to 3 spaces away from the monster."
+				}
+			]
+		},
+		{
+			"id": "gce-ch-25",
+			"name": "Hamfluter",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"club",
+				"instrument",
+				"noisy"
+			],
+			"rules_text": "Ballad of Perfection [7]: Spend (a) and archive 7 cards from the wound stack to perform. All survivors increase their Perfect hit range by 1.",
+			"source": "Chorusseum",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 3
+			},
+			"special_rules": [
+				"Perfect Hit",
+				"Range"
+			],
+			"affinities": {
+				"top": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-square",
+						"blue-square"
+					],
+					"effect": "This whistles while you swing. Gain +1 survival and +1 insanity when you attack."
+				}
+			]
+		},
+		{
+			"id": "gce-ch-26",
+			"name": "Energy Drum",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"instrument",
+				"noisy"
+			],
+			"rules_text": "(a): Spend 1 survival to play this. An adjacent survivor gains (a), which they must spend immediately. Limit once per round.",
+			"source": "Chorusseum",
+			"affinities": {
+				"left": "blue"
+			}
+		},
+		{
+			"id": "gce-ch-27",
+			"name": "Peace Dagger",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"dagger",
+				"instrument",
+				"noisy"
+			],
+			"rules_text": "Ballad of Peace [3]: Spend (a) and archive 3 cards from the wound stack to perform. In the Aftermath, if you did not attack this showdown, gain +1 (e).",
+			"source": "Chorusseum",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 6,
+				"strength": 2
+			},
+			"affinities": {
+				"top": "blue",
+				"right": "red",
+				"left": "green"
+			}
+		},
+		{
+			"id": "gce-ch-28",
+			"name": "Harpy Harp",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"instrument",
+				"noisy"
+			],
+			"rules_text": "You ignore Overwhelming Darkness.",
+			"source": "Chorusseum",
+			"affinities": {
+				"bottom": "red",
+				"left": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"green-puzzle"
+					],
+					"effect": "Your noisy weapons gain +1 strength for each instrument in your gear grid."
+				}
+			]
+		},
+		{
+			"id": "gce-ch-29",
+			"name": "Pipa",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"club",
+				"instrument",
+				"noisy"
+			],
+			"rules_text": "Ballad of Savagery [6]: Spend (a) and archive 6 cards from the wound stack to perform. All survivors' weapons gain savage.",
+			"source": "Chorusseum",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 0
+			},
+			"special_rules": [
+				"Savage"
+			],
+			"affinities": {
+				"top": "red",
+				"right": "red",
+				"bottom": "red",
+				"left": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"red-puzzle"
+					],
+					"effect": "+4 strength"
+				}
+			]
+		},
+		{
+			"id": "gce-ch-30",
+			"name": "Singing Heart",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"lantern",
+				"instrument",
+				"noisy"
+			],
+			"rules_text": "The weapon to the left gains noisy and +1 accuracy.",
+			"source": "Chorusseum",
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"green-square",
+						"red-square",
+						"blue-square"
+					],
+					"effect": "You may archive this to smash it, creating a vexing wave of white noise. Discard all\nmoods in play. The monster is dazed."
+				}
+			]
+		},
+		{
+			"id": "gce-ch-31",
+			"name": "Razor Cymbals",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"katar",
+				"metal",
+				"instrument",
+				"noisy"
+			],
+			"rules_text": "Paired\nMake attack rolls one at a time. For each hit, the monster suffers -1 evasion until the end of this attack.",
+			"source": "Chorusseum",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 4
+			},
+			"special_rules": [
+				"Paired"
+			],
+			"affinities": {
+				"top": "red",
+				"bottom": "blue"
+			}
+		},
+		{
+			"id": "gce-ch-32",
+			"name": "Spinning Sword",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"sword"
+			],
+			"rules_text": "Paired\nGain +2 evasion against ranged attacks for each of your Spinning Swords.",
+			"source": "Chorusseum",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 7,
+				"strength": 3
+			},
+			"special_rules": [
+				"Paired"
+			],
+			"affinities": {
+				"right": "green",
+				"left": "green"
+			}
+		},
+		{
+			"id": "gce-ch-33",
+			"name": "Spear of Life",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"spear",
+				"two-handed"
+			],
+			"rules_text": "Reach 2",
+			"source": "Chorusseum",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 4
+			},
+			"special_rules": [
+				"Reach"
+			],
+			"affinities": {
+				"left": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"green-puzzle"
+					],
+					"effect": "When another survivor dies from bleeding tokens, roll 1d10. On a 7+, your dart saves them! They suffer -1 permanent evasion and remove up to 3 bleeding tokens."
+				}
+			]
+		},
+		{
+			"id": "gce-k-34",
+			"name": "Deathking Helm",
+			"expansion": "gce",
+			"keywords": [
+				"armor",
+				"set",
+				"deathmetal",
+				"heavy"
+			],
+			"rules_text": "You are the slayer of kings. While insane, you cannot be knocked down.",
+			"source": "Kingsmith",
+			"armor_value": 10,
+			"hit_location": [
+				"head"
+			]
+		},
+		{
+			"id": "gce-k-35",
+			"name": "Deathking Gauntlets",
+			"expansion": "gce",
+			"keywords": [
+				"armor",
+				"set",
+				"deathmetal",
+				"heavy"
+			],
+			"rules_text": "Deflect 1\nBefore drawing hit locations, you may make 1 additional attack roll.",
+			"source": "Kingsmith",
+			"armor_value": 10,
+			"hit_location": [
+				"arms"
+			]
+		},
+		{
+			"id": "gce-k-36",
+			"name": "Deathking Greaves",
+			"expansion": "gce",
+			"keywords": [
+				"armor",
+				"set",
+				"deathmetal",
+				"heavy"
+			],
+			"rules_text": "(a): Show off your King's Coin bedazzlement. If you are in the monster's field of view, it is knocked down. Limit once per showdown.",
+			"source": "Kingsmith",
+			"armor_value": 10,
+			"hit_location": [
+				"waist"
+			]
+		},
+		{
+			"id": "gce-k-37",
+			"name": "Deathking Platemail",
+			"expansion": "gce",
+			"keywords": [
+				"armor",
+				"set",
+				"deathmetal",
+				"heavy"
+			],
+			"rules_text": "You are hushed.",
+			"source": "Kingsmith",
+			"armor_value": 10,
+			"hit_location": [
+				"chest"
+			]
+		},
+		{
+			"id": "gce-k-38",
+			"name": "Deathking Boots",
+			"expansion": "gce",
+			"keywords": [
+				"armor",
+				"set",
+				"deathmetal",
+				"heavy"
+			],
+			"rules_text": "Death Geometry: Spend (m) (m) to place yourself in an unoccupied space adjacent to a monster or survivor. If it is a survivor, you both suffer ⭐️ brain damage.",
+			"source": "Kingsmith",
+			"armor_value": 10,
+			"hit_location": [
+				"legs"
+			]
+		},
+		{
+			"id": "gce-k-39",
+			"name": "Kingslayer",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"grand",
+				"sword",
+				"deathmetal",
+				"heavy"
+			],
+			"rules_text": "Sharp, Refined\nIf you attack from the monster's facing, cancel ® on the first selected",
+			"source": "Kingsmith",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 8
+			},
+			"special_rules": [
+				"Refined",
+				"Sharp"
+			],
+			"affinities": {
+				"right": "red",
+				"left": "blue"
+			}
+		},
+		{
+			"id": "gce-k-40",
+			"name": "Grand Kingslayer",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"grand",
+				"sword",
+				"two-handed",
+				"deathmetal",
+				"heavy"
+			],
+			"rules_text": "Slow, Sharp, Devastating 1\nWhen you critically wound the monster, if you have no armor points and all your injury level boxes are filled in, the monster is slain.",
+			"source": "Kingsmith",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 6,
+				"strength": 13
+			},
+			"special_rules": [
+				"Devastating 1",
+				"Sharp",
+				"Slow"
+			],
+			"affinities": {
+				"right": "blue",
+				"bottom": "red",
+				"left": "blue"
+			}
+		},
+		{
+			"id": "gce-k-41",
+			"name": "Adjudicator",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"grand",
+				"spear",
+				"two-handed",
+				"deathmetal",
+				"heavy"
+			],
+			"rules_text": "Reach 2\nIf you draw the Trap with this weapon, you make a preemptive strike! The monster suffers a wound before resolving the Trap.",
+			"source": "Kingsmith",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 14
+			},
+			"special_rules": [
+				"Reach"
+			]
+		},
+		{
+			"id": "gce-k-42",
+			"name": "Usurper",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"grand",
+				"axe",
+				"two-handed",
+				"deathmetal",
+				"heavy"
+			],
+			"rules_text": "If you would be knocked down by an adjacent monster, you leverage yourself with the axe. Instead the monster is knocked down and suffers a wound. Limit once per showdown.",
+			"source": "Kingsmith",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 14
+			},
+			"affinities": {
+				"left": "green"
+			}
+		},
+		{
+			"id": "gce-k-43",
+			"name": "Assassinator",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"grand",
+				"katar",
+				"deathmetal",
+				"heavy"
+			],
+			"rules_text": "Paired, Barbed 4\nOn a Perfect hit, make additional attack rolls until you miss and gain Deadly 1 until the end of the attack (Deadly 2 if paired). Limit once per attack.",
+			"source": "Kingsmith",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 5,
+				"strength": 12
+			},
+			"special_rules": [
+				"Barbed 4",
+				"Deadly",
+				"Paired",
+				"Perfect Hit"
+			],
+			"affinities": {
+				"right": "blue",
+				"left": "red"
+			}
+		},
+		{
+			"id": "gce-k-44",
+			"name": "Royal Shield",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"grand",
+				"shield",
+				"deathmetal",
+				"heavy"
+			],
+			"rules_text": "Add 3 to all hit locations.",
+			"source": "Kingsmith",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 7,
+				"strength": 8
+			},
+			"affinities": {
+				"right": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-square",
+						"green-square"
+					],
+					"effect": "After you attack with the weapon to the left of this, Deflect 2 for free."
+				}
+			]
+		},
+		{
+			"id": "gce-k-45",
+			"name": "Royal Medallion",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"deathmetal",
+				"other"
+			],
+			"rules_text": "At the start of each round, lose 3 survival and gain the priority target token.",
+			"source": "Kingsmith"
+		},
+		{
+			"id": "gce-k-46",
+			"name": "Royal Lantern",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"lantern",
+				"deathmetal",
+				"other"
+			],
+			"rules_text": "The monster starts 2 spaces closer to the Start space on the hunt board.",
+			"source": "Kingsmith",
+			"affinities": {
+				"top": "blue",
+				"bottom": "red"
+			}
+		},
+		{
+			"id": "gce-o-47",
+			"name": "Stone Face Cloak",
+			"expansion": "gce",
+			"keywords": [
+				"armor",
+				"scout",
+				"heavy",
+				"stone"
+			],
+			"rules_text": "At the start of your act, if you are not on terrain, you may hide. Replace yourself with the Hidden Face terrain tile. Place the Scout miniature on the terrain card.",
+			"source": "Outskirts",
+			"armor_value": 2,
+			"hit_location": [
+				"head",
+				"chest"
+			]
+		},
+		{
+			"id": "gce-o-48",
+			"name": "Scout Whistle",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"scout",
+				"instrument",
+				"noisy"
+			],
+			"rules_text": "At the start of the round, you may roll 1d10. On a 3+, gain the priority target token. Limit once per showdown.",
+			"source": "Outskirts"
+		},
+		{
+			"id": "gce-o-49",
+			"name": "Hunting Salve",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"scout",
+				"soluble"
+			],
+			"rules_text": "After revealing a hunt event card, you may archive this to skip it.",
+			"source": "Outskirts"
+		},
+		{
+			"id": "gce-o-50",
+			"name": "Grimjaw",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"scout",
+				"melee",
+				"dagger",
+				"finesse",
+				"metal"
+			],
+			"rules_text": "During the Aftermath, if you wounded the monster at least once, gain +1 [MR]",
+			"source": "Outskirts",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 5,
+				"strength": 4
+			},
+			"special_rules": [
+				"Barbed 6"
+			],
+			"affinities": {
+				"right": "red",
+				"bottom": "blue"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"blue-puzzle"
+					],
+					"effect": "Barbed 6"
+				}
+			]
+		},
+		{
+			"id": "gce-o-51",
+			"name": "Blood Pack",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"scout",
+				"fragile"
+			],
+			"rules_text": "During the Aftermath, if another survivor died from bleeding tokens, archive this and roll 1d10. On a 7+, they live!",
+			"source": "Outskirts"
+		},
+		{
+			"id": "gce-o-52",
+			"name": "Disguise Kit",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"scout",
+				"balm",
+				"soluble"
+			],
+			"rules_text": "After resolving a hunt event or encounter in which a survivor died, you dramatically reveal yourself! The scout dies instead of that survivor.",
+			"source": "Outskirts"
+		},
+		{
+			"id": "gce-o-53",
+			"name": "Scout's Lantern",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"scout",
+				"lantern",
+				"fragile"
+			],
+			"rules_text": "When you return to the settlement, draw 2 cards and pick 1 to keep when drawing random settlement events this lantern year.",
+			"source": "Outskirts"
+		},
+		{
+			"id": "gce-o-54",
+			"name": "Vermin Bellyboots",
+			"expansion": "gce",
+			"keywords": [
+				"armor",
+				"scout"
+			],
+			"rules_text": "+1 movement\nWhen the monster has another eligible target, it will always pick them first.",
+			"source": "Outskirts",
+			"armor_value": 2,
+			"hit_location": [
+				"legs"
+			]
+		},
+		{
+			"id": "gce-o-55",
+			"name": "Crimson Crocodile Tablet",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"scout",
+				"heavy",
+				"stone",
+				"tablet"
+			],
+			"rules_text": "The monster's scales are vulnerable as it twists its neck. All survivors can use the Enchanted Reflection survival action.\n\nEnchanted Reflection: If adjacent to the Crimson Crocodile, spend 1 survival before you attack to illuminate its scales. During that attack, you can always reach the right spot on Coagulated [HL].",
+			"source": "Outskirts"
+		},
+		{
+			"id": "gce-o-56",
+			"name": "White Lion Tablet",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"scout",
+				"heavy",
+				"stone",
+				"tablet"
+			],
+			"rules_text": "The White Lion has incredible hearing that can be used to your advantage. All survivors can use the Distracted Cat survival action.\n\nDistracted Cat: When the White Lion would Grab another survivor, spend 1 survival to distract it and roll 1d10. On a 6+, place the survivor in the monster's blind spot instead.",
+			"source": "Outskirts"
+		},
+		{
+			"id": "gce-o-57",
+			"name": "Singers Tablet",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"scout",
+				"heavy",
+				"stone",
+				"tablet"
+			],
+			"rules_text": "Creating this tablet has filled you with pure malice towards the Smog Singers. All survivors can use the Hated Ones survival action.\n\nHated Ones: After resolving the last hit location of an attack, spend 1 survival to strike the Smog Singers. The attacked monster suffers knockback 1. Then you may pursue!",
+			"source": "Outskirts"
+		},
+		{
+			"id": "gce-o-58",
+			"name": "Phoenix Tablet",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"scout",
+				"heavy",
+				"stone",
+				"tablet"
+			],
+			"rules_text": "The Phoenix cannot predict the future from timelines that do not yet exist. All survivors can use the Unforeseen Strike survival action.\n\nUnforeseen Strike: Before you attack the Phoenix, spend 1 survival. For this attack, draw all face [HL] down, revealing them only as you resolve each one. Ignore Rewind for this attack.",
+			"source": "Outskirts"
+		},
+		{
+			"id": "gce-o-59",
+			"name": "Screaming Antelope Tablet",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"scout",
+				"heavy",
+				"stone",
+				"tablet"
+			],
+			"rules_text": "The Screaming Antelope has many broken and chipped teeth. All survivors can use the Toothpicker survival action. \nToothpicker: Before you attack the Screaming Antelope, spend 1 survival to aim for the monster's broken teeth. If a <R> during that attack would archive a survivor's weapon, ignore it.",
+			"source": "Outskirts"
+		},
+		{
+			"id": "gce-o-60",
+			"name": "King Tablet",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"scout",
+				"heavy",
+				"stone",
+				"tablet"
+			],
+			"rules_text": "The King creates energy from sound. Perhaps silence is a shield. All survivors can use the Silent Rebellion survival action.\n\nSilent Rebellion: Before perfoming an action against the King, spend 1 survival to hold your breath and focus on the void. You are hushed during that action.",
+			"source": "Outskirts"
+		},
+		{
+			"id": "gce-gg-61",
+			"name": "Fortune Lantern Sword",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"sword",
+				"finesse",
+				"metal"
+			],
+			"rules_text": "Sharp\nDeflect X, where X is equal to the number of reroll tokens you have.",
+			"source": "Gaming Gazebo",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 7,
+				"strength": 7
+			},
+			"special_rules": [
+				"Sharp"
+			],
+			"affinities": {
+				"left": "blue"
+			}
+		},
+		{
+			"id": "gce-gg-62",
+			"name": "Fortune Lantern Dagger",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"dagger",
+				"finesse",
+				"metal"
+			],
+			"rules_text": "Sharp, Paired\nDuring a paired attack, if you land 2+ Perfect hits, gain a reroll token.",
+			"source": "Gaming Gazebo",
+			"weapon_stats": {
+				"speed": 4,
+				"accuracy": 9,
+				"strength": 4
+			},
+			"special_rules": [
+				"Paired",
+				"Sharp"
+			],
+			"affinities": {
+				"left": "blue"
+			}
+		},
+		{
+			"id": "gce-gg-63",
+			"name": "Fortune Lantern Helm",
+			"expansion": "gce",
+			"keywords": [
+				"armor",
+				"set",
+				"metal",
+				"other"
+			],
+			"rules_text": "Outfit",
+			"source": "Gaming Gazebo",
+			"armor_value": 7,
+			"hit_location": [
+				"chest"
+			],
+			"special_rules": [
+				"Outfit"
+			],
+			"affinities": {
+				"bottom": "blue",
+				"left": "blue"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-puzzle",
+						"blue-puzzle"
+					],
+					"effect": "On Arrival, gain a reroll token."
+				}
+			]
+		},
+		{
+			"id": "gce-gg-64",
+			"name": "Fortune Lantern Cuirass",
+			"expansion": "gce",
+			"keywords": [
+				"armor",
+				"set",
+				"metal",
+				"other"
+			],
+			"rules_text": "Outfit\nOn Arrival, gain a reroll token. At the start of your first act, add 1 to all hit locations for each reroll token you have.",
+			"source": "Gaming Gazebo",
+			"armor_value": 7,
+			"hit_location": [
+				"waist"
+			],
+			"special_rules": [
+				"Outfit"
+			],
+			"affinities": {
+				"top": "blue",
+				"right": "blue",
+				"bottom": "blue",
+				"left": "blue"
+			}
+		},
+		{
+			"id": "gce-gg-65",
+			"name": "Gambler's Lantern",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"lantern"
+			],
+			"rules_text": "+1 luck",
+			"source": "Gaming Gazebo",
+			"affinities": {
+				"top": "blue",
+				"right": "red"
+			}
+		},
+		{
+			"id": "gce-rg-66",
+			"name": "Bone Charm",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"bone",
+				"jewelry",
+				"other"
+			],
+			"rules_text": "Unique\nWhile all gear in your gear grid has the bone keyword, reduce damage suffered by ⭐️ , to a minimum of 1.",
+			"source": "Rare Gear",
+			"special_rules": [
+				"Unique"
+			],
+			"affinities": {
+				"left": "green"
+			}
+		},
+		{
+			"id": "gce-rg-67",
+			"name": "Belching Bagpipe",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"instrument",
+				"noisy",
+				"other"
+			],
+			"rules_text": "Range: 5\nBallad of Pride [9]: The survivors laugh, feeling omnipotent. They all gain Undeathable.",
+			"source": "Rare Gear",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 7,
+				"strength": 9
+			},
+			"special_rules": [
+				"Range",
+				"Undeathable"
+			]
+		},
+		{
+			"id": "gce-rg-68",
+			"name": "Chaos Elf Hat",
+			"expansion": "gce",
+			"keywords": [
+				"armor",
+				"cloth",
+				"other"
+			],
+			"rules_text": "On arrival, gain a random disorder.\nWhile fighting Atnas, you always have the priority target token and cannot lose it.",
+			"source": "Rare Gear",
+			"armor_value": 4,
+			"hit_location": [
+				"head"
+			],
+			"affinities": {
+				"right": "red",
+				"left": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"red-puzzle",
+						"red-square",
+						"red-square"
+					],
+					"effect": "+4 strength"
+				}
+			]
+		},
+		{
+			"id": "gce-rg-69",
+			"name": "Child of Lightning",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"fragile"
+			],
+			"rules_text": "Irreplaceable\nWhen you return to the settlement, archive this and gain +1 population with the Levinblood ability.",
+			"source": "Rare Gear",
+			"special_rules": [
+				"Irreplaceable"
+			]
+		},
+		{
+			"id": "gce-rg-70",
+			"name": "Death Crown",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"deathmetal",
+				"other"
+			],
+			"rules_text": "Cursed, Selfish\n+3 accuracy, +3 strength, +3 evasion",
+			"source": "Rare Gear",
+			"special_rules": [
+				"Cursed",
+				"Selfish"
+			]
+		},
+		{
+			"id": "gce-rg-71",
+			"name": "Hostox the Gloaming",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"axe",
+				"two-handed",
+				"other"
+			],
+			"rules_text": "Deadly, Savage, Sentient, Sharp, Deflect 2 At the end of the round, if you have not wounded the monster with this, it drains your blood. Gain 5 bleeding tokens and suffer bash.",
+			"source": "Rare Gear",
+			"weapon_stats": {
+				"speed": 9,
+				"accuracy": 9,
+				"strength": 9
+			},
+			"special_rules": [
+				"Deadly",
+				"Savage",
+				"Sentient",
+				"Sharp"
+			]
+		},
+		{
+			"id": "gce-rg-72",
+			"name": "Lantern Festival Horn",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"festival",
+				"bone",
+				"consumable"
+			],
+			"rules_text": "(a) Consume: Ignore the effects of your permanent injuries until the end of the showdown. Limit once per showdown.",
+			"source": "Rare Gear",
+			"special_rules": [
+				"Consume"
+			],
+			"affinities": {
+				"right": "blue",
+				"left": "red"
+			}
+		},
+		{
+			"id": "gce-rg-73",
+			"name": "Lantern Festival Mask",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"festival",
+				"bone",
+				"mask"
+			],
+			"rules_text": "Accessory\n+1 strength, +1 evasion",
+			"source": "Rare Gear",
+			"armor_value": 1,
+			"hit_location": [
+				"head"
+			],
+			"special_rules": [
+				"Accessory"
+			],
+			"affinities": {
+				"right": "red",
+				"bottom": "blue",
+				"left": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-square",
+						"green-square",
+						"red-square"
+					],
+					"effect": "+1 movement"
+				}
+			]
+		},
+		{
+			"id": "gce-rg-74",
+			"name": "Lantern Festival Midi",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"festival"
+			],
+			"rules_text": "Accessory\nWhile wearing the Lantern Festival Top, double the attribute bonuses from your gear cards.",
+			"source": "Rare Gear",
+			"armor_value": 1,
+			"hit_location": [
+				"waist"
+			],
+			"special_rules": [
+				"Accessory"
+			],
+			"affinities": {
+				"top": "green"
+			}
+		},
+		{
+			"id": "gce-rg-75",
+			"name": "Lantern Festival Top",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"festival",
+				"metal",
+				"fur"
+			],
+			"rules_text": "Accessory\nThe festival fills all with pride. At the start of your act, all survivors gain +1 survival.",
+			"source": "Rare Gear",
+			"hit_location": [
+				"chest"
+			],
+			"special_rules": [
+				"Accessory"
+			],
+			"affinities": {
+				"bottom": "green"
+			}
+		},
+		{
+			"id": "gce-unknown-76",
+			"name": "Luck's Cloak",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"cloth",
+				"other"
+			],
+			"armor_value": 0,
+			"hit_location": [
+				"chest"
+			],
+			"affinities": {
+				"top": "green",
+				"bottom": "blue",
+				"left": "blue"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"green-puzzle",
+						"blue-puzzle"
+					],
+					"effect": "You may Concentrate. If you do, at the\nstart of your next act, swap your reroll\ntokens for +1 luck tokens and vice versa."
+				}
+			]
+		},
+		{
+			"id": "gce-rg-77",
+			"name": "Regal Greaves",
+			"expansion": "gce",
+			"keywords": [
+				"armor",
+				"bone",
+				"metal"
+			],
+			"rules_text": "Cursed\nDuring the Aftermath, 📖 King's Curse. When you gain this, cure all permanent leg injuries.",
+			"source": "Rare Gear",
+			"armor_value": 5,
+			"hit_location": [
+				"legs"
+			],
+			"special_rules": [
+				"Cursed"
+			]
+		},
+		{
+			"id": "gce-rg-78",
+			"name": "Regal Helm",
+			"expansion": "gce",
+			"keywords": [
+				"armor",
+				"bone",
+				"metal"
+			],
+			"rules_text": "Cursed\nDuring the Aftermath, 📖 King's Curse. You are hushed.",
+			"source": "Rare Gear",
+			"armor_value": 5,
+			"hit_location": [
+				"head"
+			],
+			"special_rules": [
+				"Cursed"
+			]
+		},
+		{
+			"id": "gce-rg-79",
+			"name": "Regal Plackart",
+			"expansion": "gce",
+			"keywords": [
+				"armor",
+				"bone",
+				"metal"
+			],
+			"rules_text": "Cursed\nDuring the Aftermath, 📖 King's Curse. When you depart, add 1 to each hit location with metal armor.",
+			"source": "Rare Gear",
+			"armor_value": 5,
+			"hit_location": [
+				"chest"
+			],
+			"special_rules": [
+				"Cursed"
+			]
+		},
+		{
+			"id": "gce-rg-80",
+			"name": "Regal Signet Ring",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"jewelry",
+				"deathmetal",
+				"other"
+			],
+			"rules_text": "Cursed, Unique\nYou emanate a majestic aura. Monsters suffer -1 speed while targeting you.",
+			"source": "Rare Gear",
+			"special_rules": [
+				"Cursed",
+				"Unique"
+			],
+			"affinities": {
+				"top": "blue",
+				"right": "blue",
+				"left": "green"
+			}
+		},
+		{
+			"id": "gce-rg-81",
+			"name": "Regal Gauntlet",
+			"expansion": "gce",
+			"keywords": [
+				"armor",
+				"bone",
+				"metal"
+			],
+			"rules_text": "Cursed\nDuring the Aftermath, 📖 King's Curse. When you gain this, cure all permanent arm injuries.",
+			"source": "Rare Gear",
+			"armor_value": 5,
+			"hit_location": [
+				"arms"
+			],
+			"special_rules": [
+				"Cursed"
+			]
+		},
+		{
+			"id": "gce-rg-82",
+			"name": "Regal Faulds",
+			"expansion": "gce",
+			"keywords": [
+				"armor",
+				"bone",
+				"metal"
+			],
+			"rules_text": "Cursed\nDuring the Aftermath, 📖 King's Curse. You are not knocked down from suffering heavy or severe injuries.",
+			"source": "Rare Gear",
+			"armor_value": 5,
+			"hit_location": [
+				"waist"
+			],
+			"special_rules": [
+				"Cursed"
+			]
+		},
+		{
+			"id": "gce-unknown-83",
+			"name": "Natural Cardinal Staff",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"club",
+				"other"
+			],
+			"rules_text": "Reach 2, Surpass 5\nDuring the showdown, this gains +1 strength anytime a survivor rolls a (l). but suffers -1 strength anytime a survivor rolls a natural 1. (Track this with strength tokens.)",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 10
+			},
+			"special_rules": [
+				"Reach"
+			],
+			"affinities": {
+				"top": "blue",
+				"right": "blue",
+				"left": "red"
+			}
+		},
+		{
+			"id": "gce-rg-84",
+			"name": "Ornate Bone Blade",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"sword",
+				"finesse",
+				"bone"
+			],
+			"rules_text": "Sentient\nGains +1 strength for each of your sword proficiency levels.",
+			"source": "Rare Gear",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 5,
+				"strength": 5
+			},
+			"special_rules": [
+				"Sentient"
+			],
+			"affinities": {
+				"right": "blue",
+				"left": "red"
+			}
+		},
+		{
+			"id": "gce-rg-85",
+			"name": "Royal Decorations",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"bone",
+				"jewelry"
+			],
+			"source": "Rare Gear",
+			"special_rules": [
+				"Frail"
+			],
+			"affinities": {
+				"top": "blue",
+				"left": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-square",
+						"blue-square"
+					],
+					"effect": "The weapon below this gains the bone keyword, Precision 1, and loses Frail."
+				}
+			]
+		},
+		{
+			"id": "gce-rg-86",
+			"name": "Scalpel",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"dagger",
+				"bone",
+				"finesse"
+			],
+			"rules_text": "Sharp, Frail, Unwieldy",
+			"source": "Rare Gear",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 6,
+				"strength": 0
+			},
+			"special_rules": [
+				"Frail",
+				"Sharp",
+				"Unwieldy"
+			],
+			"affinities": {
+				"right": "red",
+				"left": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"red-square",
+						"green-square",
+						"blue-square"
+					],
+					"effect": "When you defeat a monster, gain 1 bone resource of your choice from that monster's resource deck."
+				}
+			]
+		},
+		{
+			"id": "gce-rg-87",
+			"name": "Shawl of Determination",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"bone"
+			],
+			"rules_text": "While all gear in your gear grid has the bone keyword, gain + ⭐️ insanity at the start of your act.",
+			"source": "Rare Gear",
+			"affinities": {
+				"right": "red",
+				"left": "blue"
+			}
+		},
+		{
+			"id": "gce-rg-88",
+			"name": "Smog Lantern",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"lantern"
+			],
+			"rules_text": "Vital\nA cherished keepsake from your friends in the sky. You will never forget them.",
+			"source": "Rare Gear",
+			"special_rules": [
+				"Vital"
+			],
+			"affinities": {
+				"top": "green",
+				"right": "green",
+				"bottom": "green",
+				"left": "green"
+			}
+		},
+		{
+			"id": "gce-rg-89",
+			"name": "Stone Column",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"club",
+				"two-handed",
+				"heavy",
+				"stone"
+			],
+			"rules_text": "Frail, Reach 2\nIf you archive this due to a Super-Dense [HL], the stone shards dig into the monster! It suffers a wound.",
+			"source": "Rare Gear",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 8
+			},
+			"special_rules": [
+				"Frail",
+				"Reach"
+			]
+		},
+		{
+			"id": "gce-rg-90",
+			"name": "Visionary's Circlet",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"metal",
+				"relic",
+				"other"
+			],
+			"rules_text": "Cursed, Selfish\nYou may dodge by gaining +1 survival instead of spending 1. Start the hunt phase 3 spaces closer to the monster.",
+			"source": "Rare Gear",
+			"special_rules": [
+				"Cursed",
+				"Selfish"
+			]
+		},
+		{
+			"id": "gce-rg-91",
+			"name": "Visionary's Shield",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"shield",
+				"metal",
+				"relic",
+				"other"
+			],
+			"rules_text": "Cursed, Selfish, Deflect 3, Clobber 15\n When a survivor within 4 spaces of you is hit, spend a deflect token and ignore it.",
+			"source": "Rare Gear",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 5,
+				"strength": 15
+			},
+			"special_rules": [
+				"Cursed",
+				"Selfish"
+			]
+		},
+		{
+			"id": "gce-rg-92",
+			"name": "Visionary's Sword",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"sword",
+				"metal",
+				"finesse",
+				"relic",
+				"other"
+			],
+			"rules_text": "Cursed, Selfish, Sharp, Locked\nOnce per round, if another survivor misses all of their attack rolls, they gain (a) (m).",
+			"source": "Rare Gear",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 14
+			},
+			"special_rules": [
+				"Cursed",
+				"Selfish",
+				"Sharp"
+			]
+		},
+		{
+			"id": "gce-pt-93",
+			"name": "Bone Chibouk",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"bone",
+				"fragile",
+				"stinky"
+			],
+			"rules_text": "(a): Gain + ⭐️ lumi and suffer the collapsed lung severe body injury unless you have Legendary Lungs. Limit once per showdown.",
+			"source": "Pattern",
+			"affinities": {
+				"bottom": "blue",
+				"left": "green"
+			}
+		},
+		{
+			"id": "gce-pt-94",
+			"name": "Chef's Carver",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"grand",
+				"dagger",
+				"finesse",
+				"metal"
+			],
+			"rules_text": "Slow, Sharp",
+			"source": "Pattern",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 5,
+				"strength": 8
+			},
+			"affinities": {
+				"right": "red",
+				"bottom": "red",
+				"left": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"red-puzzle"
+					],
+					"effect": "When you wound the monster, search through its [MR] deck and gain an organ of your choice. Limit once per showdown."
+				}
+			]
+		},
+		{
+			"id": "gce-pt-95",
+			"name": "Cruel Cleaver",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"sword",
+				"cleaver",
+				"finesse",
+				"bone",
+				"metal"
+			],
+			"rules_text": "Sentient\nAdd your Body Count to this weapon's strength.",
+			"source": "Pattern",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 5,
+				"strength": 5
+			},
+			"special_rules": [
+				"Sentient"
+			],
+			"affinities": {
+				"bottom": "red",
+				"left": "blue"
+			}
+		},
+		{
+			"id": "gce-pt-96",
+			"name": "Regal Plume",
+			"expansion": "gce",
+			"keywords": [
+				"armor",
+				"metal",
+				"leather"
+			],
+			"rules_text": "Outfit\nOnce per round, during your act, you may spend 2 insanity to look at the top card of the [HL] deck. You may place it on the bottom.",
+			"source": "Pattern",
+			"armor_value": 4,
+			"hit_location": [
+				"head"
+			],
+			"special_rules": [
+				"Outfit"
+			]
+		},
+		{
+			"id": "gce-pt-97",
+			"name": "Unbreakable Zanbato",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"grand",
+				"two-handed",
+				"bone",
+				"mineral"
+			],
+			"rules_text": "Slow, Frail, Devastating 1, Unique\nWhen you archive this due to a Super-Dense [HL], gain the Shattered Blade innovation.",
+			"source": "Pattern",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 6,
+				"strength": 6
+			},
+			"special_rules": [
+				"Devastating 1",
+				"Frail",
+				"Slow",
+				"Unique"
+			],
+			"affinities": {
+				"top": "red",
+				"right": "green"
+			}
+		},
+		{
+			"id": "gce-pt-98",
+			"name": "Blood Drinker",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"bone",
+				"axe",
+				"other"
+			],
+			"rules_text": "When you wound the monster, remove one of your bleeding tokens.",
+			"source": "Pattern",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 2
+			},
+			"affinities": {
+				"right": "blue",
+				"bottom": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"blue-square"
+					],
+					"effect": "This weapon gains +3 strength for each of your bleeding tokens."
+				}
+			]
+		},
+		{
+			"id": "gce-pt-99",
+			"name": "Diamond Scab Katar",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"bone",
+				"katar"
+			],
+			"rules_text": "Paired, Sharp, Clobber 4",
+			"source": "Pattern",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 6,
+				"strength": 4
+			},
+			"special_rules": [
+				"Paired",
+				"Sharp"
+			],
+			"affinities": {
+				"right": "red",
+				"bottom": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"green-square"
+					],
+					"effect": "On a Perfect hit, monster gains -1\ntoughness until end of the attack."
+				}
+			]
+		},
+		{
+			"id": "gce-pt-100",
+			"name": "Dome Buster",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"grand",
+				"club",
+				"heavy"
+			],
+			"rules_text": "Surpass 5: When your successful wound attempt total surpasses the monster's toughness by 5 or more, the monster suffers an additional wound.",
+			"source": "Pattern",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 5,
+				"strength": 12
+			},
+			"affinities": {
+				"bottom": "blue"
+			}
+		},
+		{
+			"id": "gce-pt-101",
+			"name": "Fear Spear",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"bone",
+				"spear"
+			],
+			"rules_text": "Reach 2, Sharp",
+			"source": "Pattern",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 5
+			},
+			"special_rules": [
+				"Reach",
+				"Sharp"
+			],
+			"affinities": {
+				"right": "red",
+				"left": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"blue-square"
+					],
+					"effect": "When you gain insanity during the showdown, you may gain 0 or +3 instead."
+				}
+			]
+		},
+		{
+			"id": "gce-pt-102",
+			"name": "Immortal Arm",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"bone",
+				"shield"
+			],
+			"rules_text": "On Arrival, add 2 tto the arms hit location.\nLocked: This cannot be disarmed.",
+			"source": "Pattern",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 7,
+				"strength": 7
+			},
+			"affinities": {
+				"top": "red",
+				"left": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"red-puzzle"
+					],
+					"effect": "This gains the fist & tooth keyword. When you attack with fist & tooth, Deflect 1."
+				}
+			]
+		},
+		{
+			"id": "gce-unknown-103",
+			"name": "Curse Hammer",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"grand",
+				"club",
+				"instrument",
+				"heavy",
+				"noisy"
+			],
+			"rules_text": "When you wound with this, gain -1 strength token.",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 7,
+				"strength": 12
+			},
+			"affinities": {
+				"top": "blue"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-puzzle",
+						"blue-square"
+					],
+					"effect": "Ballad of Inversion [7): Spend (a) and archive 7 cards from the wound stack to perform. Flip all your negative attribute tokens."
+				}
+			]
+		},
+		{
+			"id": "gce-pt-104",
+			"name": "Violet Armor Charm",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"jewelry",
+				"feather",
+				"flammable",
+				"other"
+			],
+			"rules_text": "Add 2 to all hit locations wearing feather armor. At the start of your act, roll 1d10. Add that amount to all feather armor (limit, gear's armor points).",
+			"source": "Pattern",
+			"affinities": {
+				"right": "green",
+				"left": "red"
+			}
+		},
+		{
+			"id": "gce-pt-105",
+			"name": "Saxe",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"axe",
+				"bone",
+				"metal",
+				"instrument",
+				"noisy"
+			],
+			"rules_text": "Ballad of Blues [8]: Spend (a) and archive 8 cards from the wound stack to perform. The monster and all survivors shed a tear. Archive all moods in play.",
+			"source": "Pattern",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 7,
+				"strength": 8
+			},
+			"affinities": {
+				"left": "red"
+			}
+		},
+		{
+			"id": "gce-pt-106",
+			"name": "Discordian",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"sword",
+				"metal",
+				"instrument",
+				"noisy"
+			],
+			"rules_text": "Unwieldy, Sharp\nBallad of Swordpolka [5]: Spend (a) and archive 5 cards from the wound stack to perform. All survivors' swords gain finesse and Deflect 1. If they already have Deflect, increase it by 1.",
+			"source": "Pattern",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 3
+			},
+			"special_rules": [
+				"Sharp",
+				"Unwieldy"
+			],
+			"affinities": {
+				"left": "green"
+			}
+		},
+		{
+			"id": "gce-pt-107",
+			"name": "Drum of Hope",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"club",
+				"axe",
+				"bone",
+				"instrument",
+				"noisy"
+			],
+			"rules_text": "Slow Ballad of Smash [6]: Spend (a) and archive 6 cards from the wound stack to perform. All <R> Wound become <R> Failure. End this ballad at the end of the round if you fail to hit with this weapon.",
+			"source": "Pattern",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 6,
+				"strength": 9
+			},
+			"special_rules": [
+				"Slow"
+			],
+			"affinities": {
+				"top": "red",
+				"right": "red",
+				"bottom": "red"
+			}
+		},
+		{
+			"id": "gce-pt-108",
+			"name": "Violet Phoenix Faulds",
+			"expansion": "gce",
+			"keywords": [
+				"armor",
+				"set",
+				"feather",
+				"metal",
+				"bone",
+				"flammable"
+			],
+			"rules_text": "Outfit\nWhile you are insane, ignore all hits to the waist hit location.",
+			"source": "Pattern",
+			"armor_value": 4,
+			"hit_location": [
+				"waist"
+			],
+			"special_rules": [
+				"Outfit"
+			],
+			"affinities": {
+				"bottom": "blue",
+				"left": "green"
+			}
+		},
+		{
+			"id": "gce-pt-109",
+			"name": "Violet Phoenix Gauntlets",
+			"expansion": "gce",
+			"keywords": [
+				"armor",
+				"set",
+				"feather",
+				"metal",
+				"bone",
+				"flammable"
+			],
+			"rules_text": "Outfit\nWhile you are insane, ignore all hits to the arms hit location.",
+			"source": "Pattern",
+			"armor_value": 4,
+			"hit_location": [
+				"arms"
+			],
+			"special_rules": [
+				"Outfit"
+			],
+			"affinities": {
+				"right": "green",
+				"bottom": "blue"
+			}
+		},
+		{
+			"id": "gce-pt-110",
+			"name": "Regicider",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"grand",
+				"club",
+				"heavy",
+				"deathmetal"
+			],
+			"rules_text": "Slow, Savage, Surpass 5\nWhen this deals more than one wound in a single wound attempt, the blow weakens the monster. It gains -1 toughness token.",
+			"source": "Pattern",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 5,
+				"strength": 16
+			},
+			"special_rules": [
+				"Savage",
+				"Slow"
+			],
+			"affinities": {
+				"right": "green",
+				"left": "red"
+			}
+		},
+		{
+			"id": "gce-pt-111",
+			"name": "Seditioner",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"grand",
+				"axe",
+				"club",
+				"heavy",
+				"deathmetal"
+			],
+			"rules_text": "Slow \nWhen you wound a Super-Dense [HL], archive it and inflict an additional wound. The monster is knocked down.",
+			"source": "Pattern",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 6,
+				"strength": 17
+			},
+			"special_rules": [
+				"Slow"
+			],
+			"affinities": {
+				"top": "red",
+				"right": "green"
+			}
+		},
+		{
+			"id": "gce-st-112",
+			"name": "Rawhide Bandana",
+			"expansion": "gce",
+			"keywords": [
+				"seed",
+				"armor",
+				"set",
+				"rawhide"
+			],
+			"rules_text": "Outfit",
+			"source": "Seed Pattern",
+			"armor_value": 1,
+			"hit_location": [
+				"head"
+			],
+			"affinities": {
+				"bottom": "blue"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-puzzle"
+					],
+					"effect": "While insane, you may spend 1 survival to turn a monster <R> into a <R> FAILURE before you make a wound attempt."
+				}
+			]
+		},
+		{
+			"id": "gce-st-113",
+			"name": "Elder's Aegis",
+			"expansion": "gce",
+			"keywords": [
+				"seed",
+				"weapon",
+				"melee",
+				"shield"
+			],
+			"rules_text": "Deflect 1",
+			"source": "Seed Pattern",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 8,
+				"strength": 2
+			},
+			"affinities": {
+				"top": "green",
+				"right": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"green-puzzle",
+						"green-puzzle"
+					],
+					"effect": "When you depart, if you have the most Hunt XP, add 1 to all locations for every 4 XP you have more than the youngest."
+				}
+			]
+		},
+		{
+			"id": "gce-st-114",
+			"name": "Cat Fang Knife",
+			"expansion": "gce",
+			"keywords": [
+				"seed",
+				"weapon",
+				"melee",
+				"dagger",
+				"bone",
+				"metal"
+			],
+			"source": "Seed Pattern",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 6,
+				"strength": 4
+			},
+			"affinities": {
+				"top": "blue",
+				"right": "blue",
+				"bottom": "blue",
+				"left": "blue"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-puzzle",
+						"blue-puzzle",
+						"blue-puzzle",
+						"blue-puzzle"
+					],
+					"effect": "Deadly 3"
+				}
+			]
+		},
+		{
+			"id": "gce-st-115",
+			"name": "Imitation Butcher Mask",
+			"expansion": "gce",
+			"keywords": [
+				"seed",
+				"armor",
+				"set",
+				"mask",
+				"leather",
+				"metal",
+				"other"
+			],
+			"rules_text": "-2 to all brain trauma rolls.",
+			"source": "Seed Pattern",
+			"armor_value": 4,
+			"hit_location": [
+				"head"
+			],
+			"affinities": {
+				"top": "red",
+				"bottom": "blue"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"red-square",
+						"blue-square",
+						"red-square"
+					],
+					"effect": "At the start of your act, if you are insane, gain"
+				}
+			]
+		},
+		{
+			"id": "gce-st-116",
+			"name": "Monster Trophy",
+			"expansion": "gce",
+			"keywords": [
+				"seed",
+				"item",
+				"fur",
+				"flammable"
+			],
+			"rules_text": "Increase your personal survival limit by ⭐️.",
+			"source": "Seed Pattern",
+			"affinities": {
+				"right": "red",
+				"left": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"green-puzzle"
+					],
+					"effect": "All your weapons gain Persistence 1: On a Perfect hit, gain +1 survival."
+				}
+			]
+		},
+		{
+			"id": "gce-st-117",
+			"name": "Sprinter Helm",
+			"expansion": "gce",
+			"keywords": [
+				"seed",
+				"armor",
+				"set",
+				"bone",
+				"fur"
+			],
+			"rules_text": "+1 movement while insane.",
+			"source": "Seed Pattern",
+			"armor_value": 3,
+			"hit_location": [
+				"head"
+			],
+			"affinities": {
+				"top": "red",
+				"bottom": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"red-puzzle"
+					],
+					"effect": "When you Pounce, move your full movement and ignore the first reaction."
+				}
+			]
+		},
+		{
+			"id": "gce-st-118",
+			"name": "Knife",
+			"expansion": "gce",
+			"keywords": [
+				"seed",
+				"weapon",
+				"melee",
+				"dagger",
+				"bone",
+				"other"
+			],
+			"rules_text": "Savage\nWhen you critically wound the monster, it gains -1 luck token. Limit once per showdown.",
+			"source": "Seed Pattern",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 5,
+				"strength": 3
+			},
+			"special_rules": [
+				"Savage"
+			],
+			"affinities": {
+				"right": "blue",
+				"left": "blue"
+			}
+		},
+		{
+			"id": "gce-st-119",
+			"name": "Dream Keeper",
+			"expansion": "gce",
+			"keywords": [
+				"seed",
+				"item",
+				"cloth",
+				"other"
+			],
+			"rules_text": "Accessory\nWhen you depart, gain +1 luck token. During the Aftermath, suffer -1 permanent luck.",
+			"source": "Seed Pattern",
+			"armor_value": 1,
+			"hit_location": [
+				"head"
+			],
+			"special_rules": [
+				"Accessory"
+			],
+			"affinities": {
+				"top": "blue"
+			}
+		},
+		{
+			"id": "gce-st-120",
+			"name": "Fingernail Whip",
+			"expansion": "gce",
+			"keywords": [
+				"seed",
+				"weapon",
+				"melee",
+				"whip",
+				"bone",
+				"other"
+			],
+			"rules_text": "Heroic",
+			"source": "Seed Pattern",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 5,
+				"strength": 4
+			},
+			"affinities": {
+				"right": "blue",
+				"left": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"blue-square"
+					],
+					"effect": "This weapon gains Razor Sharp against Super-Dense hit locations."
+				}
+			]
+		},
+		{
+			"id": "gce-st-121",
+			"name": "Shadow Skleaver",
+			"expansion": "gce",
+			"keywords": [
+				"seed",
+				"weapon",
+				"melee",
+				"grand",
+				"metal",
+				"other"
+			],
+			"rules_text": "Razor Sharp, Devastating 1\nOn Arrival, put Sun Dial and Light & Shadow Sunstalker trait cards into play. When you are in darkness, spend (m) to place yourself in any other shadow that is not a monster's shadow.",
+			"source": "Seed Pattern",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 5,
+				"strength": 13
+			},
+			"special_rules": [
+				"Devastating 1",
+				"Sharp"
+			]
+		},
+		{
+			"id": "gce-st-122",
+			"name": "Tithe Box",
+			"expansion": "gce",
+			"keywords": [
+				"seed",
+				"item",
+				"stinky",
+				"heavy",
+				"other"
+			],
+			"rules_text": "-1 movement\nWhen a seed weapon deals the killing blow, you collect the monster's ear in this box. While there are 3+ ears inside, gain +2 accuracy, +2 strength, and +2 evasion.",
+			"source": "Seed Pattern"
+		},
+		{
+			"id": "gce-st-123",
+			"name": "Cyclops Ledger",
+			"expansion": "gce",
+			"keywords": [
+				"seed",
+				"item",
+				"other"
+			],
+			"rules_text": "The schematics help you maintain your gear.\nOn Arrival, you may change one instance of Sharp to Razor Sharp or increase Deadly by 1 until the end of the showdown.",
+			"source": "Seed Pattern",
+			"special_rules": [
+				"Deadly",
+				"Sharp"
+			],
+			"affinities": {
+				"left": "green"
+			}
+		},
+		{
+			"id": "gce-st-124",
+			"name": "Beast Hunter Helm",
+			"expansion": "gce",
+			"keywords": [
+				"seed",
+				"armor",
+				"set",
+				"bone",
+				"fur"
+			],
+			"rules_text": "(a): Select an [AI] from the discard pile and place it on top of its Basic Action. The next time the monster performs Basic Action, it perfoms the selected card at -1 speed instead.",
+			"source": "Seed Pattern",
+			"armor_value": 4,
+			"hit_location": [
+				"head"
+			],
+			"affinities": {
+				"right": "green",
+				"bottom": "blue"
+			}
+		},
+		{
+			"id": "gce-st-125",
+			"name": "Hushing Harmonium",
+			"expansion": "gce",
+			"keywords": [
+				"seed",
+				"weapon",
+				"melee",
+				"instrument",
+				"metal",
+				"other"
+			],
+			"rules_text": "Ballad of Silence [12]: Spend (a) and archive 12 cards from the wound stack to perform. All other survivors are hushed and not threats.",
+			"source": "Seed Pattern",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 7,
+				"strength": 0
+			},
+			"affinities": {
+				"right": "green",
+				"bottom": "green"
+			}
+		},
+		{
+			"id": "gce-st-126",
+			"name": "Itemsmith's Lens",
+			"expansion": "gce",
+			"keywords": [
+				"seed",
+				"item",
+				"metal",
+				"other"
+			],
+			"rules_text": "Accessory, -1 accuracy",
+			"source": "Seed Pattern",
+			"armor_value": 1,
+			"hit_location": [
+				"head"
+			],
+			"affinities": {
+				"top": "blue",
+				"right": "blue",
+				"bottom": "blue",
+				"left": "blue"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-puzzle",
+						"blue-puzzle",
+						"blue-puzzle",
+						"blue-puzzle"
+					],
+					"effect": "Grace of Splendor: Spend 04 to gain +1 luck until the end of the round for every I you have."
+				}
+			]
+		},
+		{
+			"id": "gce-st-127",
+			"name": "Armorsmith's Tongs",
+			"expansion": "gce",
+			"keywords": [
+				"seed",
+				"item",
+				"metal other"
+			],
+			"rules_text": "Grace of Valor: When you depart, add 1 to all locations for every [g] [g] you have.",
+			"source": "Seed Pattern",
+			"affinities": {
+				"top": "green",
+				"right": "green",
+				"bottom": "green",
+				"left": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"green-puzzle",
+						"green-puzzle",
+						"green-puzzle",
+						"green-puzzle"
+					],
+					"effect": "(m) (a): Reduce damage from hits by 1 to a minimum of 1 this showdown."
+				}
+			]
+		},
+		{
+			"id": "gce-st-128",
+			"name": "Weaponsmith's Hammer",
+			"expansion": "gce",
+			"keywords": [
+				"seed",
+				"weapon",
+				"melee",
+				"club",
+				"metal",
+				"other"
+			],
+			"rules_text": "Cumbersome, Grace of Power: This gains+1 strength for every [r] you have.",
+			"source": "Seed Pattern",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 5,
+				"strength": 2
+			},
+			"affinities": {
+				"top": "red",
+				"right": "red",
+				"bottom": "red",
+				"left": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"red-puzzle",
+						"red-puzzle",
+						"red-puzzle"
+					],
+					"effect": "(m) (a): A weapon in your gear grid gains Impeccable for this showdown."
+				}
+			]
+		},
+		{
+			"id": "gce-st-129",
+			"name": "Ornate Rapier",
+			"expansion": "gce",
+			"keywords": [
+				"seed",
+				"weapon",
+				"melee",
+				"sword",
+				"finesse",
+				"metal",
+				"other"
+			],
+			"rules_text": "Razor Sharp, Frail\nPrecision 1: On a Perfect hit, inflict an automatic critical wound on the first wound attempt of this attack.",
+			"source": "Seed Pattern",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 3,
+				"strength": 3
+			},
+			"special_rules": [
+				"Frail",
+				"Perfect Hit",
+				"Sharp"
+			]
+		},
+		{
+			"id": "gce-st-130",
+			"name": "True Lantern Halberd",
+			"expansion": "gce",
+			"keywords": [
+				"seed",
+				"weapon",
+				"melee",
+				"spear",
+				"two-handed",
+				"finesse",
+				"lantern",
+				"other"
+			],
+			"rules_text": "Razor Sharp, Reach 2, Irreplaceable\nYou are hushed. After attacking, if standing, you may move up to 2 spaces.",
+			"source": "Seed Pattern",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 4,
+				"strength": 14
+			},
+			"special_rules": [
+				"Irreplaceable",
+				"Reach",
+				"Sharp"
+			],
+			"affinities": {
+				"bottom": "red"
+			}
+		},
+		{
+			"id": "gce-st-131",
+			"name": "Masamune",
+			"expansion": "gce",
+			"keywords": [
+				"seed",
+				"weapon",
+				"melee",
+				"katana",
+				"metal",
+				"other"
+			],
+			"rules_text": "Deadly 2, Deflect 2\nYou must remove 2 of your bleeding tokens to activate this weapon.",
+			"source": "Seed Pattern",
+			"weapon_stats": {
+				"speed": 7,
+				"accuracy": 7,
+				"strength": 7
+			},
+			"special_rules": [
+				"Deadly"
+			]
+		},
+		{
+			"id": "gce-st-132",
+			"name": "Jarngreipr",
+			"expansion": "gce",
+			"keywords": [
+				"seed",
+				"item",
+				"metal",
+				"other"
+			],
+			"rules_text": "Accessory, +5 strengin",
+			"source": "Seed Pattern",
+			"armor_value": 4,
+			"hit_location": [
+				"head"
+			],
+			"special_rules": [
+				"Accessory"
+			],
+			"affinities": {
+				"right": "blue",
+				"bottom": "green",
+				"left": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"green-puzzle",
+						"red-puzzle",
+						"blue-puzzle"
+					],
+					"effect": "You cannot suffer disarm or the dismembered arm severe injury."
+				}
+			]
+		},
+		{
+			"id": "gce-st-133",
+			"name": "Backstabbing Stone",
+			"expansion": "gce",
+			"keywords": [
+				"seed",
+				"weapon",
+				"melee",
+				"stone"
+			],
+			"rules_text": "Spend (a) to stab an adjacent survivor! They gain 3 bleeding tokens, -1 movement token, the priority target token, and are knocked down.",
+			"source": "Seed Pattern",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 1
+			}
+		},
+		{
+			"id": "gce-st-134",
+			"name": "Master Bone Dagger",
+			"expansion": "gce",
+			"keywords": [
+				"seed",
+				"weapon",
+				"melee",
+				"dagger",
+				"finesse",
+				"bone",
+				"other"
+			],
+			"rules_text": "Razor Sharp, Persistence 2\nImpeccable: Reroll natural 1's on wound attempts. You must keep the new roll result.",
+			"source": "Seed Pattern",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 6,
+				"strength": 2
+			},
+			"special_rules": [
+				"Sharp"
+			],
+			"affinities": {
+				"right": "red",
+				"left": "red"
+			}
+		},
+		{
+			"id": "gce-st-135",
+			"name": "Heartseeker",
+			"expansion": "gce",
+			"keywords": [
+				"seed",
+				"weapon",
+				"melee",
+				"grand",
+				"sword",
+				"heavy",
+				"deathmetal"
+			],
+			"rules_text": "Razor Sharp, Impeccable\nIgnore First Strike while attacking with this weapon.",
+			"source": "Seed Pattern",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 5,
+				"strength": 11
+			},
+			"special_rules": [
+				"Sharp"
+			],
+			"affinities": {
+				"right": "red",
+				"left": "blue"
+			}
+		},
+		{
+			"id": "gce-st-136",
+			"name": "Death Defier",
+			"expansion": "gce",
+			"keywords": [
+				"seed",
+				"weapon",
+				"melee",
+				"grand",
+				"dagger",
+				"heavy",
+				"deathmetal"
+			],
+			"rules_text": "Razor Sharp, Blindside\nYou cannot lose survival.",
+			"source": "Seed Pattern",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 6,
+				"strength": 9
+			},
+			"special_rules": [
+				"Blindside",
+				"Sharp"
+			],
+			"affinities": {
+				"left": "red"
+			}
+		},
+		{
+			"id": "gce-st-137",
+			"name": "Mighty Bone Axe",
+			"expansion": "gce",
+			"keywords": [
+				"seed",
+				"weapon",
+				"melee",
+				"axe",
+				"bone"
+			],
+			"rules_text": "Savage\nHeroic: During your attack roll, reroll any natural 1's. You must keep the new roll result.",
+			"source": "Seed Pattern",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 5,
+				"strength": 6
+			},
+			"special_rules": [
+				"Savage"
+			],
+			"affinities": {
+				"top": "red",
+				"left": "red"
+			}
+		},
+		{
+			"id": "gce-st-138",
+			"name": "Reaperjaw",
+			"expansion": "gce",
+			"keywords": [
+				"seed",
+				"weapon",
+				"melee",
+				"dagger",
+				"metal",
+				"scout",
+				"other"
+			],
+			"rules_text": "During the Aftermath, if this wounded the monster, gain +1 [MR].",
+			"source": "Seed Pattern",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 7,
+				"strength": 8
+			},
+			"affinities": {
+				"top": "blue",
+				"right": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"blue-puzzle"
+					],
+					"effect": "If you are carrying Grimjaw, this gains Razor Sharp and Barbed 6."
+				}
+			]
+		},
+		{
+			"id": "gce-st-139",
+			"name": "Hypersight Visor",
+			"expansion": "gce",
+			"keywords": [
+				"seed",
+				"item",
+				"other"
+			],
+			"rules_text": "During the hunt and showdown, play with the top cards of all resource decks revealed. Once per lantern year, you may shuffle all of them.",
+			"source": "Seed Pattern",
+			"affinities": {
+				"bottom": "blue"
+			}
+		},
+		{
+			"id": "gce-st-140",
+			"name": "Plasma Cutter",
+			"expansion": "gce",
+			"keywords": [
+				"seed",
+				"weapon",
+				"melee",
+				"sword",
+				"metal",
+				"plasma"
+			],
+			"rules_text": "Razor Sharp, Irreplaceable, Sentient",
+			"source": "Seed Pattern",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 6,
+				"strength": 21
+			},
+			"special_rules": [
+				"Irreplaceable",
+				"Sentient",
+				"Sharp"
+			],
+			"affinities": {
+				"top": "red",
+				"left": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"red-puzzle"
+					],
+					"effect": "When you wound a [HL] with a persistent injury, critically wound instead."
+				}
+			]
+		},
+		{
+			"id": "gce-st-141",
+			"name": "Neko Twilight Armor",
+			"expansion": "gce",
+			"keywords": [
+				"seed",
+				"armor",
+				"metal",
+				"other"
+			],
+			"rules_text": "Full Ensemble, +1 evasion\nAdd 2 to all hit locations. You may Pounce. When you do, move 6 spaces instead and double the strength of cumbersome weapons for the attack.",
+			"source": "Seed Pattern",
+			"hit_location": [
+				"chest"
+			],
+			"special_rules": [
+				"Cumbersome",
+				"Pounce"
+			]
+		},
+		{
+			"id": "gce-unknown-142",
+			"name": "(Glyphs)",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"grand",
+				"whip",
+				"dagger",
+				"heavy",
+				"deathmetal",
+				"other"
+			],
+			"rules_text": "Reach 3, Deadly, Unique aL without a critical wound, When you draw draw a it 8 82 5t card and add its critical wound effect to this",
+			"source": "Kingsmith",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 7,
+				"strength": 12
+			},
+			"special_rules": [
+				"Deadly",
+				"Reach",
+				"Unique"
+			],
+			"affinities": {
+				"bottom": "blue",
+				"left": "red"
+			}
+		},
+		{
+			"id": "gce-m-143",
+			"name": "Supreme Stew",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"meal",
+				"consumable",
+				"soluble"
+			],
+			"rules_text": "Meal: When you depart, consume this (do not archive) to gain its benefits. You may depart with only one meal.\n+4 strength",
+			"source": "Meal",
+			"special_rules": [
+				"Consume"
+			],
+			"affinities": {
+				"bottom": "green"
+			}
+		},
+		{
+			"id": "gce-m-144",
+			"name": "Fatty Crimson Goulash",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"meal",
+				"consumable",
+				"soluble"
+			],
+			"rules_text": "Meal - Crimson Crocodile, Unique\nThe fatty stew absorbs your blood, fortifying your body. You cannot remove bleeding tokens. When you gain a bleeding token, add 4 to all hit locations.",
+			"source": "Meal",
+			"special_rules": [
+				"Unique"
+			],
+			"affinities": {
+				"right": "green",
+				"left": "red"
+			}
+		},
+		{
+			"id": "gce-m-145",
+			"name": "White Lion Bread Box",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"meal",
+				"consumable"
+			],
+			"rules_text": "Meal - White Lion, Unique\nThe beast whispers from within. You may Pounce. During that attack, your weapon gains Deadly and the katar keyword.",
+			"source": "Meal",
+			"special_rules": [
+				"Deadly",
+				"Pounce",
+				"Unique"
+			],
+			"affinities": {
+				"right": "blue",
+				"left": "red"
+			}
+		},
+		{
+			"id": "gce-m-146",
+			"name": "Time Milk",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"meal",
+				"consumable",
+				"soluble"
+			],
+			"rules_text": "Meal - Phoenix, Unique\nYou may Charge. During this Charge, you may rewind time. If you do, reset the showdown to the start of your act and end the round.",
+			"source": "Meal",
+			"special_rules": [
+				"Charge",
+				"Unique"
+			]
+		},
+		{
+			"id": "gce-m-147",
+			"name": "King Lantern Sausage",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"meal",
+				"consumable",
+				"noisy"
+			],
+			"rules_text": "Meal - King, Unique\nSound is converted to energy. You may use Instrument Force.",
+			"source": "Meal",
+			"special_rules": [
+				"Unique"
+			]
+		},
+		{
+			"id": "gce-m-148",
+			"name": "Seared Beast Skewer",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"meal",
+				"consumable"
+			],
+			"rules_text": "Meal - Screaming Antelope, Unique\nStampedes your insides. You may Slam and Skewer. When your Slam moves the monster, it gains a flinch token.",
+			"source": "Meal",
+			"special_rules": [
+				"Skewer",
+				"Slam",
+				"Unique"
+			],
+			"affinities": {
+				"bottom": "red"
+			}
+		},
+		{
+			"id": "gce-m-149",
+			"name": "Smog Soup",
+			"expansion": "gce",
+			"keywords": [
+				"item",
+				"meal",
+				"consumable",
+				"soluble"
+			],
+			"rules_text": "Meal - Smog Singers, Unique\nDigesting the vaporous soup, your body shimmers and swirls like smog. Ignore hits when the monster's attack rolls are 4 or less.",
+			"source": "Meal",
+			"special_rules": [
+				"Unique"
+			],
+			"affinities": {
+				"top": "blue",
+				"bottom": "green"
+			}
+		},
+		{
+			"id": "gce-unknown-150",
+			"name": "(Glyphs)",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"sword",
+				"deathmetal",
+				"other"
+			],
+			"rules_text": "The first time you wound with this each showdown, the weapon's bloodlust rouses. Gain [D] Immortal and +1d1000 insanity.",
+			"source": "Kingsmith",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 6,
+				"strength": 18
+			},
+			"special_rules": [
+				"Cursed",
+				"Unique"
+			]
+		},
+		{
+			"id": "gce-unknown-151",
+			"name": "(Glyphs)",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"grand",
+				"katana",
+				"heavy",
+				"deathmetal",
+				"other"
+			],
+			"rules_text": "At the end of your attack, if you wounded the monster, I Great Divide.",
+			"source": "Kingsmith",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 6,
+				"strength": 12
+			},
+			"special_rules": [
+				"Sharp",
+				"Unique"
+			],
+			"affinities": {
+				"left": "red"
+			}
+		},
+		{
+			"id": "gce-unknown-152",
+			"name": "(Glyphs)",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"grand",
+				"club",
+				"heavy",
+				"deathmetal",
+				"other"
+			],
+			"rules_text": "Surpass 5 The first time you surpass with this each showdown, the monster is knocked down and ignores Indomitable this round.",
+			"source": "Kingsmith",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 6,
+				"strength": 17
+			},
+			"special_rules": [
+				"Slow"
+			],
+			"affinities": {
+				"right": "green",
+				"bottom": "blue"
+			}
+		},
+		{
+			"id": "gce-unknown-153",
+			"name": "(Glyphs)",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"grand",
+				"spear",
+				"heavy",
+				"deathmetal",
+				"other"
+			],
+			"rules_text": "When you hit with this, draw discard pile. Suffer 2 brain damage for each hit. If you need to draw more cards than are discarded, the spear devours you. Dead.",
+			"source": "Kingsmith",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 10
+			},
+			"special_rules": [
+				"Sharp",
+				"Reach"
+			]
+		},
+		{
+			"id": "gce-k-154",
+			"name": "(Glyphs)",
+			"expansion": "gce",
+			"keywords": [
+				"weapon",
+				"melee",
+				"grand",
+				"whip",
+				"dagger",
+				"heavy",
+				"deathmetal",
+				"other"
+			],
+			"rules_text": "When you draw [HL] without a critical wound, draw a (Glyphs) card and add its critical wound effect to this [HL].",
+			"source": "Kingsmith",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 7,
+				"strength": 12
+			},
+			"special_rules": [
+				"Deadly",
+				"Reach",
+				"Unique"
+			],
+			"affinities": {
+				"bottom": "blue",
+				"left": "red"
+			}
+		}
+	]
+}
