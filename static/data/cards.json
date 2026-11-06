@@ -1,6 +1,6 @@
 {
 	"version": 3,
-	"generated": "2026-11-06T11:27:28+00:00",
+	"generated": "2026-11-06T12:38:30+00:00",
 	"cards": [
 		{
 			"id": "core-sg-2",
@@ -981,7 +981,8 @@
 					],
 					"effect": "Unshakeable: When you draw a Trap, roll 1d10.\nOn a 6+, discard the Trap and reshuffle the deck."
 				}
-			]
+			],
+			"center_affinity": "blue"
 		},
 		{
 			"id": "core-bs-48",
@@ -1004,7 +1005,8 @@
 					],
 					"effect": "Unstoppable: When you attempt to wound,\ninstead roll 1d10. On 1 - 5, fail. On 6 - 10, wound."
 				}
-			]
+			],
+			"center_affinity": "red"
 		},
 		{
 			"id": "core-bs-49",
@@ -1027,7 +1029,8 @@
 					],
 					"effect": "Undeathable: If you would die, roll 1d10.\nOn a 6+, you inexplicably survive."
 				}
-			]
+			],
+			"center_affinity": "green"
 		},
 		{
 			"id": "core-unknown-50",

@@ -7,6 +7,7 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
+	<title>Scout Lantern</title>
 </svelte:head>
 
 <main>

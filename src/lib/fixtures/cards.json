@@ -9,7 +9,8 @@
 			"keywords": ["armor"],
 			"source": "Starting Gear",
 			"armor_value": 1,
-			"hit_location": ["waist"]
+			"hit_location": ["waist"],
+			"center_affinity": "blue"
 		},
 		{
 			"id": "core-unknown-3",

@@ -63,6 +63,8 @@ export interface Card {
 	affinities?: Affinities;
 	/** Affinity boxes in the symbol: effect style */
 	affinity_boxes?: AffinityBox[];
+	/** Colour of the large bonus affinity square in the middle of the card. */
+	center_affinity?: AffinityColor;
 }
 
 /** Card data format version this frontend is written against. */

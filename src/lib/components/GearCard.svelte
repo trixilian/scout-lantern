@@ -39,6 +39,9 @@
 		{/each}
 	</p>
 	<div class="gear-card-rulestext mx-2 mb-3 text-center">
+		{#if card.center_affinity}
+			<span class="affinity affinity-center mb-1" data-affinity={card.center_affinity}></span>
+		{/if}
 		<p class="mb-0">
 			{#each splitRules as substring, i ('rulestext' + i)}
 				{substring}
@@ -180,5 +183,11 @@
 	}
 	.activation {
 		vertical-align: 0.1em;
+	}
+	.affinity-center {
+		position: relative;
+		display: inline-block;
+		aspect-ratio: 1;
+		width: 1.5rem;
 	}
 </style>
