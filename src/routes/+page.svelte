@@ -2,7 +2,7 @@
 	import type { PageData } from './$types';
 	import { goto } from '$app/navigation';
 	import { page } from '$app/state';
-	import { onDestroy } from 'svelte';
+	import { onDestroy, untrack } from 'svelte';
 	import GearCard from '$lib/components/GearCard.svelte';
 	import { createSearch } from '$lib/search';
 
@@ -14,11 +14,9 @@
 	const results = $derived(search(q));
 
 	const expansions = $derived(new Set(data.cards.map((card) => card.expansion)));
-	let selectedExpansions = $state<string[]>([]);
+	let selectedExpansions = $state<string[]>(untrack(() => Array.from(expansions)));
 	const filteredResults = $derived(
-		selectedExpansions.length === 0
-			? results
-			: results.filter((card) => selectedExpansions.includes(card.expansion))
+		results.filter((card) => selectedExpansions.includes(card.expansion))
 	);
 
 	let timer: ReturnType<typeof setTimeout>;
