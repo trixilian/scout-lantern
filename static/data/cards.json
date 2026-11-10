@@ -1,6 +1,6 @@
 {
 	"version": 3,
-	"generated": "2026-11-06T12:38:30+00:00",
+	"generated": "2026-11-10T18:03:02+00:00",
 	"cards": [
 		{
 			"id": "core-sg-2",
@@ -16,7 +16,7 @@
 			]
 		},
 		{
-			"id": "core-unknown-3",
+			"id": "core-sg-3",
 			"name": "Founding Stone",
 			"expansion": "core",
 			"keywords": [
@@ -25,6 +25,7 @@
 				"stone"
 			],
 			"rules_text": "Spend (a) to sling the stone from anywhere on the board! Archive this card for 1 automatic hit that inflicts a critical wound.",
+			"source": "Starting Gear",
 			"weapon_stats": {
 				"speed": 2,
 				"accuracy": 7,
@@ -235,7 +236,7 @@
 			}
 		},
 		{
-			"id": "core-unknown-13",
+			"id": "core-s-13",
 			"name": "Rawhide Pants",
 			"expansion": "core",
 			"keywords": [
@@ -243,6 +244,7 @@
 				"set",
 				"rawhide"
 			],
+			"source": "Skinnery",
 			"armor_value": 1,
 			"hit_location": [
 				"waist"
@@ -336,7 +338,10 @@
 				"stinky"
 			],
 			"rules_text": "When you depart, gain +1 survival.\n(a) : You are not a threat until you attack. If you have the priority target token, remove it.",
-			"source": "Organ Grinder"
+			"source": "Organ Grinder",
+			"affinities": {
+				"left": "blue"
+			}
 		},
 		{
 			"id": "core-og-20",
@@ -351,7 +356,7 @@
 			"source": "Organ Grinder"
 		},
 		{
-			"id": "core-unknown-21",
+			"id": "core-s-21",
 			"name": "Rawhide Headband",
 			"expansion": "core",
 			"keywords": [
@@ -360,6 +365,7 @@
 				"rawhide"
 			],
 			"source": "Skinnery",
+			"armor_value": 1,
 			"hit_location": [
 				"head"
 			],
@@ -450,7 +456,7 @@
 			]
 		},
 		{
-			"id": "core-og-25",
+			"id": "core-wc-25",
 			"name": "Counterweighted Axe",
 			"expansion": "core",
 			"keywords": [
@@ -460,7 +466,7 @@
 				"two-handed"
 			],
 			"rules_text": "Reach 2.",
-			"source": "Organ Grinder",
+			"source": "Weapon Crafter",
 			"weapon_stats": {
 				"speed": 2,
 				"accuracy": 6,
@@ -494,8 +500,9 @@
 			"rules_text": "On a Perfect hit, the monster is dazed, and gains -1 speed token until the end of its turn. A Monster can be dazed once per round.",
 			"source": "Weapon Crafter",
 			"weapon_stats": {
-				"accuracy": 2,
-				"strength": 1
+				"speed": 2,
+				"accuracy": 7,
+				"strength": 3
 			},
 			"special_rules": [
 				"Dazed",
@@ -556,7 +563,7 @@
 		},
 		{
 			"id": "core-wc-29",
-			"name": "Dagger",
+			"name": "Scrap Dagger",
 			"expansion": "core",
 			"keywords": [
 				"weapon",
@@ -610,9 +617,9 @@
 			"rules_text": "Reach 2, Frail",
 			"source": "Weapon Crafter",
 			"weapon_stats": {
-				"speed": 4,
-				"accuracy": 2,
-				"strength": 0
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 3
 			},
 			"special_rules": [
 				"Frail",
@@ -638,7 +645,7 @@
 			"keywords": [
 				"weapon",
 				"melee",
-				"grand weapon",
+				"grand",
 				"two-handed",
 				"bone"
 			],
@@ -650,7 +657,6 @@
 			},
 			"special_rules": [
 				"Deadly",
-				"Devastating 1",
 				"Frail",
 				"Slow"
 			],
@@ -669,7 +675,7 @@
 			]
 		},
 		{
-			"id": "core-unknown-33",
+			"id": "core-s-33",
 			"name": "Rawhide Vest",
 			"expansion": "core",
 			"keywords": [
@@ -871,7 +877,7 @@
 			]
 		},
 		{
-			"id": "core-lw-41",
+			"id": "core-bs-41",
 			"name": "First Aid Kit",
 			"expansion": "core",
 			"keywords": [
@@ -879,7 +885,7 @@
 				"heavy"
 			],
 			"rules_text": "On Arrival, all survivors gain + 3 survival. (a): Remove 1 bleeding or negative attribute token from yourself or an adjacent survivor.",
-			"source": "Leather Worker",
+			"source": "Barber Surgeon",
 			"affinities": {
 				"top": "green",
 				"right": "green",
@@ -888,7 +894,7 @@
 			}
 		},
 		{
-			"id": "core-lw-42",
+			"id": "core-bs-42",
 			"name": "Scavenger Kit",
 			"expansion": "core",
 			"keywords": [
@@ -896,7 +902,7 @@
 				"heavy"
 			],
 			"rules_text": "Unique When you defeat a monster, gain either 1 random basic resource or 1 random monster resource from that monster's resource deck.",
-			"source": "Leather Worker",
+			"source": "Barber Surgeon",
 			"special_rules": [
 				"Unique"
 			],
@@ -905,7 +911,7 @@
 			}
 		},
 		{
-			"id": "core-lw-43",
+			"id": "core-bs-43",
 			"name": "Almanac",
 			"expansion": "core",
 			"keywords": [
@@ -914,13 +920,13 @@
 				"flammable"
 			],
 			"rules_text": "When you depart, gain +2 insanity. You cannot gain disorders.",
-			"source": "Leather Worker",
+			"source": "Barber Surgeon",
 			"affinities": {
 				"right": "blue"
 			}
 		},
 		{
-			"id": "core-lw-44",
+			"id": "core-bs-44",
 			"name": "Bug Trap",
 			"expansion": "core",
 			"keywords": [
@@ -928,10 +934,10 @@
 				"soluble"
 			],
 			"rules_text": "At the start of the showdown, roll 1d10. On a 3+, add a Bug Patch terrain card to the showdown board.",
-			"source": "Leather Worker"
+			"source": "Barber Surgeon"
 		},
 		{
-			"id": "core-lw-45",
+			"id": "core-bs-45",
 			"name": "Musk Bomb",
 			"expansion": "core",
 			"keywords": [
@@ -941,17 +947,18 @@
 				"fragile"
 			],
 			"rules_text": "If adjacent to monster when it draws [AI] , you may spend 2 survial and archive Musk bomb to roll 1d10. On a 3+, discard [AI] without playing it.",
-			"source": "Leather Worker"
+			"source": "Barber Surgeon"
 		},
 		{
-			"id": "core-unknown-46",
-			"name": "Cuirass",
+			"id": "core-lw-46",
+			"name": "Leather Cuirass",
 			"expansion": "core",
 			"keywords": [
 				"armor",
 				"set",
 				"leather"
 			],
+			"source": "Leather Worker",
 			"armor_value": 3,
 			"hit_location": [
 				"chest"
@@ -962,7 +969,7 @@
 			}
 		},
 		{
-			"id": "core-unknown-47",
+			"id": "core-bs-47",
 			"name": "Blue Charm",
 			"expansion": "core",
 			"keywords": [
@@ -970,6 +977,7 @@
 				"jewelry",
 				"fragile"
 			],
+			"source": "Barber Surgeon",
 			"affinity_boxes": [
 				{
 					"affinities": [
@@ -1033,7 +1041,7 @@
 			"center_affinity": "green"
 		},
 		{
-			"id": "core-unknown-50",
+			"id": "core-mm-50",
 			"name": "White Lion Mask",
 			"expansion": "core",
 			"keywords": [
@@ -1043,6 +1051,7 @@
 				"other"
 			],
 			"rules_text": "Unique, Irreplaceable, Accessory",
+			"source": "Mask Maker",
 			"armor_value": 2,
 			"hit_location": [
 				"head"
@@ -1063,7 +1072,7 @@
 			]
 		},
 		{
-			"id": "core-unknown-51",
+			"id": "core-mm-51",
 			"name": "Antelope Mask",
 			"expansion": "core",
 			"keywords": [
@@ -1096,7 +1105,7 @@
 			]
 		},
 		{
-			"id": "core-unknown-52",
+			"id": "core-mm-52",
 			"name": "Phoenix Mask",
 			"expansion": "core",
 			"keywords": [
@@ -1129,7 +1138,7 @@
 			]
 		},
 		{
-			"id": "core-unknown-53",
+			"id": "core-mm-53",
 			"name": "Death Mask",
 			"expansion": "core",
 			"keywords": [
@@ -1151,7 +1160,7 @@
 			]
 		},
 		{
-			"id": "core-unknown-54",
+			"id": "core-mm-54",
 			"name": "Man Mask",
 			"expansion": "core",
 			"keywords": [
@@ -1519,7 +1528,7 @@
 			"keywords": [
 				"weapon",
 				"melee",
-				"grand weapon",
+				"grand",
 				"two-handed",
 				"heavy",
 				"metal"
@@ -1567,7 +1576,7 @@
 			"keywords": [
 				"weapon",
 				"melee",
-				"grand weapon",
+				"grand",
 				"two-handed",
 				"sword",
 				"heavy",
@@ -1644,7 +1653,7 @@
 		},
 		{
 			"id": "core-c-72",
-			"name": "Lion Coat",
+			"name": "White Lion Coat",
 			"expansion": "core",
 			"keywords": [
 				"armor",
@@ -1815,7 +1824,7 @@
 			}
 		},
 		{
-			"id": "core-unknown-80",
+			"id": "core-c-80",
 			"name": "Lion Headdress",
 			"expansion": "core",
 			"keywords": [
@@ -1823,6 +1832,7 @@
 				"flammable"
 			],
 			"rules_text": "Accessory: You may wear this in addition to 1 armor at this hit location.",
+			"source": "Catarium",
 			"armor_value": 1,
 			"hit_location": [
 				"head"
@@ -2054,8 +2064,7 @@
 				"weapon",
 				"melee",
 				"katar",
-				"bone",
-				"paired"
+				"bone"
 			],
 			"rules_text": "Paired \nWhen you wound with this weapon, monster gains -1 toughness until end of the attack.",
 			"source": "Stone Circle",
@@ -2504,7 +2513,7 @@
 					"affinities": [
 						"red-puzzle",
 						"green-puzzle",
-						"blue-puzzle"
+						"blue-square"
 					],
 					"effect": "Range + 2"
 				}
@@ -2719,7 +2728,6 @@
 			"name": "Oxidized Lantern Glaive",
 			"expansion": "core",
 			"keywords": [
-				"glaive",
 				"weapon",
 				"melee",
 				"spear",
@@ -2731,7 +2739,8 @@
 			"rules_text": "Sharp, Reach 2",
 			"source": "Exhausted Lantern Hoard",
 			"weapon_stats": {
-				"accuracy": 2,
+				"speed": 2,
+				"accuracy": 5,
 				"strength": 6
 			},
 			"special_rules": [
@@ -2975,24 +2984,6 @@
 			]
 		},
 		{
-			"id": "core-rg-130",
-			"name": "Regal Faulds",
-			"expansion": "core",
-			"keywords": [
-				"armor",
-				"bone"
-			],
-			"rules_text": "Cursed\nKing's Curse. At the Aftermath, 📖 King's Curse.",
-			"source": "Rare Gear",
-			"armor_value": 4,
-			"hit_location": [
-				"waist"
-			],
-			"special_rules": [
-				"Cursed"
-			]
-		},
-		{
 			"id": "core-rg-131",
 			"name": "Regal Greaves",
 			"expansion": "core",
@@ -3185,7 +3176,7 @@
 			"armor_value": 1
 		},
 		{
-			"id": "gce-sg-2",
+			"id": "gce-cc-2",
 			"name": "Crimson Helm",
 			"expansion": "gce",
 			"keywords": [
@@ -3194,7 +3185,7 @@
 				"bone"
 			],
 			"rules_text": "Mindlock 1: Spend (a) , you now have exactly 1 mindlock token. When you suffer brain damage, ignore it and lose 1 mindlock token.",
-			"source": "Starting Gear",
+			"source": "Crimson Crockery",
 			"armor_value": 2,
 			"hit_location": [
 				"head"
@@ -3204,7 +3195,7 @@
 			}
 		},
 		{
-			"id": "gce-sg-3",
+			"id": "gce-cc-3",
 			"name": "Crimson Guard",
 			"expansion": "gce",
 			"keywords": [
@@ -3213,7 +3204,7 @@
 				"flesh"
 			],
 			"rules_text": "When you depart, a pale scab hardens on your forearm. Gain a bleeding token and add 1 to the arms hit location.",
-			"source": "Starting Gear",
+			"source": "Crimson Crockery",
 			"armor_value": 2,
 			"hit_location": [
 				"arms"
@@ -3224,7 +3215,7 @@
 			}
 		},
 		{
-			"id": "gce-sg-4",
+			"id": "gce-cc-4",
 			"name": "Crimson Dress",
 			"expansion": "gce",
 			"keywords": [
@@ -3233,10 +3224,10 @@
 				"flesh"
 			],
 			"rules_text": "Immortal Spin: Spend (m) (a) to move 3 spaces forward. Then if you moved 3 spaces, activate a melee weapon with +1 strength for each bleeding token you have.",
-			"source": "Starting Gear",
+			"source": "Crimson Crockery",
 			"armor_value": 2,
 			"hit_location": [
-				"waist"
+				"chest"
 			],
 			"affinities": {
 				"right": "red",
@@ -3244,7 +3235,7 @@
 			}
 		},
 		{
-			"id": "gce-sg-5",
+			"id": "gce-cc-5",
 			"name": "Crimson Faulds",
 			"expansion": "gce",
 			"keywords": [
@@ -3253,7 +3244,7 @@
 				"flesh"
 			],
 			"rules_text": "When you depart, gain a bleeding token. It requires one more bleeding token to kill you.",
-			"source": "Starting Gear",
+			"source": "Crimson Crockery",
 			"armor_value": 2,
 			"hit_location": [
 				"waist"
@@ -3263,7 +3254,7 @@
 			}
 		},
 		{
-			"id": "gce-sg-6",
+			"id": "gce-cc-6",
 			"name": "Crimson Slippers",
 			"expansion": "gce",
 			"keywords": [
@@ -3271,17 +3262,17 @@
 				"set",
 				"flesh"
 			],
-			"source": "Starting Gear",
+			"source": "Crimson Crockery",
 			"armor_value": 2,
 			"hit_location": [
-				"arms"
+				"legs"
 			],
 			"affinities": {
 				"left": "red"
 			}
 		},
 		{
-			"id": "gce-sg-7",
+			"id": "gce-cc-7",
 			"name": "Bloodglass Dagger",
 			"expansion": "gce",
 			"keywords": [
@@ -3291,7 +3282,7 @@
 				"bone"
 			],
 			"rules_text": "Honed 3: This has +3 strength until its edge is ruined after wounding a Parry or Super-Dense hit location.",
-			"source": "Starting Gear",
+			"source": "Crimson Crockery",
 			"weapon_stats": {
 				"speed": 3,
 				"accuracy": 6,
@@ -3339,6 +3330,10 @@
 				"speed": 3,
 				"accuracy": 6,
 				"strength": 0
+			},
+			"affinities": {
+				"right": "red",
+				"bottom": "red"
 			}
 		},
 		{
@@ -4371,7 +4366,7 @@
 		},
 		{
 			"id": "gce-o-57",
-			"name": "Singers Tablet",
+			"name": "Smog Singers Tablet",
 			"expansion": "gce",
 			"keywords": [
 				"item",
@@ -4490,7 +4485,7 @@
 			"source": "Gaming Gazebo",
 			"armor_value": 7,
 			"hit_location": [
-				"chest"
+				"head"
 			],
 			"special_rules": [
 				"Outfit"
@@ -4523,7 +4518,7 @@
 			"source": "Gaming Gazebo",
 			"armor_value": 7,
 			"hit_location": [
-				"waist"
+				"chest"
 			],
 			"special_rules": [
 				"Outfit"
@@ -4764,6 +4759,7 @@
 			],
 			"rules_text": "Accessory\nThe festival fills all with pride. At the start of your act, all survivors gain +1 survival.",
 			"source": "Rare Gear",
+			"armor_value": 1,
 			"hit_location": [
 				"chest"
 			],
@@ -4775,7 +4771,7 @@
 			}
 		},
 		{
-			"id": "gce-unknown-76",
+			"id": "gce-rg-76",
 			"name": "Luck's Cloak",
 			"expansion": "gce",
 			"keywords": [
@@ -4783,6 +4779,7 @@
 				"cloth",
 				"other"
 			],
+			"source": "Rare Gear",
 			"armor_value": 0,
 			"hit_location": [
 				"chest"
@@ -4920,7 +4917,7 @@
 			]
 		},
 		{
-			"id": "gce-unknown-83",
+			"id": "gce-rg-83",
 			"name": "Natural Cardinal Staff",
 			"expansion": "gce",
 			"keywords": [
@@ -4930,6 +4927,7 @@
 				"other"
 			],
 			"rules_text": "Reach 2, Surpass 5\nDuring the showdown, this gains +1 strength anytime a survivor rolls a (l). but suffers -1 strength anytime a survivor rolls a natural 1. (Track this with strength tokens.)",
+			"source": "Rare Gear",
 			"weapon_stats": {
 				"speed": 2,
 				"accuracy": 6,
@@ -4999,7 +4997,7 @@
 		},
 		{
 			"id": "gce-rg-86",
-			"name": "Scalpel",
+			"name": "Royal Scalpel",
 			"expansion": "gce",
 			"keywords": [
 				"weapon",
@@ -5179,7 +5177,7 @@
 		},
 		{
 			"id": "gce-pt-94",
-			"name": "Chef's Carver",
+			"name": "Colossal Chef's Carver",
 			"expansion": "gce",
 			"keywords": [
 				"weapon",
@@ -5304,7 +5302,7 @@
 			"weapon_stats": {
 				"speed": 2,
 				"accuracy": 6,
-				"strength": 2
+				"strength": 6
 			},
 			"affinities": {
 				"right": "blue",
@@ -5444,7 +5442,7 @@
 			]
 		},
 		{
-			"id": "gce-unknown-103",
+			"id": "gce-pt-103",
 			"name": "Curse Hammer",
 			"expansion": "gce",
 			"keywords": [
@@ -5457,6 +5455,7 @@
 				"noisy"
 			],
 			"rules_text": "When you wound with this, gain -1 strength token.",
+			"source": "Pattern",
 			"weapon_stats": {
 				"speed": 2,
 				"accuracy": 7,
@@ -5541,6 +5540,7 @@
 				"Unwieldy"
 			],
 			"affinities": {
+				"right": "red",
 				"left": "green"
 			}
 		},
@@ -5717,7 +5717,8 @@
 				"seed",
 				"weapon",
 				"melee",
-				"shield"
+				"shield",
+				"stone"
 			],
 			"rules_text": "Deflect 1",
 			"source": "Seed Pattern",
@@ -5742,7 +5743,7 @@
 		},
 		{
 			"id": "gce-st-114",
-			"name": "Cat Fang Knife",
+			"name": "Lucky Cat Fang Knife",
 			"expansion": "gce",
 			"keywords": [
 				"seed",
@@ -5758,6 +5759,9 @@
 				"accuracy": 6,
 				"strength": 4
 			},
+			"special_rules": [
+				"Razor Sharp"
+			],
 			"affinities": {
 				"top": "blue",
 				"right": "blue",
@@ -5870,7 +5874,7 @@
 		},
 		{
 			"id": "gce-st-118",
-			"name": "Knife",
+			"name": "Dream Keeper Knife",
 			"expansion": "gce",
 			"keywords": [
 				"seed",
@@ -5897,7 +5901,7 @@
 		},
 		{
 			"id": "gce-st-119",
-			"name": "Dream Keeper",
+			"name": "Dream Keeper Cowl",
 			"expansion": "gce",
 			"keywords": [
 				"seed",
@@ -6095,7 +6099,8 @@
 			"keywords": [
 				"seed",
 				"item",
-				"metal other"
+				"metal",
+				"other"
 			],
 			"rules_text": "Grace of Valor: When you depart, add 1 to all locations for every [g] [g] you have.",
 			"source": "Seed Pattern",
@@ -6243,11 +6248,11 @@
 				"metal",
 				"other"
 			],
-			"rules_text": "Accessory, +5 strengin",
+			"rules_text": "Accessory, +5 strength",
 			"source": "Seed Pattern",
 			"armor_value": 4,
 			"hit_location": [
-				"head"
+				"arms"
 			],
 			"special_rules": [
 				"Accessory"
@@ -6495,44 +6500,10 @@
 			],
 			"rules_text": "Full Ensemble, +1 evasion\nAdd 2 to all hit locations. You may Pounce. When you do, move 6 spaces instead and double the strength of cumbersome weapons for the attack.",
 			"source": "Seed Pattern",
-			"hit_location": [
-				"chest"
-			],
 			"special_rules": [
-				"Cumbersome",
+				"Full Ensemble",
 				"Pounce"
 			]
-		},
-		{
-			"id": "gce-unknown-142",
-			"name": "(Glyphs)",
-			"expansion": "gce",
-			"keywords": [
-				"weapon",
-				"melee",
-				"grand",
-				"whip",
-				"dagger",
-				"heavy",
-				"deathmetal",
-				"other"
-			],
-			"rules_text": "Reach 3, Deadly, Unique aL without a critical wound, When you draw draw a it 8 82 5t card and add its critical wound effect to this",
-			"source": "Kingsmith",
-			"weapon_stats": {
-				"speed": 2,
-				"accuracy": 7,
-				"strength": 12
-			},
-			"special_rules": [
-				"Deadly",
-				"Reach",
-				"Unique"
-			],
-			"affinities": {
-				"bottom": "blue",
-				"left": "red"
-			}
 		},
 		{
 			"id": "gce-m-143",
@@ -6668,8 +6639,8 @@
 			}
 		},
 		{
-			"id": "gce-unknown-150",
-			"name": "(Glyphs)",
+			"id": "gce-ar-150",
+			"name": "Blade (Glyphs)",
 			"expansion": "gce",
 			"keywords": [
 				"weapon",
@@ -6679,7 +6650,7 @@
 				"other"
 			],
 			"rules_text": "The first time you wound with this each showdown, the weapon's bloodlust rouses. Gain [D] Immortal and +1d1000 insanity.",
-			"source": "Kingsmith",
+			"source": "Armory",
 			"weapon_stats": {
 				"speed": 3,
 				"accuracy": 6,
@@ -6691,8 +6662,8 @@
 			]
 		},
 		{
-			"id": "gce-unknown-151",
-			"name": "(Glyphs)",
+			"id": "gce-ar-151",
+			"name": "Divider (Glyphs)",
 			"expansion": "gce",
 			"keywords": [
 				"weapon",
@@ -6704,7 +6675,7 @@
 				"other"
 			],
 			"rules_text": "At the end of your attack, if you wounded the monster, I Great Divide.",
-			"source": "Kingsmith",
+			"source": "Armory",
 			"weapon_stats": {
 				"speed": 3,
 				"accuracy": 6,
@@ -6719,8 +6690,8 @@
 			}
 		},
 		{
-			"id": "gce-unknown-152",
-			"name": "(Glyphs)",
+			"id": "gce-ar-152",
+			"name": "Gavel (Glyphs)",
 			"expansion": "gce",
 			"keywords": [
 				"weapon",
@@ -6732,7 +6703,7 @@
 				"other"
 			],
 			"rules_text": "Surpass 5 The first time you surpass with this each showdown, the monster is knocked down and ignores Indomitable this round.",
-			"source": "Kingsmith",
+			"source": "Armory",
 			"weapon_stats": {
 				"speed": 1,
 				"accuracy": 6,
@@ -6747,8 +6718,8 @@
 			}
 		},
 		{
-			"id": "gce-unknown-153",
-			"name": "(Glyphs)",
+			"id": "gce-ar-153",
+			"name": "Partisan (Glyphs)",
 			"expansion": "gce",
 			"keywords": [
 				"weapon",
@@ -6760,7 +6731,7 @@
 				"other"
 			],
 			"rules_text": "When you hit with this, draw discard pile. Suffer 2 brain damage for each hit. If you need to draw more cards than are discarded, the spear devours you. Dead.",
-			"source": "Kingsmith",
+			"source": "Armory",
 			"weapon_stats": {
 				"speed": 2,
 				"accuracy": 6,
@@ -6772,8 +6743,8 @@
 			]
 		},
 		{
-			"id": "gce-k-154",
-			"name": "(Glyphs)",
+			"id": "gce-ar-154",
+			"name": "Scourge (Glyphs)",
 			"expansion": "gce",
 			"keywords": [
 				"weapon",
@@ -6786,7 +6757,7 @@
 				"other"
 			],
 			"rules_text": "When you draw [HL] without a critical wound, draw a (Glyphs) card and add its critical wound effect to this [HL].",
-			"source": "Kingsmith",
+			"source": "Armory",
 			"weapon_stats": {
 				"speed": 2,
 				"accuracy": 7,
