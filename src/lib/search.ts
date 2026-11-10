@@ -1,17 +1,18 @@
 import MiniSearch from 'minisearch';
 import type { Card } from '$lib/types';
+import type { ParsedQuery } from './query';
+import { matchesClause } from './filter';
 
-/** Structured filters applied on top of the text search. Empty for now. */
-export type SearchFilters = Record<string, never>;
-
-export type Search = (query: string, filters?: SearchFilters) => Card[];
+export type Search = (query: ParsedQuery) => Card[];
 
 /**
  * Builds a full-text index over `cards` and returns a search function.
  *
- * Every word in the query must match (AND). Each word may be a prefix ("bon" finds
- * "Bone Blade"), and words of 6+ letters allow a small typo. An empty query returns every card in
- * data order. Callers only see `search(query, filters)`, so the engine can be swapped.
+ * The search takes a parsed query (see `parseQuery`). Its text goes to the full-text index:
+ * every word must match (AND), each word may be a prefix ("bon" finds "Bone Blade"), and words
+ * of 6+ letters allow a small typo. Empty text starts from every card, in data order. The
+ * clauses then filter those candidates: a card stays only if it matches every clause.
+ * Callers only see `search(parsedQuery)`, so the engine can be swapped.
  */
 export function createSearch(cards: Card[]): Search {
 	const index = new MiniSearch<Card>({
@@ -35,7 +36,11 @@ export function createSearch(cards: Card[]): Search {
 	const byId = new Map(cards.map((card) => [card.id, card]));
 
 	return (query) => {
-		if (!query.trim()) return cards;
-		return index.search(query).map((result) => byId.get(result.id)!);
+		const candidates = query.text
+			? index.search(query.text).map((result) => byId.get(result.id)!)
+			: cards;
+		return candidates.filter((card) =>
+			query.clauses.every((clause) => matchesClause(card, clause))
+		);
 	};
 }

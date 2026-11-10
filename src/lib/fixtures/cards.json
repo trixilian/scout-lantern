@@ -86,6 +86,26 @@
 				"strength": 7
 			},
 			"special_rules": ["Irreplaceable", "Reach", "Unique"]
+		},
+		{
+			"id": "gce-sg-6",
+			"name": "Crimson Slippers",
+			"expansion": "gce",
+			"keywords": ["armor", "set", "flesh"],
+			"source": "Starting Gear",
+			"armor_value": 2,
+			"hit_location": ["arms"],
+			"affinities": { "left": "red" }
+		},
+		{
+			"id": "gce-ch-20",
+			"name": "Singing Cap",
+			"expansion": "gce",
+			"keywords": ["armor", "set", "flesh"],
+			"source": "Chorusseum",
+			"armor_value": 3,
+			"hit_location": ["head"],
+			"affinities": { "top": "green", "bottom": "blue" }
 		}
 	]
 }

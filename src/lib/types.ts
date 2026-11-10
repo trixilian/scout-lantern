@@ -16,8 +16,10 @@ export type AffinityColor = 'red' | 'green' | 'blue';
 export type AffinitySymbol =
 	'red-square' | 'green-square' | 'blue-square' | 'red-puzzle' | 'green-puzzle' | 'blue-puzzle';
 
+export const HIT_LOCATIONS = ['head', 'arms', 'chest', 'waist', 'legs'] as const;
+
 /** Body location an armor card protects. */
-export type HitLocation = 'head' | 'arms' | 'chest' | 'waist' | 'legs';
+export type HitLocation = (typeof HIT_LOCATIONS)[number];
 
 /** The four card edges. Only edges with a colour are present. */
 export interface AffinityBox {

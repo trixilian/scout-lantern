@@ -2,22 +2,18 @@
 	import type { PageData } from './$types';
 	import { goto } from '$app/navigation';
 	import { page } from '$app/state';
-	import { onDestroy, untrack } from 'svelte';
+	import { onDestroy } from 'svelte';
 	import GearCard from '$lib/components/GearCard.svelte';
 	import { createSearch } from '$lib/search';
+	import { parseQuery } from '$lib/query';
 
 	let { data }: { data: PageData } = $props();
 
 	const search = $derived(createSearch(data.cards));
 
-	let q = $state(page.url.searchParams.get('q') ?? '');
-	const results = $derived(search(q));
-
-	const expansions = $derived(new Set(data.cards.map((card) => card.expansion)));
-	let selectedExpansions = $state<string[]>(untrack(() => Array.from(expansions)));
-	const filteredResults = $derived(
-		results.filter((card) => selectedExpansions.includes(card.expansion))
-	);
+	let rawQuery = $state(page.url.searchParams.get('q') ?? '');
+	const parsed = $derived(parseQuery(rawQuery));
+	const results = $derived(search(parsed));
 
 	let timer: ReturnType<typeof setTimeout>;
 	onDestroy(() => clearTimeout(timer));
@@ -27,7 +23,7 @@
 		clearTimeout(timer);
 		timer = setTimeout(() => {
 			const url = new URL(page.url);
-			if (q) url.searchParams.set('q', q);
+			if (rawQuery) url.searchParams.set('q', rawQuery);
 			else url.searchParams.delete('q');
 
 			// page.url already includes any base path — we only change its search params
@@ -55,34 +51,25 @@
 					id="q"
 					type="search"
 					name="q"
-					bind:value={q}
+					bind:value={rawQuery}
 					placeholder="Search gear…"
+					aria-describedby="q-warnings"
 				/>
 				<button class="btn btn-dark" type="submit">Search</button>
 			</div>
-			<fieldset class="mt-2">
-				<legend class="visually-hidden">Expansion</legend>
-				{#each expansions as expansion (expansion)}
-					<div class="form-check form-check-inline">
-						<input
-							class="form-check-input"
-							type="checkbox"
-							id={`expansion-${expansion}`}
-							bind:group={selectedExpansions}
-							value={expansion}
-						/>
-						<label class="form-check-label" for={`expansion-${expansion}`}>
-							{expansion}
-						</label>
-					</div>
+			<ul id="q-warnings" class="list-unstyled form-text mb-0" aria-live="polite">
+				{#each parsed.warnings as warning, i (i)}
+					<li class="mt-1">
+						<i class="bi bi-exclamation-triangle me-1" aria-hidden="true"></i>{warning}
+					</li>
 				{/each}
-			</fieldset>
+			</ul>
 		</form>
 	</search>
 </header>
 
 <div class="gear-card-grid mx-2 mb-5">
-	{#each filteredResults as card (card.id)}
+	{#each results as card (card.id)}
 		<GearCard {card} />
 	{/each}
 </div>
