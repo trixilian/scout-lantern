@@ -1,11 +1,14 @@
 <script lang="ts">
-	import type { Card } from '$lib/types';
+	import type { Card, Glossary } from '$lib/types';
 	import AffinityBoxes from './AffinityBoxes.svelte';
 	import ArmorValue from './ArmorValue.svelte';
 	import WeaponStats from './WeaponStats.svelte';
 	import Activation from './icons/Activation.svelte';
+	import { formatSpecialRule } from '$lib/specialRules';
+	import { findTerm } from '$lib/glossary';
+	import { tooltip } from '$lib/tooltip';
 
-	let { card }: { card: Card } = $props();
+	let { card, glossary }: { card: Card; glossary: Glossary } = $props();
 	const EDGES = ['top', 'right', 'bottom', 'left'] as const;
 
 	const splitRules = $derived(card.rules_text?.split('(a)') ?? []);
@@ -28,14 +31,23 @@
 		</div>
 	{/if}
 	<h2 class="gear-card-name text-center mt-3 px-3">{card.name}</h2>
-	<div class="gear-card-keywords px-3 text-center">
+	<div class="gear-card-keywords d-flex flex-wrap justify-content-center px-3">
 		{#each card.keywords ?? [] as keyword (keyword)}
 			<span>{keyword}</span>
 		{/each}
 	</div>
-	<p class="gear-card-specialrules mt-auto mx-2 text-center">
-		{#each card.special_rules ?? [] as specialrule (specialrule)}
-			<span>{specialrule}</span>
+	<p class="gear-card-specialrules d-flex flex-wrap justify-content-center mt-auto mx-2">
+		{#each card.special_rules ?? [] as rule (rule.name)}
+			{@const term = findTerm(glossary, rule.name)}
+			<span>
+				{#if term}
+					<button type="button" class="term" {@attach tooltip(term.text)}>
+						{formatSpecialRule(rule)}
+					</button>
+				{:else}
+					{formatSpecialRule(rule)}
+				{/if}
+			</span>
 		{/each}
 	</p>
 	<div class="gear-card-rulestext mx-2 mb-3 text-center">
@@ -98,6 +110,18 @@
 	}
 	.gear-card-specialrules span:not(:last-child)::after {
 		content: ',';
+	}
+
+	/* A button, so the definition opens on hover, Tab and tap, but it looks like the text around it. */
+	.term {
+		padding: 0;
+		border: 0;
+		background: none;
+		font: inherit;
+		color: inherit;
+		cursor: help;
+		text-decoration: underline dotted;
+		text-underline-offset: 0.15em;
 	}
 
 	.gear-card-rulestext {

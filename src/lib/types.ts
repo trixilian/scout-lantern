@@ -1,6 +1,6 @@
 /**
  * Shape of static/data/cards.json.
- * Format `version` 3 (see DATA_VERSION below).
+ * Format `version` 4 (see DATA_VERSION below).
  *
  * Fields that don't apply to a card are left out of the JSON (never null), so they are
  * optional (`?`) here and read as `undefined`.
@@ -21,7 +21,7 @@ export const HIT_LOCATIONS = ['head', 'arms', 'chest', 'waist', 'legs'] as const
 /** Body location an armor card protects. */
 export type HitLocation = (typeof HIT_LOCATIONS)[number];
 
-/** The four card edges. Only edges with a colour are present. */
+/** An affinity bonus box: the affinities it needs and the bonus it gives. */
 export interface AffinityBox {
 	affinities: AffinitySymbol[];
 	effect: string;
@@ -42,6 +42,13 @@ export interface WeaponStats {
 	strength?: Stat;
 }
 
+/** A special rule of the card, e.g. "Reach 2" as `{ name: 'Reach', value: 2 }`. */
+export interface SpecialRule {
+	name: string;
+	/** A number (2 in "Reach 2") or text ("1d10" in "Barbed 1d10", "Phoenix" in "Meal - Phoenix"). Absent for rules without one, e.g. "Frail". */
+	value?: string | number;
+}
+
 export interface Card {
 	// Always present.
 	id: string;
@@ -56,11 +63,12 @@ export interface Card {
 	source?: string;
 	/** Armor points on armor cards. */
 	armor_value?: number;
-	/** Locations this card's armor protects — usually one, occasionally more. */
+	/** Locations this card's armor protects. Usually one, occasionally more. */
 	hit_location?: HitLocation[];
 	/** Speed, accuracy and strength on weapon cards. */
 	weapon_stats?: WeaponStats;
-	special_rules?: string[];
+	/** Drawn as the card's special-rules line; not repeated in `rules_text`. */
+	special_rules?: SpecialRule[];
 	/** Card edges with a colour. Absent when every edge is blank. */
 	affinities?: Affinities;
 	/** Affinity boxes in the symbol: effect style */
@@ -69,8 +77,35 @@ export interface Card {
 	center_affinity?: AffinityColor;
 }
 
+/** One Living Glossary entry. */
+export interface GlossaryTerm {
+	/** Title as in the glossary, e.g. "Reach X". */
+	title: string;
+	/** The definition, with the card-text symbol markup, e.g. `(a)`. */
+	text: string;
+	/** Date the entry was last changed, `YYYY-MM-DD`. */
+	updated: string;
+}
+
+/**
+ * Living Glossary definitions of the gear terms. The text is copyrighted: show `source`,
+ * `url` and `copyright` as credit wherever a definition is shown.
+ */
+export interface Glossary {
+	source: string;
+	url: string;
+	copyright: string;
+	/** Date the glossary was downloaded, `YYYY-MM-DD`. */
+	retrieved: string;
+	/**
+	 * Key: the lowercase rule name without its value, so `rule.name.toLowerCase()` finds it
+	 * ("Reach" finds "reach"). Not every term has an entry: a lookup can be `undefined`.
+	 */
+	terms: Record<string, GlossaryTerm>;
+}
+
 /** Card data format version this frontend is written against. */
-export const DATA_VERSION = 3;
+export const DATA_VERSION = 4;
 
 export interface CardData {
 	/** Format version. Bumped on breaking shape changes. */
@@ -78,4 +113,6 @@ export interface CardData {
 	/** ISO 8601 timestamp of the export. */
 	generated: string;
 	cards: Card[];
+	/** Definitions for the terms on the cards, with the credit. */
+	glossary: Glossary;
 }

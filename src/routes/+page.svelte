@@ -26,7 +26,7 @@
 			if (rawQuery) url.searchParams.set('q', rawQuery);
 			else url.searchParams.delete('q');
 
-			// page.url already includes any base path — we only change its search params
+			// page.url already includes any base path; only its search params change here
 			// eslint-disable-next-line svelte/no-navigation-without-resolve
 			goto(url, { keepFocus: true, replaceState: true, noScroll: true });
 		}, 300);
@@ -70,9 +70,16 @@
 
 <div class="gear-card-grid mx-2 mb-5">
 	{#each results as card (card.id)}
-		<GearCard {card} />
+		<GearCard {card} glossary={data.glossary} />
 	{/each}
 </div>
+
+<footer class="small text-body-secondary text-center px-2 mb-4">
+	Unofficial fan project. Card text and rule definitions © Kingdom Death; definitions from the
+	<!-- An external link from the card data, so resolve() (which adds the base path) doesn't apply. -->
+	<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+	<a href={data.glossary.url}>Living Glossary</a>.
+</footer>
 
 <style>
 	.gear-card-grid {

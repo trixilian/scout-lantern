@@ -110,7 +110,7 @@ describe('matchesClause', () => {
 	});
 
 	describe('hit location (loc)', () => {
-		it('matches any of the card’s locations', () => {
+		it("matches any of the card's locations", () => {
 			expect(matching(loc('head'))).toEqual(['helm']);
 			expect(matching(loc('chest'))).toEqual(['helm']);
 		});

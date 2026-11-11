@@ -1,6 +1,324 @@
 {
-	"version": 3,
-	"generated": "2026-11-10T18:03:02+00:00",
+	"version": 4,
+	"generated": "2026-11-11T10:54:24+00:00",
+	"glossary": {
+		"source": "Kingdom Death: Monster Living Glossary",
+		"url": "https://kingdomdeath.com/rules/living-glossary",
+		"copyright": "© Adam Poots Games, LLC. All rights reserved.",
+		"retrieved": "2026-11-11",
+		"terms": {
+			"accessory": {
+				"title": "Accessory",
+				"text": "A gear special rule. Accessory gear may be worn in addition to armor on a hit location. Each accessory specifies the hit location it covers.",
+				"updated": "2020-05-20"
+			},
+			"activation limit": {
+				"title": "Activation Limit: X",
+				"text": "A gear special rule. A survivor may only activate/spend (a) on this gear the listed number of times during a showdown.",
+				"updated": "2026-02-24"
+			},
+			"affinity bonus": {
+				"title": "Affinity Bonus",
+				"text": "A type of gear special rule. Having the indicated number of colored affinities will trigger the effect. Each affinity bonus only applies once, regardless of how many extra affinities a survivor has.",
+				"updated": "2020-05-20"
+			},
+			"ammo - bow": {
+				"title": "Ammo - Bow",
+				"text": "A gear special rule. You must have a bow in your gear grid to activate this card. Ammo has the range of a bow in your gear grid.",
+				"updated": "2020-06-29"
+			},
+			"barbed": {
+				"title": "Barbed X",
+				"text": "A gear special rule. On a Perfect hit, gain +X strength for the rest of the attack.",
+				"updated": "2021-01-22"
+			},
+			"blindside": {
+				"title": "Blindside",
+				"text": "A gear special rule. When you wound the monster from its blind spot with this gear, all of its <R> REFLEX become <R> FAILURE until the attack ends. (This includes the current reaction.)",
+				"updated": "2025-05-13"
+			},
+			"block": {
+				"title": "Block X",
+				"text": "A gear special rule. Spend (a) to ignore X hits the next time you are attacked. Lasts until your next act. A survivor may not use block more than once per attack. When you Block X, lose all deflect tokens.",
+				"updated": "2025-06-06"
+			},
+			"charge": {
+				"title": "Charge",
+				"text": "A gear special rule. Survivors spend movement and activation to move the maximum available spaces in a straight line in one direction. At the end of movement, if in range, perform an attack using a melee weapon, adding the number of spaces moved in this way to your strength for the attack. Charge does not impact any further attacks this turn.",
+				"updated": "2020-06-29"
+			},
+			"cleavage": {
+				"title": "Cleavage X",
+				"text": "A gear special rule. When you attempt to wound a hit location with a persistent injury, gain +X luck for that wound attempt.",
+				"updated": "2022-05-25"
+			},
+			"cleave": {
+				"title": "Cleave",
+				"text": "A gear special rule. You may spend MA to activate and attack with this weapon. If you do, it gains the two-handed keyword, +4 strength, and slow for the attack. You cannot use Cleave if an injury or other effect is preventing you from activating gear with the two-handed keyword.",
+				"updated": "2022-03-24"
+			},
+			"clobber": {
+				"title": "Clobber X",
+				"text": "A gear special rule. Gain +X strength while attempting to wound a Super-Dense hit location.",
+				"updated": "2023-11-02"
+			},
+			"consume": {
+				"title": "Consume",
+				"text": "A special rule. Something that may be ingested for the listed result. It may be archived after use.",
+				"updated": "2025-08-21"
+			},
+			"cumbersome": {
+				"title": "Cumbersome",
+				"text": "A gear special rule. Survivors must spend both movement and activation to activate Cumbersome gear.",
+				"updated": "2020-06-30"
+			},
+			"cursed": {
+				"title": "Cursed",
+				"text": "A gear special rule. This gear cannot be removed from the gear grid for any reason. If the survivor dies or ceases to exist, archive this gear.",
+				"updated": "2024-03-12"
+			},
+			"dazed": {
+				"title": "Dazed",
+				"text": "When a monster or survivor is dazed, they gain -1 speed token until the end of their turn. Monsters and survivors can only be dazed once per round.",
+				"updated": "2026-10-23"
+			},
+			"deadly": {
+				"title": "Deadly X",
+				"text": "A gear special rule. Gain +X luck while attacking with this weapon. This increases the odds of inflicting critical wounds. (If no numerical value is specified, aka Deadly, it is just +1 luck.)",
+				"updated": "2021-09-11"
+			},
+			"deflect": {
+				"title": "Deflect X",
+				"text": "A gear special rule. Spend (a) to gain (or lose) deflect tokens until you have X of them. When you are hit, if you have any deflect tokens, you ignore that hit and lose a deflect token. When you Deflect X, you lose the benefits of Block.",
+				"updated": "2025-06-06"
+			},
+			"devastating": {
+				"title": "Devastating X",
+				"text": "A gear special rule. When a devastating weapon wounds a monster, it will inflict X additional wounds.",
+				"updated": "2020-06-30"
+			},
+			"early iron": {
+				"title": "Early Iron",
+				"text": "A gear special rule. When any of your attack roll results are a 1, cancel your attack.",
+				"updated": "2020-06-30"
+			},
+			"ethereal": {
+				"title": "Ethereal",
+				"text": "A gear special ability. This gear is inextricably linked to saviors. When the settlement has no savior, archive this gear.",
+				"updated": "2025-03-17"
+			},
+			"frail": {
+				"title": "Frail",
+				"text": "A gear special rule. Frail weapons are destroyed if a survivor attempts to wound a Super-dense location with them. Archive the weapon at the end of the attack.",
+				"updated": "2020-07-01"
+			},
+			"full ensemble": {
+				"title": "Full Ensemble",
+				"text": "A gear special rule. This armor gear is worn at every hit location. You may not equip armor gear at any hit location while wearing a Full Ensemble.",
+				"updated": "2023-11-02"
+			},
+			"grace of power": {
+				"title": "Grace of Power",
+				"text": "A gear special rule. This weapon gains +1 strength for each red affinity you have.",
+				"updated": "2023-11-02"
+			},
+			"grace of splendor": {
+				"title": "Grace of Splendor",
+				"text": "A gear special rule. Spend (m)(a) to gain +1 luck until the end of the round for every 2 blue affinities you have.",
+				"updated": "2023-11-02"
+			},
+			"grace of valor": {
+				"title": "Grace of Valor",
+				"text": "A gear special rule. When you depart, add {!} to all hit locations for every 2 green affinities you have.",
+				"updated": "2023-11-02"
+			},
+			"grimstep": {
+				"title": "Grimstep",
+				"text": "A gear special rule. When you are attacking and Block a hit, you may move up to 6 consecutive spaces. If you do, your next wound attempt this attack gains strength equal to the number of spaces moved.",
+				"updated": "2022-03-24"
+			},
+			"heroic": {
+				"title": "Heroic",
+				"text": "A gear special rule. During your attack roll with this weapon, reroll any natural 1s. You must keep the new results.",
+				"updated": "2023-11-02"
+			},
+			"honed": {
+				"title": "Honed X",
+				"text": "A gear special rule. This gear has +X strength. After successfully wounding a Super-Dense or Parry hit location, the edge is ruined and the weapon loses its bonus strength. Some effects allow you regain Hone benefits. When the survivors return to the settlement, all Honed gear is mended, regaining its lost strength.",
+				"updated": "2023-11-02"
+			},
+			"impeccable": {
+				"title": "Impeccable",
+				"text": "A gear special rule. During your wound attempt with this weapon, reroll any natural 1s. You must keep the new results.",
+				"updated": "2023-11-02"
+			},
+			"irreplaceable": {
+				"title": "Irreplaceable",
+				"text": "A gear special rule. If a survivor dies or ceases to exist, archive all irreplaceable gear in their gear grids.",
+				"updated": "2024-03-12"
+			},
+			"leap": {
+				"title": "Leap",
+				"text": "A gear special rule. Spend (m)(a) to leap into the air! Place your survivor on an unoccupied space exactly 5 spaces away in a straight line, then activate a melee weapon with +2 accuracy and +5 strength.",
+				"updated": "2026-06-08"
+			},
+			"locked": {
+				"title": "Locked",
+				"text": "A gear special rule. This gear cannot be disarmed.",
+				"updated": "2023-11-02"
+			},
+			"meal": {
+				"title": "Meal - [Monster]",
+				"text": "A gear special rule. When you depart, consume this (do not archive) to gain its benefits. You can depart with only one meal. If a meal has a monster name, it is a unique meal from that monster gained via Supreme Cuisine.",
+				"updated": "2023-11-02"
+			},
+			"outfit": {
+				"title": "Outfit",
+				"text": "This completes an armor set if you're wearing the rest of the set and it shares a material keyword with the missing armor gear. For example, if you're wearing an Oxidized Lantern Helm and Phoenix Armor on every other hit location, you would gain the Phoenix Armor set bonus because the Phoenix Helm also has the metal keyword.",
+				"updated": "2020-07-01"
+			},
+			"paired": {
+				"title": "Paired",
+				"text": "A gear special rule. Paired weapons are two weapons that are used as one. Add the speed of the second weapon when attacking with the first. These weapons must have the same name, and both must be in your gear grid.",
+				"updated": "2024-01-17"
+			},
+			"perfect hit": {
+				"title": "Perfect Hit",
+				"text": "An attack dice roll result of a Lantern 10. This always results in a hit. When there are multiple Perfect hits in a single attack, trigger any rules applying to Perfect hits that many times.",
+				"updated": "2020-07-01"
+			},
+			"persistence": {
+				"title": "Persistence X",
+				"text": "A gear special rule. On a Perfect hit, gain +X survival.",
+				"updated": "2023-11-02"
+			},
+			"pounce": {
+				"title": "Pounce",
+				"text": "A gear special rule. Spend (m)(a) to move 3 spaces forward in a straight line and activate a melee weapon. This attack gains +1 strength.",
+				"updated": "2026-06-08"
+			},
+			"precision": {
+				"title": "Precision X",
+				"text": "A gear special rule. On a Perfect hit, inflict an automatic critical wound to the first X hit locations you resolve.",
+				"updated": "2023-11-02"
+			},
+			"provoke": {
+				"title": "Provoke",
+				"text": "A gear special rule. When you wound with this weapon, gain the priority target token.",
+				"updated": "2020-07-01"
+			},
+			"puzzle affinity": {
+				"title": "Puzzle Affinity",
+				"text": "A gear special rule. Puzzle affinity bonuses can only be gained if the affinities are completed using the affinities on that specific gear card (indicated by puzzle pieces instead of boxes).",
+				"updated": "2020-07-01"
+			},
+			"range": {
+				"title": "Range: X (Gear)",
+				"text": "A gear special rule. Survivors this many or fewer spaces away from a monster may attack with this weapon. Ranged weapons cannot be used if field of view to the monster is blocked (by terrain with the Obstacle rule).",
+				"updated": "2020-07-01"
+			},
+			"razor sharp": {
+				"title": "Razor Sharp",
+				"text": "A gear special rule. When attacking with a Razor Sharp weapon, roll the Razor Sharp die and add the result (denoted by the number of pips) to your wound attempt. This is not a wound roll and cannot cause critical wounds.",
+				"updated": "2023-11-02"
+			},
+			"reach": {
+				"title": "Reach X",
+				"text": "A gear special rule. Reach weapons are long enough to attack monsters when the survivor is not adjacent. Reach specifies the maximum number of spaces away that a survivor can attack with this weapon.",
+				"updated": "2020-07-01"
+			},
+			"refined": {
+				"title": "Refined",
+				"text": "A gear special rule. When this fails to wound, you may reroll the wound attempt. Limit once per attack.",
+				"updated": "2023-11-02"
+			},
+			"savage": {
+				"title": "Savage",
+				"text": "A gear special rule. After the first critical wound in an attack, savage weapons cause 1 additional wound. This rule does not trigger on Impervious hit locations.",
+				"updated": "2020-06-30"
+			},
+			"sealed": {
+				"title": "Sealed",
+				"text": "A gear special rule. Sealed gear has a bonus effect that can only be earned by training. A survivor can unseal the gear by declaring it as their weapon proficiency, forsaking the normal bonuses of selecting a weapon type. When the survivor reaches the specialization rank, they earn the effect listed after the Sealed special rule on the gear card. A survivor can only earn a gear's Sealed bonus once per lifetime. Example: A survivor declares Toxicimitar as their weapon proficiency (because it has a Sealed effect). When they reach rank 3 (specialization), they gain the Crescent Step secret fighting art.",
+				"updated": "2022-03-24"
+			},
+			"selfish": {
+				"title": "Selfish (Gear)",
+				"text": "A gear special rule. Selfish gear cannot be in the same gear grid with any other gear with the \"other\" keyword.",
+				"updated": "2024-04-25"
+			},
+			"sentient": {
+				"title": "Sentient",
+				"text": "A gear special rule. A survivor must be insane to activate this gear.",
+				"updated": "2020-06-30"
+			},
+			"shadow walk": {
+				"title": "Shadow Walk",
+				"text": "A special type of movement. When you Shadow Walk, you may move through spaces survivors occupy without causing collision. (You cannot end your movement on spaces survivors occupy.)",
+				"updated": "2020-07-30"
+			},
+			"sharp": {
+				"title": "Sharp",
+				"text": "A gear special rule. Add 1d10 strength to each wound attempt using this gear. This d10 is not a wound roll, and cannot cause critical wounds nor automatically fail.",
+				"updated": "2020-06-30"
+			},
+			"skewer": {
+				"title": "Skewer",
+				"text": "After you Slam, spend (a) to move 1 space and activate a melee weapon with +2 strength. If you wound with a spear, apply that wound roll result to the next selected hit location this attack.",
+				"updated": "2020-07-10"
+			},
+			"slam": {
+				"title": "Slam",
+				"text": "A gear special rule. Spend (m) and full move forward in a straight line. If you move 4+ spaces and stop adjacent to a monster, it suffers knock back 1 and -1 toughness until the end of the round.",
+				"updated": "2020-07-10"
+			},
+			"slow": {
+				"title": "Slow",
+				"text": "A gear special rule. Slow weapons always have an attack speed of 1. Do not add speed modifiers.",
+				"updated": "2020-06-30"
+			},
+			"surpass": {
+				"title": "Surpass X",
+				"text": "A gear special rule. When your wound attempt total surpasses the monster's toughness by X or more, the monster suffers an additional wound.",
+				"updated": "2023-03-06"
+			},
+			"undeathable": {
+				"title": "Undeathable",
+				"text": "A special rule. If the survivor would die, roll 1d10. On a result of 6+, instead the survivor lives. If this roll occurs from the survivor having a lethal amount of bleeding tokens, the survivor will not die until they gain another bleeding token.",
+				"updated": "2025-10-14"
+			},
+			"unique": {
+				"title": "Unique",
+				"text": "A gear special rule. A settlement may only have one copy of this gear card at a time.",
+				"updated": "2020-06-29"
+			},
+			"unshakable": {
+				"title": "Unshakable",
+				"text": "A gear special rule. When this survivor draws a trap card, roll 1d10. On a result of 6+, ignore the trap. Discard it and shuffle the hit location deck.",
+				"updated": "2020-06-29"
+			},
+			"unshakeable": {
+				"title": "Unshakable",
+				"text": "A gear special rule. When this survivor draws a trap card, roll 1d10. On a result of 6+, ignore the trap. Discard it and shuffle the hit location deck.",
+				"updated": "2020-06-29"
+			},
+			"unstoppable": {
+				"title": "Unstoppable",
+				"text": "A gear special rule. Replace all wound rolls with a 1d10 roll. On a 1-5, fail to wound, on 6+ wound. You cannot cause a critical wound while using this rule.",
+				"updated": "2020-06-29"
+			},
+			"unwieldy": {
+				"title": "Unwieldy",
+				"text": "A gear special rule. If any attack dice roll results are 1, the weapon causes 1 random damage to the survivor for each 1 rolled. Continue the attack as normal.",
+				"updated": "2020-06-29"
+			},
+			"vital": {
+				"title": "Vital",
+				"text": "A gear special rule. If the settlement has any gear with this rule, the survivors cannot depart without this gear. If the survivor holding Vital gear perishes before the showdown, another survivor must pick up the Vital gear (discarding gear to make room in their grid if needed).",
+				"updated": "2020-06-29"
+			}
+		}
+	},
 	"cards": [
 		{
 			"id": "core-sg-2",
@@ -49,9 +367,6 @@
 				"accuracy": 7,
 				"strength": 1
 			},
-			"special_rules": [
-				"Perfect Hit"
-			],
 			"affinities": {
 				"top": "red",
 				"left": "red"
@@ -74,7 +389,9 @@
 				"strength": 2
 			},
 			"special_rules": [
-				"Frail"
+				{
+					"name": "Frail"
+				}
 			],
 			"affinities": {
 				"left": "red"
@@ -97,8 +414,12 @@
 				"strength": 3
 			},
 			"special_rules": [
-				"Frail",
-				"Savage"
+				{
+					"name": "Frail"
+				},
+				{
+					"name": "Savage"
+				}
 			],
 			"affinities": {
 				"left": "red"
@@ -114,7 +435,6 @@
 				"thrown",
 				"bone"
 			],
-			"rules_text": "Range: 6.",
 			"source": "Bone Smith",
 			"weapon_stats": {
 				"speed": 1,
@@ -122,8 +442,13 @@
 				"strength": 3
 			},
 			"special_rules": [
-				"Frail",
-				"Range"
+				{
+					"name": "Frail"
+				},
+				{
+					"name": "Range",
+					"value": 6
+				}
 			],
 			"affinities": {
 				"left": "red"
@@ -148,7 +473,9 @@
 				"strength": 5
 			},
 			"special_rules": [
-				"Cumbersome"
+				{
+					"name": "Cumbersome"
+				}
 			],
 			"affinities": {
 				"right": "red",
@@ -306,7 +633,6 @@
 				"whip",
 				"rawhide"
 			],
-			"rules_text": "Provoke: When you wound with this weapon, gain the priority target token.",
 			"source": "Skinnery",
 			"weapon_stats": {
 				"speed": 3,
@@ -314,7 +640,9 @@
 				"strength": 1
 			},
 			"special_rules": [
-				"Provoke"
+				{
+					"name": "Provoke"
+				}
 			]
 		},
 		{
@@ -465,7 +793,6 @@
 				"axe",
 				"two-handed"
 			],
-			"rules_text": "Reach 2.",
 			"source": "Weapon Crafter",
 			"weapon_stats": {
 				"speed": 2,
@@ -473,7 +800,10 @@
 				"strength": 4
 			},
 			"special_rules": [
-				"Reach"
+				{
+					"name": "Reach",
+					"value": 2
+				}
 			],
 			"affinities": {
 				"top": "red"
@@ -504,10 +834,6 @@
 				"accuracy": 7,
 				"strength": 3
 			},
-			"special_rules": [
-				"Dazed",
-				"Perfect Hit"
-			],
 			"affinities": {
 				"bottom": "green"
 			}
@@ -522,7 +848,7 @@
 				"club",
 				"bone"
 			],
-			"rules_text": "On a Perfect hit, reveal the next Al card. Place it on top or bottom of the Al deck. Unwieldy: If any attack roll results are 1, you hit yourself and suffer 1 damage.",
+			"rules_text": "On a Perfect hit, reveal the next Al card. Place it on top or bottom of the Al deck.",
 			"source": "Weapon Crafter",
 			"weapon_stats": {
 				"speed": 3,
@@ -530,8 +856,9 @@
 				"strength": 3
 			},
 			"special_rules": [
-				"Perfect Hit",
-				"Unwieldy"
+				{
+					"name": "Unwieldy"
+				}
 			],
 			"affinities": {
 				"bottom": "green"
@@ -571,7 +898,6 @@
 				"dagger",
 				"metal"
 			],
-			"rules_text": "Barbed 2: On a Perfect hit, gain +2 strength for the rest of the attack.",
 			"source": "Weapon Crafter",
 			"weapon_stats": {
 				"speed": 3,
@@ -579,8 +905,10 @@
 				"strength": 2
 			},
 			"special_rules": [
-				"Barbed 2",
-				"Perfect Hit"
+				{
+					"name": "Barbed",
+					"value": 2
+				}
 			],
 			"affinities": {
 				"right": "red",
@@ -597,11 +925,7 @@
 				"heavy"
 			],
 			"rules_text": "The weapon to the left loses frail and gains unwieldy. If you attempt to wound a Super-dense location with the weapon, archive this at the end of the attack.",
-			"source": "Weapon Crafter",
-			"special_rules": [
-				"Frail",
-				"Unwieldy"
-			]
+			"source": "Weapon Crafter"
 		},
 		{
 			"id": "core-wc-31",
@@ -614,7 +938,6 @@
 				"bone",
 				"metal"
 			],
-			"rules_text": "Reach 2, Frail",
 			"source": "Weapon Crafter",
 			"weapon_stats": {
 				"speed": 2,
@@ -622,8 +945,13 @@
 				"strength": 3
 			},
 			"special_rules": [
-				"Frail",
-				"Reach"
+				{
+					"name": "Frail"
+				},
+				{
+					"name": "Reach",
+					"value": 2
+				}
 			],
 			"affinities": {
 				"right": "red",
@@ -656,9 +984,15 @@
 				"strength": 6
 			},
 			"special_rules": [
-				"Deadly",
-				"Frail",
-				"Slow"
+				{
+					"name": "Deadly"
+				},
+				{
+					"name": "Frail"
+				},
+				{
+					"name": "Slow"
+				}
 			],
 			"affinities": {
 				"top": "red",
@@ -712,7 +1046,6 @@
 				"sword",
 				"metal"
 			],
-			"rules_text": "Barbed 4",
 			"source": "Weapon Crafter",
 			"weapon_stats": {
 				"speed": 2,
@@ -720,8 +1053,10 @@
 				"strength": 3
 			},
 			"special_rules": [
-				"Barbed 4",
-				"Perfect Hit"
+				{
+					"name": "Barbed",
+					"value": 4
+				}
 			],
 			"affinities": {
 				"top": "blue"
@@ -832,7 +1167,7 @@
 				"shield",
 				"leather"
 			],
-			"rules_text": "Add 1 to all hit locations. Block 1: Spend to ignore 1 hit the next time you are attacked. Lasts until your next act. You cannot use block more than once per attack.",
+			"rules_text": "Add 1 to all hit locations.",
 			"source": "Leather Worker",
 			"weapon_stats": {
 				"speed": 1,
@@ -840,7 +1175,10 @@
 				"strength": 1
 			},
 			"special_rules": [
-				"Block 1"
+				{
+					"name": "Block",
+					"value": 1
+				}
 			],
 			"affinities": {
 				"top": "green"
@@ -901,10 +1239,12 @@
 				"item",
 				"heavy"
 			],
-			"rules_text": "Unique When you defeat a monster, gain either 1 random basic resource or 1 random monster resource from that monster's resource deck.",
+			"rules_text": "When you defeat a monster, gain either 1 random basic resource or 1 random monster resource from that monster's resource deck.",
 			"source": "Barber Surgeon",
 			"special_rules": [
-				"Unique"
+				{
+					"name": "Unique"
+				}
 			],
 			"affinities": {
 				"bottom": "green"
@@ -1050,16 +1390,21 @@
 				"bone",
 				"other"
 			],
-			"rules_text": "Unique, Irreplaceable, Accessory",
 			"source": "Mask Maker",
 			"armor_value": 2,
 			"hit_location": [
 				"head"
 			],
 			"special_rules": [
-				"Accessory",
-				"Irreplaceable",
-				"Unique"
+				{
+					"name": "Accessory"
+				},
+				{
+					"name": "Irreplaceable"
+				},
+				{
+					"name": "Unique"
+				}
 			],
 			"affinity_boxes": [
 				{
@@ -1081,16 +1426,21 @@
 				"bone",
 				"other"
 			],
-			"rules_text": "Unique, Irreplaceable, Accessory",
 			"source": "Mask Maker",
 			"armor_value": 2,
 			"hit_location": [
 				"head"
 			],
 			"special_rules": [
-				"Accessory",
-				"Irreplaceable",
-				"Unique"
+				{
+					"name": "Accessory"
+				},
+				{
+					"name": "Irreplaceable"
+				},
+				{
+					"name": "Unique"
+				}
 			],
 			"affinity_boxes": [
 				{
@@ -1114,16 +1464,21 @@
 				"bone",
 				"other"
 			],
-			"rules_text": "Unique, Irreplaceable, Accessory",
 			"source": "Mask Maker",
 			"armor_value": 2,
 			"hit_location": [
 				"head"
 			],
 			"special_rules": [
-				"Accessory",
-				"Irreplaceable",
-				"Unique"
+				{
+					"name": "Accessory"
+				},
+				{
+					"name": "Irreplaceable"
+				},
+				{
+					"name": "Unique"
+				}
 			],
 			"affinity_boxes": [
 				{
@@ -1147,16 +1502,22 @@
 				"bone",
 				"other"
 			],
-			"rules_text": "Unique, Irreplaceable, Accessory If you have no affinities, gain +4 luck and suffer -4 to all severe injury rolls.",
+			"rules_text": "If you have no affinities, gain +4 luck and suffer -4 to all severe injury rolls.",
 			"source": "Mask Maker",
 			"armor_value": 2,
 			"hit_location": [
 				"head"
 			],
 			"special_rules": [
-				"Accessory",
-				"Irreplaceable",
-				"Unique"
+				{
+					"name": "Accessory"
+				},
+				{
+					"name": "Irreplaceable"
+				},
+				{
+					"name": "Unique"
+				}
 			]
 		},
 		{
@@ -1169,16 +1530,21 @@
 				"bone",
 				"other"
 			],
-			"rules_text": "Unique, Irreplaceable, Accessory",
 			"source": "Mask Maker",
 			"armor_value": 2,
 			"hit_location": [
 				"head"
 			],
 			"special_rules": [
-				"Accessory",
-				"Irreplaceable",
-				"Unique"
+				{
+					"name": "Accessory"
+				},
+				{
+					"name": "Irreplaceable"
+				},
+				{
+					"name": "Unique"
+				}
 			],
 			"affinity_boxes": [
 				{
@@ -1200,16 +1566,21 @@
 				"bone",
 				"other"
 			],
-			"rules_text": "Unique, Irreplaceable, Accessory",
 			"source": "Mask Maker",
 			"armor_value": 2,
 			"hit_location": [
 				"head"
 			],
 			"special_rules": [
-				"Accessory",
-				"Irreplaceable",
-				"Unique"
+				{
+					"name": "Accessory"
+				},
+				{
+					"name": "Irreplaceable"
+				},
+				{
+					"name": "Unique"
+				}
 			],
 			"affinity_boxes": [
 				{
@@ -1374,7 +1745,6 @@
 				"finesse",
 				"metal"
 			],
-			"rules_text": "Sharp: Add 1d10 Strength to each wound attempt. \nEarly Iron: When an attack roll result is 1, cancel any hits and end the attack.",
 			"source": "Blacksmith",
 			"weapon_stats": {
 				"speed": 3,
@@ -1382,8 +1752,12 @@
 				"strength": 3
 			},
 			"special_rules": [
-				"Early Iron",
-				"Sharp"
+				{
+					"name": "Early Iron"
+				},
+				{
+					"name": "Sharp"
+				}
 			],
 			"affinities": {
 				"left": "red"
@@ -1400,7 +1774,7 @@
 				"bone",
 				"metal"
 			],
-			"rules_text": "Add 1 to all hit locations. \nBlock 1: Spend to ignore a hit the next time you are attacked. Lasts until your next act. You cannot use block more than once per attack.",
+			"rules_text": "Add 1 to all hit locations.",
 			"source": "Blacksmith",
 			"weapon_stats": {
 				"speed": 2,
@@ -1408,8 +1782,10 @@
 				"strength": 3
 			},
 			"special_rules": [
-				"Block 1",
-				"Block"
+				{
+					"name": "Block",
+					"value": 1
+				}
 			],
 			"affinities": {
 				"right": "red"
@@ -1426,7 +1802,6 @@
 				"finesse",
 				"metal"
 			],
-			"rules_text": "Paired \nSharp: Add 1d10 Strength to each wound attempt. Early Iron: When an attack roll result is 1, cancel any hits and end the attack.",
 			"source": "Blacksmith",
 			"weapon_stats": {
 				"speed": 2,
@@ -1434,9 +1809,15 @@
 				"strength": 1
 			},
 			"special_rules": [
-				"Early Iron",
-				"Paired",
-				"Sharp"
+				{
+					"name": "Early Iron"
+				},
+				{
+					"name": "Paired"
+				},
+				{
+					"name": "Sharp"
+				}
 			],
 			"affinities": {
 				"left": "red"
@@ -1453,7 +1834,7 @@
 				"metal",
 				"heavy"
 			],
-			"rules_text": "Add 2 to all hit locations.\nBlock 2: Spend to ignore 2 hits the next time you are attacked. Lasts until your next act. You cannot use block more than once per attack.",
+			"rules_text": "Add 2 to all hit locations.",
 			"source": "Blacksmith",
 			"weapon_stats": {
 				"speed": 1,
@@ -1461,8 +1842,10 @@
 				"strength": 5
 			},
 			"special_rules": [
-				"Block 2",
-				"Block"
+				{
+					"name": "Block",
+					"value": 2
+				}
 			]
 		},
 		{
@@ -1478,7 +1861,6 @@
 				"finesse",
 				"metal"
 			],
-			"rules_text": "Reach 2 \nSharp: Add 1d10 Strength to each wound attempt. \nEarly Iron: When an attack roll result is 1, cancel any hits and end the attack.",
 			"source": "Blacksmith",
 			"weapon_stats": {
 				"speed": 2,
@@ -1486,9 +1868,16 @@
 				"strength": 4
 			},
 			"special_rules": [
-				"Early Iron",
-				"Reach",
-				"Sharp"
+				{
+					"name": "Early Iron"
+				},
+				{
+					"name": "Reach",
+					"value": 2
+				},
+				{
+					"name": "Sharp"
+				}
 			],
 			"affinities": {
 				"bottom": "green"
@@ -1505,7 +1894,6 @@
 				"finesse",
 				"metal"
 			],
-			"rules_text": "Sharp, Reach 2\nEarly Iron: When an attack roll result is 1, cancel any hits and end the attack.",
 			"source": "Blacksmith",
 			"weapon_stats": {
 				"speed": 2,
@@ -1513,9 +1901,16 @@
 				"strength": 0
 			},
 			"special_rules": [
-				"Early Iron",
-				"Reach",
-				"Sharp"
+				{
+					"name": "Early Iron"
+				},
+				{
+					"name": "Reach",
+					"value": 2
+				},
+				{
+					"name": "Sharp"
+				}
 			],
 			"affinities": {
 				"left": "blue"
@@ -1540,11 +1935,22 @@
 				"strength": 9
 			},
 			"special_rules": [
-				"Devastating 1",
-				"Early Iron",
-				"Frail",
-				"Sharp",
-				"Slow"
+				{
+					"name": "Devastating",
+					"value": 1
+				},
+				{
+					"name": "Early Iron"
+				},
+				{
+					"name": "Frail"
+				},
+				{
+					"name": "Sharp"
+				},
+				{
+					"name": "Slow"
+				}
 			],
 			"affinities": {
 				"top": "blue",
@@ -1562,9 +1968,6 @@
 			],
 			"rules_text": "Ignore Early Iron. Spend (a) to polish the edge of your or an adjacent survivor's finesse weapon. It gains +4 strength for its next attack. Limit once per attack.",
 			"source": "Blacksmith",
-			"special_rules": [
-				"Early Iron"
-			],
 			"affinities": {
 				"left": "red"
 			}
@@ -1583,7 +1986,7 @@
 				"finesse",
 				"metal"
 			],
-			"rules_text": "Slow, Sharp, Devastating 2, Irreplaceable\n-2 movement",
+			"rules_text": "-2 movement",
 			"source": "Blacksmith",
 			"weapon_stats": {
 				"speed": 3,
@@ -1591,10 +1994,19 @@
 				"strength": 14
 			},
 			"special_rules": [
-				"Devastating 2",
-				"Irreplaceable",
-				"Sharp",
-				"Slow"
+				{
+					"name": "Devastating",
+					"value": 2
+				},
+				{
+					"name": "Irreplaceable"
+				},
+				{
+					"name": "Sharp"
+				},
+				{
+					"name": "Slow"
+				}
 			],
 			"affinities": {
 				"bottom": "red"
@@ -1614,9 +2026,6 @@
 			"armor_value": 2,
 			"hit_location": [
 				"head"
-			],
-			"special_rules": [
-				"Roar"
 			],
 			"affinities": {
 				"bottom": "red"
@@ -1646,9 +2055,6 @@
 			"armor_value": 2,
 			"hit_location": [
 				"arms"
-			],
-			"special_rules": [
-				"Pounce"
 			]
 		},
 		{
@@ -1661,14 +2067,15 @@
 				"fur",
 				"heavy"
 			],
-			"rules_text": "Pounce: Spend (m) and (a) to move 3 spaces in a straight line. Then, if you moved 3 spaces, activate a melee weapon with +1 strength.",
 			"source": "Catarium",
 			"armor_value": 2,
 			"hit_location": [
 				"chest"
 			],
 			"special_rules": [
-				"Pounce"
+				{
+					"name": "Pounce"
+				}
 			],
 			"affinities": {
 				"top": "blue"
@@ -1732,7 +2139,6 @@
 				"melee",
 				"katar"
 			],
-			"rules_text": "Deadly: +1 luck with this weapon. \nPaired: When you attack, add the speed of a 2nd Lion Beast Katar in your gear grid.",
 			"source": "Catarium",
 			"weapon_stats": {
 				"speed": 2,
@@ -1740,8 +2146,12 @@
 				"strength": 3
 			},
 			"special_rules": [
-				"Deadly",
-				"Paired"
+				{
+					"name": "Deadly"
+				},
+				{
+					"name": "Paired"
+				}
 			]
 		},
 		{
@@ -1768,7 +2178,7 @@
 				"ammunition",
 				"arrow"
 			],
-			"rules_text": "Slow, Ammo - Bow: You must have a bow in your gear grid to activate this. If you hit, monster gains -1 evasion token. Use once per showdown",
+			"rules_text": "If you hit, monster gains -1 evasion token. Use once per showdown",
 			"source": "Catarium",
 			"weapon_stats": {
 				"speed": 1,
@@ -1776,8 +2186,12 @@
 				"strength": 6
 			},
 			"special_rules": [
-				"Ammo - Bow",
-				"Slow"
+				{
+					"name": "Ammo - Bow"
+				},
+				{
+					"name": "Slow"
+				}
 			],
 			"affinities": {
 				"right": "blue"
@@ -1809,7 +2223,6 @@
 				"heavy",
 				"two-handed"
 			],
-			"rules_text": "Reach 2: May attack from 2 spaces away.",
 			"source": "Catarium",
 			"weapon_stats": {
 				"speed": 2,
@@ -1817,7 +2230,10 @@
 				"strength": 3
 			},
 			"special_rules": [
-				"Reach"
+				{
+					"name": "Reach",
+					"value": 2
+				}
 			],
 			"affinities": {
 				"right": "red"
@@ -1831,14 +2247,15 @@
 				"item",
 				"flammable"
 			],
-			"rules_text": "Accessory: You may wear this in addition to 1 armor at this hit location.",
 			"source": "Catarium",
 			"armor_value": 1,
 			"hit_location": [
 				"head"
 			],
 			"special_rules": [
-				"Accessory"
+				{
+					"name": "Accessory"
+				}
 			]
 		},
 		{
@@ -1851,7 +2268,7 @@
 				"bow",
 				"two-handed"
 			],
-			"rules_text": "Cumbersome, Range: 6. \nAim: When you attack, before rolling to hit, you may reduce the speed of this weapon by 1 to gain +2 accuracy for that attack.",
+			"rules_text": "Aim: When you attack, before rolling to hit, you may reduce the speed of this weapon by 1 to gain +2 accuracy for that attack.",
 			"source": "Catarium",
 			"weapon_stats": {
 				"speed": 2,
@@ -1859,8 +2276,13 @@
 				"strength": 3
 			},
 			"special_rules": [
-				"Cumbersome",
-				"Range"
+				{
+					"name": "Cumbersome"
+				},
+				{
+					"name": "Range",
+					"value": 6
+				}
 			],
 			"affinities": {
 				"top": "blue"
@@ -1903,9 +2325,6 @@
 				"accuracy": 6,
 				"strength": 2
 			},
-			"special_rules": [
-				"Perfect Hit"
-			],
 			"affinities": {
 				"top": "red",
 				"right": "red",
@@ -1933,10 +2352,7 @@
 				"fragile"
 			],
 			"rules_text": "(a) Consume: Suffer Frenzy brain trauma. Can be used once per showdown.",
-			"source": "Catarium",
-			"special_rules": [
-				"Consume"
-			]
+			"source": "Catarium"
 		},
 		{
 			"id": "core-sc-85",
@@ -1952,9 +2368,6 @@
 			"armor_value": 2,
 			"hit_location": [
 				"head"
-			],
-			"special_rules": [
-				"Scream"
 			],
 			"affinities": {
 				"bottom": "blue"
@@ -1989,14 +2402,15 @@
 				"set",
 				"fur"
 			],
-			"rules_text": "Slam: Spend (m) to full move foward in a straight line. If you move 4+ spaces and stop adjacent to a monster, it suffers knockback 1 and -1 toughness until the end of the round.",
 			"source": "Stone Circle",
 			"armor_value": 2,
 			"hit_location": [
 				"chest"
 			],
 			"special_rules": [
-				"Slam"
+				{
+					"name": "Slam"
+				}
 			],
 			"affinities": {
 				"top": "blue",
@@ -2066,7 +2480,7 @@
 				"katar",
 				"bone"
 			],
-			"rules_text": "Paired \nWhen you wound with this weapon, monster gains -1 toughness until end of the attack.",
+			"rules_text": "When you wound with this weapon, monster gains -1 toughness until end of the attack.",
 			"source": "Stone Circle",
 			"weapon_stats": {
 				"speed": 2,
@@ -2074,7 +2488,9 @@
 				"strength": 4
 			},
 			"special_rules": [
-				"Paired"
+				{
+					"name": "Paired"
+				}
 			]
 		},
 		{
@@ -2087,9 +2503,6 @@
 			],
 			"rules_text": "(a) Consume: Remove all your tokens and stand up. You may use this while knocked down. Use once per showdown.",
 			"source": "Stone Circle",
-			"special_rules": [
-				"Consume"
-			],
 			"affinities": {
 				"top": "green",
 				"left": "blue"
@@ -2159,7 +2572,7 @@
 				"two-handed",
 				"bone"
 			],
-			"rules_text": "Irreplaceable, Reach 2\nEach showdown, the first time you wound, the monster gains a - 1 toughness token.",
+			"rules_text": "Each showdown, the first time you wound, the monster gains a - 1 toughness token.",
 			"source": "Stone Circle",
 			"weapon_stats": {
 				"speed": 2,
@@ -2167,8 +2580,13 @@
 				"strength": 9
 			},
 			"special_rules": [
-				"Irreplaceable",
-				"Reach"
+				{
+					"name": "Irreplaceable"
+				},
+				{
+					"name": "Reach",
+					"value": 2
+				}
 			]
 		},
 		{
@@ -2300,7 +2718,6 @@
 				"shield",
 				"flammable"
 			],
-			"rules_text": "Block 1",
 			"source": "Plumery",
 			"weapon_stats": {
 				"speed": 3,
@@ -2308,8 +2725,10 @@
 				"strength": 0
 			},
 			"special_rules": [
-				"Block 1",
-				"Block"
+				{
+					"name": "Block",
+					"value": 1
+				}
 			],
 			"affinities": {
 				"top": "blue"
@@ -2376,9 +2795,6 @@
 			],
 			"rules_text": "(a) Consume: Once per showdown, add 1 to all hit locations. Gain priority target token. Roll 1d10. On a 1, reduce your survival to 0.",
 			"source": "Plumery",
-			"special_rules": [
-				"Consume"
-			],
 			"affinities": {
 				"right": "green"
 			}
@@ -2401,9 +2817,12 @@
 				"strength": 6
 			},
 			"special_rules": [
-				"Paired",
-				"Perfect Hit",
-				"Savage"
+				{
+					"name": "Paired"
+				},
+				{
+					"name": "Savage"
+				}
 			],
 			"affinities": {
 				"left": "red"
@@ -2427,10 +2846,12 @@
 				"item",
 				"other"
 			],
-			"rules_text": "Unique\nDuring the aftermath, if you died or ceased to exist, you may archive the Hours Ring and reset the campaign to the previous Settlement Phase's develop step before you departed.",
+			"rules_text": "During the aftermath, if you died or ceased to exist, you may archive the Hours Ring and reset the campaign to the previous Settlement Phase's develop step before you departed.",
 			"source": "Plumery",
 			"special_rules": [
-				"Unique"
+				{
+					"name": "Unique"
+				}
 			]
 		},
 		{
@@ -2444,7 +2865,7 @@
 				"dagger",
 				"bone"
 			],
-			"rules_text": "Frail\nThis weapon gains strength equal to the monster's damage attribute.",
+			"rules_text": "This weapon gains strength equal to the monster's damage attribute.",
 			"source": "Plumery",
 			"weapon_stats": {
 				"speed": 2,
@@ -2452,7 +2873,9 @@
 				"strength": 5
 			},
 			"special_rules": [
-				"Frail"
+				{
+					"name": "Frail"
+				}
 			]
 		},
 		{
@@ -2492,7 +2915,6 @@
 				"bow",
 				"two-handed"
 			],
-			"rules_text": "Slow, Range 6\nCumbersome: Spend (m) as an additional cost of activating this weapon.",
 			"source": "Plumery",
 			"weapon_stats": {
 				"speed": 1,
@@ -2500,9 +2922,16 @@
 				"strength": 9
 			},
 			"special_rules": [
-				"Cumbersome",
-				"Range",
-				"Slow"
+				{
+					"name": "Cumbersome"
+				},
+				{
+					"name": "Range",
+					"value": 6
+				},
+				{
+					"name": "Slow"
+				}
 			],
 			"affinities": {
 				"right": "green",
@@ -2528,7 +2957,7 @@
 				"ammunition",
 				"arrow"
 			],
-			"rules_text": "Slow, Ammo - Bow\nOn a hit, monster gains -1 movement token. Use once per showdown.",
+			"rules_text": "On a hit, monster gains -1 movement token. Use once per showdown.",
 			"source": "Plumery",
 			"weapon_stats": {
 				"speed": 1,
@@ -2536,8 +2965,12 @@
 				"strength": 11
 			},
 			"special_rules": [
-				"Ammo - Bow",
-				"Slow"
+				{
+					"name": "Ammo - Bow"
+				},
+				{
+					"name": "Slow"
+				}
 			]
 		},
 		{
@@ -2550,7 +2983,6 @@
 				"spear",
 				"two-handed"
 			],
-			"rules_text": "Reach 2",
 			"source": "Plumery",
 			"weapon_stats": {
 				"speed": 2,
@@ -2558,7 +2990,10 @@
 				"strength": 5
 			},
 			"special_rules": [
-				"Reach"
+				{
+					"name": "Reach",
+					"value": 2
+				}
 			],
 			"affinities": {
 				"top": "red"
@@ -2583,13 +3018,13 @@
 				"bone",
 				"other"
 			],
-			"rules_text": "Block 1\nWhen Rainbow Katana is left of Blood Sheath, it loses Frail and gains Sharp (add 1d10 strength to each wound attempt).",
+			"rules_text": "When Rainbow Katana is left of Blood Sheath, it loses Frail and gains Sharp (add 1d10 strength to each wound attempt).",
 			"source": "Plumery",
 			"special_rules": [
-				"Block 1",
-				"Frail",
-				"Block",
-				"Sharp"
+				{
+					"name": "Block",
+					"value": 1
+				}
 			]
 		},
 		{
@@ -2603,7 +3038,6 @@
 				"finesse",
 				"two-handed"
 			],
-			"rules_text": "Frail",
 			"source": "Plumery",
 			"weapon_stats": {
 				"speed": 4,
@@ -2611,7 +3045,9 @@
 				"strength": 4
 			},
 			"special_rules": [
-				"Frail"
+				{
+					"name": "Frail"
+				}
 			],
 			"affinities": {
 				"left": "red"
@@ -2653,7 +3089,6 @@
 				"finesse",
 				"metal"
 			],
-			"rules_text": "Sharp\nDeflect 1: Spend (a), you now have exactly 1 deflect token. The next 1 time you are hit, ignore that hit and lose 1 deflect token.",
 			"source": "Exhausted Lantern Hoard",
 			"weapon_stats": {
 				"speed": 3,
@@ -2661,7 +3096,13 @@
 				"strength": 5
 			},
 			"special_rules": [
-				"Sharp"
+				{
+					"name": "Deflect",
+					"value": 1
+				},
+				{
+					"name": "Sharp"
+				}
 			],
 			"affinities": {
 				"left": "red"
@@ -2678,13 +3119,19 @@
 				"metal",
 				"heavy"
 			],
-			"rules_text": "Add 2 to all hit locations.\nDeflect 2: Spend (a), you now have exactly 2 deflect tokens. The next 2 times you are hit, ignore a hit and lose 1 deflect token.",
+			"rules_text": "Add 2 to all hit locations.",
 			"source": "Exhausted Lantern Hoard",
 			"weapon_stats": {
 				"speed": 1,
 				"accuracy": 6,
 				"strength": 6
-			}
+			},
+			"special_rules": [
+				{
+					"name": "Deflect",
+					"value": 2
+				}
+			]
 		},
 		{
 			"id": "core-elh-119",
@@ -2697,7 +3144,6 @@
 				"finesse",
 				"metal"
 			],
-			"rules_text": "Sharp, Paired",
 			"source": "Exhausted Lantern Hoard",
 			"weapon_stats": {
 				"speed": 3,
@@ -2705,9 +3151,12 @@
 				"strength": 4
 			},
 			"special_rules": [
-				"Paired",
-				"Perfect Hit",
-				"Sharp"
+				{
+					"name": "Paired"
+				},
+				{
+					"name": "Sharp"
+				}
 			],
 			"affinities": {
 				"right": "red",
@@ -2736,7 +3185,6 @@
 				"finesse",
 				"metal"
 			],
-			"rules_text": "Sharp, Reach 2",
 			"source": "Exhausted Lantern Hoard",
 			"weapon_stats": {
 				"speed": 2,
@@ -2744,8 +3192,13 @@
 				"strength": 6
 			},
 			"special_rules": [
-				"Reach",
-				"Sharp"
+				{
+					"name": "Reach",
+					"value": 2
+				},
+				{
+					"name": "Sharp"
+				}
 			],
 			"affinities": {
 				"bottom": "green"
@@ -2771,7 +3224,6 @@
 				"finesse",
 				"metal"
 			],
-			"rules_text": "Sharp, Reach 2",
 			"source": "Exhausted Lantern Hoard",
 			"weapon_stats": {
 				"speed": 2,
@@ -2779,9 +3231,16 @@
 				"strength": 3
 			},
 			"special_rules": [
-				"Provoke",
-				"Reach",
-				"Sharp"
+				{
+					"name": "Provoke"
+				},
+				{
+					"name": "Reach",
+					"value": 2
+				},
+				{
+					"name": "Sharp"
+				}
 			],
 			"affinities": {
 				"left": "blue"
@@ -2807,14 +3266,15 @@
 				"set",
 				"metal"
 			],
-			"rules_text": "Outfit.",
 			"source": "Exhausted Lantern Hoard",
 			"armor_value": 6,
 			"hit_location": [
 				"head"
 			],
 			"special_rules": [
-				"Outfit"
+				{
+					"name": "Outfit"
+				}
 			],
 			"affinities": {
 				"bottom": "blue"
@@ -2839,7 +3299,6 @@
 				"axe",
 				"other"
 			],
-			"rules_text": "Paired\nSentient: Must be insane to activate.\nIrreplaceable: When you die, archive this card.",
 			"source": "Rare Gear",
 			"weapon_stats": {
 				"speed": 2,
@@ -2847,9 +3306,15 @@
 				"strength": 5
 			},
 			"special_rules": [
-				"Irreplaceable",
-				"Paired",
-				"Sentient"
+				{
+					"name": "Irreplaceable"
+				},
+				{
+					"name": "Paired"
+				},
+				{
+					"name": "Sentient"
+				}
 			]
 		},
 		{
@@ -2862,16 +3327,22 @@
 				"metal",
 				"other"
 			],
-			"rules_text": "Unique, Irreplaceable, Accessory\nDuring the Aftermath, you run off into the darkness never to be seen again. During the Settlement Phase, you may archive this item to build the Mask Maker location.",
+			"rules_text": "During the Aftermath, you run off into the darkness never to be seen again. During the Settlement Phase, you may archive this item to build the Mask Maker location.",
 			"source": "Rare Gear",
 			"armor_value": 2,
 			"hit_location": [
 				"head"
 			],
 			"special_rules": [
-				"Accessory",
-				"Unique",
-				"Irreplaceable"
+				{
+					"name": "Accessory"
+				},
+				{
+					"name": "Irreplaceable"
+				},
+				{
+					"name": "Unique"
+				}
 			]
 		},
 		{
@@ -2886,7 +3357,7 @@
 				"lantern",
 				"other"
 			],
-			"rules_text": "Reach 2, Irreplaceable, Unique\nAfter attacking, if standing, you may move up to 2 spaces directly away from the monster.",
+			"rules_text": "After attacking, if standing, you may move up to 2 spaces directly away from the monster.",
 			"source": "Rare Gear",
 			"weapon_stats": {
 				"speed": 2,
@@ -2894,9 +3365,16 @@
 				"strength": 7
 			},
 			"special_rules": [
-				"Irreplaceable",
-				"Reach",
-				"Unique"
+				{
+					"name": "Irreplaceable"
+				},
+				{
+					"name": "Reach",
+					"value": 2
+				},
+				{
+					"name": "Unique"
+				}
 			]
 		},
 		{
@@ -2910,7 +3388,7 @@
 				"finesse",
 				"other"
 			],
-			"rules_text": "Slow, Cursed, Cumbersome, Sentient, Irreplaceable\nGains Devastating 2 when fighting the Watcher. *Accuracy is 9 - Twilight Sword proficiency level.",
+			"rules_text": "Gains Devastating 2 when fighting the Watcher. *Accuracy is 9 - Twilight Sword proficiency level.",
 			"source": "Rare Gear",
 			"weapon_stats": {
 				"speed": 1,
@@ -2918,12 +3396,21 @@
 				"strength": 9
 			},
 			"special_rules": [
-				"Cumbersome",
-				"Cursed",
-				"Devastating 2",
-				"Irreplaceable",
-				"Sentient",
-				"Slow"
+				{
+					"name": "Cumbersome"
+				},
+				{
+					"name": "Cursed"
+				},
+				{
+					"name": "Irreplaceable"
+				},
+				{
+					"name": "Sentient"
+				},
+				{
+					"name": "Slow"
+				}
 			]
 		},
 		{
@@ -2935,14 +3422,16 @@
 				"bone",
 				"metal"
 			],
-			"rules_text": "Cursed\nAt the Aftermath, 📖 King's Curse.",
+			"rules_text": "At the Aftermath, 📖 King's Curse.",
 			"source": "Rare Gear",
 			"armor_value": 4,
 			"hit_location": [
 				"head"
 			],
 			"special_rules": [
-				"Cursed"
+				{
+					"name": "Cursed"
+				}
 			]
 		},
 		{
@@ -2954,14 +3443,16 @@
 				"bone",
 				"metal"
 			],
-			"rules_text": "Cursed\nAt the Aftermath, 📖 King's Curse.",
+			"rules_text": "At the Aftermath, 📖 King's Curse.",
 			"source": "Rare Gear",
 			"armor_value": 4,
 			"hit_location": [
 				"chest"
 			],
 			"special_rules": [
-				"Cursed"
+				{
+					"name": "Cursed"
+				}
 			]
 		},
 		{
@@ -2973,14 +3464,16 @@
 				"bone",
 				"metal"
 			],
-			"rules_text": "Cursed\nAt the Aftermath, 📖 King's Curse.",
+			"rules_text": "At the Aftermath, 📖 King's Curse.",
 			"source": "Rare Gear",
 			"armor_value": 4,
 			"hit_location": [
 				"arms"
 			],
 			"special_rules": [
-				"Cursed"
+				{
+					"name": "Cursed"
+				}
 			]
 		},
 		{
@@ -2992,14 +3485,16 @@
 				"bone",
 				"metal"
 			],
-			"rules_text": "Cursed\nAt the Aftermath, 📖 King's Curse.",
+			"rules_text": "At the Aftermath, 📖 King's Curse.",
 			"source": "Rare Gear",
 			"armor_value": 4,
 			"hit_location": [
 				"legs"
 			],
 			"special_rules": [
-				"Cursed"
+				{
+					"name": "Cursed"
+				}
 			]
 		},
 		{
@@ -3011,14 +3506,16 @@
 				"bone",
 				"metal"
 			],
-			"rules_text": "Cursed\nAt the Aftermath, 📖 King's Curse.",
+			"rules_text": "At the Aftermath, 📖 King's Curse.",
 			"source": "Rare Gear",
 			"armor_value": 4,
 			"hit_location": [
 				"waist"
 			],
 			"special_rules": [
-				"Cursed"
+				{
+					"name": "Cursed"
+				}
 			]
 		},
 		{
@@ -3032,7 +3529,7 @@
 				"finesse",
 				"other"
 			],
-			"rules_text": "Unique, Irreplaceable\nYour courage is added to this weapon's strength.",
+			"rules_text": "Your courage is added to this weapon's strength.",
 			"source": "Rare Gear",
 			"weapon_stats": {
 				"speed": 3,
@@ -3040,8 +3537,12 @@
 				"strength": 0
 			},
 			"special_rules": [
-				"Irreplaceable",
-				"Unique"
+				{
+					"name": "Irreplaceable"
+				},
+				{
+					"name": "Unique"
+				}
 			]
 		},
 		{
@@ -3056,7 +3557,7 @@
 				"finesse",
 				"other"
 			],
-			"rules_text": "Frail, Sharp, Sentient, Deadly 2, Unique\nWhen you critically wound with this weapon, gain 2 bleeding tokens.",
+			"rules_text": "When you critically wound with this weapon, gain 2 bleeding tokens.",
 			"source": "Rare Gear",
 			"weapon_stats": {
 				"speed": 6,
@@ -3064,11 +3565,22 @@
 				"strength": 6
 			},
 			"special_rules": [
-				"Deadly",
-				"Frail",
-				"Sentient",
-				"Sharp",
-				"Unique"
+				{
+					"name": "Deadly",
+					"value": 2
+				},
+				{
+					"name": "Frail"
+				},
+				{
+					"name": "Sentient"
+				},
+				{
+					"name": "Sharp"
+				},
+				{
+					"name": "Unique"
+				}
 			]
 		},
 		{
@@ -3082,7 +3594,6 @@
 				"finesse",
 				"metal"
 			],
-			"rules_text": "Irreplaceable, Slow, Sharp\nBarbed 1d10: On a Perfect hit, gain +1d10 strength for the rest of the attack.",
 			"source": "Rare Gear",
 			"weapon_stats": {
 				"speed": 1,
@@ -3090,11 +3601,19 @@
 				"strength": 5
 			},
 			"special_rules": [
-				"Barbed 1",
-				"Irreplaceable",
-				"Perfect Hit",
-				"Sharp",
-				"Slow"
+				{
+					"name": "Barbed",
+					"value": "1d10"
+				},
+				{
+					"name": "Irreplaceable"
+				},
+				{
+					"name": "Sharp"
+				},
+				{
+					"name": "Slow"
+				}
 			]
 		},
 		{
@@ -3108,7 +3627,7 @@
 				"metal",
 				"heavy"
 			],
-			"rules_text": "Irreplaceable\n-3 movement.\nSpend (a) or 1 survival to ignore a hit.",
+			"rules_text": "-3 movement.\nSpend (a) or 1 survival to ignore a hit.",
 			"source": "Rare Gear",
 			"weapon_stats": {
 				"speed": 1,
@@ -3116,7 +3635,9 @@
 				"strength": 6
 			},
 			"special_rules": [
-				"Irreplaceable"
+				{
+					"name": "Irreplaceable"
+				}
 			]
 		},
 		{
@@ -3130,7 +3651,7 @@
 				"two-handed",
 				"other"
 			],
-			"rules_text": "Irreplaceable, Unique, Cursed\nOn a Perfect hit, the monster is knocked down. Suffer a severe arm injury. All non-deaf survivors suffer 1 brain damage.",
+			"rules_text": "On a Perfect hit, the monster is knocked down. Suffer a severe arm injury. All non-deaf survivors suffer 1 brain damage.",
 			"source": "Rare Gear",
 			"weapon_stats": {
 				"speed": 2,
@@ -3138,10 +3659,15 @@
 				"strength": 10
 			},
 			"special_rules": [
-				"Cursed",
-				"Irreplaceable",
-				"Perfect Hit",
-				"Unique"
+				{
+					"name": "Cursed"
+				},
+				{
+					"name": "Irreplaceable"
+				},
+				{
+					"name": "Unique"
+				}
 			]
 		},
 		{
@@ -3153,10 +3679,12 @@
 				"lantern",
 				"other"
 			],
-			"rules_text": "Vital\nOn Arrival, all survivors gain the Horripilation survivor status card. (See the Watcher's Al deck). When not insane, flip this card.",
+			"rules_text": "On Arrival, all survivors gain the Horripilation survivor status card. (See the Watcher's Al deck). When not insane, flip this card.",
 			"source": "Rare Gear",
 			"special_rules": [
-				"Vital"
+				{
+					"name": "Vital"
+				}
 			],
 			"affinities": {
 				"top": "green",
@@ -3281,13 +3809,18 @@
 				"dagger",
 				"bone"
 			],
-			"rules_text": "Honed 3: This has +3 strength until its edge is ruined after wounding a Parry or Super-Dense hit location.",
 			"source": "Crimson Crockery",
 			"weapon_stats": {
 				"speed": 3,
 				"accuracy": 6,
 				"strength": 0
 			},
+			"special_rules": [
+				{
+					"name": "Honed",
+					"value": 3
+				}
+			],
 			"affinities": {
 				"right": "red"
 			}
@@ -3302,13 +3835,18 @@
 				"club",
 				"bone"
 			],
-			"rules_text": "Clobber 4: Gain +4 strength while attempting to wound a Super-Dense hit location.",
 			"source": "Crimson Crockery",
 			"weapon_stats": {
 				"speed": 2,
 				"accuracy": 7,
 				"strength": 2
 			},
+			"special_rules": [
+				{
+					"name": "Clobber",
+					"value": 4
+				}
+			],
 			"affinities": {
 				"right": "red",
 				"bottom": "green"
@@ -3324,13 +3862,19 @@
 				"axe",
 				"bone"
 			],
-			"rules_text": "Honed 5 While this is equipped, you are guardless.",
+			"rules_text": "While this is equipped, you are guardless.",
 			"source": "Crimson Crockery",
 			"weapon_stats": {
 				"speed": 3,
 				"accuracy": 6,
 				"strength": 0
 			},
+			"special_rules": [
+				{
+					"name": "Honed",
+					"value": 5
+				}
+			],
 			"affinities": {
 				"right": "red",
 				"bottom": "red"
@@ -3346,7 +3890,7 @@
 				"katar",
 				"bone"
 			],
-			"rules_text": "Honed 4, Paired While you have 3+ bleeding tokens, you gain +2 evasion and are guardless.",
+			"rules_text": "While you have 3+ bleeding tokens, you gain +2 evasion and are guardless.",
 			"source": "Crimson Crockery",
 			"weapon_stats": {
 				"speed": 2,
@@ -3354,7 +3898,13 @@
 				"strength": 0
 			},
 			"special_rules": [
-				"Paired"
+				{
+					"name": "Honed",
+					"value": 4
+				},
+				{
+					"name": "Paired"
+				}
 			],
 			"affinities": {
 				"bottom": "green"
@@ -3370,7 +3920,6 @@
 				"thrown",
 				"consumable"
 			],
-			"rules_text": "Range: 4",
 			"source": "Crimson Crockery",
 			"weapon_stats": {
 				"speed": 2,
@@ -3378,8 +3927,10 @@
 				"strength": 2
 			},
 			"special_rules": [
-				"Consume",
-				"Range"
+				{
+					"name": "Range",
+					"value": 4
+				}
 			],
 			"affinities": {
 				"right": "green",
@@ -3407,7 +3958,6 @@
 				"heavy",
 				"bone"
 			],
-			"rules_text": "Honed 3, Reach 2",
 			"source": "Crimson Crockery",
 			"weapon_stats": {
 				"speed": 2,
@@ -3415,7 +3965,14 @@
 				"strength": 0
 			},
 			"special_rules": [
-				"Reach"
+				{
+					"name": "Honed",
+					"value": 3
+				},
+				{
+					"name": "Reach",
+					"value": 2
+				}
 			],
 			"affinities": {
 				"right": "blue",
@@ -3458,7 +4015,7 @@
 				"two-handed",
 				"bone"
 			],
-			"rules_text": "Honed 3, Savage Saw: Spend O. For the rest of the round, your attacks with this weapon gain +2 luck.",
+			"rules_text": "Saw: Spend O. For the rest of the round, your attacks with this weapon gain +2 luck.",
 			"source": "Crimson Crockery",
 			"weapon_stats": {
 				"speed": 2,
@@ -3466,7 +4023,13 @@
 				"strength": 0
 			},
 			"special_rules": [
-				"Savage"
+				{
+					"name": "Honed",
+					"value": 3
+				},
+				{
+					"name": "Savage"
+				}
 			],
 			"affinities": {
 				"top": "blue"
@@ -3512,7 +4075,6 @@
 				"bow",
 				"two-handed"
 			],
-			"rules_text": "Cumbersome, Range: 5",
 			"source": "Crimson Crockery",
 			"weapon_stats": {
 				"speed": 2,
@@ -3520,8 +4082,13 @@
 				"strength": 3
 			},
 			"special_rules": [
-				"Cumbersome",
-				"Range"
+				{
+					"name": "Cumbersome"
+				},
+				{
+					"name": "Range",
+					"value": 5
+				}
 			],
 			"affinities": {
 				"top": "blue",
@@ -3549,7 +4116,7 @@
 				"two-handed",
 				"bone"
 			],
-			"rules_text": "Sharp, Reach 2, Unique\nWhen you critically wound, automatically critically wound all remaining hit locations in your attack.",
+			"rules_text": "When you critically wound, automatically critically wound all remaining hit locations in your attack.",
 			"source": "Crimson Crockery",
 			"weapon_stats": {
 				"speed": 3,
@@ -3557,9 +4124,16 @@
 				"strength": 8
 			},
 			"special_rules": [
-				"Reach",
-				"Sharp",
-				"Unique"
+				{
+					"name": "Reach",
+					"value": 2
+				},
+				{
+					"name": "Sharp"
+				},
+				{
+					"name": "Unique"
+				}
 			],
 			"affinities": {
 				"top": "blue"
@@ -3697,10 +4271,6 @@
 				"accuracy": 6,
 				"strength": 3
 			},
-			"special_rules": [
-				"Perfect Hit",
-				"Range"
-			],
 			"affinities": {
 				"top": "red"
 			},
@@ -3796,9 +4366,6 @@
 				"accuracy": 6,
 				"strength": 0
 			},
-			"special_rules": [
-				"Savage"
-			],
 			"affinities": {
 				"top": "red",
 				"right": "red",
@@ -3850,7 +4417,7 @@
 				"instrument",
 				"noisy"
 			],
-			"rules_text": "Paired\nMake attack rolls one at a time. For each hit, the monster suffers -1 evasion until the end of this attack.",
+			"rules_text": "Make attack rolls one at a time. For each hit, the monster suffers -1 evasion until the end of this attack.",
 			"source": "Chorusseum",
 			"weapon_stats": {
 				"speed": 2,
@@ -3858,7 +4425,9 @@
 				"strength": 4
 			},
 			"special_rules": [
-				"Paired"
+				{
+					"name": "Paired"
+				}
 			],
 			"affinities": {
 				"top": "red",
@@ -3874,7 +4443,7 @@
 				"melee",
 				"sword"
 			],
-			"rules_text": "Paired\nGain +2 evasion against ranged attacks for each of your Spinning Swords.",
+			"rules_text": "Gain +2 evasion against ranged attacks for each of your Spinning Swords.",
 			"source": "Chorusseum",
 			"weapon_stats": {
 				"speed": 2,
@@ -3882,7 +4451,9 @@
 				"strength": 3
 			},
 			"special_rules": [
-				"Paired"
+				{
+					"name": "Paired"
+				}
 			],
 			"affinities": {
 				"right": "green",
@@ -3899,7 +4470,6 @@
 				"spear",
 				"two-handed"
 			],
-			"rules_text": "Reach 2",
 			"source": "Chorusseum",
 			"weapon_stats": {
 				"speed": 2,
@@ -3907,7 +4477,10 @@
 				"strength": 4
 			},
 			"special_rules": [
-				"Reach"
+				{
+					"name": "Reach",
+					"value": 2
+				}
 			],
 			"affinities": {
 				"left": "green"
@@ -3948,11 +4521,17 @@
 				"deathmetal",
 				"heavy"
 			],
-			"rules_text": "Deflect 1\nBefore drawing hit locations, you may make 1 additional attack roll.",
+			"rules_text": "Before drawing hit locations, you may make 1 additional attack roll.",
 			"source": "Kingsmith",
 			"armor_value": 10,
 			"hit_location": [
 				"arms"
+			],
+			"special_rules": [
+				{
+					"name": "Deflect",
+					"value": 1
+				}
 			]
 		},
 		{
@@ -4018,7 +4597,7 @@
 				"deathmetal",
 				"heavy"
 			],
-			"rules_text": "Sharp, Refined\nIf you attack from the monster's facing, cancel ® on the first selected",
+			"rules_text": "If you attack from the monster's facing, cancel ® on the first selected",
 			"source": "Kingsmith",
 			"weapon_stats": {
 				"speed": 2,
@@ -4026,8 +4605,12 @@
 				"strength": 8
 			},
 			"special_rules": [
-				"Refined",
-				"Sharp"
+				{
+					"name": "Refined"
+				},
+				{
+					"name": "Sharp"
+				}
 			],
 			"affinities": {
 				"right": "red",
@@ -4047,7 +4630,7 @@
 				"deathmetal",
 				"heavy"
 			],
-			"rules_text": "Slow, Sharp, Devastating 1\nWhen you critically wound the monster, if you have no armor points and all your injury level boxes are filled in, the monster is slain.",
+			"rules_text": "When you critically wound the monster, if you have no armor points and all your injury level boxes are filled in, the monster is slain.",
 			"source": "Kingsmith",
 			"weapon_stats": {
 				"speed": 1,
@@ -4055,9 +4638,16 @@
 				"strength": 13
 			},
 			"special_rules": [
-				"Devastating 1",
-				"Sharp",
-				"Slow"
+				{
+					"name": "Devastating",
+					"value": 1
+				},
+				{
+					"name": "Sharp"
+				},
+				{
+					"name": "Slow"
+				}
 			],
 			"affinities": {
 				"right": "blue",
@@ -4078,7 +4668,7 @@
 				"deathmetal",
 				"heavy"
 			],
-			"rules_text": "Reach 2\nIf you draw the Trap with this weapon, you make a preemptive strike! The monster suffers a wound before resolving the Trap.",
+			"rules_text": "If you draw the Trap with this weapon, you make a preemptive strike! The monster suffers a wound before resolving the Trap.",
 			"source": "Kingsmith",
 			"weapon_stats": {
 				"speed": 2,
@@ -4086,7 +4676,10 @@
 				"strength": 14
 			},
 			"special_rules": [
-				"Reach"
+				{
+					"name": "Reach",
+					"value": 2
+				}
 			]
 		},
 		{
@@ -4125,7 +4718,7 @@
 				"deathmetal",
 				"heavy"
 			],
-			"rules_text": "Paired, Barbed 4\nOn a Perfect hit, make additional attack rolls until you miss and gain Deadly 1 until the end of the attack (Deadly 2 if paired). Limit once per attack.",
+			"rules_text": "On a Perfect hit, make additional attack rolls until you miss and gain Deadly 1 until the end of the attack (Deadly 2 if paired). Limit once per attack.",
 			"source": "Kingsmith",
 			"weapon_stats": {
 				"speed": 1,
@@ -4133,10 +4726,13 @@
 				"strength": 12
 			},
 			"special_rules": [
-				"Barbed 4",
-				"Deadly",
-				"Paired",
-				"Perfect Hit"
+				{
+					"name": "Barbed",
+					"value": 4
+				},
+				{
+					"name": "Paired"
+				}
 			],
 			"affinities": {
 				"right": "blue",
@@ -4267,7 +4863,10 @@
 				"strength": 4
 			},
 			"special_rules": [
-				"Barbed 6"
+				{
+					"name": "Barbed",
+					"value": 6
+				}
 			],
 			"affinities": {
 				"right": "red",
@@ -4431,7 +5030,7 @@
 				"finesse",
 				"metal"
 			],
-			"rules_text": "Sharp\nDeflect X, where X is equal to the number of reroll tokens you have.",
+			"rules_text": "Deflect X, where X is equal to the number of reroll tokens you have.",
 			"source": "Gaming Gazebo",
 			"weapon_stats": {
 				"speed": 3,
@@ -4439,7 +5038,9 @@
 				"strength": 7
 			},
 			"special_rules": [
-				"Sharp"
+				{
+					"name": "Sharp"
+				}
 			],
 			"affinities": {
 				"left": "blue"
@@ -4456,7 +5057,7 @@
 				"finesse",
 				"metal"
 			],
-			"rules_text": "Sharp, Paired\nDuring a paired attack, if you land 2+ Perfect hits, gain a reroll token.",
+			"rules_text": "During a paired attack, if you land 2+ Perfect hits, gain a reroll token.",
 			"source": "Gaming Gazebo",
 			"weapon_stats": {
 				"speed": 4,
@@ -4464,8 +5065,12 @@
 				"strength": 4
 			},
 			"special_rules": [
-				"Paired",
-				"Sharp"
+				{
+					"name": "Paired"
+				},
+				{
+					"name": "Sharp"
+				}
 			],
 			"affinities": {
 				"left": "blue"
@@ -4481,14 +5086,15 @@
 				"metal",
 				"other"
 			],
-			"rules_text": "Outfit",
 			"source": "Gaming Gazebo",
 			"armor_value": 7,
 			"hit_location": [
 				"head"
 			],
 			"special_rules": [
-				"Outfit"
+				{
+					"name": "Outfit"
+				}
 			],
 			"affinities": {
 				"bottom": "blue",
@@ -4514,14 +5120,16 @@
 				"metal",
 				"other"
 			],
-			"rules_text": "Outfit\nOn Arrival, gain a reroll token. At the start of your first act, add 1 to all hit locations for each reroll token you have.",
+			"rules_text": "On Arrival, gain a reroll token. At the start of your first act, add 1 to all hit locations for each reroll token you have.",
 			"source": "Gaming Gazebo",
 			"armor_value": 7,
 			"hit_location": [
 				"chest"
 			],
 			"special_rules": [
-				"Outfit"
+				{
+					"name": "Outfit"
+				}
 			],
 			"affinities": {
 				"top": "blue",
@@ -4555,10 +5163,12 @@
 				"jewelry",
 				"other"
 			],
-			"rules_text": "Unique\nWhile all gear in your gear grid has the bone keyword, reduce damage suffered by ⭐️ , to a minimum of 1.",
+			"rules_text": "While all gear in your gear grid has the bone keyword, reduce damage suffered by ⭐️ , to a minimum of 1.",
 			"source": "Rare Gear",
 			"special_rules": [
-				"Unique"
+				{
+					"name": "Unique"
+				}
 			],
 			"affinities": {
 				"left": "green"
@@ -4574,7 +5184,7 @@
 				"noisy",
 				"other"
 			],
-			"rules_text": "Range: 5\nBallad of Pride [9]: The survivors laugh, feeling omnipotent. They all gain Undeathable.",
+			"rules_text": "Ballad of Pride [9]: The survivors laugh, feeling omnipotent. They all gain Undeathable.",
 			"source": "Rare Gear",
 			"weapon_stats": {
 				"speed": 2,
@@ -4582,8 +5192,10 @@
 				"strength": 9
 			},
 			"special_rules": [
-				"Range",
-				"Undeathable"
+				{
+					"name": "Range",
+					"value": 5
+				}
 			]
 		},
 		{
@@ -4625,10 +5237,12 @@
 				"item",
 				"fragile"
 			],
-			"rules_text": "Irreplaceable\nWhen you return to the settlement, archive this and gain +1 population with the Levinblood ability.",
+			"rules_text": "When you return to the settlement, archive this and gain +1 population with the Levinblood ability.",
 			"source": "Rare Gear",
 			"special_rules": [
-				"Irreplaceable"
+				{
+					"name": "Irreplaceable"
+				}
 			]
 		},
 		{
@@ -4640,11 +5254,15 @@
 				"deathmetal",
 				"other"
 			],
-			"rules_text": "Cursed, Selfish\n+3 accuracy, +3 strength, +3 evasion",
+			"rules_text": "+3 accuracy, +3 strength, +3 evasion",
 			"source": "Rare Gear",
 			"special_rules": [
-				"Cursed",
-				"Selfish"
+				{
+					"name": "Cursed"
+				},
+				{
+					"name": "Selfish"
+				}
 			]
 		},
 		{
@@ -4657,7 +5275,7 @@
 				"two-handed",
 				"other"
 			],
-			"rules_text": "Deadly, Savage, Sentient, Sharp, Deflect 2 At the end of the round, if you have not wounded the monster with this, it drains your blood. Gain 5 bleeding tokens and suffer bash.",
+			"rules_text": "At the end of the round, if you have not wounded the monster with this, it drains your blood. Gain 5 bleeding tokens and suffer bash.",
 			"source": "Rare Gear",
 			"weapon_stats": {
 				"speed": 9,
@@ -4665,10 +5283,22 @@
 				"strength": 9
 			},
 			"special_rules": [
-				"Deadly",
-				"Savage",
-				"Sentient",
-				"Sharp"
+				{
+					"name": "Deadly"
+				},
+				{
+					"name": "Deflect",
+					"value": 2
+				},
+				{
+					"name": "Savage"
+				},
+				{
+					"name": "Sentient"
+				},
+				{
+					"name": "Sharp"
+				}
 			]
 		},
 		{
@@ -4683,9 +5313,6 @@
 			],
 			"rules_text": "(a) Consume: Ignore the effects of your permanent injuries until the end of the showdown. Limit once per showdown.",
 			"source": "Rare Gear",
-			"special_rules": [
-				"Consume"
-			],
 			"affinities": {
 				"right": "blue",
 				"left": "red"
@@ -4701,14 +5328,16 @@
 				"bone",
 				"mask"
 			],
-			"rules_text": "Accessory\n+1 strength, +1 evasion",
+			"rules_text": "+1 strength, +1 evasion",
 			"source": "Rare Gear",
 			"armor_value": 1,
 			"hit_location": [
 				"head"
 			],
 			"special_rules": [
-				"Accessory"
+				{
+					"name": "Accessory"
+				}
 			],
 			"affinities": {
 				"right": "red",
@@ -4734,14 +5363,16 @@
 				"item",
 				"festival"
 			],
-			"rules_text": "Accessory\nWhile wearing the Lantern Festival Top, double the attribute bonuses from your gear cards.",
+			"rules_text": "While wearing the Lantern Festival Top, double the attribute bonuses from your gear cards.",
 			"source": "Rare Gear",
 			"armor_value": 1,
 			"hit_location": [
 				"waist"
 			],
 			"special_rules": [
-				"Accessory"
+				{
+					"name": "Accessory"
+				}
 			],
 			"affinities": {
 				"top": "green"
@@ -4757,14 +5388,16 @@
 				"metal",
 				"fur"
 			],
-			"rules_text": "Accessory\nThe festival fills all with pride. At the start of your act, all survivors gain +1 survival.",
+			"rules_text": "The festival fills all with pride. At the start of your act, all survivors gain +1 survival.",
 			"source": "Rare Gear",
 			"armor_value": 1,
 			"hit_location": [
 				"chest"
 			],
 			"special_rules": [
-				"Accessory"
+				{
+					"name": "Accessory"
+				}
 			],
 			"affinities": {
 				"bottom": "green"
@@ -4808,14 +5441,16 @@
 				"bone",
 				"metal"
 			],
-			"rules_text": "Cursed\nDuring the Aftermath, 📖 King's Curse. When you gain this, cure all permanent leg injuries.",
+			"rules_text": "During the Aftermath, 📖 King's Curse. When you gain this, cure all permanent leg injuries.",
 			"source": "Rare Gear",
 			"armor_value": 5,
 			"hit_location": [
 				"legs"
 			],
 			"special_rules": [
-				"Cursed"
+				{
+					"name": "Cursed"
+				}
 			]
 		},
 		{
@@ -4827,14 +5462,16 @@
 				"bone",
 				"metal"
 			],
-			"rules_text": "Cursed\nDuring the Aftermath, 📖 King's Curse. You are hushed.",
+			"rules_text": "During the Aftermath, 📖 King's Curse. You are hushed.",
 			"source": "Rare Gear",
 			"armor_value": 5,
 			"hit_location": [
 				"head"
 			],
 			"special_rules": [
-				"Cursed"
+				{
+					"name": "Cursed"
+				}
 			]
 		},
 		{
@@ -4846,14 +5483,16 @@
 				"bone",
 				"metal"
 			],
-			"rules_text": "Cursed\nDuring the Aftermath, 📖 King's Curse. When you depart, add 1 to each hit location with metal armor.",
+			"rules_text": "During the Aftermath, 📖 King's Curse. When you depart, add 1 to each hit location with metal armor.",
 			"source": "Rare Gear",
 			"armor_value": 5,
 			"hit_location": [
 				"chest"
 			],
 			"special_rules": [
-				"Cursed"
+				{
+					"name": "Cursed"
+				}
 			]
 		},
 		{
@@ -4866,11 +5505,15 @@
 				"deathmetal",
 				"other"
 			],
-			"rules_text": "Cursed, Unique\nYou emanate a majestic aura. Monsters suffer -1 speed while targeting you.",
+			"rules_text": "You emanate a majestic aura. Monsters suffer -1 speed while targeting you.",
 			"source": "Rare Gear",
 			"special_rules": [
-				"Cursed",
-				"Unique"
+				{
+					"name": "Cursed"
+				},
+				{
+					"name": "Unique"
+				}
 			],
 			"affinities": {
 				"top": "blue",
@@ -4887,14 +5530,16 @@
 				"bone",
 				"metal"
 			],
-			"rules_text": "Cursed\nDuring the Aftermath, 📖 King's Curse. When you gain this, cure all permanent arm injuries.",
+			"rules_text": "During the Aftermath, 📖 King's Curse. When you gain this, cure all permanent arm injuries.",
 			"source": "Rare Gear",
 			"armor_value": 5,
 			"hit_location": [
 				"arms"
 			],
 			"special_rules": [
-				"Cursed"
+				{
+					"name": "Cursed"
+				}
 			]
 		},
 		{
@@ -4906,14 +5551,16 @@
 				"bone",
 				"metal"
 			],
-			"rules_text": "Cursed\nDuring the Aftermath, 📖 King's Curse. You are not knocked down from suffering heavy or severe injuries.",
+			"rules_text": "During the Aftermath, 📖 King's Curse. You are not knocked down from suffering heavy or severe injuries.",
 			"source": "Rare Gear",
 			"armor_value": 5,
 			"hit_location": [
 				"waist"
 			],
 			"special_rules": [
-				"Cursed"
+				{
+					"name": "Cursed"
+				}
 			]
 		},
 		{
@@ -4926,7 +5573,7 @@
 				"club",
 				"other"
 			],
-			"rules_text": "Reach 2, Surpass 5\nDuring the showdown, this gains +1 strength anytime a survivor rolls a (l). but suffers -1 strength anytime a survivor rolls a natural 1. (Track this with strength tokens.)",
+			"rules_text": "During the showdown, this gains +1 strength anytime a survivor rolls a (l). but suffers -1 strength anytime a survivor rolls a natural 1. (Track this with strength tokens.)",
 			"source": "Rare Gear",
 			"weapon_stats": {
 				"speed": 2,
@@ -4934,7 +5581,14 @@
 				"strength": 10
 			},
 			"special_rules": [
-				"Reach"
+				{
+					"name": "Reach",
+					"value": 2
+				},
+				{
+					"name": "Surpass",
+					"value": 5
+				}
 			],
 			"affinities": {
 				"top": "blue",
@@ -4953,7 +5607,7 @@
 				"finesse",
 				"bone"
 			],
-			"rules_text": "Sentient\nGains +1 strength for each of your sword proficiency levels.",
+			"rules_text": "Gains +1 strength for each of your sword proficiency levels.",
 			"source": "Rare Gear",
 			"weapon_stats": {
 				"speed": 2,
@@ -4961,7 +5615,9 @@
 				"strength": 5
 			},
 			"special_rules": [
-				"Sentient"
+				{
+					"name": "Sentient"
+				}
 			],
 			"affinities": {
 				"right": "blue",
@@ -4979,7 +5635,9 @@
 			],
 			"source": "Rare Gear",
 			"special_rules": [
-				"Frail"
+				{
+					"name": "Frail"
+				}
 			],
 			"affinities": {
 				"top": "blue",
@@ -5006,7 +5664,6 @@
 				"bone",
 				"finesse"
 			],
-			"rules_text": "Sharp, Frail, Unwieldy",
 			"source": "Rare Gear",
 			"weapon_stats": {
 				"speed": 3,
@@ -5014,9 +5671,15 @@
 				"strength": 0
 			},
 			"special_rules": [
-				"Frail",
-				"Sharp",
-				"Unwieldy"
+				{
+					"name": "Frail"
+				},
+				{
+					"name": "Sharp"
+				},
+				{
+					"name": "Unwieldy"
+				}
 			],
 			"affinities": {
 				"right": "red",
@@ -5057,10 +5720,12 @@
 				"item",
 				"lantern"
 			],
-			"rules_text": "Vital\nA cherished keepsake from your friends in the sky. You will never forget them.",
+			"rules_text": "A cherished keepsake from your friends in the sky. You will never forget them.",
 			"source": "Rare Gear",
 			"special_rules": [
-				"Vital"
+				{
+					"name": "Vital"
+				}
 			],
 			"affinities": {
 				"top": "green",
@@ -5081,7 +5746,7 @@
 				"heavy",
 				"stone"
 			],
-			"rules_text": "Frail, Reach 2\nIf you archive this due to a Super-Dense [HL], the stone shards dig into the monster! It suffers a wound.",
+			"rules_text": "If you archive this due to a Super-Dense [HL], the stone shards dig into the monster! It suffers a wound.",
 			"source": "Rare Gear",
 			"weapon_stats": {
 				"speed": 2,
@@ -5089,8 +5754,13 @@
 				"strength": 8
 			},
 			"special_rules": [
-				"Frail",
-				"Reach"
+				{
+					"name": "Frail"
+				},
+				{
+					"name": "Reach",
+					"value": 2
+				}
 			]
 		},
 		{
@@ -5103,11 +5773,15 @@
 				"relic",
 				"other"
 			],
-			"rules_text": "Cursed, Selfish\nYou may dodge by gaining +1 survival instead of spending 1. Start the hunt phase 3 spaces closer to the monster.",
+			"rules_text": "You may dodge by gaining +1 survival instead of spending 1. Start the hunt phase 3 spaces closer to the monster.",
 			"source": "Rare Gear",
 			"special_rules": [
-				"Cursed",
-				"Selfish"
+				{
+					"name": "Cursed"
+				},
+				{
+					"name": "Selfish"
+				}
 			]
 		},
 		{
@@ -5121,7 +5795,7 @@
 				"relic",
 				"other"
 			],
-			"rules_text": "Cursed, Selfish, Deflect 3, Clobber 15\n When a survivor within 4 spaces of you is hit, spend a deflect token and ignore it.",
+			"rules_text": "When a survivor within 4 spaces of you is hit, spend a deflect token and ignore it.",
 			"source": "Rare Gear",
 			"weapon_stats": {
 				"speed": 1,
@@ -5129,8 +5803,20 @@
 				"strength": 15
 			},
 			"special_rules": [
-				"Cursed",
-				"Selfish"
+				{
+					"name": "Clobber",
+					"value": 15
+				},
+				{
+					"name": "Cursed"
+				},
+				{
+					"name": "Deflect",
+					"value": 3
+				},
+				{
+					"name": "Selfish"
+				}
 			]
 		},
 		{
@@ -5145,7 +5831,7 @@
 				"relic",
 				"other"
 			],
-			"rules_text": "Cursed, Selfish, Sharp, Locked\nOnce per round, if another survivor misses all of their attack rolls, they gain (a) (m).",
+			"rules_text": "Once per round, if another survivor misses all of their attack rolls, they gain (a) (m).",
 			"source": "Rare Gear",
 			"weapon_stats": {
 				"speed": 2,
@@ -5153,9 +5839,18 @@
 				"strength": 14
 			},
 			"special_rules": [
-				"Cursed",
-				"Selfish",
-				"Sharp"
+				{
+					"name": "Cursed"
+				},
+				{
+					"name": "Locked"
+				},
+				{
+					"name": "Selfish"
+				},
+				{
+					"name": "Sharp"
+				}
 			]
 		},
 		{
@@ -5187,13 +5882,20 @@
 				"finesse",
 				"metal"
 			],
-			"rules_text": "Slow, Sharp",
 			"source": "Pattern",
 			"weapon_stats": {
 				"speed": 1,
 				"accuracy": 5,
 				"strength": 8
 			},
+			"special_rules": [
+				{
+					"name": "Sharp"
+				},
+				{
+					"name": "Slow"
+				}
+			],
 			"affinities": {
 				"right": "red",
 				"bottom": "red",
@@ -5222,7 +5924,7 @@
 				"bone",
 				"metal"
 			],
-			"rules_text": "Sentient\nAdd your Body Count to this weapon's strength.",
+			"rules_text": "Add your Body Count to this weapon's strength.",
 			"source": "Pattern",
 			"weapon_stats": {
 				"speed": 2,
@@ -5230,7 +5932,9 @@
 				"strength": 5
 			},
 			"special_rules": [
-				"Sentient"
+				{
+					"name": "Sentient"
+				}
 			],
 			"affinities": {
 				"bottom": "red",
@@ -5246,14 +5950,16 @@
 				"metal",
 				"leather"
 			],
-			"rules_text": "Outfit\nOnce per round, during your act, you may spend 2 insanity to look at the top card of the [HL] deck. You may place it on the bottom.",
+			"rules_text": "Once per round, during your act, you may spend 2 insanity to look at the top card of the [HL] deck. You may place it on the bottom.",
 			"source": "Pattern",
 			"armor_value": 4,
 			"hit_location": [
 				"head"
 			],
 			"special_rules": [
-				"Outfit"
+				{
+					"name": "Outfit"
+				}
 			]
 		},
 		{
@@ -5268,7 +5974,7 @@
 				"bone",
 				"mineral"
 			],
-			"rules_text": "Slow, Frail, Devastating 1, Unique\nWhen you archive this due to a Super-Dense [HL], gain the Shattered Blade innovation.",
+			"rules_text": "When you archive this due to a Super-Dense [HL], gain the Shattered Blade innovation.",
 			"source": "Pattern",
 			"weapon_stats": {
 				"speed": 1,
@@ -5276,10 +5982,19 @@
 				"strength": 6
 			},
 			"special_rules": [
-				"Devastating 1",
-				"Frail",
-				"Slow",
-				"Unique"
+				{
+					"name": "Devastating",
+					"value": 1
+				},
+				{
+					"name": "Frail"
+				},
+				{
+					"name": "Slow"
+				},
+				{
+					"name": "Unique"
+				}
 			],
 			"affinities": {
 				"top": "red",
@@ -5328,7 +6043,6 @@
 				"bone",
 				"katar"
 			],
-			"rules_text": "Paired, Sharp, Clobber 4",
 			"source": "Pattern",
 			"weapon_stats": {
 				"speed": 3,
@@ -5336,8 +6050,16 @@
 				"strength": 4
 			},
 			"special_rules": [
-				"Paired",
-				"Sharp"
+				{
+					"name": "Clobber",
+					"value": 4
+				},
+				{
+					"name": "Paired"
+				},
+				{
+					"name": "Sharp"
+				}
 			],
 			"affinities": {
 				"right": "red",
@@ -5364,13 +6086,18 @@
 				"club",
 				"heavy"
 			],
-			"rules_text": "Surpass 5: When your successful wound attempt total surpasses the monster's toughness by 5 or more, the monster suffers an additional wound.",
 			"source": "Pattern",
 			"weapon_stats": {
 				"speed": 1,
 				"accuracy": 5,
 				"strength": 12
 			},
+			"special_rules": [
+				{
+					"name": "Surpass",
+					"value": 5
+				}
+			],
 			"affinities": {
 				"bottom": "blue"
 			}
@@ -5385,7 +6112,6 @@
 				"bone",
 				"spear"
 			],
-			"rules_text": "Reach 2, Sharp",
 			"source": "Pattern",
 			"weapon_stats": {
 				"speed": 2,
@@ -5393,8 +6119,13 @@
 				"strength": 5
 			},
 			"special_rules": [
-				"Reach",
-				"Sharp"
+				{
+					"name": "Reach",
+					"value": 2
+				},
+				{
+					"name": "Sharp"
+				}
 			],
 			"affinities": {
 				"right": "red",
@@ -5420,13 +6151,18 @@
 				"bone",
 				"shield"
 			],
-			"rules_text": "On Arrival, add 2 tto the arms hit location.\nLocked: This cannot be disarmed.",
+			"rules_text": "On Arrival, add 2 tto the arms hit location.",
 			"source": "Pattern",
 			"weapon_stats": {
 				"speed": 2,
 				"accuracy": 7,
 				"strength": 7
 			},
+			"special_rules": [
+				{
+					"name": "Locked"
+				}
+			],
 			"affinities": {
 				"top": "red",
 				"left": "red"
@@ -5528,7 +6264,7 @@
 				"instrument",
 				"noisy"
 			],
-			"rules_text": "Unwieldy, Sharp\nBallad of Swordpolka [5]: Spend (a) and archive 5 cards from the wound stack to perform. All survivors' swords gain finesse and Deflect 1. If they already have Deflect, increase it by 1.",
+			"rules_text": "Ballad of Swordpolka [5]: Spend (a) and archive 5 cards from the wound stack to perform. All survivors' swords gain finesse and Deflect 1. If they already have Deflect, increase it by 1.",
 			"source": "Pattern",
 			"weapon_stats": {
 				"speed": 2,
@@ -5536,8 +6272,12 @@
 				"strength": 3
 			},
 			"special_rules": [
-				"Sharp",
-				"Unwieldy"
+				{
+					"name": "Sharp"
+				},
+				{
+					"name": "Unwieldy"
+				}
 			],
 			"affinities": {
 				"right": "red",
@@ -5557,7 +6297,7 @@
 				"instrument",
 				"noisy"
 			],
-			"rules_text": "Slow Ballad of Smash [6]: Spend (a) and archive 6 cards from the wound stack to perform. All <R> Wound become <R> Failure. End this ballad at the end of the round if you fail to hit with this weapon.",
+			"rules_text": "Ballad of Smash [6]: Spend (a) and archive 6 cards from the wound stack to perform. All <R> Wound become <R> Failure. End this ballad at the end of the round if you fail to hit with this weapon.",
 			"source": "Pattern",
 			"weapon_stats": {
 				"speed": 1,
@@ -5565,7 +6305,9 @@
 				"strength": 9
 			},
 			"special_rules": [
-				"Slow"
+				{
+					"name": "Slow"
+				}
 			],
 			"affinities": {
 				"top": "red",
@@ -5585,14 +6327,16 @@
 				"bone",
 				"flammable"
 			],
-			"rules_text": "Outfit\nWhile you are insane, ignore all hits to the waist hit location.",
+			"rules_text": "While you are insane, ignore all hits to the waist hit location.",
 			"source": "Pattern",
 			"armor_value": 4,
 			"hit_location": [
 				"waist"
 			],
 			"special_rules": [
-				"Outfit"
+				{
+					"name": "Outfit"
+				}
 			],
 			"affinities": {
 				"bottom": "blue",
@@ -5611,14 +6355,16 @@
 				"bone",
 				"flammable"
 			],
-			"rules_text": "Outfit\nWhile you are insane, ignore all hits to the arms hit location.",
+			"rules_text": "While you are insane, ignore all hits to the arms hit location.",
 			"source": "Pattern",
 			"armor_value": 4,
 			"hit_location": [
 				"arms"
 			],
 			"special_rules": [
-				"Outfit"
+				{
+					"name": "Outfit"
+				}
 			],
 			"affinities": {
 				"right": "green",
@@ -5637,7 +6383,7 @@
 				"heavy",
 				"deathmetal"
 			],
-			"rules_text": "Slow, Savage, Surpass 5\nWhen this deals more than one wound in a single wound attempt, the blow weakens the monster. It gains -1 toughness token.",
+			"rules_text": "When this deals more than one wound in a single wound attempt, the blow weakens the monster. It gains -1 toughness token.",
 			"source": "Pattern",
 			"weapon_stats": {
 				"speed": 1,
@@ -5645,8 +6391,16 @@
 				"strength": 16
 			},
 			"special_rules": [
-				"Savage",
-				"Slow"
+				{
+					"name": "Savage"
+				},
+				{
+					"name": "Slow"
+				},
+				{
+					"name": "Surpass",
+					"value": 5
+				}
 			],
 			"affinities": {
 				"right": "green",
@@ -5666,7 +6420,7 @@
 				"heavy",
 				"deathmetal"
 			],
-			"rules_text": "Slow \nWhen you wound a Super-Dense [HL], archive it and inflict an additional wound. The monster is knocked down.",
+			"rules_text": "When you wound a Super-Dense [HL], archive it and inflict an additional wound. The monster is knocked down.",
 			"source": "Pattern",
 			"weapon_stats": {
 				"speed": 1,
@@ -5674,7 +6428,9 @@
 				"strength": 17
 			},
 			"special_rules": [
-				"Slow"
+				{
+					"name": "Slow"
+				}
 			],
 			"affinities": {
 				"top": "red",
@@ -5691,11 +6447,15 @@
 				"set",
 				"rawhide"
 			],
-			"rules_text": "Outfit",
 			"source": "Seed Pattern",
 			"armor_value": 1,
 			"hit_location": [
 				"head"
+			],
+			"special_rules": [
+				{
+					"name": "Outfit"
+				}
 			],
 			"affinities": {
 				"bottom": "blue"
@@ -5720,13 +6480,18 @@
 				"shield",
 				"stone"
 			],
-			"rules_text": "Deflect 1",
 			"source": "Seed Pattern",
 			"weapon_stats": {
 				"speed": 1,
 				"accuracy": 8,
 				"strength": 2
 			},
+			"special_rules": [
+				{
+					"name": "Deflect",
+					"value": 1
+				}
+			],
 			"affinities": {
 				"top": "green",
 				"right": "green"
@@ -5760,7 +6525,9 @@
 				"strength": 4
 			},
 			"special_rules": [
-				"Razor Sharp"
+				{
+					"name": "Razor Sharp"
+				}
 			],
 			"affinities": {
 				"top": "blue",
@@ -5884,7 +6651,7 @@
 				"bone",
 				"other"
 			],
-			"rules_text": "Savage\nWhen you critically wound the monster, it gains -1 luck token. Limit once per showdown.",
+			"rules_text": "When you critically wound the monster, it gains -1 luck token. Limit once per showdown.",
 			"source": "Seed Pattern",
 			"weapon_stats": {
 				"speed": 3,
@@ -5892,7 +6659,9 @@
 				"strength": 3
 			},
 			"special_rules": [
-				"Savage"
+				{
+					"name": "Savage"
+				}
 			],
 			"affinities": {
 				"right": "blue",
@@ -5909,14 +6678,16 @@
 				"cloth",
 				"other"
 			],
-			"rules_text": "Accessory\nWhen you depart, gain +1 luck token. During the Aftermath, suffer -1 permanent luck.",
+			"rules_text": "When you depart, gain +1 luck token. During the Aftermath, suffer -1 permanent luck.",
 			"source": "Seed Pattern",
 			"armor_value": 1,
 			"hit_location": [
 				"head"
 			],
 			"special_rules": [
-				"Accessory"
+				{
+					"name": "Accessory"
+				}
 			],
 			"affinities": {
 				"top": "blue"
@@ -5934,13 +6705,17 @@
 				"bone",
 				"other"
 			],
-			"rules_text": "Heroic",
 			"source": "Seed Pattern",
 			"weapon_stats": {
 				"speed": 2,
 				"accuracy": 5,
 				"strength": 4
 			},
+			"special_rules": [
+				{
+					"name": "Heroic"
+				}
+			],
 			"affinities": {
 				"right": "blue",
 				"left": "red"
@@ -5967,7 +6742,7 @@
 				"metal",
 				"other"
 			],
-			"rules_text": "Razor Sharp, Devastating 1\nOn Arrival, put Sun Dial and Light & Shadow Sunstalker trait cards into play. When you are in darkness, spend (m) to place yourself in any other shadow that is not a monster's shadow.",
+			"rules_text": "On Arrival, put Sun Dial and Light & Shadow Sunstalker trait cards into play. When you are in darkness, spend (m) to place yourself in any other shadow that is not a monster's shadow.",
 			"source": "Seed Pattern",
 			"weapon_stats": {
 				"speed": 2,
@@ -5975,8 +6750,13 @@
 				"strength": 13
 			},
 			"special_rules": [
-				"Devastating 1",
-				"Sharp"
+				{
+					"name": "Devastating",
+					"value": 1
+				},
+				{
+					"name": "Razor Sharp"
+				}
 			]
 		},
 		{
@@ -6004,10 +6784,6 @@
 			],
 			"rules_text": "The schematics help you maintain your gear.\nOn Arrival, you may change one instance of Sharp to Razor Sharp or increase Deadly by 1 until the end of the showdown.",
 			"source": "Seed Pattern",
-			"special_rules": [
-				"Deadly",
-				"Sharp"
-			],
 			"affinities": {
 				"left": "green"
 			}
@@ -6068,11 +6844,16 @@
 				"metal",
 				"other"
 			],
-			"rules_text": "Accessory, -1 accuracy",
+			"rules_text": "-1 accuracy",
 			"source": "Seed Pattern",
 			"armor_value": 1,
 			"hit_location": [
 				"head"
+			],
+			"special_rules": [
+				{
+					"name": "Accessory"
+				}
 			],
 			"affinities": {
 				"top": "blue",
@@ -6102,8 +6883,12 @@
 				"metal",
 				"other"
 			],
-			"rules_text": "Grace of Valor: When you depart, add 1 to all locations for every [g] [g] you have.",
 			"source": "Seed Pattern",
+			"special_rules": [
+				{
+					"name": "Grace of Valor"
+				}
+			],
 			"affinities": {
 				"top": "green",
 				"right": "green",
@@ -6134,13 +6919,20 @@
 				"metal",
 				"other"
 			],
-			"rules_text": "Cumbersome, Grace of Power: This gains+1 strength for every [r] you have.",
 			"source": "Seed Pattern",
 			"weapon_stats": {
 				"speed": 2,
 				"accuracy": 5,
 				"strength": 2
 			},
+			"special_rules": [
+				{
+					"name": "Cumbersome"
+				},
+				{
+					"name": "Grace of Power"
+				}
+			],
 			"affinities": {
 				"top": "red",
 				"right": "red",
@@ -6172,7 +6964,6 @@
 				"metal",
 				"other"
 			],
-			"rules_text": "Razor Sharp, Frail\nPrecision 1: On a Perfect hit, inflict an automatic critical wound on the first wound attempt of this attack.",
 			"source": "Seed Pattern",
 			"weapon_stats": {
 				"speed": 3,
@@ -6180,9 +6971,16 @@
 				"strength": 3
 			},
 			"special_rules": [
-				"Frail",
-				"Perfect Hit",
-				"Sharp"
+				{
+					"name": "Frail"
+				},
+				{
+					"name": "Precision",
+					"value": 1
+				},
+				{
+					"name": "Razor Sharp"
+				}
 			]
 		},
 		{
@@ -6199,7 +6997,7 @@
 				"lantern",
 				"other"
 			],
-			"rules_text": "Razor Sharp, Reach 2, Irreplaceable\nYou are hushed. After attacking, if standing, you may move up to 2 spaces.",
+			"rules_text": "You are hushed. After attacking, if standing, you may move up to 2 spaces.",
 			"source": "Seed Pattern",
 			"weapon_stats": {
 				"speed": 2,
@@ -6207,9 +7005,16 @@
 				"strength": 14
 			},
 			"special_rules": [
-				"Irreplaceable",
-				"Reach",
-				"Sharp"
+				{
+					"name": "Irreplaceable"
+				},
+				{
+					"name": "Razor Sharp"
+				},
+				{
+					"name": "Reach",
+					"value": 2
+				}
 			],
 			"affinities": {
 				"bottom": "red"
@@ -6227,7 +7032,7 @@
 				"metal",
 				"other"
 			],
-			"rules_text": "Deadly 2, Deflect 2\nYou must remove 2 of your bleeding tokens to activate this weapon.",
+			"rules_text": "You must remove 2 of your bleeding tokens to activate this weapon.",
 			"source": "Seed Pattern",
 			"weapon_stats": {
 				"speed": 7,
@@ -6235,7 +7040,14 @@
 				"strength": 7
 			},
 			"special_rules": [
-				"Deadly"
+				{
+					"name": "Deadly",
+					"value": 2
+				},
+				{
+					"name": "Deflect",
+					"value": 2
+				}
 			]
 		},
 		{
@@ -6248,14 +7060,16 @@
 				"metal",
 				"other"
 			],
-			"rules_text": "Accessory, +5 strength",
+			"rules_text": "+5 strength",
 			"source": "Seed Pattern",
 			"armor_value": 4,
 			"hit_location": [
 				"arms"
 			],
 			"special_rules": [
-				"Accessory"
+				{
+					"name": "Accessory"
+				}
 			],
 			"affinities": {
 				"right": "blue",
@@ -6304,7 +7118,6 @@
 				"bone",
 				"other"
 			],
-			"rules_text": "Razor Sharp, Persistence 2\nImpeccable: Reroll natural 1's on wound attempts. You must keep the new roll result.",
 			"source": "Seed Pattern",
 			"weapon_stats": {
 				"speed": 3,
@@ -6312,7 +7125,16 @@
 				"strength": 2
 			},
 			"special_rules": [
-				"Sharp"
+				{
+					"name": "Impeccable"
+				},
+				{
+					"name": "Persistence",
+					"value": 2
+				},
+				{
+					"name": "Razor Sharp"
+				}
 			],
 			"affinities": {
 				"right": "red",
@@ -6332,7 +7154,7 @@
 				"heavy",
 				"deathmetal"
 			],
-			"rules_text": "Razor Sharp, Impeccable\nIgnore First Strike while attacking with this weapon.",
+			"rules_text": "Ignore First Strike while attacking with this weapon.",
 			"source": "Seed Pattern",
 			"weapon_stats": {
 				"speed": 2,
@@ -6340,7 +7162,12 @@
 				"strength": 11
 			},
 			"special_rules": [
-				"Sharp"
+				{
+					"name": "Impeccable"
+				},
+				{
+					"name": "Razor Sharp"
+				}
 			],
 			"affinities": {
 				"right": "red",
@@ -6360,7 +7187,7 @@
 				"heavy",
 				"deathmetal"
 			],
-			"rules_text": "Razor Sharp, Blindside\nYou cannot lose survival.",
+			"rules_text": "You cannot lose survival.",
 			"source": "Seed Pattern",
 			"weapon_stats": {
 				"speed": 3,
@@ -6368,8 +7195,12 @@
 				"strength": 9
 			},
 			"special_rules": [
-				"Blindside",
-				"Sharp"
+				{
+					"name": "Blindside"
+				},
+				{
+					"name": "Razor Sharp"
+				}
 			],
 			"affinities": {
 				"left": "red"
@@ -6386,7 +7217,6 @@
 				"axe",
 				"bone"
 			],
-			"rules_text": "Savage\nHeroic: During your attack roll, reroll any natural 1's. You must keep the new roll result.",
 			"source": "Seed Pattern",
 			"weapon_stats": {
 				"speed": 2,
@@ -6394,7 +7224,12 @@
 				"strength": 6
 			},
 			"special_rules": [
-				"Savage"
+				{
+					"name": "Heroic"
+				},
+				{
+					"name": "Savage"
+				}
 			],
 			"affinities": {
 				"top": "red",
@@ -6462,7 +7297,6 @@
 				"metal",
 				"plasma"
 			],
-			"rules_text": "Razor Sharp, Irreplaceable, Sentient",
 			"source": "Seed Pattern",
 			"weapon_stats": {
 				"speed": 3,
@@ -6470,9 +7304,15 @@
 				"strength": 21
 			},
 			"special_rules": [
-				"Irreplaceable",
-				"Sentient",
-				"Sharp"
+				{
+					"name": "Irreplaceable"
+				},
+				{
+					"name": "Razor Sharp"
+				},
+				{
+					"name": "Sentient"
+				}
 			],
 			"affinities": {
 				"top": "red",
@@ -6501,8 +7341,9 @@
 			"rules_text": "Full Ensemble, +1 evasion\nAdd 2 to all hit locations. You may Pounce. When you do, move 6 spaces instead and double the strength of cumbersome weapons for the attack.",
 			"source": "Seed Pattern",
 			"special_rules": [
-				"Full Ensemble",
-				"Pounce"
+				{
+					"name": "Full Ensemble"
+				}
 			]
 		},
 		{
@@ -6515,10 +7356,12 @@
 				"consumable",
 				"soluble"
 			],
-			"rules_text": "Meal: When you depart, consume this (do not archive) to gain its benefits. You may depart with only one meal.\n+4 strength",
+			"rules_text": "+4 strength",
 			"source": "Meal",
 			"special_rules": [
-				"Consume"
+				{
+					"name": "Meal"
+				}
 			],
 			"affinities": {
 				"bottom": "green"
@@ -6534,10 +7377,16 @@
 				"consumable",
 				"soluble"
 			],
-			"rules_text": "Meal - Crimson Crocodile, Unique\nThe fatty stew absorbs your blood, fortifying your body. You cannot remove bleeding tokens. When you gain a bleeding token, add 4 to all hit locations.",
+			"rules_text": "The fatty stew absorbs your blood, fortifying your body. You cannot remove bleeding tokens. When you gain a bleeding token, add 4 to all hit locations.",
 			"source": "Meal",
 			"special_rules": [
-				"Unique"
+				{
+					"name": "Meal",
+					"value": "Crimson Crocodile"
+				},
+				{
+					"name": "Unique"
+				}
 			],
 			"affinities": {
 				"right": "green",
@@ -6553,12 +7402,16 @@
 				"meal",
 				"consumable"
 			],
-			"rules_text": "Meal - White Lion, Unique\nThe beast whispers from within. You may Pounce. During that attack, your weapon gains Deadly and the katar keyword.",
+			"rules_text": "The beast whispers from within. You may Pounce. During that attack, your weapon gains Deadly and the katar keyword.",
 			"source": "Meal",
 			"special_rules": [
-				"Deadly",
-				"Pounce",
-				"Unique"
+				{
+					"name": "Meal",
+					"value": "White Lion"
+				},
+				{
+					"name": "Unique"
+				}
 			],
 			"affinities": {
 				"right": "blue",
@@ -6575,11 +7428,16 @@
 				"consumable",
 				"soluble"
 			],
-			"rules_text": "Meal - Phoenix, Unique\nYou may Charge. During this Charge, you may rewind time. If you do, reset the showdown to the start of your act and end the round.",
+			"rules_text": "You may Charge. During this Charge, you may rewind time. If you do, reset the showdown to the start of your act and end the round.",
 			"source": "Meal",
 			"special_rules": [
-				"Charge",
-				"Unique"
+				{
+					"name": "Meal",
+					"value": "Phoenix"
+				},
+				{
+					"name": "Unique"
+				}
 			]
 		},
 		{
@@ -6592,10 +7450,16 @@
 				"consumable",
 				"noisy"
 			],
-			"rules_text": "Meal - King, Unique\nSound is converted to energy. You may use Instrument Force.",
+			"rules_text": "Sound is converted to energy. You may use Instrument Force.",
 			"source": "Meal",
 			"special_rules": [
-				"Unique"
+				{
+					"name": "Meal",
+					"value": "King"
+				},
+				{
+					"name": "Unique"
+				}
 			]
 		},
 		{
@@ -6607,12 +7471,16 @@
 				"meal",
 				"consumable"
 			],
-			"rules_text": "Meal - Screaming Antelope, Unique\nStampedes your insides. You may Slam and Skewer. When your Slam moves the monster, it gains a flinch token.",
+			"rules_text": "Stampedes your insides. You may Slam and Skewer. When your Slam moves the monster, it gains a flinch token.",
 			"source": "Meal",
 			"special_rules": [
-				"Skewer",
-				"Slam",
-				"Unique"
+				{
+					"name": "Meal",
+					"value": "Screaming Antelope"
+				},
+				{
+					"name": "Unique"
+				}
 			],
 			"affinities": {
 				"bottom": "red"
@@ -6628,10 +7496,16 @@
 				"consumable",
 				"soluble"
 			],
-			"rules_text": "Meal - Smog Singers, Unique\nDigesting the vaporous soup, your body shimmers and swirls like smog. Ignore hits when the monster's attack rolls are 4 or less.",
+			"rules_text": "Digesting the vaporous soup, your body shimmers and swirls like smog. Ignore hits when the monster's attack rolls are 4 or less.",
 			"source": "Meal",
 			"special_rules": [
-				"Unique"
+				{
+					"name": "Meal",
+					"value": "Smog Singers"
+				},
+				{
+					"name": "Unique"
+				}
 			],
 			"affinities": {
 				"top": "blue",
@@ -6657,8 +7531,12 @@
 				"strength": 18
 			},
 			"special_rules": [
-				"Cursed",
-				"Unique"
+				{
+					"name": "Cursed"
+				},
+				{
+					"name": "Unique"
+				}
 			]
 		},
 		{
@@ -6682,8 +7560,12 @@
 				"strength": 12
 			},
 			"special_rules": [
-				"Sharp",
-				"Unique"
+				{
+					"name": "Sharp"
+				},
+				{
+					"name": "Unique"
+				}
 			],
 			"affinities": {
 				"left": "red"
@@ -6702,7 +7584,7 @@
 				"deathmetal",
 				"other"
 			],
-			"rules_text": "Surpass 5 The first time you surpass with this each showdown, the monster is knocked down and ignores Indomitable this round.",
+			"rules_text": "The first time you surpass with this each showdown, the monster is knocked down and ignores Indomitable this round.",
 			"source": "Armory",
 			"weapon_stats": {
 				"speed": 1,
@@ -6710,7 +7592,13 @@
 				"strength": 17
 			},
 			"special_rules": [
-				"Slow"
+				{
+					"name": "Slow"
+				},
+				{
+					"name": "Surpass",
+					"value": 5
+				}
 			],
 			"affinities": {
 				"right": "green",
@@ -6738,8 +7626,13 @@
 				"strength": 10
 			},
 			"special_rules": [
-				"Sharp",
-				"Reach"
+				{
+					"name": "Sharp"
+				},
+				{
+					"name": "Reach",
+					"value": 2
+				}
 			]
 		},
 		{
@@ -6764,9 +7657,16 @@
 				"strength": 12
 			},
 			"special_rules": [
-				"Deadly",
-				"Reach",
-				"Unique"
+				{
+					"name": "Deadly"
+				},
+				{
+					"name": "Reach",
+					"value": 3
+				},
+				{
+					"name": "Unique"
+				}
 			],
 			"affinities": {
 				"bottom": "blue",

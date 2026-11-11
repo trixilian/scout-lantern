@@ -4,8 +4,8 @@
 	"editor.formatOnSave": true,
 
 	// Three installed extensions can format these files (svelte-vscode,
-	// prettier-vscode, prettier-eslint), so VS Code needs to be told which wins —
-	// otherwise it prompts, or worse, formats differently than CI checks.
+	// prettier-vscode, prettier-eslint), so VS Code has to be told which one to use.
+	// Without that it asks every time, or worse, formats differently than the CI check.
 	//
 	// .svelte goes to the Svelte extension: it runs prettier with
 	// prettier-plugin-svelte under the hood, matching the repo's prettier config.

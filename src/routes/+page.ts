@@ -14,5 +14,5 @@ export const load: PageLoad = async ({ fetch }) => {
 		error(500, `Card data version ${data.version}, expected ${DATA_VERSION}`);
 	}
 
-	return { cards: data.cards };
+	return { cards: data.cards, glossary: data.glossary };
 };

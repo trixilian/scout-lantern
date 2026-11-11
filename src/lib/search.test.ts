@@ -33,6 +33,13 @@ describe('search', () => {
 		expect(names('sling')).toEqual(['Founding Stone']);
 	});
 
+	it('matches special rules', () => {
+		// Special rules are not repeated in the rules text, so they need their own field.
+		expect(names('frail').sort()).toEqual(['Bone Axe', 'Bone Blade']);
+		expect(names('savage')).toEqual(['Bone Axe']);
+		expect(names('irreplaceable')).toEqual(['Lantern Halberd']);
+	});
+
 	it('requires every word to match', () => {
 		const bone = names('bone');
 		expect(bone).toEqual(expect.arrayContaining(['Bone Blade', 'Bone Axe']));
@@ -49,9 +56,9 @@ describe('search', () => {
 });
 
 describe('search typo tolerance', () => {
-	it('does not fuzz short words', () => {
-		// "one" is one edit from "bone" but must not pull in every Bone card.
-		expect(names('one')).not.toContain('Bone Axe');
+	it('also allows a typo in short words', () => {
+		// fuzzy 0.2 allows round(0.2 * length) edits: 1 for a 3-letter word, so "one" finds "bone".
+		expect(names('one')).toContain('Bone Axe');
 	});
 
 	it('tolerates a typo in longer words', () => {

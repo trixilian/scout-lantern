@@ -1,6 +1,24 @@
 {
-	"version": 3,
-	"generated": "2026-11-06T00:00:00+00:00",
+	"version": 4,
+	"generated": "2026-11-11T00:00:00+00:00",
+	"glossary": {
+		"source": "Kingdom Death: Monster Living Glossary",
+		"url": "https://kingdomdeath.com/rules/living-glossary",
+		"copyright": "© Adam Poots Games, LLC. All rights reserved.",
+		"retrieved": "2026-11-11",
+		"terms": {
+			"frail": {
+				"title": "Frail",
+				"text": "A gear special rule. Frail weapons are destroyed if a survivor attempts to wound a Super-dense location with them. Archive the weapon at the end of the attack.",
+				"updated": "2020-07-01"
+			},
+			"reach": {
+				"title": "Reach X",
+				"text": "A gear special rule. Reach weapons are long enough to attack monsters when the survivor is not adjacent. Reach specifies the maximum number of spaces away that a survivor can attack with this weapon.",
+				"updated": "2020-07-01"
+			}
+		}
+	},
 	"cards": [
 		{
 			"id": "core-sg-2",
@@ -35,7 +53,7 @@
 				"accuracy": 6,
 				"strength": 2
 			},
-			"special_rules": ["Frail"],
+			"special_rules": [{ "name": "Frail" }],
 			"affinities": {
 				"left": "red"
 			}
@@ -51,7 +69,7 @@
 				"accuracy": 6,
 				"strength": 3
 			},
-			"special_rules": ["Frail", "Savage"],
+			"special_rules": [{ "name": "Frail" }, { "name": "Savage" }],
 			"affinities": {
 				"left": "red"
 			}
@@ -78,14 +96,18 @@
 			"name": "Lantern Halberd",
 			"expansion": "core",
 			"keywords": ["weapon", "melee", "two-handed", "spear", "lantern", "other"],
-			"rules_text": "Reach 2, Irreplaceable, Unique\nAfter attacking, if standing, you may move up to 2 spaces directly away from the monster.",
+			"rules_text": "After attacking, if standing, you may move up to 2 spaces directly away from the monster.",
 			"source": "Rare Gear",
 			"weapon_stats": {
 				"speed": 2,
 				"accuracy": 4,
 				"strength": 7
 			},
-			"special_rules": ["Irreplaceable", "Reach", "Unique"]
+			"special_rules": [
+				{ "name": "Irreplaceable" },
+				{ "name": "Reach", "value": 2 },
+				{ "name": "Unique" }
+			]
 		},
 		{
 			"id": "gce-sg-6",

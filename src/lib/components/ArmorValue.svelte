@@ -42,7 +42,6 @@
 	}
 	.armor-text {
 		font-family: var(--font-number);
-		font-stretch: 25%; /* Roboto Flex allows 25–151%; the title is 62.5% */
 		font-weight: 100; /* lighter than the title's 500 */
 		font-size: 12px;
 	}
