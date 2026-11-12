@@ -5,6 +5,7 @@
 	import { onDestroy } from 'svelte';
 	import GearCard from '$lib/components/GearCard.svelte';
 	import { parseQuery } from '$lib/query';
+	import { feedbackUrl } from '$lib/feedback';
 	import { resolve } from '$app/paths';
 
 	let { data }: { data: PageData } = $props();
@@ -86,7 +87,7 @@
 
 <div class="gear-card-grid mx-2 mb-5">
 	{#each results as card (card.id)}
-		<GearCard {card} glossary={data.glossary} />
+		<GearCard {card} glossary={data.glossary} href={resolve(`/card?id=${card.id}`)} />
 	{/each}
 </div>
 
@@ -95,6 +96,9 @@
 	<!-- An external link from the card data, so resolve() (which adds the base path) doesn't apply. -->
 	<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
 	<a href={data.glossary.url}>Living Glossary</a>.
+	<br />
+	<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+	<a href={feedbackUrl()} target="_blank" rel="noreferrer">Send feedback</a>
 </footer>
 
 <style>

@@ -3,15 +3,14 @@
 	import AffinityBoxes from './AffinityBoxes.svelte';
 	import ArmorValue from './ArmorValue.svelte';
 	import WeaponStats from './WeaponStats.svelte';
-	import Activation from './icons/Activation.svelte';
+	import RulesText from './RulesText.svelte';
 	import { formatSpecialRule } from '$lib/specialRules';
 	import { findTerm } from '$lib/glossary';
 	import { tooltip } from '$lib/tooltip';
 
-	let { card, glossary }: { card: Card; glossary: Glossary } = $props();
+	/** `href`: when set, the whole card is a link to it (the term buttons stay clickable). */
+	let { card, glossary, href }: { card: Card; glossary: Glossary; href?: string } = $props();
 	const EDGES = ['top', 'right', 'bottom', 'left'] as const;
-
-	const splitRules = $derived(card.rules_text?.split('(a)') ?? []);
 </script>
 
 <div class="card gear-card">
@@ -30,7 +29,15 @@
 			<WeaponStats weapon_stats={card.weapon_stats} />
 		</div>
 	{/if}
-	<h2 class="gear-card-name text-center mt-3 px-3">{card.name}</h2>
+	<h2 class="gear-card-name text-center mt-3 px-3">
+		{#if href}
+			<!-- stretched-link covers the whole card with the link's click area. -->
+			<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+			<a class="stretched-link text-reset text-decoration-none" {href}>{card.name}</a>
+		{:else}
+			{card.name}
+		{/if}
+	</h2>
 	<div class="gear-card-keywords d-flex flex-wrap justify-content-center px-3">
 		{#each card.keywords ?? [] as keyword (keyword)}
 			<span>{keyword}</span>
@@ -55,12 +62,9 @@
 			<span class="affinity affinity-center mb-1" data-affinity={card.center_affinity}></span>
 		{/if}
 		<p class="mb-0">
-			{#each splitRules as substring, i ('rulestext' + i)}
-				{substring}
-				{#if i + 1 < splitRules.length}
-					<span class="activation"><Activation /></span>
-				{/if}
-			{/each}
+			{#if card.rules_text}
+				<RulesText text={card.rules_text} />
+			{/if}
 		</p>
 		{#if card.affinity_boxes}
 			<AffinityBoxes affinity_boxes={card.affinity_boxes}></AffinityBoxes>
@@ -112,8 +116,11 @@
 		content: ',';
 	}
 
-	/* A button, so the definition opens on hover, Tab and tap, but it looks like the text around it. */
+	/* A button, so the definition opens on hover, Tab and tap, but it looks like the text around it.
+	   Positioned above the stretched card link (z-index 1), so a click opens the definition. */
 	.term {
+		position: relative;
+		z-index: 2;
 		padding: 0;
 		border: 0;
 		background: none;
@@ -204,9 +211,6 @@
 	}
 	.armor-value {
 		width: 1.75rem;
-	}
-	.activation {
-		vertical-align: 0.1em;
 	}
 	.affinity-center {
 		position: relative;
