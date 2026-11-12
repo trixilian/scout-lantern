@@ -4,16 +4,14 @@
 	import { page } from '$app/state';
 	import { onDestroy } from 'svelte';
 	import GearCard from '$lib/components/GearCard.svelte';
-	import { createSearch } from '$lib/search';
 	import { parseQuery } from '$lib/query';
+	import { resolve } from '$app/paths';
 
 	let { data }: { data: PageData } = $props();
 
-	const search = $derived(createSearch(data.cards));
-
 	let rawQuery = $state(page.url.searchParams.get('q') ?? '');
 	const parsed = $derived(parseQuery(rawQuery));
-	const results = $derived(search(parsed));
+	const results = $derived(data.search(parsed));
 
 	let timer: ReturnType<typeof setTimeout>;
 	onDestroy(() => clearTimeout(timer));
@@ -33,6 +31,10 @@
 	}
 </script>
 
+<svelte:head>
+	<title>Scout Lantern</title>
+</svelte:head>
+
 <header class="sticky-top">
 	<search>
 		<form
@@ -44,7 +46,9 @@
 		>
 			<label class="visually-hidden" for="q">Search gear</label>
 			<div class="input-group">
-				<span class="input-group-text"><i class="bi bi-search" aria-hidden="true"></i></span>
+				<span class="input-group-text d-none d-sm-flex"
+					><i class="bi bi-search" aria-hidden="true"></i></span
+				>
 				<input
 					oninput={syncUrl}
 					class="form-control"
@@ -55,7 +59,19 @@
 					placeholder="Search gear…"
 					aria-describedby="q-warnings"
 				/>
-				<button class="btn btn-dark" type="submit">Search</button>
+				<button class="btn btn-dark" type="submit" aria-label="Search"
+					><span class="d-none d-sm-inline">Search</span>
+					<i class="bi bi-search d-sm-none" aria-hidden="true"></i></button
+				>
+				<a
+					class="btn btn-outline-dark"
+					style="--bs-btn-bg: var(--bs-body-bg)"
+					href={resolve(`/advanced?${new URLSearchParams({ q: rawQuery })}`)}
+					aria-label="Advanced search"
+				>
+					<i class="bi bi-sliders" aria-hidden="true"></i>
+					<span class="d-none d-sm-inline">Advanced</span>
+				</a>
 			</div>
 			<ul id="q-warnings" class="list-unstyled form-text mb-0" aria-live="polite">
 				{#each parsed.warnings as warning, i (i)}
@@ -89,5 +105,14 @@
 		grid-template-columns: repeat(auto-fill, clamp(11rem, 25vw, 13rem));
 		justify-content: center;
 		gap: 0.5rem;
+	}
+
+	/* Below sm the search icon in front of the input is hidden, but it is still the
+	   input group's first child, so Bootstrap leaves the input's left corners square. */
+	@media (max-width: 575.98px) {
+		#q {
+			border-top-left-radius: var(--bs-border-radius);
+			border-bottom-left-radius: var(--bs-border-radius);
+		}
 	}
 </style>

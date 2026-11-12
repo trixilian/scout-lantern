@@ -1,6 +1,16 @@
 {
-	"version": 4,
-	"generated": "2026-11-11T10:54:24+00:00",
+	"version": 5,
+	"generated": "2026-11-12T13:05:55+00:00",
+	"expansions": {
+		"core": {
+			"name": "Core Game",
+			"category": "core-game"
+		},
+		"gce": {
+			"name": "Gambler's Chest Expansion",
+			"category": "large-expansion"
+		}
+	},
 	"glossary": {
 		"source": "Kingdom Death: Monster Living Glossary",
 		"url": "https://kingdomdeath.com/rules/living-glossary",

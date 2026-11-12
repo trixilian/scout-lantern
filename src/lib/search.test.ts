@@ -40,6 +40,29 @@ describe('search', () => {
 		expect(names('irreplaceable')).toEqual(['Lantern Halberd']);
 	});
 
+	it('matches a special rule together with its value', () => {
+		// Scrap Dagger has no "2" anywhere else, so only the indexed value can match.
+		expect(names('barbed 2')).toEqual(['Scrap Dagger']);
+		expect(names('barbed 3')).toEqual([]);
+	});
+
+	it('leaves out cards that match a word with a leading "-"', () => {
+		expect(names('bone -axe')).not.toContain('Bone Axe');
+		expect(names('bone -axe')).toContain('Bone Blade');
+	});
+
+	it('leaves out "-" words with no other text, from every card', () => {
+		const withoutBone = names('-bone');
+		expect(withoutBone).not.toContain('Bone Axe');
+		expect(withoutBone).not.toContain('Bone Blade');
+		expect(withoutBone).toContain('Cloth');
+	});
+
+	it('does not leave out typo matches of a "-" word', () => {
+		// "bane" is one letter away from "bone"; excluding it must not drop the bone cards.
+		expect(names('blade -bane')).toEqual(['Bone Blade']);
+	});
+
 	it('requires every word to match', () => {
 		const bone = names('bone');
 		expect(bone).toEqual(expect.arrayContaining(['Bone Blade', 'Bone Axe']));

@@ -1,21 +1,24 @@
 import { HIT_LOCATIONS, type HitLocation } from '$lib/types';
+import { isNumberKey, type NumberKey } from './filter';
 
-export type Clause = ExpansionClause | NumberClause | LocationClause;
+/** The comparison operators, in the order the advanced search form lists them. */
+export const CLAUSE_OPS = ['=', '<', '>', '<=', '>='] as const;
 
-export type ClauseOp = '=' | '<' | '>' | '<=' | '>=';
+export type ClauseOp = (typeof CLAUSE_OPS)[number];
+
+/** A number filter, e.g. `arm>=3` (see NUMBER_FILTERS). */
+export interface NumberClause {
+	key: NumberKey;
+	values: number[];
+	negated: boolean;
+	op: ClauseOp;
+}
 
 export interface ExpansionClause {
 	key: 'e';
 	values: string[];
 	negated: boolean;
 	op: '=';
-}
-
-export interface NumberClause {
-	key: 'arm' | 'str' | 'acc' | 'spd';
-	values: number[];
-	negated: boolean;
-	op: ClauseOp;
 }
 
 export interface LocationClause {
@@ -25,6 +28,8 @@ export interface LocationClause {
 	op: '=';
 }
 
+export type Clause = NumberClause | ExpansionClause | LocationClause;
+
 /**
  * One search word as a clause: optional "-", a key of letters, an operator, the rest.
  * "<=" and ">=" come before "<" and ">" so "arm<=4" isn't read as "<" with value "=4".
@@ -33,7 +38,7 @@ export interface LocationClause {
 const CLAUSE = /^(-?)([a-z]+)(<=|>=|:|=|<|>)(.*)$/i;
 
 /** Every operator the regex can return, mapped to its ClauseOp (":" means the same as "="). */
-const OPS: Record<string, ClauseOp> = {
+const OP_FROM_SYMBOL: Record<string, ClauseOp> = {
 	':': '=',
 	'=': '=',
 	'<': '<',
@@ -42,19 +47,8 @@ const OPS: Record<string, ClauseOp> = {
 	'>=': '>='
 };
 
-const CLAUSE_KEYS = {
-	e: 'text',
-	arm: 'number',
-	str: 'number',
-	acc: 'number',
-	spd: 'number',
-	loc: 'text'
-} as const;
-
-export type ClauseKey = keyof typeof CLAUSE_KEYS;
-
-// Object.hasOwn instead of `in`: `in` also finds inherited names like "constructor".
-const isClauseKey = (key: string): key is ClauseKey => Object.hasOwn(CLAUSE_KEYS, key);
+/** Keys that match a list of names and so only take ":" or "=". */
+const isListKey = (key: string): key is 'e' | 'loc' => key === 'e' || key === 'loc';
 
 // Widened to readonly string[]: on the `as const` tuple, includes() only accepts the five names.
 const isHitLocation = (value: string): value is HitLocation =>
@@ -89,23 +83,22 @@ export const parseQuery = (query: string): ParsedQuery => {
 		const [, minus, rawKey, rawOp, rest] = match;
 		const negated = minus === '-';
 		const key = rawKey.toLowerCase();
-		const op = OPS[rawOp];
+		const op = OP_FROM_SYMBOL[rawOp];
 		const values = rest
 			.toLowerCase()
 			.split(',')
 			.filter((v) => v !== '');
 
 		// Each check drops the whole term with one warning that quotes it as typed.
-		if (!isClauseKey(key)) {
+		if (!isNumberKey(key) && !isListKey(key)) {
 			warn(`Unknown filter "${key}" in "${part}"`);
 			continue;
 		}
-		const kind = CLAUSE_KEYS[key];
 		if (values.length === 0) {
 			warn(`No value in "${part}"`);
 			continue;
 		}
-		if (kind === 'text' && op !== '=') {
+		if (isListKey(key) && op !== '=') {
 			warn(`Only ":" or "=" works for "${key}", in "${part}"`);
 			continue;
 		}
@@ -113,30 +106,23 @@ export const parseQuery = (query: string): ParsedQuery => {
 			warn(`A comparison takes a single value, in "${part}"`);
 			continue;
 		}
-		// Number keys only take whole numbers: digits only, from start to end.
-		if (kind === 'number' && !values.every((v) => /^\d+$/.test(v))) {
-			warn(`Not a whole number in "${part}"`);
-			continue;
-		}
 
-		switch (key) {
-			case 'e':
-				clauses.push({ key, op: '=', values, negated });
-				break;
-			case 'arm':
-			case 'str':
-			case 'acc':
-			case 'spd':
-				clauses.push({ key, op, values: values.map((v) => parseInt(v)), negated });
-				break;
-			case 'loc':
-				// every() with a type guard narrows `values` to HitLocation[] when it passes.
-				if (!values.every(isHitLocation)) {
-					warn(`Unknown hit location in "${part}"`);
-					continue;
-				}
-				clauses.push({ key, op: '=', values, negated });
-				break;
+		if (isNumberKey(key)) {
+			// Number keys only take whole numbers: digits only, from start to end.
+			if (!values.every((v) => /^\d+$/.test(v))) {
+				warn(`Not a whole number in "${part}"`);
+				continue;
+			}
+			clauses.push({ key, op, values: values.map((v) => parseInt(v)), negated });
+		} else if (key === 'loc') {
+			// every() with a type guard narrows `values` to HitLocation[] when it passes.
+			if (!values.every(isHitLocation)) {
+				warn(`Unknown hit location in "${part}"`);
+				continue;
+			}
+			clauses.push({ key, op: '=', values, negated });
+		} else {
+			clauses.push({ key, op: '=', values, negated });
 		}
 	}
 

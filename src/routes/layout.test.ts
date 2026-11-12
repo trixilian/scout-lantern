@@ -1,11 +1,14 @@
 import { describe, it, expect, vi } from 'vitest';
 import { isHttpError } from '@sveltejs/kit';
 import fixture from '$lib/fixtures/cards.json';
-import { DATA_VERSION } from '$lib/types';
+import { DATA_VERSION, type CardData } from '$lib/types';
+import type { Search } from '$lib/search';
+import { parseQuery } from '$lib/query';
 
 vi.mock('$app/paths', () => ({ asset: (file: string) => `/base${file}` }));
 
-const { load } = await import('./+page');
+// The layout loads the card data once, for every page.
+const { load } = await import('./+layout');
 
 function fetchReturning(body: unknown, status = 200) {
 	return vi.fn(async (url: URL | RequestInfo) => {
@@ -16,7 +19,11 @@ function fetchReturning(body: unknown, status = 200) {
 
 // `load` only uses fetch, so a partial event is enough.
 function callLoad(fetch: ReturnType<typeof fetchReturning>) {
-	return (load as unknown as (event: { fetch: typeof fetch }) => Promise<{ cards: unknown[] }>)({
+	return (
+		load as unknown as (event: {
+			fetch: typeof fetch;
+		}) => Promise<{ cards: unknown[]; expansions: unknown; glossary: unknown; search: Search }>
+	)({
 		fetch
 	});
 }
@@ -32,17 +39,36 @@ async function loadError(fetch: ReturnType<typeof fetchReturning>) {
 }
 
 describe('load', () => {
-	it('fetches the card data under the base path', async () => {
+	it('fetches the card data under the base path, with the format version', async () => {
 		const fetch = fetchReturning(fixture);
 		await callLoad(fetch);
 
-		expect(String(fetch.mock.calls[0][0])).toBe('/base/data/cards.json');
+		expect(String(fetch.mock.calls[0][0])).toBe(`/base/data/cards.json?v=${DATA_VERSION}`);
 	});
 
 	it('returns the cards', async () => {
 		const result = await callLoad(fetchReturning(fixture));
 
 		expect(result.cards).toEqual(fixture.cards);
+	});
+
+	it('returns the expansions', async () => {
+		const result = await callLoad(fetchReturning(fixture));
+
+		expect(result.expansions).toEqual(fixture.expansions);
+	});
+
+	it('returns the glossary', async () => {
+		const result = await callLoad(fetchReturning(fixture));
+
+		expect(result.glossary).toEqual(fixture.glossary);
+	});
+
+	it('returns a search over the cards', async () => {
+		const result = await callLoad(fetchReturning(fixture));
+		const cloth = (fixture as CardData).cards.filter((card) => card.name === 'Cloth');
+
+		expect(result.search(parseQuery('cloth'))).toEqual(cloth);
 	});
 
 	it('fails with the response status when the download fails', async () => {

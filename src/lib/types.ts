@@ -1,6 +1,6 @@
 /**
  * Shape of static/data/cards.json.
- * Format `version` 4 (see DATA_VERSION below).
+ * Format `version` 5 (see DATA_VERSION below).
  *
  * Fields that don't apply to a card are left out of the JSON (never null), so they are
  * optional (`?`) here and read as `undefined`.
@@ -20,6 +20,24 @@ export const HIT_LOCATIONS = ['head', 'arms', 'chest', 'waist', 'legs'] as const
 
 /** Body location an armor card protects. */
 export type HitLocation = (typeof HIT_LOCATIONS)[number];
+
+/** Product categories of the expansions. */
+export const CATEGORIES = [
+	'core-game',
+	'large-expansion',
+	'monster-expansion',
+	'white-box',
+	'promotion'
+] as const;
+
+export type Category = (typeof CATEGORIES)[number];
+
+/** An expansion's display name and product category. */
+export interface Expansion {
+	/** E.g. "Core Game". */
+	name: string;
+	category: Category;
+}
 
 /** An affinity bonus box: the affinities it needs and the bonus it gives. */
 export interface AffinityBox {
@@ -53,7 +71,7 @@ export interface Card {
 	// Always present.
 	id: string;
 	name: string;
-	/** Expansion id, e.g. "core". */
+	/** Expansion id, e.g. "core": a key of `CardData.expansions`. */
 	expansion: string;
 
 	// Left out when they don't apply to a card.
@@ -105,13 +123,15 @@ export interface Glossary {
 }
 
 /** Card data format version this frontend is written against. */
-export const DATA_VERSION = 4;
+export const DATA_VERSION = 5;
 
 export interface CardData {
 	/** Format version. Bumped on breaking shape changes. */
 	version: number;
 	/** ISO 8601 timestamp of the export. */
 	generated: string;
+	/** Every expansion id the cards use, in display order (Core Game first). */
+	expansions: Record<string, Expansion>;
 	cards: Card[];
 	/** Definitions for the terms on the cards, with the credit. */
 	glossary: Glossary;

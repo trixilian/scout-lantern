@@ -7,7 +7,8 @@
 	import Waist from './Waist.svelte';
 	import Legs from './Legs.svelte';
 
-	let { location }: { location: HitLocation } = $props();
+	/** `decorative`: the icon sits next to text that already names the location. */
+	let { location, decorative = false }: { location: HitLocation; decorative?: boolean } = $props();
 
 	const ICONS: Record<HitLocation, Component> = {
 		head: Head,
@@ -19,7 +20,11 @@
 	const Icon = $derived(ICONS[location]);
 </script>
 
-<span class="hit-location" role="img" aria-label={location}><Icon /></span>
+{#if decorative}
+	<span class="hit-location" aria-hidden="true"><Icon /></span>
+{:else}
+	<span class="hit-location" role="img" aria-label={location}><Icon /></span>
+{/if}
 
 <style>
 	.hit-location {

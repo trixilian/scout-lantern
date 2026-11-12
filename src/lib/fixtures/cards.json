@@ -1,6 +1,10 @@
 {
-	"version": 4,
+	"version": 5,
 	"generated": "2026-11-11T00:00:00+00:00",
+	"expansions": {
+		"core": { "name": "Core Game", "category": "core-game" },
+		"gce": { "name": "Gambler's Chest Expansion", "category": "large-expansion" }
+	},
 	"glossary": {
 		"source": "Kingdom Death: Monster Living Glossary",
 		"url": "https://kingdomdeath.com/rules/living-glossary",
@@ -128,6 +132,20 @@
 			"armor_value": 3,
 			"hit_location": ["head"],
 			"affinities": { "top": "green", "bottom": "blue" }
+		},
+		{
+			"id": "core-wc-29",
+			"name": "Scrap Dagger",
+			"expansion": "core",
+			"keywords": ["weapon", "melee", "dagger", "metal"],
+			"source": "Weapon Crafter",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 7,
+				"strength": 2
+			},
+			"special_rules": [{ "name": "Barbed", "value": 2 }],
+			"affinities": { "right": "red", "bottom": "red" }
 		}
 	]
 }
