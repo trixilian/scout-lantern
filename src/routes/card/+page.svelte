@@ -83,6 +83,7 @@
 				</dl>
 				<p class="small text-body-secondary">
 					Gear special rules from the
+					<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
 					<a href={data.glossary.url}>{data.glossary.source}</a>
 				</p>
 			{/if}
