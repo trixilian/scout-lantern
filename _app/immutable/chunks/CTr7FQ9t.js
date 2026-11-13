@@ -1,0 +1,1 @@
+var e=e=>e.name===`Meal`&&typeof e.value==`string`?`Meal - ${e.value}`:e.value===void 0?e.name:`${e.name} ${e.value}`;export{e as t};
