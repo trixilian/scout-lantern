@@ -1,14 +1,22 @@
 {
 	"version": 7,
-	"generated": "2026-11-13T13:11:01+00:00",
+	"generated": "2026-11-13T14:18:37+00:00",
 	"expansions": {
 		"core": {
 			"name": "Core Game",
 			"category": "core-game"
 		},
+		"dk": {
+			"name": "Dragon King Expansion",
+			"category": "monster-expansion"
+		},
 		"gce": {
 			"name": "Gambler's Chest Expansion",
 			"category": "large-expansion"
+		},
+		"ss": {
+			"name": "Sunstalker Expansion",
+			"category": "monster-expansion"
 		}
 	},
 	"sources": {
@@ -36,6 +44,9 @@
 		"cc": {
 			"name": "Crimson Crockery"
 		},
+		"da": {
+			"name": "Dragon Armory"
+		},
 		"elh": {
 			"name": "Exhausted Lantern Hoard"
 		},
@@ -62,6 +73,9 @@
 		},
 		"s": {
 			"name": "Skinnery"
+		},
+		"ss": {
+			"name": "Skyreef Sanctuary"
 		},
 		"sc": {
 			"name": "Stone Circle"
@@ -3770,6 +3784,488 @@
 			"affinities": {
 				"up": "green",
 				"left": "blue"
+			}
+		},
+		{
+			"id": "dk-da-1",
+			"name": "Dragonskull Helm",
+			"expansion": "dk",
+			"keywords": [
+				"armor",
+				"set",
+				"bone",
+				"metal"
+			],
+			"source": "da",
+			"armor_value": 4,
+			"hit_location": [
+				"head"
+			],
+			"affinities": {
+				"right": "red",
+				"down": "red",
+				"left": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"red-puzzle"
+					],
+					"effect": "Gain +1 to all severe [head] injury roll results. Ignore shattered jaw severe [head] injury result."
+				}
+			]
+		},
+		{
+			"id": "dk-da-2",
+			"name": "Dragon Gloves",
+			"expansion": "dk",
+			"keywords": [
+				"armor",
+				"set",
+				"metal"
+			],
+			"source": "da",
+			"armor_value": 4,
+			"hit_location": [
+				"arms"
+			],
+			"affinities": {
+				"up": "blue",
+				"right": "green"
+			}
+		},
+		{
+			"id": "dk-da-3",
+			"name": "Dragon Mantle",
+			"expansion": "dk",
+			"keywords": [
+				"armor",
+				"set",
+				"metal"
+			],
+			"source": "da",
+			"armor_value": 4,
+			"hit_location": [
+				"chest"
+			],
+			"affinities": {
+				"up": "red",
+				"right": "blue",
+				"down": "green",
+				"left": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"green-puzzle",
+						"red-puzzle",
+						"green-puzzle",
+						"blue-puzzle"
+					],
+					"effect": "At the start of the showdown, you beat your chest mightily and gain survival up to the survival limit."
+				}
+			]
+		},
+		{
+			"id": "dk-da-4",
+			"name": "Dragon Belt",
+			"expansion": "dk",
+			"keywords": [
+				"armor",
+				"set",
+				"metal"
+			],
+			"source": "da",
+			"armor_value": 4,
+			"hit_location": [
+				"waist"
+			],
+			"affinities": {
+				"down": "blue",
+				"left": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-puzzle",
+						"red-puzzle"
+					],
+					"effect": "You are not knocked down from suffering a heavy injury."
+				}
+			]
+		},
+		{
+			"id": "dk-da-5",
+			"name": "Dragon Boots",
+			"expansion": "dk",
+			"keywords": [
+				"armor",
+				"set",
+				"metal"
+			],
+			"rules_text": "Gain +2 movement during your act.",
+			"source": "da",
+			"armor_value": 4,
+			"hit_location": [
+				"legs"
+			],
+			"affinities": {
+				"up": "green",
+				"right": "red"
+			}
+		},
+		{
+			"id": "dk-da-10",
+			"name": "Dragon Chakram",
+			"expansion": "dk",
+			"keywords": [
+				"weapon",
+				"ranged",
+				"thrown",
+				"bone"
+			],
+			"rules_text": "If you hit, the monster gains -1 evasion until the end of the round. Limit, once per attack.",
+			"source": "da",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 3
+			},
+			"special_rules": [
+				{
+					"name": "Range"
+				}
+			]
+		},
+		{
+			"id": "dk-da-11",
+			"name": "Blast Shield",
+			"expansion": "dk",
+			"keywords": [
+				"weapon",
+				"melee",
+				"shield",
+				"metal"
+			],
+			"rules_text": "Add 1 to all hit locations. The first time you block a hit each showdown, gain the priority target token.",
+			"source": "da",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 7,
+				"strength": 4
+			},
+			"special_rules": [
+				{
+					"name": "Block",
+					"value": 1
+				}
+			]
+		},
+		{
+			"id": "dk-da-12",
+			"name": "Dragon Bite Bolt",
+			"expansion": "dk",
+			"keywords": [
+				"item",
+				"ammunition",
+				"arrow"
+			],
+			"rules_text": "If you wound the monster, it suffers knockback 5. Use once per showdown.",
+			"source": "da",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 6,
+				"strength": 6
+			},
+			"special_rules": [
+				{
+					"name": "Ammo - Bow"
+				},
+				{
+					"name": "Devastating",
+					"value": 1
+				},
+				{
+					"name": "Slow"
+				}
+			]
+		},
+		{
+			"id": "dk-da-13",
+			"name": "Shielded Quiver",
+			"expansion": "dk",
+			"keywords": [
+				"item",
+				"leather"
+			],
+			"rules_text": "You may activate and gain the benefits of each arrow gear in your grid one additional time each showdown.",
+			"source": "da"
+		},
+		{
+			"id": "dk-da-14",
+			"name": "Talon Knife",
+			"expansion": "dk",
+			"keywords": [
+				"weapon",
+				"melee",
+				"katar",
+				"bone"
+			],
+			"rules_text": "If all of your attack rolls hit, gain Savage and Deadly until the end of your attack.",
+			"source": "da",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 4
+			},
+			"special_rules": [
+				{
+					"name": "Paired"
+				}
+			],
+			"affinities": {
+				"up": "blue",
+				"left": "blue"
+			}
+		},
+		{
+			"id": "dk-da-15",
+			"name": "Blast Sword",
+			"expansion": "dk",
+			"keywords": [
+				"weapon",
+				"melee",
+				"sword",
+				"bone"
+			],
+			"rules_text": "When you spend (a) to block with this weapon, gain +1 survival.",
+			"source": "da",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 4
+			},
+			"special_rules": [
+				{
+					"name": "Block",
+					"value": 1
+				}
+			],
+			"affinities": {
+				"up": "green",
+				"down": "red"
+			}
+		},
+		{
+			"id": "dk-da-16",
+			"name": "Nuclear Knife",
+			"expansion": "dk",
+			"keywords": [
+				"weapon",
+				"melee",
+				"dagger",
+				"nuclear"
+			],
+			"source": "da",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 6,
+				"strength": 3
+			},
+			"special_rules": [
+				{
+					"name": "Devastating",
+					"value": 1
+				}
+			],
+			"affinities": {
+				"up": "blue",
+				"right": "red",
+				"down": "green",
+				"left": "blue"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"green-puzzle",
+						"red-puzzle",
+						"blue-puzzle"
+					],
+					"effect": "(a) : Edge ignites! Suffer 3 brain damage. Your next attack with this weapon gains devastating 1. Limit, once per round."
+				}
+			]
+		},
+		{
+			"id": "dk-da-17",
+			"name": "Nuclear Scythe",
+			"expansion": "dk",
+			"keywords": [
+				"weapon",
+				"melee",
+				"scythe",
+				"two-handed",
+				"nuclear"
+			],
+			"source": "da",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 4
+			},
+			"special_rules": [
+				{
+					"name": "Reach"
+				}
+			],
+			"affinities": {
+				"up": "red",
+				"down": "red",
+				"left": "blue"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"red-puzzle",
+						"blue-puzzle"
+					],
+					"effect": "(a): Edge ignites! Suffer 3 brain damage. Your next attack with this weapon gains devastating 1. Limit, once per round."
+				}
+			]
+		},
+		{
+			"id": "dk-da-18",
+			"name": "Red Power Core",
+			"expansion": "dk",
+			"keywords": [
+				"item",
+				"jewelry"
+			],
+			"rules_text": "All nuclear gear cards in your gear grid gain Sharp.",
+			"source": "da"
+		},
+		{
+			"id": "dk-da-19",
+			"name": "Blue Power Core",
+			"expansion": "dk",
+			"keywords": [
+				"item",
+				"jewelry"
+			],
+			"rules_text": "All nuclear gear cards in your gear grid gain Deadly 2.",
+			"source": "da",
+			"special_rules": [
+				{
+					"name": "Deadly",
+					"value": 2
+				}
+			]
+		},
+		{
+			"id": "dk-da-20",
+			"name": "Husk of Destiny",
+			"expansion": "dk",
+			"keywords": [
+				"item",
+				"other"
+			],
+			"rules_text": "Cursed.\nYour destiny is fulfilled. You are always insane.",
+			"source": "da",
+			"special_rules": [
+				{
+					"name": "Cursed"
+				}
+			]
+		},
+		{
+			"id": "dk-da-21",
+			"name": "Regal Edge",
+			"expansion": "dk",
+			"keywords": [
+				"weapon",
+				"melee",
+				"sword",
+				"metal"
+			],
+			"rules_text": "Gain +1 speed and +4 strength when attacking with this weapon if you have a Constellation.",
+			"source": "da",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 5,
+				"strength": 2
+			},
+			"special_rules": [
+				{
+					"name": "Sharp"
+				}
+			],
+			"affinities": {
+				"up": "green",
+				"left": "red"
+			}
+		},
+		{
+			"id": "dk-da-22",
+			"name": "Dragon Vestments",
+			"expansion": "dk",
+			"keywords": [
+				"item",
+				"silk",
+				"other"
+			],
+			"rules_text": "Add 1 to all hit locations. When you gain a random fighting art, select a Dragon Trait one instead.",
+			"source": "da"
+		},
+		{
+			"id": "dk-da-23",
+			"name": "Hazmat Shield",
+			"expansion": "dk",
+			"keywords": [
+				"weapon",
+				"melee",
+				"shield",
+				"metal",
+				"heavy"
+			],
+			"rules_text": "Add 2 to all hit locations. When the monster performs Unseen Agony or Meltdown, roll 1d10. On a 2+, you suffer no damage.",
+			"source": "da",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 4,
+				"strength": 7
+			},
+			"special_rules": [
+				{
+					"name": "Block",
+					"value": 2
+				}
+			]
+		},
+		{
+			"id": "dk-da-24",
+			"name": "Celestial Spear",
+			"expansion": "dk",
+			"keywords": [
+				"weapon",
+				"melee",
+				"spear",
+				"metal"
+			],
+			"rules_text": "Gain +5 strength when attacking with this weapon if you have a constellation.",
+			"source": "da",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 5,
+				"strength": 4
+			},
+			"special_rules": [
+				{
+					"name": "Reach"
+				}
+			],
+			"affinities": {
+				"up": "blue"
 			}
 		},
 		{
@@ -7752,6 +8248,687 @@
 			"affinities": {
 				"down": "blue",
 				"left": "red"
+			}
+		},
+		{
+			"id": "ss-ss-1",
+			"name": "Cycloid Scale Hood",
+			"expansion": "ss",
+			"keywords": [
+				"armor",
+				"set",
+				"scale"
+			],
+			"rules_text": "Whenever you spend (m), the scales' colors shift. Gain +1 evasion until your next act.",
+			"source": "ss",
+			"armor_value": 2,
+			"hit_location": [
+				"head"
+			],
+			"affinities": {
+				"down": "blue"
+			}
+		},
+		{
+			"id": "ss-ss-2",
+			"name": "Cycloid Scale Sleeves",
+			"expansion": "ss",
+			"keywords": [
+				"armor",
+				"set",
+				"scale"
+			],
+			"rules_text": "When you Shadow Walk and attack a monster from its blind spot, your weapon gains +1 accuracy and Sharp for that attack.",
+			"source": "ss",
+			"armor_value": 2,
+			"hit_location": [
+				"arms"
+			],
+			"special_rules": [
+				{
+					"name": "Shadow Walk"
+				},
+				{
+					"name": "Sharp"
+				}
+			],
+			"affinities": {
+				"right": "blue",
+				"left": "blue"
+			}
+		},
+		{
+			"id": "ss-ss-3",
+			"name": "Scale Jacket",
+			"expansion": "ss",
+			"keywords": [
+				"armor",
+				"set",
+				"scale"
+			],
+			"rules_text": "When you spend 1, you Shadow Walk and may move through spaces survivors occupy without causing collision.",
+			"source": "ss",
+			"armor_value": 2,
+			"hit_location": [
+				"chest"
+			],
+			"affinities": {
+				"up": "blue",
+				"right": "red",
+				"left": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-puzzle",
+						"red-square",
+						"red-square"
+					],
+					"effect": "+1 Accuracy"
+				}
+			]
+		},
+		{
+			"id": "ss-ss-4",
+			"name": "Cycloid Scale Skirt",
+			"expansion": "ss",
+			"keywords": [
+				"armor",
+				"set",
+				"scale"
+			],
+			"source": "ss",
+			"armor_value": 2,
+			"hit_location": [
+				"waist"
+			],
+			"affinities": {
+				"up": "blue",
+				"down": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"green-puzzle",
+						"blue-square",
+						"blue-square",
+						"blue-square"
+					],
+					"effect": "When you depart, gain survival equal to the number of [blue] you have."
+				}
+			]
+		},
+		{
+			"id": "ss-ss-5",
+			"name": "Cycloid Scale Shoes",
+			"expansion": "ss",
+			"keywords": [
+				"armor",
+				"set",
+				"scale"
+			],
+			"source": "ss",
+			"armor_value": 2,
+			"hit_location": [
+				"legs"
+			],
+			"affinities": {
+				"up": "green",
+				"left": "blue"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-puzzle",
+						"green-puzzle"
+					],
+					"effect": "(m): You are not a threat until you attack. If you have the priority target token, gain +2 survival and remove it."
+				}
+			]
+		},
+		{
+			"id": "ss-ss-6",
+			"name": "Sunspot Dart",
+			"expansion": "ss",
+			"keywords": [
+				"weapon",
+				"ranged",
+				"thrown"
+			],
+			"rules_text": "When you hit, there is an inspiring flash! Survivors adjacent to the monster gain +1 survival.",
+			"source": "ss",
+			"weapon_stats": {
+				"speed": 4,
+				"accuracy": 7,
+				"strength": 3
+			},
+			"special_rules": [
+				{
+					"name": "Activation Limit",
+					"value": 3
+				},
+				{
+					"name": "Range"
+				},
+				{
+					"name": "Deadly"
+				}
+			],
+			"affinities": {
+				"right": "red"
+			}
+		},
+		{
+			"id": "ss-ss-7",
+			"name": "Sunspot Lantern",
+			"expansion": "ss",
+			"keywords": [
+				"item",
+				"lantern"
+			],
+			"rules_text": "+1 Accuracy You cast a 1-space shadow directly away from the monster. If the shadow could be cast in 2 spaces, decide which space has it until you move.",
+			"source": "ss",
+			"affinities": {
+				"right": "green",
+				"left": "green"
+			}
+		},
+		{
+			"id": "ss-ss-8",
+			"name": "Sunshark Bow",
+			"expansion": "ss",
+			"keywords": [
+				"weapon",
+				"melee",
+				"ranged",
+				"bow",
+				"two-handed"
+			],
+			"source": "ss",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 6,
+				"strength": 0
+			},
+			"special_rules": [
+				{
+					"name": "Range"
+				},
+				{
+					"name": "Sharp"
+				}
+			],
+			"affinities": {
+				"down": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"red-square",
+						"red-square"
+					],
+					"effect": "Gains +4 strength and slow."
+				}
+			]
+		},
+		{
+			"id": "ss-ss-9",
+			"name": "Quiver Sun String",
+			"expansion": "ss",
+			"keywords": [
+				"item",
+				"leather",
+				"scale"
+			],
+			"rules_text": "You may carry up to 3 arrow gear cards outside of your grid. (All arrows you carry must be different.)",
+			"source": "ss",
+			"special_rules": [
+				{
+					"name": "Range"
+				}
+			],
+			"affinities": {
+				"right": "blue",
+				"left": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-square",
+						"blue-square",
+						"red-square"
+					],
+					"effect": "All your bows gain +2 range."
+				}
+			]
+		},
+		{
+			"id": "ss-ss-10",
+			"name": "Sunshark Arrows",
+			"expansion": "ss",
+			"keywords": [
+				"item",
+				"ammunition",
+				"arrow",
+				"soluble"
+			],
+			"rules_text": "Sharp, Ammo - Bow.\nActivation Limit 3: May activate this up to 3 times per showdown (use tokens to track).",
+			"source": "ss",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 4,
+				"strength": 6
+			},
+			"special_rules": [
+				{
+					"name": "Activation Limit",
+					"value": 3
+				},
+				{
+					"name": "Ammo - Bow"
+				},
+				{
+					"name": "Sharp"
+				}
+			]
+		},
+		{
+			"id": "ss-ss-11",
+			"name": "Shadow Saliva Shawl",
+			"expansion": "ss",
+			"keywords": [
+				"item",
+				"balm",
+				"stinky",
+				"other"
+			],
+			"rules_text": "+2 Evasion Cannot wear if you have heavy, soluble, or shield gear, or any gear with 3 or higher printed on it.",
+			"source": "ss",
+			"affinities": {
+				"up": "green",
+				"down": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"green-puzzle",
+						"green-puzzle",
+						"green-square",
+						"green-square"
+					],
+					"effect": "+1 Evasion. All weapons gain slow."
+				}
+			]
+		},
+		{
+			"id": "ss-ss-12",
+			"name": "Denticle Axe",
+			"expansion": "ss",
+			"keywords": [
+				"weapon",
+				"melee",
+				"axe",
+				"scale"
+			],
+			"source": "ss",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 5
+			},
+			"affinities": {
+				"right": "red",
+				"down": "blue"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-puzzle",
+						"blue-square",
+						"red-square"
+					],
+					"effect": "When attacking from the blind spot, the attack gains +2 strength and the first successful wound attempt gains devastating 1."
+				}
+			]
+		},
+		{
+			"id": "ss-ss-13",
+			"name": "Sun Lure and Hook",
+			"expansion": "ss",
+			"keywords": [
+				"item",
+				"tool"
+			],
+			"rules_text": "When you depart, gain +1 survival. After Hunt Phase setup, place the Sky Fishing event on any hunt space.",
+			"source": "ss",
+			"affinities": {
+				"down": "blue"
+			}
+		},
+		{
+			"id": "ss-ss-14",
+			"name": "Skleaver",
+			"expansion": "ss",
+			"keywords": [
+				"weapon",
+				"melee",
+				"grand",
+				"heavy",
+				"two-handed",
+				"bone"
+			],
+			"rules_text": "On the first Perfect hit each attack, this gains devastating 1 until the end of the attack.",
+			"source": "ss",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 5,
+				"strength": 10
+			},
+			"affinities": {
+				"up": "red",
+				"down": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"red-square",
+						"red-square"
+					],
+					"effect": "Loses the heavy keyword."
+				}
+			]
+		},
+		{
+			"id": "ss-ss-15",
+			"name": "Sky Harpoon",
+			"expansion": "ss",
+			"keywords": [
+				"weapon",
+				"melee",
+				"thrown",
+				"spear"
+			],
+			"rules_text": "Once per showdown, if monster is within reach, roll 1d10. On a 6+, you skewer it! It suffers 1 wound. Move it up to 3 spaces towards you.",
+			"source": "ss",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 5,
+				"strength": 5
+			},
+			"special_rules": [
+				{
+					"name": "Reach"
+				},
+				{
+					"name": "Savage"
+				}
+			],
+			"affinities": {
+				"left": "red"
+			}
+		},
+		{
+			"id": "ss-ss-16",
+			"name": "Ink Sword",
+			"expansion": "ss",
+			"keywords": [
+				"weapon",
+				"melee",
+				"sword",
+				"fragile"
+			],
+			"rules_text": "You may only attack with this while in darkness.",
+			"source": "ss",
+			"weapon_stats": {
+				"speed": 4,
+				"accuracy": 4,
+				"strength": 4
+			},
+			"special_rules": [
+				{
+					"name": "Deadly",
+					"value": 3
+				},
+				{
+					"name": "Reach"
+				}
+			],
+			"affinities": {
+				"down": "blue"
+			}
+		},
+		{
+			"id": "ss-ss-17",
+			"name": "Ink Blood Bow",
+			"expansion": "ss",
+			"keywords": [
+				"weapon",
+				"ranged",
+				"bow",
+				"two-handed",
+				"other"
+			],
+			"rules_text": "Gains +1 strength for each bleeding token you have. Loses cumbersome when in darkness.",
+			"source": "ss",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 7,
+				"strength": 8
+			},
+			"special_rules": [
+				{
+					"name": "Cumbersome"
+				},
+				{
+					"name": "Range"
+				},
+				{
+					"name": "Deadly"
+				}
+			],
+			"affinities": {
+				"up": "red",
+				"right": "blue"
+			}
+		},
+		{
+			"id": "ss-ss-18",
+			"name": "Sun Vestments",
+			"expansion": "ss",
+			"keywords": [
+				"item",
+				"silk",
+				"flammable"
+			],
+			"rules_text": "Ignore Cumbersome.",
+			"source": "ss",
+			"special_rules": [
+				{
+					"name": "Cumbersome"
+				},
+				{
+					"name": "Range"
+				}
+			],
+			"affinities": {
+				"right": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-square",
+						"red-square"
+					],
+					"effect": "When you have any +1 strength tokens, increase the range of your Perfect hits by 1."
+				}
+			]
+		},
+		{
+			"id": "ss-ss-19",
+			"name": "Sun Vestments",
+			"expansion": "ss",
+			"keywords": [
+				"item",
+				"flammable",
+				"silk"
+			],
+			"rules_text": "Ignore Cumbersome.",
+			"source": "ss",
+			"special_rules": [
+				{
+					"name": "Cumbersome"
+				},
+				{
+					"name": "Range"
+				}
+			],
+			"affinities": {
+				"right": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-square",
+						"red-square"
+					],
+					"effect": "When you have any +1 strength tokens, increase the range of your Perfect hits by 1."
+				}
+			]
+		},
+		{
+			"id": "ss-ss-20",
+			"name": "Sunring Bow",
+			"expansion": "ss",
+			"keywords": [
+				"weapon",
+				"ranged",
+				"two-handed",
+				"bone"
+			],
+			"source": "ss",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 4,
+				"strength": 4
+			},
+			"special_rules": [
+				{
+					"name": "Cumbersome"
+				},
+				{
+					"name": "Range"
+				},
+				{
+					"name": "Unique"
+				}
+			],
+			"affinities": {
+				"right": "red",
+				"left": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"red-puzzle"
+					],
+					"effect": "On a Perfect hit, do not draw a hit location. Monster suffers 1 wound."
+				}
+			]
+		},
+		{
+			"id": "ss-ss-21",
+			"name": "Apostle Crown",
+			"expansion": "ss",
+			"keywords": [
+				"item",
+				"jewelry",
+				"other"
+			],
+			"rules_text": "At the start of your act, if you have any +1 strength tokens, reveal the next 4 monster hit locations and put them back in any order.",
+			"source": "ss",
+			"armor_value": 3,
+			"hit_location": [
+				"head"
+			],
+			"special_rules": [
+				{
+					"name": "Accessory"
+				},
+				{
+					"name": "Unique"
+				}
+			],
+			"affinities": {
+				"right": "red",
+				"down": "blue"
+			}
+		},
+		{
+			"id": "ss-ss-22",
+			"name": "Prism Mace",
+			"expansion": "ss",
+			"keywords": [
+				"weapon",
+				"melee",
+				"club",
+				"two-handed",
+				"bone"
+			],
+			"rules_text": "When you wound with this you may block 1 for free and discard 1 mood in play if you have any +1 strength tokens.",
+			"source": "ss",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 6,
+				"strength": 10
+			},
+			"special_rules": [
+				{
+					"name": "Block",
+					"value": 1
+				},
+				{
+					"name": "Unique"
+				}
+			],
+			"affinities": {
+				"up": "green",
+				"right": "blue",
+				"down": "green",
+				"left": "red"
+			}
+		},
+		{
+			"id": "ss-ss-23",
+			"name": "Gods String",
+			"expansion": "ss",
+			"keywords": [
+				"item",
+				"other"
+			],
+			"rules_text": "When a bow is below God's String, it gains sharp and its range is increased by 1.",
+			"source": "ss",
+			"special_rules": [
+				{
+					"name": "Unique"
+				}
+			]
+		},
+		{
+			"id": "ss-ss-24",
+			"name": "Eye Patch",
+			"expansion": "ss",
+			"keywords": [
+				"item",
+				"leather"
+			],
+			"rules_text": "While you wear this, you are blind in one eye (-1 accuracy). If you are already blind, gain +2 strength for being a badass instead.",
+			"source": "ss",
+			"affinities": {
+				"up": "green",
+				"down": "red"
 			}
 		}
 	]
