@@ -1,18 +1,18 @@
 {
 	"version": 7,
-	"generated": "2026-11-13T14:18:37+00:00",
+	"generated": "2026-11-13T14:40:20+00:00",
 	"expansions": {
 		"core": {
 			"name": "Core Game",
 			"category": "core-game"
 		},
-		"dk": {
-			"name": "Dragon King Expansion",
-			"category": "monster-expansion"
-		},
 		"gce": {
 			"name": "Gambler's Chest Expansion",
 			"category": "large-expansion"
+		},
+		"dk": {
+			"name": "Dragon King Expansion",
+			"category": "monster-expansion"
 		},
 		"ss": {
 			"name": "Sunstalker Expansion",
@@ -3784,488 +3784,6 @@
 			"affinities": {
 				"up": "green",
 				"left": "blue"
-			}
-		},
-		{
-			"id": "dk-da-1",
-			"name": "Dragonskull Helm",
-			"expansion": "dk",
-			"keywords": [
-				"armor",
-				"set",
-				"bone",
-				"metal"
-			],
-			"source": "da",
-			"armor_value": 4,
-			"hit_location": [
-				"head"
-			],
-			"affinities": {
-				"right": "red",
-				"down": "red",
-				"left": "red"
-			},
-			"affinity_boxes": [
-				{
-					"affinities": [
-						"red-puzzle",
-						"red-puzzle"
-					],
-					"effect": "Gain +1 to all severe [head] injury roll results. Ignore shattered jaw severe [head] injury result."
-				}
-			]
-		},
-		{
-			"id": "dk-da-2",
-			"name": "Dragon Gloves",
-			"expansion": "dk",
-			"keywords": [
-				"armor",
-				"set",
-				"metal"
-			],
-			"source": "da",
-			"armor_value": 4,
-			"hit_location": [
-				"arms"
-			],
-			"affinities": {
-				"up": "blue",
-				"right": "green"
-			}
-		},
-		{
-			"id": "dk-da-3",
-			"name": "Dragon Mantle",
-			"expansion": "dk",
-			"keywords": [
-				"armor",
-				"set",
-				"metal"
-			],
-			"source": "da",
-			"armor_value": 4,
-			"hit_location": [
-				"chest"
-			],
-			"affinities": {
-				"up": "red",
-				"right": "blue",
-				"down": "green",
-				"left": "green"
-			},
-			"affinity_boxes": [
-				{
-					"affinities": [
-						"green-puzzle",
-						"red-puzzle",
-						"green-puzzle",
-						"blue-puzzle"
-					],
-					"effect": "At the start of the showdown, you beat your chest mightily and gain survival up to the survival limit."
-				}
-			]
-		},
-		{
-			"id": "dk-da-4",
-			"name": "Dragon Belt",
-			"expansion": "dk",
-			"keywords": [
-				"armor",
-				"set",
-				"metal"
-			],
-			"source": "da",
-			"armor_value": 4,
-			"hit_location": [
-				"waist"
-			],
-			"affinities": {
-				"down": "blue",
-				"left": "red"
-			},
-			"affinity_boxes": [
-				{
-					"affinities": [
-						"blue-puzzle",
-						"red-puzzle"
-					],
-					"effect": "You are not knocked down from suffering a heavy injury."
-				}
-			]
-		},
-		{
-			"id": "dk-da-5",
-			"name": "Dragon Boots",
-			"expansion": "dk",
-			"keywords": [
-				"armor",
-				"set",
-				"metal"
-			],
-			"rules_text": "Gain +2 movement during your act.",
-			"source": "da",
-			"armor_value": 4,
-			"hit_location": [
-				"legs"
-			],
-			"affinities": {
-				"up": "green",
-				"right": "red"
-			}
-		},
-		{
-			"id": "dk-da-10",
-			"name": "Dragon Chakram",
-			"expansion": "dk",
-			"keywords": [
-				"weapon",
-				"ranged",
-				"thrown",
-				"bone"
-			],
-			"rules_text": "If you hit, the monster gains -1 evasion until the end of the round. Limit, once per attack.",
-			"source": "da",
-			"weapon_stats": {
-				"speed": 2,
-				"accuracy": 6,
-				"strength": 3
-			},
-			"special_rules": [
-				{
-					"name": "Range"
-				}
-			]
-		},
-		{
-			"id": "dk-da-11",
-			"name": "Blast Shield",
-			"expansion": "dk",
-			"keywords": [
-				"weapon",
-				"melee",
-				"shield",
-				"metal"
-			],
-			"rules_text": "Add 1 to all hit locations. The first time you block a hit each showdown, gain the priority target token.",
-			"source": "da",
-			"weapon_stats": {
-				"speed": 1,
-				"accuracy": 7,
-				"strength": 4
-			},
-			"special_rules": [
-				{
-					"name": "Block",
-					"value": 1
-				}
-			]
-		},
-		{
-			"id": "dk-da-12",
-			"name": "Dragon Bite Bolt",
-			"expansion": "dk",
-			"keywords": [
-				"item",
-				"ammunition",
-				"arrow"
-			],
-			"rules_text": "If you wound the monster, it suffers knockback 5. Use once per showdown.",
-			"source": "da",
-			"weapon_stats": {
-				"speed": 1,
-				"accuracy": 6,
-				"strength": 6
-			},
-			"special_rules": [
-				{
-					"name": "Ammo - Bow"
-				},
-				{
-					"name": "Devastating",
-					"value": 1
-				},
-				{
-					"name": "Slow"
-				}
-			]
-		},
-		{
-			"id": "dk-da-13",
-			"name": "Shielded Quiver",
-			"expansion": "dk",
-			"keywords": [
-				"item",
-				"leather"
-			],
-			"rules_text": "You may activate and gain the benefits of each arrow gear in your grid one additional time each showdown.",
-			"source": "da"
-		},
-		{
-			"id": "dk-da-14",
-			"name": "Talon Knife",
-			"expansion": "dk",
-			"keywords": [
-				"weapon",
-				"melee",
-				"katar",
-				"bone"
-			],
-			"rules_text": "If all of your attack rolls hit, gain Savage and Deadly until the end of your attack.",
-			"source": "da",
-			"weapon_stats": {
-				"speed": 2,
-				"accuracy": 6,
-				"strength": 4
-			},
-			"special_rules": [
-				{
-					"name": "Paired"
-				}
-			],
-			"affinities": {
-				"up": "blue",
-				"left": "blue"
-			}
-		},
-		{
-			"id": "dk-da-15",
-			"name": "Blast Sword",
-			"expansion": "dk",
-			"keywords": [
-				"weapon",
-				"melee",
-				"sword",
-				"bone"
-			],
-			"rules_text": "When you spend (a) to block with this weapon, gain +1 survival.",
-			"source": "da",
-			"weapon_stats": {
-				"speed": 2,
-				"accuracy": 6,
-				"strength": 4
-			},
-			"special_rules": [
-				{
-					"name": "Block",
-					"value": 1
-				}
-			],
-			"affinities": {
-				"up": "green",
-				"down": "red"
-			}
-		},
-		{
-			"id": "dk-da-16",
-			"name": "Nuclear Knife",
-			"expansion": "dk",
-			"keywords": [
-				"weapon",
-				"melee",
-				"dagger",
-				"nuclear"
-			],
-			"source": "da",
-			"weapon_stats": {
-				"speed": 3,
-				"accuracy": 6,
-				"strength": 3
-			},
-			"special_rules": [
-				{
-					"name": "Devastating",
-					"value": 1
-				}
-			],
-			"affinities": {
-				"up": "blue",
-				"right": "red",
-				"down": "green",
-				"left": "blue"
-			},
-			"affinity_boxes": [
-				{
-					"affinities": [
-						"green-puzzle",
-						"red-puzzle",
-						"blue-puzzle"
-					],
-					"effect": "(a) : Edge ignites! Suffer 3 brain damage. Your next attack with this weapon gains devastating 1. Limit, once per round."
-				}
-			]
-		},
-		{
-			"id": "dk-da-17",
-			"name": "Nuclear Scythe",
-			"expansion": "dk",
-			"keywords": [
-				"weapon",
-				"melee",
-				"scythe",
-				"two-handed",
-				"nuclear"
-			],
-			"source": "da",
-			"weapon_stats": {
-				"speed": 2,
-				"accuracy": 6,
-				"strength": 4
-			},
-			"special_rules": [
-				{
-					"name": "Reach"
-				}
-			],
-			"affinities": {
-				"up": "red",
-				"down": "red",
-				"left": "blue"
-			},
-			"affinity_boxes": [
-				{
-					"affinities": [
-						"red-puzzle",
-						"red-puzzle",
-						"blue-puzzle"
-					],
-					"effect": "(a): Edge ignites! Suffer 3 brain damage. Your next attack with this weapon gains devastating 1. Limit, once per round."
-				}
-			]
-		},
-		{
-			"id": "dk-da-18",
-			"name": "Red Power Core",
-			"expansion": "dk",
-			"keywords": [
-				"item",
-				"jewelry"
-			],
-			"rules_text": "All nuclear gear cards in your gear grid gain Sharp.",
-			"source": "da"
-		},
-		{
-			"id": "dk-da-19",
-			"name": "Blue Power Core",
-			"expansion": "dk",
-			"keywords": [
-				"item",
-				"jewelry"
-			],
-			"rules_text": "All nuclear gear cards in your gear grid gain Deadly 2.",
-			"source": "da",
-			"special_rules": [
-				{
-					"name": "Deadly",
-					"value": 2
-				}
-			]
-		},
-		{
-			"id": "dk-da-20",
-			"name": "Husk of Destiny",
-			"expansion": "dk",
-			"keywords": [
-				"item",
-				"other"
-			],
-			"rules_text": "Cursed.\nYour destiny is fulfilled. You are always insane.",
-			"source": "da",
-			"special_rules": [
-				{
-					"name": "Cursed"
-				}
-			]
-		},
-		{
-			"id": "dk-da-21",
-			"name": "Regal Edge",
-			"expansion": "dk",
-			"keywords": [
-				"weapon",
-				"melee",
-				"sword",
-				"metal"
-			],
-			"rules_text": "Gain +1 speed and +4 strength when attacking with this weapon if you have a Constellation.",
-			"source": "da",
-			"weapon_stats": {
-				"speed": 1,
-				"accuracy": 5,
-				"strength": 2
-			},
-			"special_rules": [
-				{
-					"name": "Sharp"
-				}
-			],
-			"affinities": {
-				"up": "green",
-				"left": "red"
-			}
-		},
-		{
-			"id": "dk-da-22",
-			"name": "Dragon Vestments",
-			"expansion": "dk",
-			"keywords": [
-				"item",
-				"silk",
-				"other"
-			],
-			"rules_text": "Add 1 to all hit locations. When you gain a random fighting art, select a Dragon Trait one instead.",
-			"source": "da"
-		},
-		{
-			"id": "dk-da-23",
-			"name": "Hazmat Shield",
-			"expansion": "dk",
-			"keywords": [
-				"weapon",
-				"melee",
-				"shield",
-				"metal",
-				"heavy"
-			],
-			"rules_text": "Add 2 to all hit locations. When the monster performs Unseen Agony or Meltdown, roll 1d10. On a 2+, you suffer no damage.",
-			"source": "da",
-			"weapon_stats": {
-				"speed": 2,
-				"accuracy": 4,
-				"strength": 7
-			},
-			"special_rules": [
-				{
-					"name": "Block",
-					"value": 2
-				}
-			]
-		},
-		{
-			"id": "dk-da-24",
-			"name": "Celestial Spear",
-			"expansion": "dk",
-			"keywords": [
-				"weapon",
-				"melee",
-				"spear",
-				"metal"
-			],
-			"rules_text": "Gain +5 strength when attacking with this weapon if you have a constellation.",
-			"source": "da",
-			"weapon_stats": {
-				"speed": 2,
-				"accuracy": 5,
-				"strength": 4
-			},
-			"special_rules": [
-				{
-					"name": "Reach"
-				}
-			],
-			"affinities": {
-				"up": "blue"
 			}
 		},
 		{
@@ -8251,6 +7769,491 @@
 			}
 		},
 		{
+			"id": "dk-da-1",
+			"name": "Dragonskull Helm",
+			"expansion": "dk",
+			"keywords": [
+				"armor",
+				"set",
+				"bone",
+				"metal"
+			],
+			"source": "da",
+			"armor_value": 4,
+			"hit_location": [
+				"head"
+			],
+			"affinities": {
+				"right": "red",
+				"down": "red",
+				"left": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"red-puzzle"
+					],
+					"effect": "Gain +1 to all severe [head] injury roll results. Ignore shattered jaw severe [head] injury result."
+				}
+			]
+		},
+		{
+			"id": "dk-da-2",
+			"name": "Dragon Gloves",
+			"expansion": "dk",
+			"keywords": [
+				"armor",
+				"set",
+				"metal"
+			],
+			"source": "da",
+			"armor_value": 4,
+			"hit_location": [
+				"arms"
+			],
+			"affinities": {
+				"up": "blue",
+				"right": "green"
+			}
+		},
+		{
+			"id": "dk-da-3",
+			"name": "Dragon Mantle",
+			"expansion": "dk",
+			"keywords": [
+				"armor",
+				"set",
+				"metal"
+			],
+			"source": "da",
+			"armor_value": 4,
+			"hit_location": [
+				"chest"
+			],
+			"affinities": {
+				"up": "red",
+				"right": "blue",
+				"down": "green",
+				"left": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"green-puzzle",
+						"red-puzzle",
+						"green-puzzle",
+						"blue-puzzle"
+					],
+					"effect": "At the start of the showdown, you beat your chest mightily and gain survival up to the survival limit."
+				}
+			]
+		},
+		{
+			"id": "dk-da-4",
+			"name": "Dragon Belt",
+			"expansion": "dk",
+			"keywords": [
+				"armor",
+				"set",
+				"metal"
+			],
+			"source": "da",
+			"armor_value": 4,
+			"hit_location": [
+				"waist"
+			],
+			"affinities": {
+				"down": "blue",
+				"left": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-puzzle",
+						"red-puzzle"
+					],
+					"effect": "You are not knocked down from suffering a heavy injury."
+				}
+			]
+		},
+		{
+			"id": "dk-da-5",
+			"name": "Dragon Boots",
+			"expansion": "dk",
+			"keywords": [
+				"armor",
+				"set",
+				"metal"
+			],
+			"rules_text": "Gain +2 movement during your act.",
+			"source": "da",
+			"armor_value": 4,
+			"hit_location": [
+				"legs"
+			],
+			"affinities": {
+				"up": "green",
+				"right": "red"
+			}
+		},
+		{
+			"id": "dk-da-10",
+			"name": "Dragon Chakram",
+			"expansion": "dk",
+			"keywords": [
+				"weapon",
+				"ranged",
+				"thrown",
+				"bone"
+			],
+			"rules_text": "If you hit, the monster gains -1 evasion until the end of the round. Limit, once per attack.",
+			"source": "da",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 3
+			},
+			"special_rules": [
+				{
+					"name": "Range",
+					"value": 3
+				}
+			]
+		},
+		{
+			"id": "dk-da-11",
+			"name": "Blast Shield",
+			"expansion": "dk",
+			"keywords": [
+				"weapon",
+				"melee",
+				"shield",
+				"metal"
+			],
+			"rules_text": "Add 1 to all hit locations. The first time you block a hit each showdown, gain the priority target token.",
+			"source": "da",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 7,
+				"strength": 4
+			},
+			"special_rules": [
+				{
+					"name": "Block",
+					"value": 1
+				}
+			]
+		},
+		{
+			"id": "dk-da-12",
+			"name": "Dragon Bite Bolt",
+			"expansion": "dk",
+			"keywords": [
+				"item",
+				"ammunition",
+				"arrow"
+			],
+			"rules_text": "If you wound the monster, it suffers knockback 5. Use once per showdown.",
+			"source": "da",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 6,
+				"strength": 6
+			},
+			"special_rules": [
+				{
+					"name": "Ammo - Bow"
+				},
+				{
+					"name": "Devastating",
+					"value": 1
+				},
+				{
+					"name": "Slow"
+				}
+			]
+		},
+		{
+			"id": "dk-da-13",
+			"name": "Shielded Quiver",
+			"expansion": "dk",
+			"keywords": [
+				"item",
+				"leather"
+			],
+			"rules_text": "You may activate and gain the benefits of each arrow gear in your grid one additional time each showdown.",
+			"source": "da"
+		},
+		{
+			"id": "dk-da-14",
+			"name": "Talon Knife",
+			"expansion": "dk",
+			"keywords": [
+				"weapon",
+				"melee",
+				"katar",
+				"bone"
+			],
+			"rules_text": "If all of your attack rolls hit, gain Savage and Deadly until the end of your attack.",
+			"source": "da",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 4
+			},
+			"special_rules": [
+				{
+					"name": "Paired"
+				}
+			],
+			"affinities": {
+				"up": "blue",
+				"left": "blue"
+			}
+		},
+		{
+			"id": "dk-da-15",
+			"name": "Blast Sword",
+			"expansion": "dk",
+			"keywords": [
+				"weapon",
+				"melee",
+				"sword",
+				"bone"
+			],
+			"rules_text": "When you spend (a) to block with this weapon, gain +1 survival.",
+			"source": "da",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 4
+			},
+			"special_rules": [
+				{
+					"name": "Block",
+					"value": 1
+				}
+			],
+			"affinities": {
+				"up": "green",
+				"down": "red"
+			}
+		},
+		{
+			"id": "dk-da-16",
+			"name": "Nuclear Knife",
+			"expansion": "dk",
+			"keywords": [
+				"weapon",
+				"melee",
+				"dagger",
+				"nuclear"
+			],
+			"source": "da",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 6,
+				"strength": 3
+			},
+			"special_rules": [
+				{
+					"name": "Devastating",
+					"value": 1
+				}
+			],
+			"affinities": {
+				"up": "blue",
+				"right": "red",
+				"down": "green",
+				"left": "blue"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"green-puzzle",
+						"red-puzzle",
+						"blue-puzzle"
+					],
+					"effect": "(a) : Edge ignites! Suffer 3 brain damage. Your next attack with this weapon gains devastating 1. Limit, once per round."
+				}
+			]
+		},
+		{
+			"id": "dk-da-17",
+			"name": "Nuclear Scythe",
+			"expansion": "dk",
+			"keywords": [
+				"weapon",
+				"melee",
+				"scythe",
+				"two-handed",
+				"nuclear"
+			],
+			"source": "da",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 4
+			},
+			"special_rules": [
+				{
+					"name": "Reach",
+					"value": 2
+				}
+			],
+			"affinities": {
+				"up": "red",
+				"down": "red",
+				"left": "blue"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"red-puzzle",
+						"blue-puzzle"
+					],
+					"effect": "(a): Edge ignites! Suffer 3 brain damage. Your next attack with this weapon gains devastating 1. Limit, once per round."
+				}
+			]
+		},
+		{
+			"id": "dk-da-18",
+			"name": "Red Power Core",
+			"expansion": "dk",
+			"keywords": [
+				"item",
+				"jewelry"
+			],
+			"rules_text": "All nuclear gear cards in your gear grid gain Sharp.",
+			"source": "da"
+		},
+		{
+			"id": "dk-da-19",
+			"name": "Blue Power Core",
+			"expansion": "dk",
+			"keywords": [
+				"item",
+				"jewelry"
+			],
+			"rules_text": "All nuclear gear cards in your gear grid gain Deadly 2.",
+			"source": "da",
+			"special_rules": [
+				{
+					"name": "Deadly",
+					"value": 2
+				}
+			]
+		},
+		{
+			"id": "dk-da-20",
+			"name": "Husk of Destiny",
+			"expansion": "dk",
+			"keywords": [
+				"item",
+				"other"
+			],
+			"rules_text": "Cursed.\nYour destiny is fulfilled. You are always insane.",
+			"source": "da",
+			"special_rules": [
+				{
+					"name": "Cursed"
+				}
+			]
+		},
+		{
+			"id": "dk-da-21",
+			"name": "Regal Edge",
+			"expansion": "dk",
+			"keywords": [
+				"weapon",
+				"melee",
+				"sword",
+				"metal"
+			],
+			"rules_text": "Gain +1 speed and +4 strength when attacking with this weapon if you have a Constellation.",
+			"source": "da",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 5,
+				"strength": 2
+			},
+			"special_rules": [
+				{
+					"name": "Sharp"
+				}
+			],
+			"affinities": {
+				"up": "green",
+				"left": "red"
+			}
+		},
+		{
+			"id": "dk-da-22",
+			"name": "Dragon Vestments",
+			"expansion": "dk",
+			"keywords": [
+				"item",
+				"silk",
+				"other"
+			],
+			"rules_text": "Add 1 to all hit locations. When you gain a random fighting art, select a Dragon Trait one instead.",
+			"source": "da"
+		},
+		{
+			"id": "dk-da-23",
+			"name": "Hazmat Shield",
+			"expansion": "dk",
+			"keywords": [
+				"weapon",
+				"melee",
+				"shield",
+				"metal",
+				"heavy"
+			],
+			"rules_text": "Add 2 to all hit locations. When the monster performs Unseen Agony or Meltdown, roll 1d10. On a 2+, you suffer no damage.",
+			"source": "da",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 4,
+				"strength": 7
+			},
+			"special_rules": [
+				{
+					"name": "Block",
+					"value": 2
+				}
+			]
+		},
+		{
+			"id": "dk-da-24",
+			"name": "Celestial Spear",
+			"expansion": "dk",
+			"keywords": [
+				"weapon",
+				"melee",
+				"spear",
+				"metal"
+			],
+			"rules_text": "Gain +5 strength when attacking with this weapon if you have a constellation.",
+			"source": "da",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 5,
+				"strength": 4
+			},
+			"special_rules": [
+				{
+					"name": "Reach",
+					"value": 2
+				}
+			],
+			"affinities": {
+				"up": "blue"
+			}
+		},
+		{
 			"id": "ss-ss-1",
 			"name": "Cycloid Scale Hood",
 			"expansion": "ss",
@@ -8408,7 +8411,8 @@
 					"value": 3
 				},
 				{
-					"name": "Range"
+					"name": "Range",
+					"value": 5
 				},
 				{
 					"name": "Deadly"
@@ -8452,7 +8456,8 @@
 			},
 			"special_rules": [
 				{
-					"name": "Range"
+					"name": "Range",
+					"value": 1
 				},
 				{
 					"name": "Sharp"
@@ -8659,7 +8664,8 @@
 			},
 			"special_rules": [
 				{
-					"name": "Reach"
+					"name": "Reach",
+					"value": 3
 				},
 				{
 					"name": "Savage"
@@ -8692,7 +8698,8 @@
 					"value": 3
 				},
 				{
-					"name": "Reach"
+					"name": "Reach",
+					"value": 3
 				}
 			],
 			"affinities": {
@@ -8722,7 +8729,8 @@
 					"name": "Cumbersome"
 				},
 				{
-					"name": "Range"
+					"name": "Range",
+					"value": 7
 				},
 				{
 					"name": "Deadly"
@@ -8741,38 +8749,6 @@
 				"item",
 				"silk",
 				"flammable"
-			],
-			"rules_text": "Ignore Cumbersome.",
-			"source": "ss",
-			"special_rules": [
-				{
-					"name": "Cumbersome"
-				},
-				{
-					"name": "Range"
-				}
-			],
-			"affinities": {
-				"right": "red"
-			},
-			"affinity_boxes": [
-				{
-					"affinities": [
-						"red-square",
-						"red-square"
-					],
-					"effect": "When you have any +1 strength tokens, increase the range of your Perfect hits by 1."
-				}
-			]
-		},
-		{
-			"id": "ss-ss-19",
-			"name": "Sun Vestments",
-			"expansion": "ss",
-			"keywords": [
-				"item",
-				"flammable",
-				"silk"
 			],
 			"rules_text": "Ignore Cumbersome.",
 			"source": "ss",
@@ -8818,7 +8794,8 @@
 					"name": "Cumbersome"
 				},
 				{
-					"name": "Range"
+					"name": "Range",
+					"value": 5
 				},
 				{
 					"name": "Unique"
