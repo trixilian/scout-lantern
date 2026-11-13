@@ -10,7 +10,7 @@
 
 	/** `href`: when set, the whole card is a link to it (the term buttons stay clickable). */
 	let { card, glossary, href }: { card: Card; glossary: Glossary; href?: string } = $props();
-	const EDGES = ['top', 'right', 'bottom', 'left'] as const;
+	const EDGES = ['up', 'right', 'down', 'left'] as const;
 </script>
 
 <div class="card gear-card">
@@ -163,11 +163,11 @@
 		--affinity-color: #2f5e9e;
 	}
 
-	.affinity-top::before {
+	.affinity-up::before {
 		top: 0;
 		border-top: none;
 	}
-	.affinity-bottom::before {
+	.affinity-down::before {
 		bottom: 0;
 		border-bottom: none;
 	}
@@ -180,17 +180,17 @@
 		border-right: none;
 	}
 
-	.affinity-top,
-	.affinity-bottom {
+	.affinity-up,
+	.affinity-down {
 		width: 1.75rem;
 		height: var(--affinity-thickness);
 		left: 50%;
 	}
-	.affinity-top {
+	.affinity-up {
 		top: calc(var(--affinity-thickness) / 2);
 		transform: translate(-50%, -50%);
 	}
-	.affinity-bottom {
+	.affinity-down {
 		bottom: calc(var(--affinity-thickness) / 2);
 		transform: translate(-50%, 50%);
 	}

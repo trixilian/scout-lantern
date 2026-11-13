@@ -4,8 +4,8 @@ import type { CardData } from '$lib/types';
 import { parseQuery } from './query';
 import { createSearch } from './search';
 
-const { cards } = fixture as CardData;
-const search = createSearch(cards);
+const { cards, sources } = fixture as CardData;
+const search = createSearch(cards, sources);
 /** Search with a query string as typed in the search bar. */
 const run = (query: string) => search(parseQuery(query));
 const names = (query: string) => run(query).map((card) => card.name);
@@ -31,6 +31,12 @@ describe('search', () => {
 
 	it('matches rules text', () => {
 		expect(names('sling')).toEqual(['Founding Stone']);
+	});
+
+	it('matches the source by its name, not its id', () => {
+		expect(names('skinnery')).toEqual(['Rawhide Headband']);
+		expect(names('weapon crafter')).toEqual(['Scrap Dagger']);
+		expect(names('wc')).toEqual([]);
 	});
 
 	it('matches special rules', () => {

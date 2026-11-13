@@ -1,5 +1,5 @@
-import type { Card, Stat } from '$lib/types';
-import type { Clause, ClauseOp } from './query';
+import type { AffinityColor, Card, Stat } from '$lib/types';
+import type { AffinityKey, Clause, ClauseOp } from './query';
 
 interface NumberFilter {
 	/** Shown in the advanced search form. */
@@ -40,6 +40,16 @@ const compare = (cardValue: number, op: ClauseOp, value: number): boolean => {
 	}
 };
 
+/**
+ * The card's color for an affinity key: an edge from `affinities`, or `center_affinity` for
+ * "center". undefined when that spot has no color.
+ */
+export const affinityColor = (card: Card, key: AffinityKey): AffinityColor | undefined => {
+	if (key === 'center') return card.center_affinity;
+	// Here key is one of the four edges; ?. gives undefined when the card has no affinities.
+	return card.affinities?.[key];
+};
+
 export const matchesClause = (card: Card, clause: Clause): boolean => {
 	switch (clause.key) {
 		case 'e': {
@@ -50,6 +60,22 @@ export const matchesClause = (card: Card, clause: Clause): boolean => {
 			const cardValues = card.hit_location;
 			if (cardValues === undefined) return false; // No hit location on this card
 			const match = clause.values.some((v) => cardValues.includes(v));
+			return clause.negated ? !match : match;
+		}
+		case 'src': {
+			if (card.source === undefined) return false; // No source on this card
+			// Source ids are lowercase, and so are the values from the parser.
+			const match = clause.values.includes(card.source);
+			return clause.negated ? !match : match;
+		}
+		case 'up':
+		case 'right':
+		case 'down':
+		case 'left':
+		case 'center': {
+			const color = affinityColor(card, clause.key);
+			if (color === undefined) return false; // No color on this spot
+			const match = clause.values.includes(color);
 			return clause.negated ? !match : match;
 		}
 		default: {

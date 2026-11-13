@@ -63,7 +63,7 @@
 		justify-content: center;
 	}
 
-	/* Same colours as the affinity edges in GearCard. */
+	/* Same colors as the affinity edges in GearCard. */
 	.red-square,
 	.red-puzzle {
 		--symbol-color: #b3352c;
@@ -77,7 +77,7 @@
 		--symbol-color: #2f5e9e;
 	}
 
-	/* The square is a coloured box, a little smaller than its slot. */
+	/* The square is a colored box, a little smaller than its slot. */
 	.red-square::before,
 	.green-square::before,
 	.blue-square::before {

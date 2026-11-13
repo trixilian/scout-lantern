@@ -7,20 +7,25 @@
 	import { goto } from '$app/navigation';
 	import { resolve } from '$app/paths';
 	import { buildQuery, type AdvancedSearchForm } from '$lib/buildQuery';
+	import { sourcesByExpansion } from '$lib/sources';
 	import HitLocationIcon from '$lib/components/icons/HitLocationIcon.svelte';
+	import AffinityPicker from '$lib/components/AffinityPicker.svelte';
 
 	// In the order printed on weapon cards.
 	const WEAPON_STATS: NumberKey[] = ['spd', 'acc', 'str'];
 
 	let { data }: { data: PageData } = $props();
 	const expansionIds = $derived(Object.keys(data.expansions));
+	const expansionSources = $derived(sourcesByExpansion(data.cards, data.sources));
 
 	// Every expansion is checked at the start: the form begins with no expansion filter.
 	// The starting value is read once on purpose; untrack() tells Svelte so (no warning).
 	let form = $state<AdvancedSearchForm>({
 		text: '',
 		expansions: untrack(() => Object.keys(data.expansions)),
+		sources: [],
 		hitLocations: [],
+		affinities: { up: null, right: null, down: null, left: null, center: null },
 		stats: {
 			spd: { op: '=', value: null },
 			acc: { op: '=', value: null },
@@ -106,7 +111,42 @@
 				{/each}
 			</div>
 		</fieldset>
+		<fieldset class="row mb-3">
+			<legend class="col-sm-3 col-form-label pt-0">Sources</legend>
+			<div class="col-sm-9">
+				<!-- One group per expansion. A source of several expansions (Rare Gear) is in each
+				     group; its boxes share the value, so checking one checks them all. -->
+				{#each expansionIds as expansion (expansion)}
+					{#if expansionSources[expansion]}
+						<fieldset class="mb-2">
+							<legend class="small fw-semibold mb-1">{data.expansions[expansion].name}</legend>
+							{#each expansionSources[expansion] as id (id)}
+								<div class="form-check form-check-inline">
+									<input
+										class="form-check-input"
+										type="checkbox"
+										id="src-{expansion}-{id}"
+										value={id}
+										bind:group={form.sources}
+									/>
+									<label class="form-check-label" for="src-{expansion}-{id}">
+										{data.sources[id].name}
+									</label>
+								</div>
+							{/each}
+						</fieldset>
+					{/if}
+				{/each}
+			</div>
+		</fieldset>
 
+		<h2 class="h5 border-bottom pb-1 mt-4 mb-3">Affinities</h2>
+		<fieldset class="row mb-3">
+			<legend class="col-sm-3 col-form-label pt-0">Edges and center</legend>
+			<div class="col-sm-9">
+				<AffinityPicker bind:value={form.affinities} />
+			</div>
+		</fieldset>
 		<h2 class="h5 border-bottom pb-1 mt-4 mb-3">Weapon</h2>
 		{#each WEAPON_STATS as key (key)}
 			{@render statRow(key)}

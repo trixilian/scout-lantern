@@ -49,10 +49,24 @@
 			<h1 class="card-title">{card.name}</h1>
 			<dl class="row">
 				<dt class="col-sm-4">Expansion</dt>
-				<dd class="col-sm-8">{expansion?.name ?? card.expansion}</dd>
+				<dd class="col-sm-8">
+					<a
+						class="d-inline-block link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+						href={resolve(`/?q=e:${card.expansion}`)}
+					>
+						{expansion?.name ?? card.expansion}
+					</a>
+				</dd>
 				{#if card.source}
 					<dt class="col-sm-4">Source</dt>
-					<dd class="col-sm-8">{card.source}</dd>
+					<dd class="col-sm-8">
+						<a
+							class="d-inline-block link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+							href={resolve(`/?q=src:${card.source}`)}
+						>
+							{data.sources[card.source]?.name ?? card.source}
+						</a>
+					</dd>
 				{/if}
 				{#if card.keywords}
 					<dt class="col-sm-4">Keywords</dt>

@@ -1,6 +1,6 @@
 /**
  * Shape of static/data/cards.json.
- * Format `version` 5 (see DATA_VERSION below).
+ * Format `version` 7 (see DATA_VERSION below).
  *
  * Fields that don't apply to a card are left out of the JSON (never null), so they are
  * optional (`?`) here and read as `undefined`.
@@ -9,8 +9,11 @@
 /** A gear-card combat stat: a number, or "*" for a special/variable value. */
 export type Stat = number | '*';
 
-/** Affinity edge colour. The contract enumerates exactly these three. */
-export type AffinityColor = 'red' | 'green' | 'blue';
+/** Affinity colors. The contract enumerates exactly these three. */
+export const AFFINITY_COLORS = ['red', 'green', 'blue'] as const;
+
+/** Affinity edge color. */
+export type AffinityColor = (typeof AFFINITY_COLORS)[number];
 
 /** Affinity symbol in the affinity boxes */
 export type AffinitySymbol =
@@ -39,17 +42,23 @@ export interface Expansion {
 	category: Category;
 }
 
+/** A source's display name. */
+export interface Source {
+	/** E.g. "Bone Smith". */
+	name: string;
+}
+
 /** An affinity bonus box: the affinities it needs and the bonus it gives. */
 export interface AffinityBox {
 	affinities: AffinitySymbol[];
 	effect: string;
 }
 
-/** The four card edges. Only edges with a colour are present. */
+/** The four card edges, named as directions (`up` is the top edge). Only edges with a color are present. */
 export interface Affinities {
-	top?: AffinityColor;
+	up?: AffinityColor;
 	right?: AffinityColor;
-	bottom?: AffinityColor;
+	down?: AffinityColor;
 	left?: AffinityColor;
 }
 
@@ -77,7 +86,7 @@ export interface Card {
 	// Left out when they don't apply to a card.
 	keywords?: string[];
 	rules_text?: string;
-	/** Location or crafter that provides the card. */
+	/** Id of the location or crafter that provides the card, e.g. "bm": a key of `CardData.sources`. */
 	source?: string;
 	/** Armor points on armor cards. */
 	armor_value?: number;
@@ -87,11 +96,11 @@ export interface Card {
 	weapon_stats?: WeaponStats;
 	/** Drawn as the card's special-rules line; not repeated in `rules_text`. */
 	special_rules?: SpecialRule[];
-	/** Card edges with a colour. Absent when every edge is blank. */
+	/** Card edges with a color. Absent when every edge is blank. */
 	affinities?: Affinities;
 	/** Affinity boxes in the symbol: effect style */
 	affinity_boxes?: AffinityBox[];
-	/** Colour of the large bonus affinity square in the middle of the card. */
+	/** Color of the large bonus affinity square in the middle of the card. */
 	center_affinity?: AffinityColor;
 }
 
@@ -123,7 +132,7 @@ export interface Glossary {
 }
 
 /** Card data format version this frontend is written against. */
-export const DATA_VERSION = 5;
+export const DATA_VERSION = 7;
 
 export interface CardData {
 	/** Format version. Bumped on breaking shape changes. */
@@ -132,6 +141,11 @@ export interface CardData {
 	generated: string;
 	/** Every expansion id the cards use, in display order (Core Game first). */
 	expansions: Record<string, Expansion>;
+	/**
+	 * Every source id the cards use, in display order: Starting Gear, the locations by name,
+	 * then Meal, Pattern, Seed Pattern and Rare Gear.
+	 */
+	sources: Record<string, Source>;
 	cards: Card[];
 	/** Definitions for the terms on the cards, with the credit. */
 	glossary: Glossary;

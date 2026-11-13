@@ -1,9 +1,17 @@
 {
-	"version": 5,
+	"version": 7,
 	"generated": "2026-11-11T00:00:00+00:00",
 	"expansions": {
 		"core": { "name": "Core Game", "category": "core-game" },
 		"gce": { "name": "Gambler's Chest Expansion", "category": "large-expansion" }
+	},
+	"sources": {
+		"bm": { "name": "Bone Smith" },
+		"ch": { "name": "Chorusseum" },
+		"rg": { "name": "Rare Gear" },
+		"s": { "name": "Skinnery" },
+		"sg": { "name": "Starting Gear" },
+		"wc": { "name": "Weapon Crafter" }
 	},
 	"glossary": {
 		"source": "Kingdom Death: Monster Living Glossary",
@@ -29,7 +37,7 @@
 			"name": "Cloth",
 			"expansion": "core",
 			"keywords": ["armor"],
-			"source": "Starting Gear",
+			"source": "sg",
 			"armor_value": 1,
 			"hit_location": ["waist"],
 			"center_affinity": "blue"
@@ -51,7 +59,7 @@
 			"name": "Bone Blade",
 			"expansion": "core",
 			"keywords": ["weapon", "melee", "sword", "bone"],
-			"source": "Bone Smith",
+			"source": "bm",
 			"weapon_stats": {
 				"speed": 2,
 				"accuracy": 6,
@@ -67,7 +75,7 @@
 			"name": "Bone Axe",
 			"expansion": "core",
 			"keywords": ["weapon", "melee", "axe", "bone"],
-			"source": "Bone Smith",
+			"source": "bm",
 			"weapon_stats": {
 				"speed": 2,
 				"accuracy": 6,
@@ -83,10 +91,10 @@
 			"name": "Rawhide Headband",
 			"expansion": "core",
 			"keywords": ["armor", "set", "rawhide"],
-			"source": "Skinnery",
+			"source": "s",
 			"hit_location": ["head"],
 			"affinities": {
-				"bottom": "blue"
+				"down": "blue"
 			},
 			"affinity_boxes": [
 				{
@@ -101,7 +109,7 @@
 			"expansion": "core",
 			"keywords": ["weapon", "melee", "two-handed", "spear", "lantern", "other"],
 			"rules_text": "After attacking, if standing, you may move up to 2 spaces directly away from the monster.",
-			"source": "Rare Gear",
+			"source": "rg",
 			"weapon_stats": {
 				"speed": 2,
 				"accuracy": 4,
@@ -118,7 +126,7 @@
 			"name": "Crimson Slippers",
 			"expansion": "gce",
 			"keywords": ["armor", "set", "flesh"],
-			"source": "Starting Gear",
+			"source": "sg",
 			"armor_value": 2,
 			"hit_location": ["arms"],
 			"affinities": { "left": "red" }
@@ -128,24 +136,24 @@
 			"name": "Singing Cap",
 			"expansion": "gce",
 			"keywords": ["armor", "set", "flesh"],
-			"source": "Chorusseum",
+			"source": "ch",
 			"armor_value": 3,
 			"hit_location": ["head"],
-			"affinities": { "top": "green", "bottom": "blue" }
+			"affinities": { "up": "green", "down": "blue" }
 		},
 		{
 			"id": "core-wc-29",
 			"name": "Scrap Dagger",
 			"expansion": "core",
 			"keywords": ["weapon", "melee", "dagger", "metal"],
-			"source": "Weapon Crafter",
+			"source": "wc",
 			"weapon_stats": {
 				"speed": 3,
 				"accuracy": 7,
 				"strength": 2
 			},
 			"special_rules": [{ "name": "Barbed", "value": 2 }],
-			"affinities": { "right": "red", "bottom": "red" }
+			"affinities": { "right": "red", "down": "red" }
 		}
 	]
 }

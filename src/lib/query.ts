@@ -1,4 +1,4 @@
-import { HIT_LOCATIONS, type HitLocation } from '$lib/types';
+import { HIT_LOCATIONS, AFFINITY_COLORS, type AffinityColor, type HitLocation } from '$lib/types';
 import { isNumberKey, type NumberKey } from './filter';
 
 /** The comparison operators, in the order the advanced search form lists them. */
@@ -28,7 +28,31 @@ export interface LocationClause {
 	op: '=';
 }
 
-export type Clause = NumberClause | ExpansionClause | LocationClause;
+export interface SourceClause {
+	key: 'src';
+	values: string[];
+	negated: boolean;
+	op: '=';
+}
+
+/**
+ * The affinity keys: the four card edges, named as directions (`up` is the top edge, `down`
+ * the bottom edge), and the center square.
+ */
+export const AFFINITY_KEYS = ['up', 'right', 'down', 'left', 'center'] as const;
+
+export type AffinityKey = (typeof AFFINITY_KEYS)[number];
+
+/** An affinity filter, e.g. `left:red,blue`: the color on that edge (or the center). */
+export interface AffinityClause {
+	key: AffinityKey;
+	values: AffinityColor[];
+	negated: boolean;
+	op: '=';
+}
+
+export type Clause =
+	NumberClause | ExpansionClause | LocationClause | SourceClause | AffinityClause;
 
 /**
  * One search word as a clause: optional "-", a key of letters, an operator, the rest.
@@ -48,11 +72,18 @@ const OP_FROM_SYMBOL: Record<string, ClauseOp> = {
 };
 
 /** Keys that match a list of names and so only take ":" or "=". */
-const isListKey = (key: string): key is 'e' | 'loc' => key === 'e' || key === 'loc';
+const isListKey = (key: string): key is 'e' | 'loc' | 'src' | AffinityKey =>
+	key === 'e' || key === 'loc' || key === 'src' || isAffinityKey(key);
 
 // Widened to readonly string[]: on the `as const` tuple, includes() only accepts the five names.
 const isHitLocation = (value: string): value is HitLocation =>
 	(HIT_LOCATIONS as readonly string[]).includes(value);
+
+export const isAffinityKey = (key: string): key is AffinityKey =>
+	(AFFINITY_KEYS as readonly string[]).includes(key);
+
+const isAffinityColor = (value: string): value is AffinityColor =>
+	(AFFINITY_COLORS as readonly string[]).includes(value);
 
 export interface ParsedQuery {
 	clauses: Clause[];
@@ -107,7 +138,13 @@ export const parseQuery = (query: string): ParsedQuery => {
 			continue;
 		}
 
-		if (isNumberKey(key)) {
+		if (isAffinityKey(key)) {
+			if (!values.every(isAffinityColor)) {
+				warn(`Unknown affinity color in "${part}"`);
+				continue;
+			}
+			clauses.push({ key, op: '=', values, negated });
+		} else if (isNumberKey(key)) {
 			// Number keys only take whole numbers: digits only, from start to end.
 			if (!values.every((v) => /^\d+$/.test(v))) {
 				warn(`Not a whole number in "${part}"`);

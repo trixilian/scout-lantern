@@ -168,6 +168,44 @@ describe('parseQuery', () => {
 		});
 	});
 
+	describe('source clauses (src)', () => {
+		it('parses a comma list of source ids, lower-cased', () => {
+			expect(parseQuery('src:BM,rg').clauses).toEqual([
+				{ key: 'src', op: '=', values: ['bm', 'rg'], negated: false }
+			]);
+		});
+
+		it('parses a negated source', () => {
+			expect(parseQuery('-src:c').clauses).toEqual([
+				{ key: 'src', op: '=', values: ['c'], negated: true }
+			]);
+		});
+	});
+
+	describe('affinity clauses (up, right, down, left, center)', () => {
+		it('parses each edge and the center', () => {
+			expect(parseQuery('up:red right:green down:blue left:red center:green').clauses).toEqual([
+				{ key: 'up', op: '=', values: ['red'], negated: false },
+				{ key: 'right', op: '=', values: ['green'], negated: false },
+				{ key: 'down', op: '=', values: ['blue'], negated: false },
+				{ key: 'left', op: '=', values: ['red'], negated: false },
+				{ key: 'center', op: '=', values: ['green'], negated: false }
+			]);
+		});
+
+		it('parses a comma list of colors, lower-cased', () => {
+			expect(parseQuery('LEFT:Red,BLUE').clauses).toEqual([
+				{ key: 'left', op: '=', values: ['red', 'blue'], negated: false }
+			]);
+		});
+
+		it('parses a negated affinity', () => {
+			expect(parseQuery('-center:green').clauses).toEqual([
+				{ key: 'center', op: '=', values: ['green'], negated: true }
+			]);
+		});
+	});
+
 	describe('warnings', () => {
 		// Only the number of warnings and the term they name are checked, not the exact wording.
 
@@ -219,6 +257,19 @@ describe('parseQuery', () => {
 
 		it('warns about a comparison on a location', () => {
 			dropped('loc>head', 'loc>head');
+		});
+
+		it('warns about a comparison on a source', () => {
+			dropped('src>c', 'src>c');
+		});
+
+		it('warns about an unknown color and drops the whole term', () => {
+			dropped('up:yellow', 'up:yellow');
+			dropped('left:red,yellow', 'left:red,yellow');
+		});
+
+		it('warns about a comparison on an affinity', () => {
+			dropped('up>red', 'up>red');
 		});
 
 		it('collects one warning per bad term and still parses the good ones', () => {

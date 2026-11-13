@@ -20,9 +20,13 @@ function fetchReturning(body: unknown, status = 200) {
 // `load` only uses fetch, so a partial event is enough.
 function callLoad(fetch: ReturnType<typeof fetchReturning>) {
 	return (
-		load as unknown as (event: {
-			fetch: typeof fetch;
-		}) => Promise<{ cards: unknown[]; expansions: unknown; glossary: unknown; search: Search }>
+		load as unknown as (event: { fetch: typeof fetch }) => Promise<{
+			cards: unknown[];
+			expansions: unknown;
+			sources: unknown;
+			glossary: unknown;
+			search: Search;
+		}>
 	)({
 		fetch
 	});
@@ -56,6 +60,12 @@ describe('load', () => {
 		const result = await callLoad(fetchReturning(fixture));
 
 		expect(result.expansions).toEqual(fixture.expansions);
+	});
+
+	it('returns the sources', async () => {
+		const result = await callLoad(fetchReturning(fixture));
+
+		expect(result.sources).toEqual(fixture.sources);
 	});
 
 	it('returns the glossary', async () => {

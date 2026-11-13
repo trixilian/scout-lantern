@@ -1,5 +1,5 @@
 import MiniSearch from 'minisearch';
-import type { Card } from '$lib/types';
+import type { Card, Source } from '$lib/types';
 import type { ParsedQuery } from './query';
 import { matchesClause } from './filter';
 import { formatSpecialRule } from './specialRules';
@@ -7,7 +7,9 @@ import { formatSpecialRule } from './specialRules';
 export type Search = (query: ParsedQuery) => Card[];
 
 /**
- * Builds a full-text index over `cards` and returns a search function.
+ * Builds a full-text index over `cards` and returns a search function. `sources` gives the
+ * source names: a card holds only the source id ("bm"), but the text search finds the name
+ * ("bone smith").
  *
  * The search takes a parsed query (see `parseQuery`). Its text goes to the full-text index:
  * every word must match (AND), each word may be a prefix ("bon" finds "Bone Blade"), and words
@@ -15,7 +17,7 @@ export type Search = (query: ParsedQuery) => Card[];
  * clauses then filter those candidates: a card stays only if it matches every clause.
  * Callers only see `search(parsedQuery)`, so the engine can be swapped.
  */
-export function createSearch(cards: Card[]): Search {
+export function createSearch(cards: Card[], sources: Record<string, Source>): Search {
 	const index = new MiniSearch<Card>({
 		fields: ['name', 'keywords', 'special_rules', 'rules_text', 'source'],
 		// Array fields become one text field each. Special rules keep their value
@@ -25,6 +27,7 @@ export function createSearch(cards: Card[]): Search {
 			if (field === 'special_rules') {
 				return (card.special_rules ?? []).map(formatSpecialRule).join(' ');
 			}
+			if (field === 'source') return card.source ? (sources[card.source]?.name ?? '') : '';
 			return Array.isArray(value) ? value.join(' ') : ((value as string | undefined) ?? '');
 		},
 		searchOptions: {

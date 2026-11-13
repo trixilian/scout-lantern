@@ -27,7 +27,8 @@ export const load: LayoutLoad = async ({ fetch }) => {
 	return {
 		cards: data.cards,
 		expansions: data.expansions,
+		sources: data.sources,
 		glossary: data.glossary,
-		search: createSearch(data.cards)
+		search: createSearch(data.cards, data.sources)
 	};
 };

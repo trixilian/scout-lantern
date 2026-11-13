@@ -7,6 +7,7 @@
 	import { parseQuery } from '$lib/query';
 	import { feedbackUrl } from '$lib/feedback';
 	import { resolve } from '$app/paths';
+	import { groupByExpansion } from '$lib/sections';
 
 	let { data }: { data: PageData } = $props();
 
@@ -14,8 +15,28 @@
 	const parsed = $derived(parseQuery(rawQuery));
 	const results = $derived(data.search(parsed));
 
+	const sections = $derived(groupByExpansion(results, Object.keys(data.expansions)));
+
 	let timer: ReturnType<typeof setTimeout>;
 	onDestroy(() => clearTimeout(timer));
+
+	let searchInput: HTMLInputElement;
+
+	/** "f" anywhere on the page puts the cursor in the search bar, unless something is being typed. */
+	function focusSearchOnF(e: KeyboardEvent) {
+		if (e.key !== 'f' || e.metaKey || e.ctrlKey || e.altKey) return; // Keep Cmd+F (find) working
+		const target = e.target;
+		if (
+			target instanceof HTMLInputElement ||
+			target instanceof HTMLTextAreaElement ||
+			target instanceof HTMLSelectElement
+		) {
+			return; // Typing an "f" into a field
+		}
+		// The focus moves during keydown; without this the "f" would be typed into the search bar.
+		e.preventDefault();
+		searchInput.focus();
+	}
 
 	/** Mirror the search term into ?q= (debounced) so the URL stays shareable. */
 	function syncUrl() {
@@ -35,6 +56,8 @@
 <svelte:head>
 	<title>Scout Lantern</title>
 </svelte:head>
+
+<svelte:window onkeydown={focusSearchOnF} />
 
 <header class="sticky-top">
 	<search>
@@ -57,6 +80,7 @@
 					type="search"
 					name="q"
 					bind:value={rawQuery}
+					bind:this={searchInput}
 					placeholder="Search gear…"
 					aria-describedby="q-warnings"
 				/>
@@ -86,8 +110,14 @@
 </header>
 
 <div class="gear-card-grid mx-2 mb-5">
-	{#each results as card (card.id)}
-		<GearCard {card} glossary={data.glossary} href={resolve(`/card?id=${card.id}`)} />
+	{#each sections as section, i (section.expansion)}
+		<!-- Spans the whole grid row, so the line under it is exactly as wide as the cards. -->
+		<h2 class="section-title h5 border-bottom border-dark-subtle pb-1 mb-0" class:mt-3={i > 0}>
+			{data.expansions[section.expansion]?.name ?? section.expansion}
+		</h2>
+		{#each section.cards as card (card.id)}
+			<GearCard {card} glossary={data.glossary} href={resolve(`/card?id=${card.id}`)} />
+		{/each}
 	{/each}
 </div>
 
@@ -109,6 +139,9 @@
 		grid-template-columns: repeat(auto-fill, clamp(11rem, 25vw, 13rem));
 		justify-content: center;
 		gap: 0.5rem;
+	}
+	.section-title {
+		grid-column: 1 / -1;
 	}
 
 	/* Below sm the search icon in front of the input is hidden, but it is still the
