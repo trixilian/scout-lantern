@@ -43,6 +43,6 @@
 	.armor-text {
 		font-family: var(--font-number);
 		font-weight: 100; /* lighter than the title's 500 */
-		font-size: 12px;
+		font-size: 13px; /* viewBox units: the shield is 24 wide */
 	}
 </style>

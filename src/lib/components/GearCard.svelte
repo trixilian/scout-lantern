@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { Card, Glossary } from '$lib/types';
 	import AffinityBoxes from './AffinityBoxes.svelte';
+	import AffinityShape from './AffinityShape.svelte';
 	import ArmorValue from './ArmorValue.svelte';
 	import WeaponStats from './WeaponStats.svelte';
 	import RulesText from './RulesText.svelte';
@@ -13,7 +14,10 @@
 	const EDGES = ['up', 'right', 'down', 'left'] as const;
 </script>
 
-<div class="card gear-card">
+<div
+	class="card gear-card"
+	class:has-stat-icon={card.armor_value !== undefined || card.weapon_stats !== undefined}
+>
 	{#if card.armor_value !== undefined}
 		<div class="position-absolute top-0 start-0 m-2 armor-value">
 			<ArmorValue value={card.armor_value} hit_location={card.hit_location ?? []}></ArmorValue>
@@ -21,7 +25,9 @@
 	{/if}
 	{#each EDGES as edge (edge)}
 		{#if card.affinities?.[edge]}
-			<span class="affinity affinity-{edge}" data-affinity={card.affinities?.[edge]}></span>
+			<span class="affinity-edge affinity-{edge}">
+				<AffinityShape color={card.affinities[edge]} spot={edge} />
+			</span>
 		{/if}
 	{/each}
 	{#if card.weapon_stats}
@@ -29,7 +35,7 @@
 			<WeaponStats weapon_stats={card.weapon_stats} />
 		</div>
 	{/if}
-	<h2 class="gear-card-name text-center mt-3 px-3">
+	<h2 class="gear-card-name text-center mt-3">
 		{#if href}
 			<!-- stretched-link covers the whole card with the link's click area. -->
 			<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
@@ -38,7 +44,7 @@
 			{card.name}
 		{/if}
 	</h2>
-	<div class="gear-card-keywords d-flex flex-wrap justify-content-center px-3">
+	<div class="gear-card-keywords d-flex flex-wrap justify-content-center">
 		{#each card.keywords ?? [] as keyword (keyword)}
 			<span>{keyword}</span>
 		{/each}
@@ -57,9 +63,9 @@
 			</span>
 		{/each}
 	</p>
-	<div class="gear-card-rulestext mx-2 mb-3 text-center">
+	<div class="gear-card-rulestext mx-2 text-center">
 		{#each card.center_affinity ?? [] as color, i (i)}
-			<span class="affinity affinity-center mb-1" data-affinity={color}></span>
+			<span class="affinity-center mb-1"><AffinityShape {color} spot="center" /></span>
 		{/each}
 		<p class="mb-0">
 			{#if card.rules_text}
@@ -75,7 +81,9 @@
 <style>
 	.gear-card {
 		--gear-card-tint: #e9eded;
-		--affinity-thickness: 0.9rem;
+		/* Size factor for the card text and the weapon stats (WeaponStats reads it too).
+		   Keywords, affinities and the armor shield keep their size. */
+		--gear-card-scale: 1.2;
 
 		aspect-ratio: 1;
 		background: radial-gradient(
@@ -89,8 +97,21 @@
 		font-family: var(--font-display);
 		font-stretch: 62.5%;
 		font-weight: 500;
-		font-size: 1rem;
+		font-size: calc(1rem * var(--gear-card-scale));
 		margin: 0;
+	}
+
+	/* Padding in CSS, not px-3: Bootstrap's utilities are !important and would win.
+	   The armor icon and weapon pill are absolute, so the text doesn't flow around them;
+	   padding on both sides keeps the text clear of them and still centered on the card. */
+	.gear-card-name,
+	.gear-card-keywords {
+		padding-inline: 1rem;
+	}
+	/* The icon wrapper ends 2.25rem from the left edge (m-2 plus 1.75rem), plus a small gap. */
+	.has-stat-icon .gear-card-name,
+	.has-stat-icon .gear-card-keywords {
+		padding-inline: 2.5rem;
 	}
 
 	.gear-card-keywords {
@@ -108,7 +129,7 @@
 
 	.gear-card-specialrules {
 		gap: 0 0.3em;
-		font-size: 0.7rem;
+		font-size: calc(0.7rem * var(--gear-card-scale));
 		font-weight: 600;
 		margin: 0;
 	}
@@ -133,91 +154,47 @@
 
 	.gear-card-rulestext {
 		gap: 0 0.3em;
-		font-size: 0.5rem;
+		font-size: calc(0.5rem * var(--gear-card-scale));
 		font-weight: 400;
 		margin: 0;
+		margin-bottom: 1.1rem;
 	}
 
-	.affinity {
-		--affinity-gap: 0.02rem;
-		--affinity-stroke: 0.12rem;
-
+	/* Wrappers that place the edge shapes: each spans its whole card edge and centers the shape
+	   with flexbox, so no translate() lands it on a fraction of a pixel. */
+	.affinity-edge {
 		position: absolute;
-		background: var(--affinity-color);
+		display: flex;
 	}
-
-	.affinity::before {
-		content: '';
-		position: absolute;
-		inset: calc(-1 * (var(--affinity-gap) + var(--affinity-stroke)));
-		border: var(--affinity-stroke) solid var(--affinity-color);
-	}
-
-	.affinity[data-affinity='red'] {
-		--affinity-color: #b3352c;
-	}
-	.affinity[data-affinity='green'] {
-		--affinity-color: #3d7a3d;
-	}
-	.affinity[data-affinity='blue'] {
-		--affinity-color: #2f5e9e;
-	}
-
-	.affinity-up::before {
-		top: 0;
-		border-top: none;
-	}
-	.affinity-down::before {
-		bottom: 0;
-		border-bottom: none;
-	}
-	.affinity-left::before {
-		left: 0;
-		border-left: none;
-	}
-	.affinity-right::before {
-		right: 0;
-		border-right: none;
-	}
-
 	.affinity-up,
 	.affinity-down {
-		width: 1.75rem;
-		height: var(--affinity-thickness);
-		left: 50%;
+		inset-inline: 0;
+		justify-content: center;
 	}
 	.affinity-up {
-		top: calc(var(--affinity-thickness) / 2);
-		transform: translate(-50%, -50%);
+		top: 0;
 	}
 	.affinity-down {
-		bottom: calc(var(--affinity-thickness) / 2);
-		transform: translate(-50%, 50%);
+		bottom: 0;
 	}
-
 	.affinity-left,
 	.affinity-right {
-		width: var(--affinity-thickness);
-		height: 1.75rem;
-		top: 50%;
+		inset-block: 0;
+		align-items: center;
 	}
 	.affinity-left {
-		left: calc(var(--affinity-thickness) / 2);
-		transform: translate(-50%, -50%);
+		left: 0;
 	}
 	.affinity-right {
-		right: calc(var(--affinity-thickness) / 2);
-		transform: translate(50%, -50%);
+		right: 0;
 	}
 	.armor-value {
 		width: 1.75rem;
 	}
+	/* Several center squares (Death Mehndi has three) sit side by side; their strokes are
+	   part of the shape, so they need little extra space. */
 	.affinity-center {
-		position: relative;
 		display: inline-block;
-		aspect-ratio: 1;
-		width: 1.5rem;
-		/* Space between several center squares (Death Mehndi has three). */
-		margin-inline: 0.125rem;
+		margin-inline: 0.05rem;
 	}
 </style>

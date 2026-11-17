@@ -30,15 +30,16 @@
 	.weapon {
 		border-radius: 999px;
 		background: #999999;
-		width: 1.08rem;
-		font-size: 0.66rem;
-		line-height: 1.05rem;
-		padding-bottom: 0.04rem;
+		/* --gear-card-scale is set on the gear card around this component. */
+		width: calc(1.08rem * var(--gear-card-scale));
+		font-size: calc(0.66rem * var(--gear-card-scale));
+		line-height: calc(1.05rem * var(--gear-card-scale));
+		padding-bottom: calc(0.04rem * var(--gear-card-scale));
 	}
 	.attacks {
 		border-radius: 999px;
 		background: #777777;
-		margin: 0.1rem;
+		margin: calc(0.1rem * var(--gear-card-scale));
 	}
 	.weapon > hr {
 		color: black;
