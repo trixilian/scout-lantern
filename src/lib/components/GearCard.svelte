@@ -58,9 +58,9 @@
 		{/each}
 	</p>
 	<div class="gear-card-rulestext mx-2 mb-3 text-center">
-		{#if card.center_affinity}
-			<span class="affinity affinity-center mb-1" data-affinity={card.center_affinity}></span>
-		{/if}
+		{#each card.center_affinity ?? [] as color, i (i)}
+			<span class="affinity affinity-center mb-1" data-affinity={color}></span>
+		{/each}
 		<p class="mb-0">
 			{#if card.rules_text}
 				<RulesText text={card.rules_text} />
@@ -217,5 +217,7 @@
 		display: inline-block;
 		aspect-ratio: 1;
 		width: 1.5rem;
+		/* Space between several center squares (Death Mehndi has three). */
+		margin-inline: 0.125rem;
 	}
 </style>

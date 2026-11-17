@@ -41,13 +41,14 @@ const compare = (cardValue: number, op: ClauseOp, value: number): boolean => {
 };
 
 /**
- * The card's color for an affinity key: an edge from `affinities`, or `center_affinity` for
- * "center". undefined when that spot has no color.
+ * The card's colors for an affinity key: the edge's color from `affinities`, or every center
+ * square for "center" (a card can have several). Empty when that spot has no color.
  */
-export const affinityColor = (card: Card, key: AffinityKey): AffinityColor | undefined => {
-	if (key === 'center') return card.center_affinity;
+export const affinityColors = (card: Card, key: AffinityKey): AffinityColor[] => {
+	if (key === 'center') return card.center_affinity ?? [];
 	// Here key is one of the four edges; ?. gives undefined when the card has no affinities.
-	return card.affinities?.[key];
+	const color = card.affinities?.[key];
+	return color ? [color] : [];
 };
 
 export const matchesClause = (card: Card, clause: Clause): boolean => {
@@ -73,9 +74,9 @@ export const matchesClause = (card: Card, clause: Clause): boolean => {
 		case 'down':
 		case 'left':
 		case 'center': {
-			const color = affinityColor(card, clause.key);
-			if (color === undefined) return false; // No color on this spot
-			const match = clause.values.includes(color);
+			const colors = affinityColors(card, clause.key);
+			if (colors.length === 0) return false; // No color on this spot
+			const match = clause.values.some((v) => colors.includes(v));
 			return clause.negated ? !match : match;
 		}
 		default: {

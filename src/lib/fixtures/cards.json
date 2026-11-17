@@ -1,5 +1,5 @@
 {
-	"version": 7,
+	"version": 8,
 	"generated": "2026-11-11T00:00:00+00:00",
 	"expansions": {
 		"core": { "name": "Core Game", "category": "core-game" },
@@ -40,7 +40,7 @@
 			"source": "sg",
 			"armor_value": 1,
 			"hit_location": ["waist"],
-			"center_affinity": "blue"
+			"center_affinity": ["blue"]
 		},
 		{
 			"id": "core-unknown-3",

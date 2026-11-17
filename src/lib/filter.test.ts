@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import type { AffinityColor, Card, HitLocation } from '$lib/types';
 import type { AffinityKey, Clause, ClauseOp } from './query';
-import { affinityColor, matchesClause } from './filter';
+import { affinityColors, matchesClause } from './filter';
 
 const cloth: Card = {
 	id: 'cloth',
@@ -10,7 +10,14 @@ const cloth: Card = {
 	source: 'sg',
 	armor_value: 1,
 	hit_location: ['waist'],
-	center_affinity: 'blue'
+	center_affinity: ['blue']
+};
+/** Three center squares, like Death Mehndi. */
+const mehndi: Card = {
+	id: 'mehndi',
+	name: 'Death Mehndi',
+	expansion: 'lg',
+	center_affinity: ['blue', 'green', 'red']
 };
 const helm: Card = {
 	id: 'helm',
@@ -171,9 +178,20 @@ describe('matchesClause', () => {
 			expect(matching(aff('left', 'red', 'green'))).toEqual(['helm', 'blade']);
 		});
 
-		it('reads the center square for "center", not the edges', () => {
+		it('reads the center squares for "center", not the edges', () => {
 			expect(matching(aff('center', 'blue'))).toEqual(['cloth']);
 			expect(matching(aff('center', 'red'))).toEqual([]);
+		});
+
+		it('matches any of several center squares', () => {
+			const cards = [cloth, mehndi];
+			const ids = (clause: Clause) =>
+				cards.filter((c) => matchesClause(c, clause)).map((c) => c.id);
+			expect(ids(aff('center', 'red'))).toEqual(['mehndi']);
+			expect(ids(aff('center', 'blue'))).toEqual(['cloth', 'mehndi']);
+			// -center:blue: has a center square, and none of them is blue.
+			expect(ids(not(aff('center', 'blue')))).toEqual([]);
+			expect(ids(not(aff('center', 'red')))).toEqual(['cloth']);
 		});
 
 		it('flips only among cards with a color on that spot when negated', () => {
@@ -183,19 +201,20 @@ describe('matchesClause', () => {
 	});
 });
 
-describe('affinityColor', () => {
+describe('affinityColors', () => {
 	it('reads an edge from the affinities', () => {
-		expect(affinityColor(helm, 'up')).toBe('green');
-		expect(affinityColor(helm, 'down')).toBe('blue');
+		expect(affinityColors(helm, 'up')).toEqual(['green']);
+		expect(affinityColors(helm, 'down')).toEqual(['blue']);
 	});
 
-	it('reads the center square for "center"', () => {
-		expect(affinityColor(cloth, 'center')).toBe('blue');
+	it('reads every center square for "center", left to right', () => {
+		expect(affinityColors(cloth, 'center')).toEqual(['blue']);
+		expect(affinityColors(mehndi, 'center')).toEqual(['blue', 'green', 'red']);
 	});
 
-	it('is undefined for a blank edge or a card without affinities', () => {
-		expect(affinityColor(helm, 'right')).toBeUndefined();
-		expect(affinityColor(oddWeapon, 'up')).toBeUndefined();
-		expect(affinityColor(blade, 'center')).toBeUndefined();
+	it('is empty for a blank edge or a card without affinities', () => {
+		expect(affinityColors(helm, 'right')).toEqual([]);
+		expect(affinityColors(oddWeapon, 'up')).toEqual([]);
+		expect(affinityColors(blade, 'center')).toEqual([]);
 	});
 });

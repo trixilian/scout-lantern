@@ -1,6 +1,6 @@
 /**
  * Shape of static/data/cards.json.
- * Format `version` 7 (see DATA_VERSION below).
+ * Format `version` 8 (see DATA_VERSION below).
  *
  * Fields that don't apply to a card are left out of the JSON (never null), so they are
  * optional (`?`) here and read as `undefined`.
@@ -100,8 +100,8 @@ export interface Card {
 	affinities?: Affinities;
 	/** Affinity boxes in the symbol: effect style */
 	affinity_boxes?: AffinityBox[];
-	/** Color of the large bonus affinity square in the middle of the card. */
-	center_affinity?: AffinityColor;
+	/** Colors of the large bonus affinity squares in the middle of the card, left to right. */
+	center_affinity?: AffinityColor[];
 }
 
 /** One Living Glossary entry. */
@@ -132,7 +132,7 @@ export interface Glossary {
 }
 
 /** Card data format version this frontend is written against. */
-export const DATA_VERSION = 7;
+export const DATA_VERSION = 8;
 
 export interface CardData {
 	/** Format version. Bumped on breaking shape changes. */

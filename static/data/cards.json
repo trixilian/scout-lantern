@@ -1,6 +1,6 @@
 {
-	"version": 7,
-	"generated": "2026-11-17T16:12:00+00:00",
+	"version": 8,
+	"generated": "2026-11-17T18:20:39+00:00",
 	"expansions": {
 		"core": {
 			"name": "Core Game",
@@ -10,8 +10,44 @@
 			"name": "Gambler's Chest Expansion",
 			"category": "large-expansion"
 		},
+		"lg": {
+			"name": "Lion God Expansion",
+			"category": "large-expansion"
+		},
 		"dk": {
 			"name": "Dragon King Expansion",
+			"category": "monster-expansion"
+		},
+		"dbk": {
+			"name": "Dung Beetle Knight Expansion",
+			"category": "monster-expansion"
+		},
+		"fk": {
+			"name": "Flower Knight Expansion",
+			"category": "monster-expansion"
+		},
+		"gorm": {
+			"name": "Gorm Expansion",
+			"category": "monster-expansion"
+		},
+		"gk": {
+			"name": "Green Knight Expansion",
+			"category": "monster-expansion"
+		},
+		"lk": {
+			"name": "Lion Knight Expansion",
+			"category": "monster-expansion"
+		},
+		"mh": {
+			"name": "Manhunter Expansion",
+			"category": "monster-expansion"
+		},
+		"slen": {
+			"name": "Slenderman Expansion",
+			"category": "monster-expansion"
+		},
+		"spid": {
+			"name": "Spidicules Expansion",
 			"category": "monster-expansion"
 		},
 		"sun": {
@@ -53,6 +89,12 @@
 		"gg": {
 			"name": "Gaming Gazebo"
 		},
+		"gr": {
+			"name": "Gormchymist"
+		},
+		"g": {
+			"name": "Gormery"
+		},
 		"k": {
 			"name": "Kingsmith"
 		},
@@ -71,6 +113,9 @@
 		"p": {
 			"name": "Plumery"
 		},
+		"sm": {
+			"name": "Silk Mill"
+		},
 		"s": {
 			"name": "Skinnery"
 		},
@@ -82,6 +127,9 @@
 		},
 		"wc": {
 			"name": "Weapon Crafter"
+		},
+		"wrc": {
+			"name": "Wet Resin Crafter"
 		},
 		"m": {
 			"name": "Meal"
@@ -1425,7 +1473,9 @@
 					"effect": "Unshakeable: When you draw a Trap, roll 1d10.\nOn a 6+, discard the Trap and reshuffle the deck."
 				}
 			],
-			"center_affinity": "blue"
+			"center_affinity": [
+				"blue"
+			]
 		},
 		{
 			"id": "core-bs-48",
@@ -1449,7 +1499,9 @@
 					"effect": "Unstoppable: When you attempt to wound,\ninstead roll 1d10. On 1 - 5, fail. On 6 - 10, wound."
 				}
 			],
-			"center_affinity": "red"
+			"center_affinity": [
+				"red"
+			]
 		},
 		{
 			"id": "core-bs-49",
@@ -1473,7 +1525,9 @@
 					"effect": "Undeathable: If you would die, roll 1d10.\nOn a 6+, you inexplicably survive."
 				}
 			],
-			"center_affinity": "green"
+			"center_affinity": [
+				"green"
+			]
 		},
 		{
 			"id": "core-mm-50",
@@ -7769,6 +7823,259 @@
 			}
 		},
 		{
+			"id": "lg-unknown-1",
+			"name": "Necromancer’s Eye",
+			"expansion": "lg",
+			"keywords": [
+				"item",
+				"set",
+				"jewelry",
+				"other"
+			],
+			"rules_text": "Ignore the effects of blind.",
+			"armor_value": 2,
+			"hit_location": [
+				"head"
+			],
+			"special_rules": [
+				{
+					"name": "Accessory"
+				},
+				{
+					"name": "Unique"
+				}
+			],
+			"affinities": {
+				"down": "blue"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-puzzle"
+					],
+					"effect": "(a): Reveal the next 4 monster hit locations. Put them back in any order."
+				}
+			]
+		},
+		{
+			"id": "lg-unknown-2",
+			"name": "Golden Plate",
+			"expansion": "lg",
+			"keywords": [
+				"item",
+				"metal",
+				"heavy"
+			],
+			"rules_text": "-1 evasion.",
+			"special_rules": [
+				{
+					"name": "Unique"
+				}
+			],
+			"affinities": {
+				"up": "red",
+				"right": "red",
+				"down": "red",
+				"left": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-square",
+						"red-square",
+						"red-square",
+						"red-square"
+					],
+					"effect": "When you depart, gain + 2 to all locations wearing fur armor."
+				}
+			]
+		},
+		{
+			"id": "lg-unknown-3",
+			"name": "Lion God Statue",
+			"expansion": "lg",
+			"keywords": [
+				"item",
+				"stone",
+				"heavy"
+			],
+			"rules_text": "-1 evasion.",
+			"special_rules": [
+				{
+					"name": "Unique"
+				}
+			],
+			"affinities": {
+				"up": "blue",
+				"left": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle"
+					],
+					"effect": "Gain +1 strength for each you have."
+				}
+			]
+		},
+		{
+			"id": "lg-unknown-4",
+			"name": "Ancient Lion Claws",
+			"expansion": "lg",
+			"keywords": [
+				"item",
+				"fur",
+				"heavy"
+			],
+			"rules_text": "-1 evasion. +2 strength while attacking with daggers or katars. You may move up to 2 additional spaces when you pounce.",
+			"armor_value": 2,
+			"hit_location": [
+				"arms"
+			],
+			"special_rules": [
+				{
+					"name": "Accessory"
+				},
+				{
+					"name": "Unique"
+				}
+			],
+			"affinities": {
+				"up": "red",
+				"right": "red"
+			}
+		},
+		{
+			"id": "lg-unknown-5",
+			"name": "Lantern Mehndi",
+			"expansion": "lg",
+			"keywords": [
+				"item",
+				"soluble",
+				"symbol",
+				"other"
+			],
+			"affinities": {
+				"down": "blue"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-square",
+						"red-square",
+						"blue-puzzle"
+					],
+					"effect": "You may start the showdown in any unoccupied board space."
+				}
+			],
+			"center_affinity": [
+				"red"
+			]
+		},
+		{
+			"id": "lg-unknown-6",
+			"name": "Glyph",
+			"expansion": "lg",
+			"keywords": [
+				"item",
+				"soluble",
+				"symbol"
+			],
+			"affinities": {
+				"right": "green",
+				"down": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-square",
+						"red-square",
+						"green-puzzle"
+					],
+					"effect": "+2 accuracy. You are deaf. You cannot encourage."
+				}
+			],
+			"center_affinity": [
+				"red"
+			]
+		},
+		{
+			"id": "lg-unknown-7",
+			"name": "Butcher's Blood",
+			"expansion": "lg",
+			"keywords": [
+				"item",
+				"soluble",
+				"symbol",
+				"other"
+			],
+			"affinities": {
+				"up": "red",
+				"left": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-square",
+						"blue-square",
+						"red-puzzle"
+					],
+					"effect": "For every 10 insanity you have, gain +1 speed and +1 strength."
+				}
+			],
+			"center_affinity": [
+				"blue"
+			]
+		},
+		{
+			"id": "lg-unknown-8",
+			"name": "Death Mehndi",
+			"expansion": "lg",
+			"keywords": [
+				"item",
+				"soluble",
+				"symbol",
+				"other"
+			],
+			"rules_text": "On a Perfect hit, gain 1d10 insanity. -4 to all brain trauma rolls.",
+			"special_rules": [
+				{
+					"name": "Cursed"
+				}
+			],
+			"center_affinity": [
+				"blue",
+				"green",
+				"red"
+			]
+		},
+		{
+			"id": "lg-unknown-9",
+			"name": "Bone Witch Mehndi",
+			"expansion": "lg",
+			"keywords": [
+				"item",
+				"soluble",
+				"symbol",
+				"other"
+			],
+			"affinities": {
+				"up": "blue",
+				"right": "red",
+				"left": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"blue-puzzle",
+						"green-puzzle"
+					],
+					"effect": "At the start of your act, you may spend 3 insanity to gain 1 survival or 1 survival to gain 3 insanity."
+				}
+			]
+		},
+		{
 			"id": "dk-da-1",
 			"name": "Dragonskull Helm",
 			"expansion": "dk",
@@ -8251,6 +8558,2301 @@
 			],
 			"affinities": {
 				"up": "blue"
+			}
+		},
+		{
+			"id": "dbk-wrc-1",
+			"name": "DBK Errant Badge",
+			"expansion": "dbk",
+			"keywords": [
+				"item",
+				"jewelry",
+				"knight"
+			],
+			"rules_text": "Add 1 to all hit locations. At the start of the showdown, draw 1 tactics card.",
+			"source": "wrc",
+			"special_rules": [
+				{
+					"name": "Unique"
+				}
+			],
+			"affinities": {
+				"right": "red"
+			}
+		},
+		{
+			"id": "dbk-wrc-2",
+			"name": "Rainbow Wing Belt",
+			"expansion": "dbk",
+			"keywords": [
+				"item",
+				"flammable"
+			],
+			"source": "wrc",
+			"affinities": {
+				"up": "red",
+				"right": "green",
+				"down": "blue"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-square",
+						"red-square",
+						"green-square",
+						"red-square"
+					],
+					"effect": "When any of your attack rolls are 1, you may reroll them. Limit, once per attack."
+				}
+			]
+		},
+		{
+			"id": "dbk-wrc-3",
+			"name": "Seasoned Monster Meat",
+			"expansion": "dbk",
+			"keywords": [
+				"item",
+				"consumable"
+			],
+			"rules_text": "When you depart, gain +3 survival.",
+			"source": "wrc",
+			"affinities": {
+				"up": "green",
+				"right": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle"
+					],
+					"effect": "(a) Consume: Gain +3 survival and +1 strength token. Limit, once per showdown."
+				}
+			]
+		},
+		{
+			"id": "dbk-wrc-4",
+			"name": "Scarab Circlet",
+			"expansion": "dbk",
+			"keywords": [
+				"item",
+				"bone",
+				"jewelry",
+				"other"
+			],
+			"rules_text": "Add 1 to all hit locations. During the showdown, when your survival is reduced to 0, gain +1 strength token.",
+			"source": "wrc",
+			"affinities": {
+				"up": "blue",
+				"down": "blue"
+			}
+		},
+		{
+			"id": "dbk-wrc-5",
+			"name": "Rubber Bone Harness",
+			"expansion": "dbk",
+			"keywords": [
+				"item",
+				"bone",
+				"leather"
+			],
+			"rules_text": "Once per showdown, you may convert all of your negative attribute tokens to positive attribute tokens of the same type.",
+			"source": "wrc",
+			"affinities": {
+				"up": "red",
+				"right": "green",
+				"down": "blue",
+				"left": "green"
+			}
+		},
+		{
+			"id": "dbk-wrc-6",
+			"name": "The Beetle Bomb",
+			"expansion": "dbk",
+			"keywords": [
+				"item",
+				"thrown",
+				"fragile"
+			],
+			"rules_text": "(a): If adjacent to the monster, roll 1d10. On a 6+, the monster gains -1 accuracy and -1 evasion tokens. Limit, once per showdown.",
+			"source": "wrc",
+			"special_rules": [
+				{
+					"name": "Unique"
+				}
+			],
+			"affinities": {
+				"up": "blue",
+				"down": "red"
+			}
+		},
+		{
+			"id": "dbk-wrc-7",
+			"name": "Digging Claw",
+			"expansion": "dbk",
+			"keywords": [
+				"weapon",
+				"melee",
+				"katar",
+				"pickaxe",
+				"bone",
+				"mineral"
+			],
+			"rules_text": "During the Mineral Gathering story event, you may reroll one of your d10.",
+			"source": "wrc",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 4,
+				"strength": 5
+			},
+			"special_rules": [
+				{
+					"name": "Paired"
+				}
+			],
+			"affinities": {
+				"right": "green"
+			}
+		},
+		{
+			"id": "dbk-wrc-8",
+			"name": "Century Shoulder Pads",
+			"expansion": "dbk",
+			"keywords": [
+				"item",
+				"bone",
+				"mineral",
+				"heavy"
+			],
+			"rules_text": "Add l to all hit locations.",
+			"source": "wrc",
+			"affinities": {
+				"right": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"green-puzzle",
+						"green-square"
+					],
+					"effect": "Ripple Pattern: When you are attacked, roll 1d10. On a 10+, ignore 1 hit."
+				}
+			]
+		},
+		{
+			"id": "dbk-wrc-9",
+			"name": "Century Greaves",
+			"expansion": "dbk",
+			"keywords": [
+				"item",
+				"bone",
+				"mineral",
+				"heavy"
+			],
+			"rules_text": "- 1 movement. Add 1 to all hit locations.",
+			"source": "wrc",
+			"affinities": {
+				"left": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"green-puzzle",
+						"blue-square"
+					],
+					"effect": "Add +1 to Ripple Pattern roll results."
+				}
+			]
+		},
+		{
+			"id": "dbk-wrc-10",
+			"name": "Zanbato",
+			"expansion": "dbk",
+			"keywords": [
+				"weapon",
+				"melee",
+				"grand",
+				"two-handed",
+				"bone",
+				"mineral"
+			],
+			"source": "wrc",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 6,
+				"strength": 6
+			},
+			"special_rules": [
+				{
+					"name": "Frail"
+				},
+				{
+					"name": "Slow"
+				},
+				{
+					"name": "Deadly"
+				}
+			],
+			"affinities": {
+				"up": "red",
+				"right": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"green-square"
+					],
+					"effect": "Gains Devastating 1: Whenever you wound, inflict 1 additional wound."
+				}
+			]
+		},
+		{
+			"id": "dbk-unknown-11",
+			"name": "Regenerating Blade",
+			"expansion": "dbk",
+			"keywords": [
+				"item",
+				"mineral",
+				"other"
+			],
+			"rules_text": "During the Settlement Phase, you may archive this to remove the Dismembered Arm or Dismembered Leg permanent injury from one survivor.",
+			"affinities": {
+				"right": "blue",
+				"left": "green"
+			}
+		},
+		{
+			"id": "dbk-unknown-12",
+			"name": "Calcified Digging Claw",
+			"expansion": "dbk",
+			"keywords": [
+				"weapon",
+				"melee",
+				"katar",
+				"pickaxe"
+			],
+			"rules_text": "During the Mineral Gathering story event, you may reroll one of your d10.",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 4,
+				"strength": 5
+			},
+			"special_rules": [
+				{
+					"name": "Paired"
+				},
+				{
+					"name": "Sharp"
+				}
+			],
+			"affinities": {
+				"left": "green"
+			}
+		},
+		{
+			"id": "dbk-unknown-13",
+			"name": "Calcified Shoulder Pads",
+			"expansion": "dbk",
+			"keywords": [
+				"item",
+				"bone",
+				"heavy"
+			],
+			"rules_text": "Add 3 to all hit locations.",
+			"affinities": {
+				"right": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"green-puzzle",
+						"green-square"
+					],
+					"effect": "Ripple Pattern: When you are attacked, roll 1d10. On a 10+, ignore 1 hit."
+				}
+			]
+		},
+		{
+			"id": "dbk-unknown-14",
+			"name": "Calcified Greaves",
+			"expansion": "dbk",
+			"keywords": [
+				"item",
+				"bone",
+				"heavy"
+			],
+			"rules_text": "- 1 movement. Add 3 to all hit locations.",
+			"affinities": {
+				"left": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"green-puzzle",
+						"blue-square"
+					],
+					"effect": "Add +2 to Ripple Pattern roll results."
+				}
+			]
+		},
+		{
+			"id": "dbk-unknown-15",
+			"name": "Calcified Zanbato",
+			"expansion": "dbk",
+			"keywords": [
+				"weapon",
+				"melee",
+				"grand",
+				"two-handed",
+				"bone",
+				"heavy"
+			],
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 5,
+				"strength": 8
+			},
+			"special_rules": [
+				{
+					"name": "Slow"
+				},
+				{
+					"name": "Deadly"
+				}
+			],
+			"affinities": {
+				"up": "red",
+				"right": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"green-square"
+					],
+					"effect": "Gains Devastating 1: Whenever you wound, inflict 1 additional wound."
+				}
+			]
+		},
+		{
+			"id": "dbk-unknown-16",
+			"name": "Calcified Juggernaut Blade",
+			"expansion": "dbk",
+			"keywords": [
+				"weapon",
+				"melee",
+				"grand",
+				"bone",
+				"other"
+			],
+			"rules_text": "This weapon gains +1 strength for each token you have.",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 5,
+				"strength": 9
+			},
+			"special_rules": [
+				{
+					"name": "Block",
+					"value": 1
+				},
+				{
+					"name": "Slow"
+				}
+			],
+			"affinities": {
+				"right": "red",
+				"left": "red"
+			}
+		},
+		{
+			"id": "dbk-unknown-17",
+			"name": "Trash Crown",
+			"expansion": "dbk",
+			"keywords": [
+				"item",
+				"jewelry",
+				"fragile",
+				"other"
+			],
+			"rules_text": "(a): Reveal the next 4 hit location cards and discard 3 that are not traps. Place remaining cards on top of the deck in any order.",
+			"armor_value": 4,
+			"hit_location": [
+				"head"
+			],
+			"affinities": {
+				"down": "red",
+				"left": "blue"
+			}
+		},
+		{
+			"id": "dbk-unknown-18",
+			"name": "Hidden Crimson Jewel",
+			"expansion": "dbk",
+			"keywords": [
+				"item",
+				"jewelry",
+				"other"
+			],
+			"rules_text": "Once per game phase, you may reroll one d10.",
+			"special_rules": [
+				{
+					"name": "Irreplaceable"
+				},
+				{
+					"name": "Unique"
+				}
+			],
+			"affinities": {
+				"up": "red",
+				"right": "red",
+				"down": "red",
+				"left": "red"
+			}
+		},
+		{
+			"id": "fk-unknown-1",
+			"name": "Flower Knight",
+			"expansion": "fk",
+			"keywords": [
+				"item",
+				"jewelry",
+				"badge"
+			],
+			"rules_text": "At the start of the showdown, draw 1 tactics card and gain +1 evasion token.",
+			"special_rules": [
+				{
+					"name": "Unique"
+				}
+			],
+			"affinities": {
+				"up": "blue"
+			}
+		},
+		{
+			"id": "fk-unknown-2",
+			"name": "Satchel",
+			"expansion": "fk",
+			"keywords": [
+				"item",
+				"heavy",
+				"stinky"
+			],
+			"rules_text": "You may depart with one resource card. If that resource is Perishable, it is not destroyed.",
+			"affinities": {
+				"up": "green",
+				"down": "green",
+				"left": "green"
+			}
+		},
+		{
+			"id": "fk-unknown-3",
+			"name": "Vespertine Foil",
+			"expansion": "fk",
+			"keywords": [
+				"weapon",
+				"melee",
+				"sword",
+				"fragile"
+			],
+			"rules_text": "At the beginning of each settlement phase, archive this unless you spend 1 Flower resource.",
+			"weapon_stats": {
+				"speed": 4,
+				"accuracy": 5,
+				"strength": 1
+			},
+			"affinities": {
+				"right": "blue",
+				"left": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-puzzle",
+						"red-puzzle"
+					],
+					"effect": "Gains deadly 2."
+				}
+			]
+		},
+		{
+			"id": "fk-unknown-4",
+			"name": "Vespertine Cello",
+			"expansion": "fk",
+			"keywords": [
+				"item",
+				"instrument",
+				"noisy",
+				"other"
+			],
+			"rules_text": "At start of showdown, all other survivors with an instrument in their gear grid gain +1 luck token.",
+			"special_rules": [
+				{
+					"name": "Unique"
+				}
+			],
+			"affinities": {
+				"down": "blue"
+			}
+		},
+		{
+			"id": "fk-unknown-5",
+			"name": "Vespertine Arrow",
+			"expansion": "fk",
+			"keywords": [
+				"item",
+				"ammunition",
+				"arrow"
+			],
+			"rules_text": "Archive after use. If your attack misses, place a Flower Patch terrain tile adjacent to the monster.",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 0
+			},
+			"special_rules": [
+				{
+					"name": "Ammo - Bow"
+				},
+				{
+					"name": "Deadly",
+					"value": 4
+				}
+			]
+		},
+		{
+			"id": "fk-unknown-6",
+			"name": "Vespertine Bow",
+			"expansion": "fk",
+			"keywords": [
+				"weapon",
+				"ranged",
+				"bow",
+				"two-handed",
+				"other"
+			],
+			"rules_text": "Before each attack, you may choose for Vespertine Bow to have slow, +4 accuracy, and Range: 9 for that attack.",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 6,
+				"strength": 1
+			},
+			"special_rules": [
+				{
+					"name": "Range",
+					"value": 5
+				},
+				{
+					"name": "Deadly"
+				}
+			],
+			"affinities": {
+				"right": "green",
+				"left": "blue"
+			}
+		},
+		{
+			"id": "fk-unknown-7",
+			"name": "Sleeping Virus Flower",
+			"expansion": "fk",
+			"keywords": [
+				"item",
+				"flammable"
+			],
+			"rules_text": "+1 Luck. When you die, a flower blooms from your corpse. Add 📖 A Warm Virus to the timeline next year. You are the guest.",
+			"special_rules": [
+				{
+					"name": "Cursed"
+				}
+			],
+			"affinities": {
+				"up": "blue",
+				"right": "blue",
+				"down": "blue",
+				"left": "blue"
+			}
+		},
+		{
+			"id": "fk-unknown-8",
+			"name": "Flower Knight Helm",
+			"expansion": "fk",
+			"keywords": [
+				"armor",
+				"heavy"
+			],
+			"rules_text": "+1 Accuracy.",
+			"armor_value": 3,
+			"hit_location": [
+				"head"
+			],
+			"affinities": {
+				"down": "blue"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"green-square",
+						"blue-puzzle",
+						"green-square",
+						"green-square"
+					],
+					"effect": "While you are being attacked, the monster has -1 speed."
+				}
+			]
+		},
+		{
+			"id": "fk-unknown-9",
+			"name": "Replica Flower Sword",
+			"expansion": "fk",
+			"keywords": [
+				"weapon",
+				"melee",
+				"grand",
+				"sword"
+			],
+			"rules_text": "You cannot dodge.",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 6
+			},
+			"special_rules": [
+				{
+					"name": "Devastating",
+					"value": 1
+				}
+			],
+			"affinities": {
+				"up": "red",
+				"right": "red",
+				"left": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-square",
+						"green-square",
+						"green-puzzle",
+						"green-square"
+					],
+					"effect": "Gains Sharp. +1 Evasion."
+				}
+			]
+		},
+		{
+			"id": "gorm-g-1",
+			"name": "Gorment Mask",
+			"expansion": "gorm",
+			"keywords": [
+				"armor",
+				"set",
+				"gormskin",
+				"heavy"
+			],
+			"source": "g",
+			"armor_value": 2,
+			"hit_location": [
+				"head"
+			],
+			"affinities": {
+				"up": "blue",
+				"down": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-puzzle",
+						"green-puzzle"
+					],
+					"effect": "If your courage is higher than ⭐️, ignore Intimidate actions."
+				}
+			]
+		},
+		{
+			"id": "gorm-g-2",
+			"name": "Gorment Sleeves",
+			"expansion": "gorm",
+			"keywords": [
+				"armor",
+				"set",
+				"gormskin",
+				"heavy"
+			],
+			"source": "g",
+			"armor_value": 2,
+			"hit_location": [
+				"arms"
+			],
+			"affinities": {
+				"right": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"green-square",
+						"green-square"
+					],
+					"effect": "You may Guard without spending survival."
+				}
+			]
+		},
+		{
+			"id": "gorm-g-3",
+			"name": "Gorment Suit",
+			"expansion": "gorm",
+			"keywords": [
+				"armor",
+				"set",
+				"gormskin",
+				"heavy"
+			],
+			"source": "g",
+			"armor_value": 2,
+			"hit_location": [
+				"chest",
+				"waist"
+			],
+			"affinities": {
+				"left": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-square",
+						"green-puzzle",
+						"red-square"
+					],
+					"effect": "Guard: At the end of your attack, if you are standing and have a shield in your gear grid, spend 1 survival to move 3 spaces directly away from the monster and Block 1 for free."
+				}
+			]
+		},
+		{
+			"id": "gorm-g-4",
+			"name": "Gorment Boots",
+			"expansion": "gorm",
+			"keywords": [
+				"armor",
+				"set",
+				"gormskin",
+				"heavy"
+			],
+			"rules_text": "Other survivors may move through but not end movement in a space you occupy.",
+			"source": "g",
+			"armor_value": 2,
+			"hit_location": [
+				"legs"
+			]
+		},
+		{
+			"id": "gorm-g-5",
+			"name": "Regeneration Suit",
+			"expansion": "gorm",
+			"keywords": [
+				"item",
+				"gorm"
+			],
+			"source": "g",
+			"armor_value": 2,
+			"hit_location": [
+				"chest"
+			],
+			"special_rules": [
+				{
+					"name": "Accessory"
+				}
+			],
+			"affinities": {
+				"up": "green",
+				"down": "green",
+				"left": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"green-puzzle",
+						"green-square",
+						"green-square"
+					],
+					"effect": "At the end of the showdown, remove any permanent injuries you suffered this showdown."
+				}
+			]
+		},
+		{
+			"id": "gorm-g-6",
+			"name": "Rib Blade",
+			"expansion": "gorm",
+			"keywords": [
+				"weapon",
+				"melee",
+				"grand",
+				"bone"
+			],
+			"source": "g",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 6,
+				"strength": 5
+			},
+			"special_rules": [
+				{
+					"name": "Slow"
+				},
+				{
+					"name": "Deadly"
+				}
+			],
+			"affinities": {
+				"right": "blue"
+			}
+		},
+		{
+			"id": "gorm-g-7",
+			"name": "Pulse Lantern",
+			"expansion": "gorm",
+			"keywords": [
+				"item",
+				"lantern",
+				"gormskin",
+				"fragile"
+			],
+			"rules_text": "(a): Once per showdown, roll 1d10. On a result of 4+, the monster is knocked down and all survivors gain -1 accuracy token.",
+			"source": "g",
+			"affinities": {
+				"up": "red"
+			}
+		},
+		{
+			"id": "gorm-g-8",
+			"name": "Knuckle Shield",
+			"expansion": "gorm",
+			"keywords": [
+				"weapon",
+				"melee",
+				"shield",
+				"gormskin"
+			],
+			"rules_text": "Once per round, If you wound with this weapon, Block 1 for free.",
+			"source": "g",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 7,
+				"strength": 1
+			},
+			"special_rules": [
+				{
+					"name": "Block",
+					"value": 1
+				}
+			],
+			"affinities": {
+				"down": "red"
+			}
+		},
+		{
+			"id": "gorm-g-9",
+			"name": "Gorn",
+			"expansion": "gorm",
+			"keywords": [
+				"item",
+				"instrument",
+				"gormskin"
+			],
+			"rules_text": "(a) : All non-deaf knocked down survivors stand and gain + 1 to all hit locations. Use once per showdown.",
+			"source": "g",
+			"affinities": {
+				"down": "blue"
+			}
+		},
+		{
+			"id": "gorm-g-10",
+			"name": "Gaxe",
+			"expansion": "gorm",
+			"keywords": [
+				"weapon",
+				"melee",
+				"axe",
+				"bone"
+			],
+			"rules_text": "Each showdown, the first time you critically wound the monster, it gains -1 evasion token.",
+			"source": "g",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 6,
+				"strength": 4
+			},
+			"special_rules": [
+				{
+					"name": "Savage"
+				}
+			],
+			"affinities": {
+				"up": "red",
+				"left": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-square"
+					],
+					"effect": "Gains +1 speed and Savage."
+				}
+			]
+		},
+		{
+			"id": "gorm-g-11",
+			"name": "Armor Spikes",
+			"expansion": "gorm",
+			"keywords": [
+				"item",
+				"bone",
+				"heavy"
+			],
+			"rules_text": "If adjacent to the monster when you suffer a severe body injury, the monster suffers a wound. Limit, once per round.",
+			"source": "g",
+			"affinities": {
+				"down": "blue"
+			}
+		},
+		{
+			"id": "gorm-g-12",
+			"name": "Greater Gaxe",
+			"expansion": "gorm",
+			"keywords": [
+				"weapon",
+				"melee",
+				"axe",
+				"two-handed",
+				"heavy"
+			],
+			"source": "g",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 4
+			},
+			"special_rules": [
+				{
+					"name": "Reach",
+					"value": 2
+				},
+				{
+					"name": "Deadly"
+				}
+			],
+			"affinities": {
+				"left": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"green-square",
+						"red-square"
+					],
+					"effect": "On a Perfect hit, the edge sharpens. Gain +4 strength for the rest of the attack."
+				}
+			]
+		},
+		{
+			"id": "gorm-g-13",
+			"name": "Acid-Tooth Dagger",
+			"expansion": "gorm",
+			"keywords": [
+				"weapon",
+				"melee",
+				"dagger",
+				"bone"
+			],
+			"rules_text": "On a Perfect hit, a wound attempt in your attack automatically succeeds.",
+			"source": "g",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 7,
+				"strength": 2
+			},
+			"special_rules": [
+				{
+					"name": "Paired"
+				}
+			],
+			"affinities": {
+				"up": "red",
+				"down": "red"
+			}
+		},
+		{
+			"id": "gorm-g-14",
+			"name": "Riot Mace",
+			"expansion": "gorm",
+			"keywords": [
+				"weapon",
+				"melee",
+				"club"
+			],
+			"rules_text": "When you critically wound, the next time the monster would draw Al, it performs Basic Action instead.",
+			"source": "g",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 5,
+				"strength": 5
+			},
+			"special_rules": [
+				{
+					"name": "Deadly"
+				}
+			],
+			"affinities": {
+				"right": "blue"
+			}
+		},
+		{
+			"id": "gorm-g-15",
+			"name": "Black Sword",
+			"expansion": "gorm",
+			"keywords": [
+				"weapon",
+				"melee",
+				"sword",
+				"heavy"
+			],
+			"rules_text": "On a Perfect hit, gain +1 survival. If you are a Sword Master, you understand this weapon's potential. It gains +20 strength.",
+			"source": "g",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 5,
+				"strength": 10
+			}
+		},
+		{
+			"id": "gorm-gr-16",
+			"name": "Healing Potion",
+			"expansion": "gorm",
+			"keywords": [
+				"item",
+				"consumable",
+				"fragile"
+			],
+			"rules_text": "At the end of the showdown, if you suffered any permanent injuries, you may archive this card and remove one of your choice.",
+			"source": "gr",
+			"affinities": {
+				"down": "red"
+			}
+		},
+		{
+			"id": "gorm-gr-17",
+			"name": "Wisdom Potion",
+			"expansion": "gorm",
+			"keywords": [
+				"item",
+				"consumable",
+				"other"
+			],
+			"source": "gr",
+			"affinities": {
+				"right": "blue"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-square",
+						"blue-puzzle"
+					],
+					"effect": "Play the showdown with the top card of the hit location deck revealed."
+				}
+			]
+		},
+		{
+			"id": "gorm-gr-18",
+			"name": "Steadfast Potion",
+			"expansion": "gorm",
+			"keywords": [
+				"item",
+				"consumable",
+				"heavy"
+			],
+			"rules_text": "When you ignore a hit with Block, gain +1 strength token. When you are knocked down, lose all your +1 strength tokens.",
+			"source": "gr",
+			"affinities": {
+				"up": "red"
+			}
+		},
+		{
+			"id": "gorm-gr-19",
+			"name": "Power Potion",
+			"expansion": "gorm",
+			"keywords": [
+				"item",
+				"consumable"
+			],
+			"rules_text": "(a) Consume: Once per showdown, gain +1 strength token for each  green affinity you have.",
+			"source": "gr",
+			"affinities": {
+				"up": "green"
+			}
+		},
+		{
+			"id": "gorm-gr-20",
+			"name": "Life Elixir",
+			"expansion": "gorm",
+			"keywords": [
+				"item",
+				"consumable",
+				"stinky"
+			],
+			"rules_text": "Each showdown, the first time you would die from a severe injury, ignore that injury.",
+			"source": "gr"
+		},
+		{
+			"id": "gk-unknown-1",
+			"name": "Green Gloves",
+			"expansion": "gk",
+			"keywords": [
+				"armor",
+				"set",
+				"metal"
+			],
+			"rules_text": "+2 Strength.",
+			"armor_value": 5,
+			"hit_location": [
+				"arms"
+			],
+			"affinities": {
+				"right": "red",
+				"down": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"red-puzzle"
+					],
+					"effect": "+6 Luck when attempting to wound Parry hit locations."
+				}
+			]
+		},
+		{
+			"id": "gk-unknown-2",
+			"name": "Green Helm",
+			"expansion": "gk",
+			"keywords": [
+				"armor",
+				"set",
+				"bone",
+				"metal"
+			],
+			"rules_text": "+1 Luck. \nWhen a monster attacks you, you may elect to take a hit on the head and roll 1d10. On a 6+, ignore the hit. If adjacent, it suffers 1 wound.",
+			"armor_value": 5,
+			"hit_location": [
+				"head"
+			],
+			"affinities": {
+				"down": "green",
+				"left": "red"
+			}
+		},
+		{
+			"id": "gk-unknown-3",
+			"name": "Griswaldo",
+			"expansion": "gk",
+			"keywords": [
+				"weapon",
+				"set",
+				"melee",
+				"sword",
+				"finesse",
+				"bone",
+				"metal"
+			],
+			"rules_text": "When you wound, Block 2 with Fetorsaurus for free.",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 4,
+				"strength": 15
+			},
+			"special_rules": [
+				{
+					"name": "Savage"
+				},
+				{
+					"name": "Sharp"
+				},
+				{
+					"name": "Deadly"
+				}
+			],
+			"affinities": {
+				"up": "red",
+				"right": "green"
+			}
+		},
+		{
+			"id": "gk-unknown-4",
+			"name": "Green Plate",
+			"expansion": "gk",
+			"keywords": [
+				"armor",
+				"set",
+				"metal",
+				"gormskin"
+			],
+			"rules_text": "At the start of the showdown, draw 3 tactics cards.",
+			"armor_value": 5,
+			"hit_location": [
+				"chest"
+			],
+			"affinities": {
+				"up": "green",
+				"right": "blue",
+				"left": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-puzzle",
+						"blue-puzzle",
+						"green-puzzle",
+						"green-puzzle"
+					],
+					"effect": "When you attack, the extra weight grants leverage. Your weapon gains the club keyword."
+				}
+			]
+		},
+		{
+			"id": "gk-unknown-5",
+			"name": "Fetorsaurus",
+			"expansion": "gk",
+			"keywords": [
+				"weapon",
+				"set",
+				"melee",
+				"shield",
+				"metal"
+			],
+			"rules_text": "Add 2 to all hit locations. While you carry this, reduce ⭐️ by 1.",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 5,
+				"strength": 9
+			},
+			"special_rules": [
+				{
+					"name": "Block",
+					"value": 2
+				}
+			],
+			"affinities": {
+				"down": "green",
+				"left": "blue"
+			}
+		},
+		{
+			"id": "gk-unknown-6",
+			"name": "Green Faulds",
+			"expansion": "gk",
+			"keywords": [
+				"armor",
+				"set",
+				"metal",
+				"other"
+			],
+			"rules_text": "+1 Evasion.",
+			"armor_value": 5,
+			"hit_location": [
+				"waist"
+			],
+			"affinities": {
+				"up": "blue",
+				"right": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-puzzle",
+						"green-puzzle"
+					],
+					"effect": "After drawing hit locations from an attack, you may discard 1 First Strike hit location card."
+				}
+			]
+		},
+		{
+			"id": "gk-unknown-7",
+			"name": "Green Boots",
+			"expansion": "gk",
+			"keywords": [
+				"armor",
+				"set",
+				"bone",
+				"heavy",
+				"metal"
+			],
+			"rules_text": "You may use the Tumble fighting art.",
+			"armor_value": 5,
+			"hit_location": [
+				"legs"
+			],
+			"affinities": {
+				"up": "green",
+				"left": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"green-puzzle",
+						"green-puzzle"
+					],
+					"effect": "You successfully tumble on 2+ instead of 6+."
+				}
+			]
+		},
+		{
+			"id": "lk-unknown-1",
+			"name": "Lion Knight Badge",
+			"expansion": "lk",
+			"keywords": [
+				"item",
+				"jewelry",
+				"knight"
+			],
+			"rules_text": "Gain +1 accuracy. At the start of the showdown, draw 1 Tactics card.",
+			"special_rules": [
+				{
+					"name": "Unique"
+				}
+			]
+		},
+		{
+			"id": "lk-unknown-2",
+			"name": "Hideous Disguise",
+			"expansion": "lk",
+			"keywords": [
+				"item",
+				"mask",
+				"bone",
+				"other"
+			],
+			"rules_text": "Gain +1 strength. At the start of the showdown, if you are fighting the Lion Knight, choose your Role card.",
+			"armor_value": 2,
+			"hit_location": [
+				"head"
+			],
+			"special_rules": [
+				{
+					"name": "Accessory"
+				},
+				{
+					"name": "Cursed"
+				}
+			]
+		},
+		{
+			"id": "lk-unknown-3",
+			"name": "Lion Knight's Right Claw",
+			"expansion": "lk",
+			"keywords": [
+				"weapon",
+				"melee",
+				"katar"
+			],
+			"rules_text": "with Lion Knight's Left Claw",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 8,
+				"strength": 8
+			},
+			"special_rules": [
+				{
+					"name": "Paired"
+				}
+			],
+			"affinities": {
+				"right": "red",
+				"left": "blue"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-puzzle"
+					],
+					"effect": "Gains +1 speed"
+				},
+				{
+					"affinities": [
+						"red-puzzle"
+					],
+					"effect": "On a Perfect hit, +1 survival."
+				}
+			]
+		},
+		{
+			"id": "lk-unknown-4",
+			"name": "Lion Knight's Left Claw",
+			"expansion": "lk",
+			"keywords": [
+				"weapon",
+				"melee",
+				"katar"
+			],
+			"rules_text": "Paired with Lion Knight's Right Claw",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 5,
+				"strength": 4
+			},
+			"special_rules": [
+				{
+					"name": "Paired"
+				}
+			],
+			"affinities": {
+				"right": "blue",
+				"left": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-puzzle"
+					],
+					"effect": "Gains +1 speed"
+				},
+				{
+					"affinities": [
+						"red-puzzle"
+					],
+					"effect": "Gains deadly"
+				}
+			]
+		},
+		{
+			"id": "mh-unknown-1",
+			"name": "Reveberating Lantern",
+			"expansion": "mh",
+			"keywords": [
+				"item",
+				"tool",
+				"lantern"
+			],
+			"rules_text": "At the start of any hunt turn, before an event is revealed, you may 📖 Sonorous Rest. Limit, once per hunt.",
+			"special_rules": [
+				{
+					"name": "Unique"
+				}
+			],
+			"affinities": {
+				"up": "green",
+				"right": "blue"
+			}
+		},
+		{
+			"id": "mh-unknown-2",
+			"name": "Hunter's Heart",
+			"expansion": "mh",
+			"keywords": [
+				"item",
+				"consumable",
+				"metal",
+				"heavy"
+			],
+			"rules_text": "If you die, the heart crawls back to the settlement. Roll 1d10. On a 7+, it regrows you. During the settlement phase, you may archive this to Bleeding Heart.",
+			"special_rules": [
+				{
+					"name": "Unique"
+				}
+			]
+		},
+		{
+			"id": "mh-unknown-3",
+			"name": "Deathpact",
+			"expansion": "mh",
+			"keywords": [
+				"item",
+				"metal",
+				"fragile"
+			],
+			"rules_text": "At the start of your act, gain +1 survival. Once per campaign, you may fire the gun to automatically hit and inflict a critical wound.",
+			"special_rules": [
+				{
+					"name": "Unique"
+				}
+			],
+			"affinities": {
+				"up": "blue",
+				"right": "red"
+			}
+		},
+		{
+			"id": "mh-unknown-4",
+			"name": "Tool Belt",
+			"expansion": "mh",
+			"keywords": [
+				"item",
+				"metal",
+				"fragile"
+			],
+			"rules_text": "If you have no weapons in your gear grid, gain +3 evasion. Tools in your gear grid lose frail. Tools with attack profiles gain +1 speed, +3 accuracy, and sharp.",
+			"special_rules": [
+				{
+					"name": "Unique"
+				}
+			],
+			"affinities": {
+				"up": "blue",
+				"right": "green"
+			}
+		},
+		{
+			"id": "mh-unknown-5",
+			"name": "Manhunter’ Hat",
+			"expansion": "mh",
+			"keywords": [
+				"item",
+				"rawhide",
+				"leather"
+			],
+			"special_rules": [
+				{
+					"name": "Accessory"
+				},
+				{
+					"name": "Unique"
+				}
+			],
+			"affinities": {
+				"up": "red",
+				"down": "blue",
+				"left": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-puzzle",
+						"red-square"
+					],
+					"effect": "Ignore the first severe injury you suffer each showdown."
+				}
+			]
+		},
+		{
+			"id": "slen-unknown-1",
+			"name": "Gloom Bracelets",
+			"expansion": "slen",
+			"keywords": [
+				"item",
+				"jewelry",
+				"gloomy",
+				"fragile",
+				"heavy"
+			],
+			"rules_text": "When you depart, gain +2 insanity. When you suffer a severe arm injury, archive this card.",
+			"armor_value": 6,
+			"hit_location": [
+				"arms"
+			],
+			"special_rules": [
+				{
+					"name": "Accessory"
+				}
+			],
+			"affinities": {
+				"right": "red",
+				"down": "blue",
+				"left": "red"
+			}
+		},
+		{
+			"id": "slen-unknown-2",
+			"name": "Gloom-Coated Arrow",
+			"expansion": "slen",
+			"keywords": [
+				"item",
+				"ammunition",
+				"arrow",
+				"gloomy"
+			],
+			"rules_text": "After attempting to wound each hit location, place it on top of the deck instead of in the discard pile. Use once per showdown.",
+			"weapon_stats": {
+				"speed": 5,
+				"accuracy": 6,
+				"strength": 5
+			},
+			"special_rules": [
+				{
+					"name": "Ammo - Bow"
+				},
+				{
+					"name": "Cumbersome"
+				},
+				{
+					"name": "Deadly"
+				}
+			]
+		},
+		{
+			"id": "slen-unknown-3",
+			"name": "Gloom Mehndi",
+			"expansion": "slen",
+			"keywords": [
+				"item",
+				"gloomy",
+				"soluble"
+			],
+			"rules_text": "When you depart, gain 1 to all hit locations. When you gain the Crystal Skin ability, gain the Crystal Sword Mold strange resource.",
+			"affinities": {
+				"right": "red",
+				"down": "red",
+				"left": "blue"
+			}
+		},
+		{
+			"id": "slen-unknown-4",
+			"name": "Dark Water Vial",
+			"expansion": "slen",
+			"keywords": [
+				"item",
+				"consumable",
+				"gloomy",
+				"fragile"
+			],
+			"rules_text": "(a) Consume: You are knocked down and cannot gain bleeding tokens until the end of the round. Use once per showdown.",
+			"affinities": {
+				"down": "green"
+			}
+		},
+		{
+			"id": "slen-unknown-5",
+			"name": "Raptor-Worm Collar",
+			"expansion": "slen",
+			"keywords": [
+				"item",
+				"jewelry",
+				"gloomy"
+			],
+			"rules_text": "You may encourage without spending survival. When you encourage a survivor, they suffer 2 brain damage.",
+			"affinities": {
+				"down": "green",
+				"left": "red"
+			}
+		},
+		{
+			"id": "slen-unknown-6",
+			"name": "Gloom Cream",
+			"expansion": "slen",
+			"keywords": [
+				"item",
+				"consumable",
+				"balm",
+				"gloomy",
+				"stinky",
+				"other"
+			],
+			"affinities": {
+				"up": "blue",
+				"right": "red",
+				"down": "blue",
+				"left": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"red-puzzle",
+						"blue-square",
+						"blue-square"
+					],
+					"effect": "When you depart, gain -3 Hunt XP, -1 understanding. If you have no understanding, die instantly."
+				}
+			]
+		},
+		{
+			"id": "slen-unknown-7",
+			"name": "Gloom Hammer",
+			"expansion": "slen",
+			"keywords": [
+				"weapon",
+				"melee",
+				"club",
+				"two-handed",
+				"gloomy",
+				"other"
+			],
+			"rules_text": "When you wound, end your attack (cancel reactions). Gain the monster controller tile and full move the monster directly away from you.",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 7,
+				"strength": 13
+			},
+			"special_rules": [
+				{
+					"name": "Reach",
+					"value": 2
+				},
+				{
+					"name": "Sentient"
+				},
+				{
+					"name": "Unique"
+				},
+				{
+					"name": "Deadly"
+				}
+			],
+			"affinities": {
+				"up": "blue",
+				"left": "red"
+			}
+		},
+		{
+			"id": "slen-unknown-8",
+			"name": "Slender Ovule",
+			"expansion": "slen",
+			"keywords": [
+				"item",
+				"jewelry",
+				"gloomy",
+				"other"
+			],
+			"rules_text": "When you depart, gain +3 insanity.",
+			"special_rules": [
+				{
+					"name": "Unique"
+				}
+			],
+			"affinities": {
+				"up": "blue",
+				"right": "green",
+				"down": "blue"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-puzzle",
+						"green-puzzle"
+					],
+					"effect": "Monsters and survivors adjacent to you have -1 luck."
+				}
+			]
+		},
+		{
+			"id": "slen-unknown-9",
+			"name": "Gloom Katana",
+			"expansion": "slen",
+			"keywords": [
+				"weapon",
+				"melee",
+				"katana",
+				"two-handed",
+				"finesse",
+				"gloomy",
+				"other"
+			],
+			"rules_text": "Your insanity is added to this weapon's strength. When Gloom Sheath is right of this in your gear grid, Gloom Katana gains Savage.",
+			"weapon_stats": {
+				"speed": 4,
+				"accuracy": 5,
+				"strength": 0
+			},
+			"affinities": {
+				"up": "blue"
+			}
+		},
+		{
+			"id": "slen-unknown-10",
+			"name": "Gloom Sheath",
+			"expansion": "slen",
+			"keywords": [
+				"item",
+				"gloomy",
+				"other"
+			],
+			"special_rules": [
+				{
+					"name": "Block",
+					"value": 1
+				}
+			],
+			"affinities": {
+				"up": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"blue-square"
+					],
+					"effect": "At the start of your act, gain +1 insanity."
+				}
+			]
+		},
+		{
+			"id": "spid-unknown-1",
+			"name": "Silk Turban",
+			"expansion": "spid",
+			"keywords": [
+				"armor",
+				"set",
+				"silk",
+				"flammable"
+			],
+			"source": "sm",
+			"armor_value": 3,
+			"hit_location": [
+				"head"
+			],
+			"affinities": {
+				"right": "green",
+				"left": "blue"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"green-puzzle",
+						"blue-puzzle"
+					],
+					"effect": "(a): Add 1 to all hit locations. Use once per showdown."
+				}
+			]
+		},
+		{
+			"id": "spid-unknown-2",
+			"name": "Silk Wraps",
+			"expansion": "spid",
+			"keywords": [
+				"armor",
+				"set",
+				"silk",
+				"flammable"
+			],
+			"source": "sm",
+			"armor_value": 3,
+			"hit_location": [
+				"arms"
+			],
+			"affinities": {
+				"down": "red",
+				"left": "green"
+			}
+		},
+		{
+			"id": "spid-sm-3",
+			"name": "Silk Robes",
+			"expansion": "spid",
+			"keywords": [
+				"armor",
+				"set",
+				"silk",
+				"flammable"
+			],
+			"rules_text": "When you depart, gain 1 survival.",
+			"source": "sm",
+			"armor_value": 3,
+			"hit_location": [
+				"chest"
+			],
+			"affinities": {
+				"up": "red",
+				"right": "blue",
+				"down": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"red-puzzle",
+						"blue-puzzle"
+					],
+					"effect": "(a): Add 1 to all hit locations. Use once per showdown."
+				}
+			]
+		},
+		{
+			"id": "spid-sm-4",
+			"name": "Silk Sash",
+			"expansion": "spid",
+			"keywords": [
+				"armor",
+				"set",
+				"silk",
+				"flammable"
+			],
+			"rules_text": "When you depart, gain 1 survival.",
+			"source": "sm",
+			"armor_value": 3,
+			"hit_location": [
+				"waist"
+			],
+			"affinities": {
+				"down": "green",
+				"left": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"green-puzzle",
+						"green-puzzle"
+					],
+					"effect": "(a): Add 1 to all hit locations. Use once per showdown."
+				}
+			]
+		},
+		{
+			"id": "spid-sm-5",
+			"name": "Silk Boots",
+			"expansion": "spid",
+			"keywords": [
+				"armor",
+				"set",
+				"silk",
+				"flammable"
+			],
+			"source": "sm",
+			"armor_value": 3,
+			"hit_location": [
+				"legs"
+			],
+			"affinities": {
+				"up": "green",
+				"right": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"green-puzzle",
+						"green-puzzle"
+					],
+					"effect": "+1 movement. Once per round, you may spend 1 survival to gain 2 insanity."
+				}
+			]
+		},
+		{
+			"id": "spid-sm-6",
+			"name": "Amber Poleaxe",
+			"expansion": "spid",
+			"keywords": [
+				"weapon",
+				"melee",
+				"axe",
+				"spear",
+				"two-handed",
+				"amber"
+			],
+			"rules_text": "When a monster collides with you, roll 1d10. On a 6+, the monster suffers 1 wound.",
+			"source": "sm",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 3
+			},
+			"special_rules": [
+				{
+					"name": "Reach",
+					"value": 2
+				}
+			],
+			"affinities": {
+				"down": "green"
+			}
+		},
+		{
+			"id": "spid-sm-7",
+			"name": "Silk Body Suit",
+			"expansion": "spid",
+			"keywords": [
+				"item",
+				"silk",
+				"flammable"
+			],
+			"rules_text": "Reduce damage from every hit suffered by 2, to a minimum of 1. You may not have any heavy or metal armor in your gear grid.",
+			"source": "sm",
+			"special_rules": [
+				{
+					"name": "Unique"
+				}
+			]
+		},
+		{
+			"id": "spid-sm-8",
+			"name": "Throwing Knife",
+			"expansion": "spid",
+			"keywords": [
+				"weapon",
+				"ranged",
+				"thrown"
+			],
+			"rules_text": "At the end of your attack, gain +1 accuracy token for each Perfect hit. When knocked down, remove all your +1 accuracy tokens.",
+			"source": "sm",
+			"weapon_stats": {
+				"speed": 4,
+				"accuracy": 9,
+				"strength": 2
+			},
+			"special_rules": [
+				{
+					"name": "Range",
+					"value": 4
+				}
+			],
+			"affinities": {
+				"right": "red"
+			}
+		},
+		{
+			"id": "spid-sm-9",
+			"name": "Silk Bomb",
+			"expansion": "spid",
+			"keywords": [
+				"item",
+				"thrown",
+				"silk",
+				"amber",
+				"fragile"
+			],
+			"rules_text": "(a): Until the end of the round, all survivors ignore knockback and bash. Archive after use.",
+			"source": "sm"
+		},
+		{
+			"id": "spid-sm-10",
+			"name": "Silk Whip",
+			"expansion": "spid",
+			"keywords": [
+				"weapon",
+				"melee",
+				"whip",
+				"silk"
+			],
+			"source": "sm",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 6,
+				"strength": 3
+			},
+			"affinities": {
+				"right": "blue",
+				"down": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-puzzle",
+						"green-puzzle"
+					],
+					"effect": "On a Perfect hit, you may arc in play instead of drawing a"
+				}
+			]
+		},
+		{
+			"id": "spid-sm-11",
+			"name": "Red Ring",
+			"expansion": "spid",
+			"keywords": [
+				"item",
+				"jewelry",
+				"amber"
+			],
+			"source": "sm",
+			"armor_value": 2,
+			"hit_location": [
+				"arms"
+			],
+			"special_rules": [
+				{
+					"name": "Accessory"
+				},
+				{
+					"name": "Unique"
+				}
+			],
+			"affinities": {
+				"up": "red",
+				"down": "red",
+				"left": "red"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"red-puzzle",
+						"red-puzzle",
+						"red-puzzle"
+					],
+					"effect": "If you gain a bleeding token while monster controller, monster suffers 1 wound. Limit twice per round."
+				}
+			]
+		},
+		{
+			"id": "spid-sm-12",
+			"name": "Hooded Scrap Katar",
+			"expansion": "spid",
+			"keywords": [
+				"weapon",
+				"melee",
+				"katar",
+				"metal"
+			],
+			"rules_text": "If you hit 4 or more times in a single attack with this weapon, the monster suffers 1 wound before hit locations are drawn.",
+			"source": "sm",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 7,
+				"strength": 4
+			},
+			"special_rules": [
+				{
+					"name": "Paired"
+				}
+			],
+			"affinities": {
+				"left": "blue"
+			}
+		},
+		{
+			"id": "spid-sm-13",
+			"name": "Blue Ring",
+			"expansion": "spid",
+			"keywords": [
+				"item",
+				"jewelry",
+				"amber"
+			],
+			"source": "sm",
+			"armor_value": 2,
+			"hit_location": [
+				"arms"
+			],
+			"special_rules": [
+				{
+					"name": "Accessory"
+				},
+				{
+					"name": "Unique"
+				}
+			],
+			"affinities": {
+				"right": "blue",
+				"down": "blue",
+				"left": "blue"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"blue-puzzle",
+						"blue-puzzle",
+						"blue-puzzle"
+					],
+					"effect": "If you are monster controller when the monster draws AI, draw 1 extra card. Select 1 to play and discard the other."
+				}
+			]
+		},
+		{
+			"id": "spid-sm-14",
+			"name": "Green Ring",
+			"expansion": "spid",
+			"keywords": [
+				"item",
+				"jewelry",
+				"amber"
+			],
+			"source": "sm",
+			"armor_value": 2,
+			"hit_location": [
+				"arms"
+			],
+			"special_rules": [
+				{
+					"name": "Accessory"
+				},
+				{
+					"name": "Unique"
+				}
+			],
+			"affinities": {
+				"up": "green",
+				"right": "green",
+				"down": "green"
+			},
+			"affinity_boxes": [
+				{
+					"affinities": [
+						"green-puzzle",
+						"green-puzzle",
+						"green-puzzle"
+					],
+					"effect": "The first time you are attacked each round, gain 3 to all hit locations if you are monster controller."
+				}
+			]
+		},
+		{
+			"id": "spid-unknown-15",
+			"name": "Amber Edge",
+			"expansion": "spid",
+			"keywords": [
+				"weapon",
+				"melee",
+				"scimitar",
+				"amber"
+			],
+			"rules_text": "At the end of each attack, if you wounded the monster, make an additional attack with this weapon.",
+			"source": "sm",
+			"weapon_stats": {
+				"speed": 1,
+				"accuracy": 6,
+				"strength": 4
+			},
+			"special_rules": [
+				{
+					"name": "Slow"
+				}
+			]
+		},
+		{
+			"id": "spid-unknown-16",
+			"name": "The Weaver",
+			"expansion": "spid",
+			"keywords": [
+				"weapon",
+				"melee",
+				"sword",
+				"amber"
+			],
+			"rules_text": "When you wound a monster, add 1 to a random hit location.",
+			"weapon_stats": {
+				"speed": 3,
+				"accuracy": 6,
+				"strength": 2
+			},
+			"special_rules": [
+				{
+					"name": "Unique"
+				}
+			],
+			"affinities": {
+				"up": "red",
+				"left": "red"
+			}
+		},
+		{
+			"id": "spid-unknown-17",
+			"name": "Grinning Visage",
+			"expansion": "spid",
+			"keywords": [
+				"weapon",
+				"melee",
+				"shield"
+			],
+			"rules_text": "When you wound with this shield, you may spend 1 survival to add 1 to all hit locations. Limit, once per attack.",
+			"weapon_stats": {
+				"speed": 2,
+				"accuracy": 7,
+				"strength": 4
+			},
+			"special_rules": [
+				{
+					"name": "Block",
+					"value": 1
+				},
+				{
+					"name": "Unique"
+				}
+			],
+			"affinities": {
+				"up": "green",
+				"down": "red"
 			}
 		},
 		{
